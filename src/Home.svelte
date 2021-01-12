@@ -1,4 +1,4 @@
-<main id="home" class="main">
+<main id="home" class="main min-h-screen">
     <h1 class="text-7xl font-light text-gray-700 mb-2">Hello There.</h1>
     <p class="font-mono text-lg mb-5">I am Ng Bob Shoaun. I write good code with good designs.</p>
 

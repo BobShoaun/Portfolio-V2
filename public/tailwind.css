@@ -9,6 +9,7 @@
         @apply py-52;
         @apply px-52;
         @apply m-0;
+        /* @apply min-h-screen; */
     }
     body {
         @apply p-0;

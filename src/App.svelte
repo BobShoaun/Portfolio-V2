@@ -12,12 +12,6 @@
   export let url = ""; //This property is necessary declare to avoid ignore the Router
 </script>
 
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
-
 <Router {url}>
   <!-- <nav>
      <Link to="/" noroute>Home</Link>
@@ -38,7 +32,6 @@
   <Navbar />
   <Home />
   <About />
-
   <WebDev />
   <Designs />
   <GameDev />
