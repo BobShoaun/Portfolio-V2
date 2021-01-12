@@ -1,3 +1,12 @@
+<script>
+    export let image = "images/pathforge.png";
+    export let name = "awesome website";
+    export let collaborators = "with some people";
+    export let description = "none.";
+    export let technologies = ["svelte", "tailwind css"];
+    export let right = false;
+</script>
+
 <style>
     img {
         border-top: 20px solid rgba(191, 219, 254);
@@ -7,24 +16,18 @@
     }
 </style>
 
-<main class="flex items-center justify-around space-x-28 p-24">
+<main class="flex items-center justify-around py-16">
     <div class="relative h-auto w-auto">
         <div class="absolute bg-white w-5 h-5 right-0" />
         <div class="absolute bg-white w-5 h-5 bottom-0" />
-        <img
-            src={'images/pathforge.png'}
-            class=" object-contain"
-            alt="pathforge" />
+        <img src={image} class=" object-contain" alt={name} />
     </div>
 
-    <div>
-        <h1 class="font-bold text-2xl">Pathforge</h1>
-        <p class="font-bold text-sm text-purple-700">with pathforge team</p>
-        <p class="text-md">
-            Here are some web development projects i have worked on. Here are
-            some web development projects i have worked on.
-        </p>
+    <div class={right ? 'order-first pr-28' : 'pl-28'}>
+        <h1 class="font-bold text-2xl">{name}</h1>
+        <p class="font-bold text-sm text-purple-700 mb-3">{collaborators}</p>
+        <p class="text-md mb-4">{description}</p>
 
-        <p class="text-lg font-semibold">vue // buefy // postgres // graphql</p>
+        <p class="text-lg font-semibold">{technologies.join(' // ')}</p>
     </div>
 </main>
