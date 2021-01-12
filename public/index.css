@@ -536,6 +536,49 @@ video {
   height: auto;
 }
 
+.main {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .main {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .main {
+    max-width: 1536px;
+  }
+}
+
+.main {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   width: 100%;
 }

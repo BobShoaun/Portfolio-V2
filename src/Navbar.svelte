@@ -1,5 +1,5 @@
-<header class="flex items-center justify-between px-10 py-5 bg-gray-100 shadow-md">
-    <div class="logo">logo here</div>
+<header class="flex items-center justify-between px-10 py-5 bg-white shadow-md">
+    <div class="logo font-semibold">Ng Bob Shoaun</div>
     <div class="links flex justify-between items-center space-x-10">
         <a href="#">About</a>
         <a href="#">Web dev</a>
