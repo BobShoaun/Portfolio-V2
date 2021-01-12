@@ -549,6 +549,10 @@ body {
   padding: 0px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
 }

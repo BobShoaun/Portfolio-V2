@@ -1,6 +1,6 @@
 <script>
   import Navbar from "./Navbar.svelte";
-  import Home from "./Home.svelte";
+  import Home from "./Home.svelte";   
   import About from "./About.svelte";
   import WebDev from "./WebDev.svelte";
   import Designs from "./Designs.svelte";
