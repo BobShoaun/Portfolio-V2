@@ -4,6 +4,7 @@
   import About from "./About.svelte";
   import WebDev from "./WebDev.svelte";
   import GameDev from "./GameDev.svelte";
+  import Contact from "./Contact.svelte"
 </script>
 
 <style>
@@ -11,11 +12,9 @@
 
 <main class="">
   <Navbar />
-  <!-- <div class="container space-y-52"> -->
-  <!-- <div class="container"> -->
   <Home />
   <About />
   <WebDev />
   <GameDev />
-  <!-- </div> -->
+  <Contact />
 </main>

@@ -1,27 +1,15 @@
 <script>
-    export let image = "images/pathforge.png";
-    export let name = "awesome website";
+    import ProjectImage from "./ProjectImage.svelte";
+    export let image = "images/doodle jump.gif";
+    export let name = "awesome game";
     export let collaborators = "with some people";
     export let description = "none.";
-    export let technologies = ["svelte", "tailwind css"];
+    export let technologies = ["unity", "c#"];
     export let right = false;
 </script>
 
-<style>
-    img {
-        border-top: 20px solid rgba(191, 219, 254);
-        border-left: 20px solid rgba(191, 219, 254);
-        border-right: 20px solid rgba(167, 243, 208);
-        border-bottom: 20px solid rgba(167, 243, 208);
-    }
-</style>
-
 <main class="flex items-center justify-around py-16">
-    <div class="relative h-auto w-auto">
-        <div class="absolute bg-white w-5 h-5 right-0" />
-        <div class="absolute bg-white w-5 h-5 bottom-0" />
-        <img src={image} class=" object-contain" alt={name} />
-    </div>
+    <ProjectImage {image} alt={name} />
 
     <div class={right ? 'order-first pr-28' : 'pl-28'}>
         <h1 class="font-bold text-2xl">{name}</h1>

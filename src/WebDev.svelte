@@ -18,7 +18,7 @@
         name={'ADP Timetabler (Course Checker)'}
         collaborators={'by myself'}
         description={'Here are some web development projects i have worked on. Here are some web development projects i have worked on.'}
-        technologies={['html', 'css', 'unity', 'webGL']}
+        technologies={['html', 'css', 'unity', 'c#', 'webGL']}
         right />
     <WebDevProject
         image={'images/todo app 2.png'}

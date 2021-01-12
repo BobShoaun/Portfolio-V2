@@ -1,19 +1,13 @@
-
-
 @tailwind base;
 @tailwind components;
-
-
-
 @tailwind utilities;
 
-@import "colors.scss";
+/* @import "colors.scss"; */
 
 @layer base {
     .main {
-        @apply container;
         @apply py-52;
-        @apply px-32;
-        @apply mx-auto;
+        @apply px-52;
+        @apply m-0;
     }
 }
