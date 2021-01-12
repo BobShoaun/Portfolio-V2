@@ -544,6 +544,10 @@ video {
   margin: 0px;
 }
 
+body {
+  padding: 0px;
+}
+
 .container {
   width: 100%;
 }
@@ -29139,6 +29143,10 @@ video {
 }
 
 /* @import "colors.scss"; */
+
+html {
+  scroll-behavior: smooth;
+}
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -171899,3 +171907,4 @@ video {
     animation: bounce 1s infinite;
   }
 }
+

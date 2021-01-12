@@ -1,4 +1,4 @@
-<main class="main bg-gray-100">
+<main id="contact" class="main bg-gray-100">
     <h1 class="text-5xl font-light mb-3">Contact me</h1>
     <p class="font-mono mb-5">
         What are you waiting for? shoot me a message!

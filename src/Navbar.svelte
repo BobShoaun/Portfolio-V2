@@ -1,10 +1,15 @@
-<header class="flex items-center justify-between px-10 py-5 bg-white shadow-md fixed w-full z-50">
-    <div class="logo font-semibold">Ng Bob Shoaun</div>
+<header
+    class="flex items-center justify-between px-10 py-5 bg-white shadow-md fixed w-full z-50">
+    <div class="logo font-semibold">
+        <a href="#home" class="hover:no-underline"><p class="text-gray-800">
+                Ng Bob Shoaun
+            </p></a>
+    </div>
     <div class="links flex justify-between items-center space-x-10">
-        <a href="#">About</a>
-        <a href="#">Web dev</a>
-        <a href="#">Design</a>
-        <a href="#">Game dev</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#web-development">Web dev</a>
+        <a href="#graphic-design">Design</a>
+        <a href="#game-development">Game dev</a>
+        <a href="#contact">Contact</a>
     </div>
 </header>
