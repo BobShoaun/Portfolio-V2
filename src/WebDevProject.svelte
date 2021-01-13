@@ -1,5 +1,5 @@
 <script>
-    import ProjectImage from "./ProjectImage.svelte";
+    import Image from "./Image.svelte";
     export let image = "images/doodle jump.gif";
     export let name = "awesome game";
     export let collaborators = "with some people";
@@ -11,7 +11,7 @@
 </script>
 
 <main class="flex items-center justify-around py-16">
-    <ProjectImage {image} alt={name} />
+    <Image src={image} alt={name} />
 
     <div class={right ? 'order-first pr-28' : 'pl-28'}>
         <h1 class="font-bold text-2xl">{name}</h1>

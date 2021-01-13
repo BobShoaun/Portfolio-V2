@@ -1,5 +1,5 @@
 <script>
-    import ProjectImage from "./ProjectImage.svelte";
+    import Image from "./Image.svelte";
     export let image = "images/pathforge.png";
     export let name = "awesome website";
     export let collaborators = "with some people";
@@ -11,7 +11,7 @@
 
 <main class="py-16">
     <div class="mb-10">
-        <ProjectImage {image} alt={name} />
+        <Image src={image} alt={name} />
     </div>
 
     <div class="ml-5">

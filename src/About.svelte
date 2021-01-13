@@ -1,5 +1,11 @@
+<script>
+    import Image from "./Image.svelte";
+</script>
+
 <main id="about" class="main bg-gray-100 flex justify-between space-x-20">
-    <img src="images/me.jpg" class="w-1/3 h-auto object-contain" alt="me" />
+
+    <Image src="images/me.jpg" alt="me" inverted />
+    <!-- <img src= class="w-1/3 h-auto object-contain" alt="me" /> -->
 
     <div class="content">
         <h1 class="text-5xl font-light mb-3">About me</h1>
