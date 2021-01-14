@@ -362,7 +362,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -11211,7 +11211,7 @@ a:hover {
 }
 
 .font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -13977,8 +13977,20 @@ a:hover {
   max-width: 1536px;
 }
 
+.max-w-1\/2 {
+  max-width: 50%;
+}
+
 .min-h-0 {
   min-height: 0;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .min-h-1\/4 {
@@ -13991,14 +14003,6 @@ a:hover {
 
 .min-h-3\/4 {
   min-height: 75%;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .min-w-0 {
@@ -39816,7 +39820,7 @@ html {
   }
 
   .sm\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
@@ -42582,8 +42586,20 @@ html {
     max-width: 1536px;
   }
 
+  .sm\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
   .sm\:min-h-0 {
     min-height: 0;
+  }
+
+  .sm\:min-h-full {
+    min-height: 100%;
+  }
+
+  .sm\:min-h-screen {
+    min-height: 100vh;
   }
 
   .sm\:min-h-1\/4 {
@@ -42596,14 +42612,6 @@ html {
 
   .sm\:min-h-3\/4 {
     min-height: 75%;
-  }
-
-  .sm\:min-h-full {
-    min-height: 100%;
-  }
-
-  .sm\:min-h-screen {
-    min-height: 100vh;
   }
 
   .sm\:min-w-0 {
@@ -68372,7 +68380,7 @@ html {
   }
 
   .md\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
@@ -71138,8 +71146,20 @@ html {
     max-width: 1536px;
   }
 
+  .md\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
   .md\:min-h-0 {
     min-height: 0;
+  }
+
+  .md\:min-h-full {
+    min-height: 100%;
+  }
+
+  .md\:min-h-screen {
+    min-height: 100vh;
   }
 
   .md\:min-h-1\/4 {
@@ -71152,14 +71172,6 @@ html {
 
   .md\:min-h-3\/4 {
     min-height: 75%;
-  }
-
-  .md\:min-h-full {
-    min-height: 100%;
-  }
-
-  .md\:min-h-screen {
-    min-height: 100vh;
   }
 
   .md\:min-w-0 {
@@ -96928,7 +96940,7 @@ html {
   }
 
   .lg\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
@@ -99694,8 +99706,20 @@ html {
     max-width: 1536px;
   }
 
+  .lg\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
   .lg\:min-h-0 {
     min-height: 0;
+  }
+
+  .lg\:min-h-full {
+    min-height: 100%;
+  }
+
+  .lg\:min-h-screen {
+    min-height: 100vh;
   }
 
   .lg\:min-h-1\/4 {
@@ -99708,14 +99732,6 @@ html {
 
   .lg\:min-h-3\/4 {
     min-height: 75%;
-  }
-
-  .lg\:min-h-full {
-    min-height: 100%;
-  }
-
-  .lg\:min-h-screen {
-    min-height: 100vh;
   }
 
   .lg\:min-w-0 {
@@ -125484,7 +125500,7 @@ html {
   }
 
   .xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
@@ -128250,8 +128266,20 @@ html {
     max-width: 1536px;
   }
 
+  .xl\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
   .xl\:min-h-0 {
     min-height: 0;
+  }
+
+  .xl\:min-h-full {
+    min-height: 100%;
+  }
+
+  .xl\:min-h-screen {
+    min-height: 100vh;
   }
 
   .xl\:min-h-1\/4 {
@@ -128264,14 +128292,6 @@ html {
 
   .xl\:min-h-3\/4 {
     min-height: 75%;
-  }
-
-  .xl\:min-h-full {
-    min-height: 100%;
-  }
-
-  .xl\:min-h-screen {
-    min-height: 100vh;
   }
 
   .xl\:min-w-0 {
@@ -154040,7 +154060,7 @@ html {
   }
 
   .\32xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .\32xl\:font-serif {
@@ -156806,8 +156826,20 @@ html {
     max-width: 1536px;
   }
 
+  .\32xl\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
   .\32xl\:min-h-0 {
     min-height: 0;
+  }
+
+  .\32xl\:min-h-full {
+    min-height: 100%;
+  }
+
+  .\32xl\:min-h-screen {
+    min-height: 100vh;
   }
 
   .\32xl\:min-h-1\/4 {
@@ -156820,14 +156852,6 @@ html {
 
   .\32xl\:min-h-3\/4 {
     min-height: 75%;
-  }
-
-  .\32xl\:min-h-full {
-    min-height: 100%;
-  }
-
-  .\32xl\:min-h-screen {
-    min-height: 100vh;
   }
 
   .\32xl\:min-w-0 {

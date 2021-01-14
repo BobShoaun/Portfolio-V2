@@ -1,19 +1,20 @@
 <script>
-    import Image from "./Image.svelte";
+	import Image from "./Image.svelte";
 </script>
 
-<main id="about" class="main bg-gray-100 flex justify-between space-x-20">
+<main id="about" class="main bg-gray-100 flex justify-between space-x-24">
+	<Image src="images/me.jpg" alt="me" inverted cornerColor="bg-gray-100" />
+	<!-- <img src= class="w-1/3 h-auto object-contain" alt="me" /> -->
 
-    <Image src="images/me.jpg" alt="me" inverted />
-    <!-- <img src= class="w-1/3 h-auto object-contain" alt="me" /> -->
-
-    <div class="content">
-        <h1 class="text-5xl font-light mb-3">About me</h1>
-        <p class="font-mono">
-            lolol Created a website to help students with pre-registration. A
-            Grapevine (Event club) Board of director, designs posters and media
-            for marketing. Passionate about programming, a self learner, doing
-            self coding projects.
-        </p>
-    </div>
+	<div class="my-auto max-w-1/2">
+		<h1 class="text-5xl font-semibold mb-6 text-gray-600">About me</h1>
+		<p class="text-gray-500 text-lg">
+			Hi, I’m Bob, a passionate software developer currently earning my degree in University of
+			Toronto, alongside a part-time job as a web developer.
+			<br /><br />
+			I have started coding since the age of 14 and have since been driven to create and design
+			quality, intuitive softwares for others to use. My expertise in software development lies in Unity
+			game engine, C#, Python, and Vue. Besides coding, my hobbies include graphic designing, building computers and playing the drums.
+		</p>
+	</div>
 </main>

@@ -1,7 +1,10 @@
 <header
     class="flex items-center justify-between px-10 py-5 bg-white shadow-md fixed w-full z-50">
     <div class="logo font-semibold">
-        <a href="#home" class="hover:no-underline"><p class="text-gray-800">
+        <div class="bg-purple-400 w-4 h-4 mr-3 inline-block">
+
+        </div>
+        <a href="#home" class="hover:no-underline inline-block"><p class="text-gray-800">
                 Ng Bob Shoaun
             </p></a>
     </div>
