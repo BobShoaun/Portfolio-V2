@@ -11,5 +11,7 @@
 		
 	</div>
 
-	<h2 class="text-medium text-center">Designed and built by Ng Bob Shoaun. &copy; 2021</h2>
+
+	<h2 class="text-medium text-center mb-8">Designed and built by Ng Bob Shoaun. &copy; 2021</h2>
+	<h2 class="text-medium text-center">This site is still a work in progress.</h2>
 </main>

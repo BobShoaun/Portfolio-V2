@@ -1,7 +1,7 @@
 <main id="graphic-design" class="main bg-gray-100">
-    <h1 class="text-5xl font-light mb-3 text-right">Graphic design</h1>
-    <p class="font-mono text-right">
-        Here are some graphic design projects i have worked on.
+    <h1 class="text-5xl font-semibold text-gray-600 mb-3">Graphic design</h1>
+    <p class="text-gray-500 text-xl">
+        I enjoy graphic design like designing posters and such.
     </p>
 
 </main>

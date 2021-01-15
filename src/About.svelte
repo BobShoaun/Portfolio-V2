@@ -2,7 +2,7 @@
 	import Image from "./Image.svelte";
 </script>
 
-<main id="about" class="main bg-gray-100 flex justify-between space-x-24">
+<main id="about" class="main bg-gray-100 flex justify-between space-x-32">
 	<Image src="images/me.jpg" alt="me" inverted cornerColor="bg-gray-100" />
 	<!-- <img src= class="w-1/3 h-auto object-contain" alt="me" /> -->
 

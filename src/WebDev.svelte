@@ -4,7 +4,7 @@
 
 <main id="web-development" class="main">
     <h1 class="text-5xl font-semibold text-gray-600 mb-3">Web development</h1>
-    <p class="text-gray-500 text-2xl">
+    <p class="text-gray-500 text-xl">
         Here are some web development projects i have worked on.
     </p>
     <WebDevProject
