@@ -1,5 +1,9 @@
 <script>
     import WebDevProject from "./WebDevProject.svelte";
+
+    function more() {
+        alert("more coming soon!");
+    }
 </script>
 
 <main id="web-development" class="main">
@@ -33,7 +37,7 @@
         github={'https://github.com/BobShoaun/Vue-Todo-App'}
         website={'https://bobshoaun.github.io/Vue-Todo-App/#/'} />
 
-    <button class="py-2 px-4 bg-green-200 rounded-none block mx-auto mt-10">
+    <button on:click={more} class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10">
         See More
     </button>
 </main>

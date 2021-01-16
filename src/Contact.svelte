@@ -2,7 +2,7 @@
 	<h1 class="text-5xl font-semibold text-gray-600 mb-3">Contact me</h1>
 	<p class="text-gray-500 text-xl mb-10">
 		What are you waiting for? Shoot me a message and I will get back to you as soon as I can. <br />
-		My email is <a href="ngbobshoaun2000@gmail.com">ngbobshoaun2000@gmail.com</a>.
+		My email is <a href="mailto:ngbobshoaun2000@gmail.com">ngbobshoaun2000@gmail.com</a>.
     </p>
 	<input class="w-full mb-2 px-4 py-2" type="text" placeholder="Your email" />
 	<textarea

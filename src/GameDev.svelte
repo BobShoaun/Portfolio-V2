@@ -1,6 +1,9 @@
 <script>
 	import GameDevProject from "./GameDevProject.svelte";
-	import WebDevProject from "./WebDevProject.svelte";
+
+	function more() {
+        alert("more coming soon!");
+    }
 </script>
 
 <main id="game-development" class="main">
@@ -21,7 +24,7 @@
 			collaborators={"with some friends"}
 			description={"A game made entirely with ascii graphics to display in the console, with the help of a console game engine. The game features local multiplayer with two players, a runner and a chaser."}
 			technologies={["c++", "visual studio"]}
-			github={"https://github.com/BobShoaun/Assembly-Doodle-Jump"}
+			github={"https://github.com/BobShoaun/Maze-Runner"}
 		/>
     </div>
     
@@ -30,10 +33,14 @@
         image={"images/doxel-core.png"}
         name={"Doxel Core Unity Package"}
         collaborators={"by myself"}
-        description={"Here are some web development projects i have worked on. Here are some web development projects i have worked on."}
+        description={"A unity package that provides a framework for serializing data easily. It also contains many frequently used utility classes, functions and extension methods."}
         technologies={["unity", "c#"]}
-        github={"https://github.com/BobShoaun/Assembly-Doodle-Jump"}
+        github={"https://github.com/BobShoaun/Doxel-Core"}
     />
-    </div>
+	</div>
+	
+	<button on:click={more} class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10">
+        See More
+    </button>
 
 </main>
