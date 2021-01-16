@@ -1,7 +1,7 @@
 {
   "name": "svelte-app",
   "version": "1.0.0",
-  "homepage": "https://bobshoaun.github.io/Portfolio-V2",
+  "homepage": "https://BobShoaun.github.io/Portfolio-V2",
   "scripts": {
     "watch:tailwind": "postcss public/tailwind.css -o public/index.css -w",
     "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/index.css",
