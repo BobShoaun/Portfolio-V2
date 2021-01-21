@@ -28,8 +28,8 @@
   </div>
 </Router>
 
-<main class="">
-  <Navbar />
+<div class="">
+  <!-- <Navbar /> -->
   <Home />
   <About />
   <WebDev />
@@ -37,4 +37,4 @@
   <GameDev />
   <Contact />
   <Footer />
-</main>
+</div>

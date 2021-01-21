@@ -6,13 +6,15 @@
 
 @layer base {
     .main {
-        @apply py-52;
-        @apply px-52;
-        @apply m-0;
+        @apply py-52 px-10 md:px-20 lg:px-52;
+        @apply w-full;
+        /* @apply w-90% mx-auto; */
+
         /* @apply min-h-screen; */
     }
     body {
         @apply p-0;
+        @apply w-full;
     }
     a {
         @apply hover:no-underline;

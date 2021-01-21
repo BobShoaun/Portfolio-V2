@@ -537,16 +537,35 @@ video {
 }
 
 .main {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   padding-top: 13rem;
   padding-bottom: 13rem;
-  padding-left: 13rem;
-  padding-right: 13rem;
-  margin: 0px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+
+.main {
+  width: 100%;
+  /* @apply w-90% mx-auto; */
   /* @apply min-h-screen; */
 }
 
 body {
   padding: 0px;
+  width: 100%;
 }
 
 a:hover {
@@ -25150,6 +25169,10 @@ a:hover {
 
 .w-max {
   width: max-content;
+}
+
+.w-90\% {
+  width: 90%;
 }
 
 .z-0 {
@@ -53748,6 +53771,10 @@ html {
     width: max-content;
   }
 
+  .sm\:w-90\% {
+    width: 90%;
+  }
+
   .sm\:z-0 {
     z-index: 0;
   }
@@ -82306,6 +82333,10 @@ html {
 
   .md\:w-max {
     width: max-content;
+  }
+
+  .md\:w-90\% {
+    width: 90%;
   }
 
   .md\:z-0 {
@@ -110868,6 +110899,10 @@ html {
     width: max-content;
   }
 
+  .lg\:w-90\% {
+    width: 90%;
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -139428,6 +139463,10 @@ html {
     width: max-content;
   }
 
+  .xl\:w-90\% {
+    width: 90%;
+  }
+
   .xl\:z-0 {
     z-index: 0;
   }
@@ -167986,6 +168025,10 @@ html {
 
   .\32xl\:w-max {
     width: max-content;
+  }
+
+  .\32xl\:w-90\% {
+    width: 90%;
   }
 
   .\32xl\:z-0 {

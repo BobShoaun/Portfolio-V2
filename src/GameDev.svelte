@@ -9,7 +9,7 @@
 <main id="game-development" class="main">
 	<h1 class="text-5xl font-semibold text-gray-600 mb-3">Game development</h1>
 	<p class="text-gray-500 text-xl">Fun fact: game development was what got me into coding in the first place.</p>
-	<div class="flex justify-between space-x-28">
+	<div class="md:flex justify-between md:space-x-28">
 		<GameDevProject
 			image={"images/doodle jump.gif"}
 			name={"Assembly Doodle Jump"}

@@ -2,11 +2,14 @@
 	import Image from "./Image.svelte";
 </script>
 
-<main id="about" class="main bg-gray-100 flex justify-between space-x-32">
-	<Image src="images/me.jpg" alt="me" inverted cornerColor="bg-gray-100" />
+<main id="about" class="main bg-gray-100 md:flex justify-between md:space-x-32">
+  <div class="m-10">
+    <Image src="images/me.jpg" alt="me" inverted cornerColor="bg-gray-100" />
+  </div>
+	
 	<!-- <img src= class="w-1/3 h-auto object-contain" alt="me" /> -->
 
-	<div class="my-auto max-w-1/2">
+	<div class="my-auto md:max-w-1/2">
 		<h1 class="text-5xl font-semibold mb-6 text-gray-600">About me</h1>
 		<p class="text-gray-500 text-lg">
 			Hi, I’m Bob, a passionate software developer currently earning my degree in University of

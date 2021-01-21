@@ -15,7 +15,10 @@ module.exports = {
 			},
 			maxWidth: {
 				"1/2": "50%",
-			},
+      },
+      width: {
+        "90%": "90%",
+      },
 			fontFamily: {
 				sans: ["Helvetica", ...defaultTheme.fontFamily.sans],
 			},
