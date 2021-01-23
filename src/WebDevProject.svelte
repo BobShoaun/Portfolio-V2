@@ -11,9 +11,10 @@
 </script>
 
 <main class="md:flex items-center justify-around py-16">
-    <Image src={image} alt={name} />
-
-    <div class={right ? 'md:order-first md:pr-28' : 'md:pl-28'}>
+  <div class="mb-10 md:mb-0">
+  <Image src={image} alt={name} />
+</div>  
+    <div class="{right ? 'md:order-first md:pr-28' : 'md:pl-28' } ml-5">
         <h1 class="font-bold text-3xl">{name}</h1>
         <p class="font-bold font-mono text-sm text-purple-700 mb-3">{collaborators}</p>
         <p class="text-md mb-4 text-gray-700">{description}</p>

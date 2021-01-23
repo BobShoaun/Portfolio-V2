@@ -2,14 +2,16 @@
 	import GameDevProject from "./GameDevProject.svelte";
 
 	function more() {
-        alert("more coming soon!");
-    }
+		alert("more coming soon!");
+	}
 </script>
 
 <main id="game-development" class="main">
 	<h1 class="text-5xl font-semibold text-gray-600 mb-3">Game development</h1>
-	<p class="text-gray-500 text-xl">Fun fact: game development was what got me into coding in the first place.</p>
-	<div class="md:flex justify-between md:space-x-28">
+	<p class="text-gray-500 text-xl">
+		Fun fact: game development was what got me into coding in the first place.
+	</p>
+	<div class="md:flex md:justify-between md:space-x-28">
 		<GameDevProject
 			image={"images/doodle jump.gif"}
 			name={"Assembly Doodle Jump"}
@@ -26,21 +28,22 @@
 			technologies={["c++", "visual studio"]}
 			github={"https://github.com/BobShoaun/Maze-Runner"}
 		/>
-    </div>
-    
-    <div class="flex justify-center">
-        <GameDevProject
-        image={"images/doxel-core.png"}
-        name={"Doxel Core Unity Package"}
-        collaborators={"by myself"}
-        description={"A unity package that provides a framework for serializing data easily. It also contains many frequently used utility classes, functions and extension methods."}
-        technologies={["unity", "c#"]}
-        github={"https://github.com/BobShoaun/Doxel-Core"}
-    />
 	</div>
-	
-	<button on:click={more} class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10">
-        See More
-    </button>
 
+	<div class="flex justify-center ">
+		<div class="md:max-w-1/2">
+			<GameDevProject
+				image={"images/doxel-core.png"}
+				name={"Doxel Core Unity Package"}
+				collaborators={"by myself"}
+				description={"A unity package that provides a framework for serializing data easily. It also contains many frequently used utility classes, functions and extension methods."}
+				technologies={["unity", "c#"]}
+				github={"https://github.com/BobShoaun/Doxel-Core"}
+			/>
+		</div>
+	</div>
+
+	<button
+		on:click={more}
+		class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10"> See More </button>
 </main>

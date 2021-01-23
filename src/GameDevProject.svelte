@@ -9,9 +9,9 @@
 	export let website = null;
 </script>
 
-<main class="py-16 max-w-1/2">
+<main class="py-16">
 	<div class="mb-10">
-		<Image src={image} alt={name} />
+    <Image src={image} alt={name} />
 	</div>
 
 	<div class="ml-5">

@@ -5,23 +5,50 @@
 /* @import "colors.scss"; */
 
 @layer base {
-    .main {
-        @apply py-52 px-10 md:px-20 lg:px-52;
-        @apply w-full;
-        /* @apply w-90% mx-auto; */
+	.main {
+		@apply py-52 px-10 md:px-20 lg:px-52;
+		@apply w-full;
+		/* @apply w-90% mx-auto; */
 
-        /* @apply min-h-screen; */
+		/* @apply min-h-screen; */
+	}
+	body {
+		@apply p-0;
+		@apply w-full;
+	}
+	a {
+		@apply hover:no-underline;
+  }
+
+  .image {
+		border-top: 0.75rem solid rgba(191, 219, 254);
+		border-left: 0.75rem solid rgba(191, 219, 254);
+		border-right: 0.75rem solid rgba(167, 243, 208);
+		border-bottom: 0.75rem solid rgba(167, 243, 208);
+  }
+  .image-inverted {
+    border-right: 0.75rem solid rgba(191, 219, 254);
+    border-bottom: 0.75rem solid rgba(191, 219, 254);
+    border-top: 0.75rem solid rgba(167, 243, 208);
+    border-left: 0.75rem solid rgba(167, 243, 208);
+  }
+  @screen md {
+		.image {
+			border-top: 1.25rem solid rgba(191, 219, 254);
+			border-left: 1.25rem solid rgba(191, 219, 254);
+			border-right: 1.25rem solid rgba(167, 243, 208);
+			border-bottom: 1.25rem solid rgba(167, 243, 208);
     }
-    body {
-        @apply p-0;
-        @apply w-full;
+    .image-inverted {
+      border-right: 1.25rem solid rgba(191, 219, 254);
+      border-bottom: 1.25rem solid rgba(191, 219, 254);
+      border-top: 1.25rem solid rgba(167, 243, 208);
+      border-left: 1.25rem solid rgba(167, 243, 208);
     }
-    a {
-        @apply hover:no-underline;
-    }
+	}
+
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
-

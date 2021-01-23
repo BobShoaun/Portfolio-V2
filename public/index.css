@@ -572,6 +572,36 @@ a:hover {
   text-decoration: none;
 }
 
+.image {
+  border-top: 0.75rem solid rgba(191, 219, 254);
+  border-left: 0.75rem solid rgba(191, 219, 254);
+  border-right: 0.75rem solid rgba(167, 243, 208);
+  border-bottom: 0.75rem solid rgba(167, 243, 208);
+}
+
+.image-inverted {
+  border-right: 0.75rem solid rgba(191, 219, 254);
+  border-bottom: 0.75rem solid rgba(191, 219, 254);
+  border-top: 0.75rem solid rgba(167, 243, 208);
+  border-left: 0.75rem solid rgba(167, 243, 208);
+}
+
+@media (min-width: 768px) {
+  .image {
+    border-top: 1.25rem solid rgba(191, 219, 254);
+    border-left: 1.25rem solid rgba(191, 219, 254);
+    border-right: 1.25rem solid rgba(167, 243, 208);
+    border-bottom: 1.25rem solid rgba(167, 243, 208);
+  }
+
+  .image-inverted {
+    border-right: 1.25rem solid rgba(191, 219, 254);
+    border-bottom: 1.25rem solid rgba(191, 219, 254);
+    border-top: 1.25rem solid rgba(167, 243, 208);
+    border-left: 1.25rem solid rgba(167, 243, 208);
+  }
+}
+
 .container {
   width: 100%;
 }
@@ -172003,4 +172033,3 @@ html {
     animation: bounce 1s infinite;
   }
 }
-
