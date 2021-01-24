@@ -1,14 +1,14 @@
 <script>
 	let frameworks = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Figma", "Illustrator"];
 	let codingLanguages = [
-		"Javascript",
+		"JS",
 		"HTML",
 		"(S)CSS",
 		"C#",
 		"C++",
 		"SQL",
 		"Python",
-		// "Java"
+		"Java"
 	];
 	let interests = ["Drums", "PC Building", "Ukulele", "Table Tennis"];
 	let languages = ["English", "Chinese", "Malay"];
@@ -26,9 +26,9 @@
 		>
 	</div> -->
 	<section class="resume bg-white shadow-xl mx-auto">
-		<aside class="sidebar bg-orange-50 px-4 pt-3 pb-5 border-orange-400 border-t-4">
+		<aside class="sidebar bg-red-50 px-5 pt-5 pb-6 border-red-400 border-t-4">
 			<h1 class="text-gray-700 text-5xl font-bold mb-1">Ng Bob Shoaun</h1>
-			<h3 class="text-orange-400 font-semibold text-xl mb-3">Software Developer <br> & Designer</h3>
+			<h3 class="text-red-400 font- text-xl mb-2">Software Developer <br>& Designer</h3>
 			<div class="info">
 				<i class="text-gray-700 text-center fas fa-phone" />
 				<p class="text-gray-700 text-sm">+60 18-2943 168</p>
@@ -56,7 +56,7 @@
 		<article class="content flex flex-col justify-between">
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>About Me</h2>
 				<p class="text-gray-600 text-sm">
 					<q
@@ -69,7 +69,7 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Education</h2>
 
 				<div class="flex justify-between items-baseline mb-0">
@@ -100,7 +100,7 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Experience</h2>
 				<h3 class="text-gray-700 text-lg font-bold">Pathforge Pte. Ltd.</h3>
 				<p class="text-sm text-gray-400 float-right text-right">Sept 2020 - Present</p>
@@ -128,7 +128,7 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Projects</h2>
 				<div class="flex justify-between items-baseline mb-1">
 					<h3 class="text-gray-700 text-lg font-bold">Assembly Doodle Jump</h3>
@@ -159,11 +159,11 @@
 		<section class="stats relative flex flex-col justify-between">
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
 				>Coding Languages</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each codingLanguages as codingLanguage}
-						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
 							{codingLanguage}
 						</h4>
 					{/each}
@@ -172,11 +172,11 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
 				>Tools & Frameworks</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each frameworks as framework}
-						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
 							{framework}
 						</h4>
 					{/each}
@@ -185,11 +185,11 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
 				>Interests</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each interests as interest}
-						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
 							{interest}
 						</h4>
 					{/each}
@@ -198,19 +198,19 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
 				>Languages</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each languages as language}
-						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
 							{language}
 						</h4>
 					{/each}
 				</div>
 			</div>
 
-			<div class="bg-orange-50 border-orange-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
-				<h3 class="text-orange-400 text-sm italic">Last updated on: 24 Jan 2021</h3>
+			<div class="bg-red-50 border-red-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
+				<h3 class="text-red-400 text-sm italic">Last updated on: 24 Jan 2021</h3>
 			</div>
 		</section>
 	</section>
