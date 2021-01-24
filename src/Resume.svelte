@@ -1,7 +1,17 @@
 <script>
-	let skills = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Figma", "Illustrator"];
-	let languages = ["Javascript", "HTML", "(S)CSS", "C#", "C++", "SQL", "Python", "Java"];
+	let frameworks = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Figma", "Illustrator"];
+	let codingLanguages = [
+		"Javascript",
+		"HTML",
+		"(S)CSS",
+		"C#",
+		"C++",
+		"SQL",
+		"Python",
+		// "Java"
+	];
 	let interests = ["Drums", "PC Building", "Ukulele", "Table Tennis"];
+	let languages = ["English", "Chinese", "Malay"];
 
 	async function copyEmail() {
 		await navigator.clipboard.writeText("ngbobshoaun2000@gmail.com");
@@ -16,7 +26,7 @@
 		>
 	</div> -->
 	<section class="resume bg-white shadow-xl mx-auto">
-		<aside class="sidebar bg-orange-50 px-4 pt-8 pb-8 border-orange-400 border-t-4">
+		<aside class="sidebar bg-orange-50 px-4 pt-3 pb-5 border-orange-400 border-t-4">
 			<h1 class="text-gray-700 text-5xl font-bold mb-1">Ng Bob Shoaun</h1>
 			<h3 class="text-orange-400 font-semibold text-xl mb-3">Software Developer & Designer</h3>
 			<div class="info">
@@ -61,9 +71,14 @@
 				<h2
 					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Education</h2>
-				<h3 class="text-gray-700 text-lg font-bold">University of Toronto</h3>
-				<p class="text-sm text-gray-400 float-right text-right">09/2019 - Present</p>
-				<p class="text-sm text-gray-400 mb-1 italic">Computer Science Specialist</p>
+
+				<div class="flex justify-between items-baseline mb-0">
+					<h3 class="text-gray-700 text-lg font-bold">University of Toronto</h3>
+					<p class="text-sm text-gray-700">CGPA: 3.93</p>
+				</div>
+
+				<p class="text-sm text-gray-400 float-right text-right">Sept 2019 - Present</p>
+				<p class="text-sm text-gray-400 mb-1 italic">Computer Science Specialist (2nd year)</p>
 				<ul class="list-square text-gray-700 pl-5 text-sm mb-1">
 					<li>
 						MAT137: Calculus!
@@ -81,7 +96,6 @@
 						<p class="float-right">A+</p>
 					</li>
 				</ul>
-				<p class="text-right text-sm text-gray-700">CGPA: 3.93</p>
 			</div>
 
 			<div>
@@ -89,13 +103,13 @@
 					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Experience</h2>
 				<h3 class="text-gray-700 text-lg font-bold">Pathforge Pte. Ltd.</h3>
-				<p class="text-sm text-gray-400 float-right text-right">09/2020 - Present</p>
+				<p class="text-sm text-gray-400 float-right text-right">Sept 2020 - Present</p>
 				<p class="text-sm text-gray-400 mb-1 italic">Fullstack developer</p>
 				<ul class="list-square text-gray-600 pl-5 text-sm mb-2">
-					<li>Communicated with developer and designers in a startup environment.</li>
+					<li>Communicated with developers and designers in a startup environment.</li>
 					<li>
-						Gave zoom lectures and provided mentorship to groups of learners about programming and
-						web development.
+						Conducted zoom lectures and provided mentorship to groups of learners about programming
+						and web dev.
 					</li>
 					<li>
 						Used technologies like Vue, Graphql, and Hasura to build a site that seeks to
@@ -103,7 +117,7 @@
 					</li>
 				</ul>
 				<h3 class="text-gray-700 text-lg font-bold">N2N Berhad</h3>
-				<p class="text-sm text-gray-400 float-right text-right">05/2019 - 08/2019</p>
+				<p class="text-sm text-gray-400 float-right text-right">May - Aug 2019</p>
 				<p class="text-sm text-gray-400 mb-1 italic">Intern / Frontend developer</p>
 				<ul class="list-square text-gray-600 pl-5 text-sm">
 					<li>Revamped the frontend for the company's internal timesheet management system.</li>
@@ -137,7 +151,7 @@
 						Helps students plan courses for the upcoming semester by dynamically generating a visual
 						timetable.
 					</li>
-					<li>Improve university’s course pre-registration process.</li>
+					<li>Made for Taylor's university ADP students.</li>
 				</ul>
 			</div>
 		</article>
@@ -145,12 +159,12 @@
 		<section class="stats relative flex flex-col justify-between">
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-3"
-				>Languages</h2>
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+				>Coding Languages</h2>
 				<div class="flex flex-wrap justify-start">
-					{#each languages as language}
-						<h4 class="bg-orange-400 px-3 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
-							{language}
+					{#each codingLanguages as codingLanguage}
+						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
+							{codingLanguage}
 						</h4>
 					{/each}
 				</div>
@@ -158,12 +172,12 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-3"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
 				>Tools & Frameworks</h2>
 				<div class="flex flex-wrap justify-start">
-					{#each skills as skill}
-						<h4 class="bg-orange-400 px-3 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
-							{skill}
+					{#each frameworks as framework}
+						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
+							{framework}
 						</h4>
 					{/each}
 				</div>
@@ -171,18 +185,31 @@
 
 			<div>
 				<h2
-					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-3"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
 				>Interests</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each interests as interest}
-						<h4 class="bg-orange-400 px-3 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
+						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
 							{interest}
 						</h4>
 					{/each}
 				</div>
 			</div>
 
-			<div class="bg-orange-50 border-orange-400 border-b-4 px-5 pt-2 pb-2 w-full">
+			<div>
+				<h2
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+				>Languages</h2>
+				<div class="flex flex-wrap justify-start">
+					{#each languages as language}
+						<h4 class="bg-orange-400 px-2.5 py-1 mb-2 mr-1.5 font-semibold text-sm text-white">
+							{language}
+						</h4>
+					{/each}
+				</div>
+			</div>
+
+			<div class="bg-orange-50 border-orange-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
 				<h3 class="text-orange-400 text-sm italic">Last updated on: 24 Jan 2021</h3>
 			</div>
 		</section>
@@ -201,7 +228,7 @@
 			"sidebar content"
 			"stats content";
 		column-gap: 2.5em;
-		row-gap: 2.5em;
+		row-gap: 2em;
 
 		/* a4 size */
 		width: 21cm;
@@ -232,8 +259,8 @@
 		display: grid;
 		grid-template-columns: auto 1fr;
 		grid-template-rows: repeat(4, 1fr);
-		column-gap: 0.7rem;
-		row-gap: 0.7rem;
+		column-gap: 0.6rem;
+		row-gap: 0.6rem;
 	}
 	.stats {
 		grid-area: stats;
