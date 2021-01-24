@@ -28,7 +28,7 @@
 	<section class="resume bg-white shadow-xl mx-auto">
 		<aside class="sidebar bg-orange-50 px-4 pt-3 pb-5 border-orange-400 border-t-4">
 			<h1 class="text-gray-700 text-5xl font-bold mb-1">Ng Bob Shoaun</h1>
-			<h3 class="text-orange-400 font-semibold text-xl mb-3">Software Developer & Designer</h3>
+			<h3 class="text-orange-400 font-semibold text-xl mb-3">Software Developer <br> & Designer</h3>
 			<div class="info">
 				<i class="text-gray-700 text-center fas fa-phone" />
 				<p class="text-gray-700 text-sm">+60 18-2943 168</p>
