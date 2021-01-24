@@ -9,16 +9,16 @@
 	import Footer from "./Footer.svelte";
 	import Resume from "./Resume.svelte";
 
-	import { Router, Route, Link } from "svelte-routing";
+	import { Router, Route } from "svelte-routing";
 	export let url = ""; //This property is necessary declare to avoid ignore the Router
 </script>
 
 <Router {url}>
-	<nav>
+	<!-- <nav>
 		<Link to="/" noroute>Home</Link>
 		<Link to="about" noroute>About</Link>
 		<Link to="resume" noroute>Resume</Link>
-	</nav>
+	</nav> -->
 	<Route path="/">
 		<Navbar />
 		<Home />

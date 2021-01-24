@@ -1,30 +1,31 @@
 <script>
 	let skills = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Figma", "Illustrator"];
 	let languages = ["Javascript", "HTML", "(S)CSS", "C#", "C++", "SQL", "Python", "Java"];
-	let interests = ["Drums", "PC Building", "Coding", "Table Tennis"];
+	let interests = ["Drums", "PC Building", "Ukulele", "Table Tennis"];
 
-  async function copyEmail() {
-    await navigator.clipboard.writeText("ngbobshoaun2000@gmail.com");
-    alert("copied to clipboard!");
-  }
+	async function copyEmail() {
+		await navigator.clipboard.writeText("ngbobshoaun2000@gmail.com");
+		alert("copied to clipboard!");
+	}
 </script>
 
-<main class="bg-blue-900 py-32 overflow-auto">
-	<div class="mx-auto">
+<main class="bg-blue-200 py-32 overflow-auto">
+	<!-- <div class="mx-auto">
 		<button class="py-1 px-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none"
 			>Print</button
 		>
-	</div>
-
+	</div> -->
 	<section class="resume bg-white shadow-xl mx-auto">
-		<aside class="sidebar bg-red-50 px-5 pt-5 pb-8 border-red-400 border-t-4">
+		<aside class="sidebar bg-orange-50 px-4 pt-8 pb-8 border-orange-400 border-t-4">
 			<h1 class="text-gray-700 text-5xl font-bold mb-1">Ng Bob Shoaun</h1>
-			<h3 class="text-red-400 font-semibold text-xl mb-3">Software Developer / Designer</h3>
+			<h3 class="text-orange-400 font-semibold text-xl mb-3">Software Developer & Designer</h3>
 			<div class="info">
 				<i class="text-gray-700 text-center fas fa-phone" />
 				<p class="text-gray-700 text-sm">+60 18-2943 168</p>
 				<i class="text-gray-700 text-center fas fa-envelope" />
-				<p class="text-gray-700 text-sm cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail</p>
+				<p class="text-gray-700 text-sm cursor-pointer" on:click={copyEmail}>
+					ngbobshoaun2000@gmail
+				</p>
 				<i class="text-gray-700 text-center fab fa-linkedin" />
 				<a
 					href="https://www.linkedin.com/in/ngbobshoaun/"
@@ -45,23 +46,25 @@
 		<article class="content flex flex-col justify-between">
 			<div>
 				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>About Me</h2>
 				<p class="text-gray-600 text-sm">
-					<q>Skilled and diligent programmer with an eye for good designs. Always seeking to learn and
-					improve on existing ways. A resourceful and avid self-learner passionate in coding since
-					the age of 14.</q>
+					<q
+						>Skilled and diligent programmer with an eye for good designs. Always seeking to learn
+						and improve on existing ways. A resourceful and avid self-learner passionate in coding
+						since the age of 14.</q
+					>
 				</p>
 			</div>
 
 			<div>
 				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Education</h2>
 				<h3 class="text-gray-700 text-lg font-bold">University of Toronto</h3>
 				<p class="text-sm text-gray-400 float-right text-right">09/2019 - Present</p>
-				<p class="text-sm text-gray-400 mb-2 italic">Computer Science Specialist</p>
-				<ul class="list-square text-gray-700 pl-5 text-sm">
+				<p class="text-sm text-gray-400 mb-1 italic">Computer Science Specialist</p>
+				<ul class="list-square text-gray-700 pl-5 text-sm mb-1">
 					<li>
 						MAT137: Calculus!
 						<p class="float-right">A+</p>
@@ -76,18 +79,18 @@
 					<li>
 						CSC258: Computer Organization
 						<p class="float-right">A+</p>
-          </li>
-        </ul>
-        <p class="text-right text-sm text-gray-700">CGPA: 3.93</p>
+					</li>
+				</ul>
+				<p class="text-right text-sm text-gray-700">CGPA: 3.93</p>
 			</div>
 
 			<div>
 				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Experience</h2>
 				<h3 class="text-gray-700 text-lg font-bold">Pathforge Pte. Ltd.</h3>
 				<p class="text-sm text-gray-400 float-right text-right">09/2020 - Present</p>
-				<p class="text-sm text-gray-400 mb-2 italic">Fullstack developer</p>
+				<p class="text-sm text-gray-400 mb-1 italic">Fullstack developer</p>
 				<ul class="list-square text-gray-600 pl-5 text-sm mb-2">
 					<li>Communicated with developer and designers in a startup environment.</li>
 					<li>
@@ -101,7 +104,7 @@
 				</ul>
 				<h3 class="text-gray-700 text-lg font-bold">N2N Berhad</h3>
 				<p class="text-sm text-gray-400 float-right text-right">05/2019 - 08/2019</p>
-				<p class="text-sm text-gray-400 mb-2 italic">Intern / Frontend developer</p>
+				<p class="text-sm text-gray-400 mb-1 italic">Intern / Frontend developer</p>
 				<ul class="list-square text-gray-600 pl-5 text-sm">
 					<li>Revamped the frontend for the company's internal timesheet management system.</li>
 					<li>Fixed bugs and introduced new quality of life features.</li>
@@ -111,9 +114,9 @@
 
 			<div>
 				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-2"
 				>Projects</h2>
-				<div class="flex justify-between items-baseline">
+				<div class="flex justify-between items-baseline mb-1">
 					<h3 class="text-gray-700 text-lg font-bold">Assembly Doodle Jump</h3>
 					<p class="text-sm text-gray-400 italic">Final academic project</p>
 				</div>
@@ -125,7 +128,7 @@
 					</li>
 				</ul>
 
-				<div class="flex justify-between items-baseline">
+				<div class="flex justify-between items-baseline mb-1">
 					<h3 class="text-gray-700 text-lg font-bold">Course Checker</h3>
 					<p class="text-sm text-gray-400 italic">Personal project</p>
 				</div>
@@ -142,11 +145,11 @@
 		<section class="stats relative flex flex-col justify-between">
 			<div>
 				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-3"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-3"
 				>Languages</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each languages as language}
-						<h4 class="bg-red-400 px-3 py-1.5 mb-2.5 mr-2.5 font-semibold text-sm text-white">
+						<h4 class="bg-orange-400 px-3 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
 							{language}
 						</h4>
 					{/each}
@@ -155,11 +158,11 @@
 
 			<div>
 				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-3"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-3"
 				>Tools & Frameworks</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each skills as skill}
-						<h4 class="bg-red-400 px-3 py-1.5 mb-2.5 mr-2.5 font-semibold text-sm text-white">
+						<h4 class="bg-orange-400 px-3 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
 							{skill}
 						</h4>
 					{/each}
@@ -168,29 +171,29 @@
 
 			<div>
 				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-3"
+					class="text-orange-400 bg-orange-50 w-full border-orange-400 pl-4 py-1 border-l-4 text-xl mb-3"
 				>Interests</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each interests as interest}
-						<h4 class="bg-red-400 px-3 py-1.5 mb-2.5 mr-2.5 font-semibold text-sm text-white">
+						<h4 class="bg-orange-400 px-3 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
 							{interest}
 						</h4>
 					{/each}
 				</div>
 			</div>
 
-			<div class="bg-red-50 border-red-400 border-b-4 px-5 pt-2 pb-2 w-full">
-				<h3 class="text-red-400 text-sm font-semibold">Last updated on: 24 Jan 2021</h3>
+			<div class="bg-orange-50 border-orange-400 border-b-4 px-5 pt-2 pb-2 w-full">
+				<h3 class="text-orange-400 text-sm italic">Last updated on: 24 Jan 2021</h3>
 			</div>
 		</section>
-  </section>
+	</section>
 </main>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
 	.resume {
-    font-family: 'Open Sans', sans-serif;
+		font-family: "Open Sans", sans-serif;
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		grid-template-rows: auto 1fr;
@@ -198,7 +201,7 @@
 			"sidebar content"
 			"stats content";
 		column-gap: 2.5em;
-		row-gap: 2em;
+		row-gap: 2.5em;
 
 		/* a4 size */
 		width: 21cm;
@@ -206,9 +209,9 @@
 
 		box-sizing: border-box;
 		padding: 3em;
-  }
-  
-  @media print {
+	}
+
+	@media print {
 		.resume {
 			height: 100% !important;
 			width: 100% !important;
@@ -217,13 +220,13 @@
 			left: 0 !important;
 			margin: 0 !important;
 			padding: 0 !important;
-      line-height: 18px;
-      -webkit-print-color-adjust: exact !important;
-    }
-    @page {
-			size:A4;
+			line-height: 18px;
+			-webkit-print-color-adjust: exact !important;
 		}
-  }
+		@page {
+			size: A4;
+		}
+	}
 
 	.info {
 		display: grid;

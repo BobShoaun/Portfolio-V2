@@ -28,8 +28,14 @@ module.exports = {
       },
       screens: {
         'print': {'raw': 'print'},
-        // => @media  print { ... }
+      },
+      colors: {
+        orange: {
+          400: '#FF7733',
+          50: '#FFF1EB',
+        },
       }
+  
 		},
 	},
 	variants: {

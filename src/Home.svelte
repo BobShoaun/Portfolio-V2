@@ -1,3 +1,7 @@
+<script>
+	import { Link } from "svelte-routing";
+</script>
+
 <main id="home" class="relative">
 	<!-- <div class="background absolute bg-gray-100" /> -->
 
@@ -9,19 +13,28 @@
 				I am Ng Bob Shoaun. I write good code with good designs.
 			</p>
 
-			<a
+			<!-- <a
 				type="button"
 				href="/images/resume.pdf"
 				target="_blank"
 				class="ml-1 py-2 px-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3">
 				<p class="text-gray-700 font-mono">View resume</p>
-			</a>
+      </a> -->
+      <div class="h-10">
+        <Link
+				to="resume"
+				class="px-4 py-2 ml-1 inline-block leading-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3 text-gray-700 font-mono" 
+				noroute
+			>View resume</Link
+			>
 			<a
 				type="button"
 				href="#contact"
-				class="py-2 px-4 border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none"
-				><p class="text-gray-700 font-mono">Let's talk</p></a
+				class="px-4 py-2 inline-block border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none"
+				><p class="text-gray-700 font-mono leading-4">Let's talk</p></a
 			>
+      </div>
+			
 		</div>
 	</section>
 </main>
