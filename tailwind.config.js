@@ -20,8 +20,16 @@ module.exports = {
         "90%": "90%",
       },
 			fontFamily: {
-				sans: ["Helvetica", ...defaultTheme.fontFamily.sans],
-			},
+				sans: [...defaultTheme.fontFamily.sans],
+      },
+      listStyleType: {
+       square: 'square',
+       roman: 'upper-roman',
+      },
+      screens: {
+        'print': {'raw': 'print'},
+        // => @media  print { ... }
+      }
 		},
 	},
 	variants: {
