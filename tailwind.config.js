@@ -20,7 +20,7 @@ module.exports = {
         "90%": "90%",
       },
 			fontFamily: {
-				sans: [...defaultTheme.fontFamily.sans],
+				sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
       },
       listStyleType: {
        square: 'square',
