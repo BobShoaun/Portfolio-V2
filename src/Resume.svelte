@@ -12,7 +12,6 @@
 </script>
 
 <main class="bg-gray-500 dark:bg-gray-800 py-32 overflow-auto flex">
-
 	<div class="m-auto">
 		<div class="mb-5">
 			<Link
@@ -25,6 +24,7 @@
 				</p></Link
 			>
 			<button
+				on:click={() => window.print()}
 				class="px-4 py-1 font-bold font-mono border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none"
 				><i class="fas fa-print mr-3" />Print</button
 			>
