@@ -4,9 +4,9 @@
 		What are you waiting for? Shoot me a message and I will get back to you as soon as I can. <br />
 		My email is <a href="mailto:ngbobshoaun2000@gmail.com">ngbobshoaun2000@gmail.com</a>.
     </p>
-	<input class="w-full mb-2 px-4 py-2" type="text" placeholder="Your email" />
+	<input class="w-full mb-2 px-4 py-2 dark:bg-gray-600" type="text" placeholder="Your email" />
 	<textarea
-		class="w-full px-4 py-2 mb-3 min-h-1/4"
+		class="w-full px-4 py-2 mb-3 min-h-1/4 dark:bg-gray-600"
 		placeholder="Hey..."
 		name="fsdfs"
 		id=""
