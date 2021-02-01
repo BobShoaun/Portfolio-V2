@@ -6,9 +6,9 @@
 	}
 </script>
 
-<main id="game-development" class="main">
-	<h1 class="text-5xl font-semibold text-gray-600 mb-3">Game development</h1>
-	<p class="text-gray-500 text-xl">
+<main id="game-development" class="main dark:bg-gray-700">
+	<h1 class="text-5xl font-semibold text-gray-600 dark:text-white mb-3">Game development</h1>
+	<p class="text-gray-500 dark:text-gray-300 text-xl">
 		Fun fact: game development was what got me into coding in the first place.
 	</p>
 	<div class="md:flex md:justify-between md:space-x-28">
@@ -45,5 +45,5 @@
 
 	<button
 		on:click={more}
-		class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10"> See More </button>
+		class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10 font-bold font-mono"> See More </button>
 </main>

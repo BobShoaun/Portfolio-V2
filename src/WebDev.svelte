@@ -6,9 +6,9 @@
     }
 </script>
 
-<main id="web-development" class="main">
-    <h1 class="text-5xl font-semibold text-gray-600 mb-3">Web development</h1>
-    <p class="text-gray-500 text-xl">
+<main id="web-development" class="main dark:bg-gray-700">
+    <h1 class="text-5xl font-semibold text-gray-600 dark:text-gray-50 mb-3">Web development</h1>
+    <p class="text-gray-500 dark:text-gray-300 text-xl">
         Here are some web development projects i have worked on.
     </p>
     <WebDevProject
@@ -37,7 +37,7 @@
         github={'https://github.com/BobShoaun/Vue-Todo-App'}
         website={'https://bobshoaun.github.io/Vue-Todo-App/#/'} />
 
-    <button on:click={more} class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10">
+    <button on:click={more} class="py-2 px-4 bg-purple-400 text-white rounded-none block mx-auto mt-10 font-bold font-mono">
         See More
     </button>
 </main>

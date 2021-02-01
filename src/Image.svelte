@@ -1,7 +1,7 @@
 <script>
 	export let src = "images/pathforge.png";
 	export let alt = "this is an image";
-	export let cornerColor = "bg-white";
+	export let cornerColor = "bg-white dark:bg-gray-700";
 	export let inverted = false;
 </script>
 

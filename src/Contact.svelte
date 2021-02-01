@@ -1,6 +1,6 @@
-<main id="contact" class="main bg-gray-100">
-	<h1 class="text-5xl font-semibold text-gray-600 mb-3">Contact me</h1>
-	<p class="text-gray-500 text-xl mb-10">
+<main id="contact" class="main bg-gray-100 dark:bg-gray-800">
+	<h1 class="text-5xl font-semibold text-gray-600 dark:text-white mb-3">Contact me</h1>
+	<p class="text-gray-500 dark:text-gray-300 text-xl mb-10">
 		What are you waiting for? Shoot me a message and I will get back to you as soon as I can. <br />
 		My email is <a href="mailto:ngbobshoaun2000@gmail.com">ngbobshoaun2000@gmail.com</a>.
     </p>
@@ -12,5 +12,5 @@
 		id=""
 		rows="10"
 	/>
-	<button class="bg-green-200 py-2 px-4 float-right rounded-none">Send</button>
+	<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"><i class="far fa-paper-plane mr-3" />Send</button>
 </main>
