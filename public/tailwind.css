@@ -8,7 +8,7 @@
 	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
 	.main {
-		@apply py-52 px-10 md:px-20 lg:px-52;
+		@apply py-52 px-10 md:px-20 lg:px-52 xl:px-96;
 		@apply w-full;
 		/* @apply w-90% mx-auto; */
 
