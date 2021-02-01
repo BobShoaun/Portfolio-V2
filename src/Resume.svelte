@@ -1,15 +1,6 @@
 <script>
 	let frameworks = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Figma", "Illustrator"];
-	let codingLanguages = [
-		"JS",
-		"HTML",
-		"(S)CSS",
-		"C#",
-		"C++",
-		"SQL",
-		"Python",
-		"Java"
-	];
+	let codingLanguages = ["JS", "HTML", "(S)CSS", "C#", "C++", "SQL", "Python", "Java"];
 	let interests = ["Drums", "PC Building", "Ukulele", "Table Tennis"];
 	let languages = ["English", "Chinese", "Malay"];
 
@@ -28,7 +19,7 @@
 	<section class="resume bg-white shadow-xl mx-auto">
 		<aside class="sidebar bg-red-50 px-5 pt-5 pb-6 border-red-400 border-t-4">
 			<h1 class="text-gray-700 text-5xl font-bold mb-1">Ng Bob Shoaun</h1>
-			<h3 class="text-red-400 font- text-xl mb-2">Software Developer <br>& Designer</h3>
+			<h3 class="text-red-400 font- text-xl mb-2">Software Developer <br />& Designer</h3>
 			<div class="info">
 				<i class="text-gray-700 text-center fas fa-phone" />
 				<p class="text-gray-700 text-sm">+60 18-2943 168</p>
@@ -55,9 +46,9 @@
 
 		<article class="content flex flex-col justify-between">
 			<div>
-				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
-				>About Me</h2>
+				<h2 class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2">
+					About Me
+				</h2>
 				<p class="text-gray-600 text-sm">
 					<q
 						>Skilled and diligent programmer with an eye for good designs. Always seeking to learn
@@ -68,9 +59,9 @@
 			</div>
 
 			<div>
-				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
-				>Education</h2>
+				<h2 class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2">
+					Education
+				</h2>
 
 				<div class="flex justify-between items-baseline mb-0">
 					<h3 class="text-gray-700 text-lg font-bold">University of Toronto</h3>
@@ -99,9 +90,9 @@
 			</div>
 
 			<div>
-				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
-				>Experience</h2>
+				<h2 class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2">
+					Experience
+				</h2>
 				<h3 class="text-gray-700 text-lg font-bold">Pathforge Pte. Ltd.</h3>
 				<p class="text-sm text-gray-400 float-right text-right">Sept 2020 - Present</p>
 				<p class="text-sm text-gray-400 mb-1 italic">Fullstack developer</p>
@@ -127,9 +118,9 @@
 			</div>
 
 			<div>
-				<h2
-					class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
-				>Projects</h2>
+				<h2 class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2">
+					Projects
+				</h2>
 				<div class="flex justify-between items-baseline mb-1">
 					<h3 class="text-gray-700 text-lg font-bold">Assembly Doodle Jump</h3>
 					<p class="text-sm text-gray-400 italic">Final academic project</p>
@@ -163,7 +154,7 @@
 				>Coding Languages</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each codingLanguages as codingLanguage}
-						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
 							{codingLanguage}
 						</h4>
 					{/each}
@@ -176,7 +167,7 @@
 				>Tools & Frameworks</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each frameworks as framework}
-						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
 							{framework}
 						</h4>
 					{/each}
@@ -189,7 +180,7 @@
 				>Interests</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each interests as interest}
-						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
 							{interest}
 						</h4>
 					{/each}
@@ -202,7 +193,7 @@
 				>Languages</h2>
 				<div class="flex flex-wrap justify-start">
 					{#each languages as language}
-						<h4 class="bg-red-400 px-2.5 py-1.5 mb-2 mr-2 font-semibold text-sm text-white">
+						<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
 							{language}
 						</h4>
 					{/each}
