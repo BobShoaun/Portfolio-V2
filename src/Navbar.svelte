@@ -6,6 +6,15 @@
   let open = false;
   export let dark = false;
 
+  function toggleTheme() {
+    dark = !dark;
+    if (dark) {
+      localStorage.theme = "dark";
+    } else {
+      localStorage.theme = "light";
+    }
+  }
+
 </script>
 
 <header class="flex items-center justify-between px-10 py-5 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50">
@@ -21,7 +30,7 @@
 		<a href="#graphic-design"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Design</p></a>
 		<a href="#game-development"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Game dev</p></a>
 		<a href="#contact"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Contact</p></a>
-    <button on:click={() => dark = !dark} class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50"><i class="{dark ? 'fas' : 'far'} fa-moon mr-2"></i>{dark ? 'White' : 'Dark'}</button>
+    <button on:click={toggleTheme} class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50"><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2"></i>{dark ? 'Light' : 'Dark'}</button>
   </nav>
   
 
