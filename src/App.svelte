@@ -8,6 +8,7 @@
 	import Contact from "./Contact.svelte";
 	import Footer from "./Footer.svelte";
 	import Resume from "./Resume.svelte";
+  import FunFacts from "./FunFacts.svelte";
 
 	import { Router, Route } from "svelte-routing";
   export let url = ""; //This property is necessary declare to avoid ignore the Router
@@ -35,6 +36,10 @@
     <Route path="About" component={About} />
     <Route path="resume" component={Resume} />
     <Route path="Resume" component={Resume} />
+    <Route path="Facts" component={FunFacts} />
+    <Route path="facts" component={FunFacts} />
+
+
   </Router>
   
 </main>

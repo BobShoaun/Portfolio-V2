@@ -11,9 +11,10 @@
 	<p class="text-gray-500 dark:text-gray-300 text-xl">
 		Fun fact: game development was what got me into coding in the first place.
 	</p>
+  <!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
 	<div class="md:flex md:justify-between md:space-x-28">
 		<GameDevProject
-			image={"images/doodle jump.gif"}
+      video={"videos/doodle jump.mp4"}
 			name={"Assembly Doodle Jump"}
 			collaborators={"by myself"}
 			description={"Doodle jump game recreated using assembly language. It features different types of platforms, and powerups like springs and jetpacks. This was a final project for my CSC258 course."}
