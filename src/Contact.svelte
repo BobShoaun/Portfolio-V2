@@ -7,8 +7,21 @@
 		contactForm.addEventListener("submit", submitForm);
 		function submitForm(e) {
 			e.preventDefault();
-			contactForm.reset();
-			alert("Message sent!");
+			// contactForm.reset();
+			// alert("Message sent!");
+			const formData = new FormData(contactForm);
+			fetch(contactForm.getAttribute("action"), {
+				method: "POST",
+				headers: {
+					Accept: "application/x-www-form-urlencoded;charset=UTF-8",
+					"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+				},
+				body: new URLSearchParams(formData).toString(),
+			}).then(res => {
+				if (res) {
+					alert("worked");
+				}
+			});
 		}
 	});
 </script>
@@ -20,7 +33,7 @@
 			Shoot me a message and I will get back to you as soon as I can. My email is:
 			<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
 		</h5>
-		<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+		<form name="contact" action="action" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 			<input type="hidden" name="form-name" value="contact" />
 			<p class="hidden">
 				<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
