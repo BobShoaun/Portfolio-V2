@@ -3,7 +3,7 @@
 	import { Link } from "svelte-routing";
 </script>
 
-<main id="about" class="bg-gray-100 dark:bg-gray-800">
+<main id="about" class="main bg-gray-100 dark:bg-gray-800">
 	<section class="section flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0">
 		<div class="lg:mr-20 min-w-min max-w-sm">
 			<Image src="images/me.jpg" alt="me" inverted cornerColor="bg-gray-100 dark:bg-gray-800" />

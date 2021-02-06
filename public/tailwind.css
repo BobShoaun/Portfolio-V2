@@ -4,6 +4,8 @@
 
 @layer base {
   .main {
+    @apply px-6 md:px-18 lg:px-24;
+
     /* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
     
 		/* @apply w-full; */
@@ -15,15 +17,16 @@
 		/* @apply self-stretch; */
 	}
 	.title {
-    @apply text-3xl lg:text-5xl font-bold text-gray-600 dark:text-gray-50;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-gray-600 dark:text-gray-50;
 	}
   
   .subtitle {
-    @apply text-gray-500 dark:text-gray-300 lg:text-lg;
+    @apply text-gray-500 dark:text-gray-300 text-lg;
   }
   
   .section {
-    @apply w-10/12 m-auto xl:w-7/12 py-20 lg:py-52;
+    max-width: 1000px;
+    @apply m-auto py-20 lg:py-52;
   }
   
 	body {

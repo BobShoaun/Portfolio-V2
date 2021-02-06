@@ -13,20 +13,20 @@
   $: welcomeMessage = dark ? "Hey there." : "Hello there.";
 </script>
 
-<main id="home" class="relative bg-gray-50 dark:bg-gray-700 h-screen flex">
+<main id="home" class="relative main bg-gray-50 dark:bg-gray-700 h-screen flex">
 	<!-- <div class="background absolute bg-gray-100" /> -->
 
 	<!-- <section class="min-h-screen flex"> -->
-	<section class="section">
+	<section class="section w-full">
 		<div class="bg-purple-400 w-7 h-1.5 lg:w-12 lg:h-3 ml-0.5 mb-2" />
 		{#if ready}
 			<h1
 				transition:blur={{}}
-				class="text-5xl lg:text-7xl font-extrabold text-gray-600 dark:text-white mb-2"
+				class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-600 dark:text-white mb-2"
 			>
 				{welcomeMessage}
 			</h1>
-			<p transition:slide={{}} class="lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1">
+			<p transition:slide={{}} class="text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1">
 				I am Ng Bob Shoaun. I write good code with good designs.
 			</p>
 		{/if}

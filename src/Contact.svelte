@@ -23,7 +23,7 @@
 	}
 </script>
 
-<main id="contact" class="bg-gray-100 dark:bg-gray-800">
+<main id="contact" class="main bg-gray-100 dark:bg-gray-800">
 	<section class="section">
 		<h2 class="title mb-2">Contact me</h2>
 		<h5 class="subtitle mb-16">

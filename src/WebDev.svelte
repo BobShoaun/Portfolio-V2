@@ -6,7 +6,7 @@
 	}
 </script>
 
-<main id="web-development" class="dark:bg-gray-700">
+<main id="web-development" class="main dark:bg-gray-700">
 	<section class="section">
 		<h2 class="title mb-2">
 			Web development

@@ -17,7 +17,7 @@
 
 </script>
 
-<header class="flex items-center justify-between px-10 py-5 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50">
+<header class="flex items-center justify-between px-6 lg:px-10 py-5 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50">
 	<div class="logo font-semibold">
 		<div class="bg-purple-400 w-4 h-4 mr-3 inline-block" />
 		<a href="#home" class="hover:no-underline inline-block"

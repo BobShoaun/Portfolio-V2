@@ -1,4 +1,4 @@
-<main class=" bg-gray-100 dark:bg-gray-700">
+<main class=" main bg-gray-100 dark:bg-gray-700">
 	<section class="section">
 		<div class="text-center space-x-5 mb-10">
 			<a href="https://github.com/BobShoaun" target="_blank"

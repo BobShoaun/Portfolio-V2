@@ -1,4 +1,4 @@
-<main id="graphic-design" class="bg-gray-100 dark:bg-gray-800">
+<main id="graphic-design" class="main bg-gray-100 dark:bg-gray-800">
 	<section class="section">
 		<h2 class="title mb-2">Graphic design</h2>
 		<h5 class="subtitle mb-20">
