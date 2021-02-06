@@ -7,11 +7,11 @@
 </script>
 
 <main id="web-development" class="dark:bg-gray-700">
-	<section class="">
-		<h2 class="mb-2">
+	<section class="section">
+		<h2 class="title mb-2">
 			Web development
     </h2>
-		<h5 class="mb-20">
+		<h5 class="subtitle mb-20">
 			Here are some web development projects i have worked on.
     </h5>
 

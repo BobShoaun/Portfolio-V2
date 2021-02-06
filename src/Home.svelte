@@ -17,7 +17,7 @@
 	<!-- <div class="background absolute bg-gray-100" /> -->
 
 	<!-- <section class="min-h-screen flex"> -->
-	<section class="">
+	<section class="section">
 		<div class="bg-purple-400 w-7 h-1.5 lg:w-12 lg:h-3 ml-0.5 mb-2" />
 		{#if ready}
 			<h1

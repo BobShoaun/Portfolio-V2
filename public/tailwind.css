@@ -18,21 +18,20 @@
 		/* @apply min-h-screen; */
 		/* @apply self-stretch; */
 	}
-	h2 {
+	.title {
 		@apply text-3xl lg:text-5xl font-semibold text-gray-600 dark:text-gray-50;
 	}
 
-  h5 {
+  .subtitle {
     @apply text-gray-500 dark:text-gray-300 lg:text-lg;
   }
 
-  section {
+  .section {
     @apply w-10/12 m-auto lg:w-8/12 xl:w-7/12 py-20 lg:py-52;
   }
 
 	body {
 		@apply p-0;
-		/* @apply w-full; */
 	}
 	a {
 		@apply hover:no-underline;

@@ -7,9 +7,9 @@
 </script>
 
 <main id="game-development" class="main dark:bg-gray-700">
-  <section class="">
-    <h2 class="mb-2">Game development</h2>
-    <h5 class="mb-20">
+  <section class="section">
+    <h2 class="title mb-2">Game development</h2>
+    <h5 class="subtitle mb-20">
       Fun fact: game development was what got me into coding in the first place.
     </h5>
     <!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->

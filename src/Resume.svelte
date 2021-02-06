@@ -230,7 +230,7 @@
 				</div>
 
 				<div class="bg-red-50 border-red-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
-					<h3 class="text-red-400 text-sm italic">Last updated on: 24 Jan 2021</h3>
+					<h3 class="text-red-400 text-sm">Last updated on: <span class="italic">6 Feb 2021</span></h3>
 				</div>
 			</section>
 		</section>
@@ -238,10 +238,17 @@
 </main>
 
 <style>
+  /* only use light, regular, regular italic, bold */
 	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 	.resume {
 		font-family: "Open Sans", sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		grid-template-rows: auto 1fr;

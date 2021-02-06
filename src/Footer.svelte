@@ -1,5 +1,5 @@
 <main class=" bg-gray-100 dark:bg-gray-700">
-	<section class="">
+	<section class="section">
 		<div class="text-center space-x-5 mb-10">
 			<a href="https://github.com/BobShoaun" target="_blank"
 				><i class="text-gray-800 dark:text-gray-50 fab fa-github fa-lg" /></a
