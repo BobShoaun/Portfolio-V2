@@ -25,11 +25,11 @@
 		>
 	</div>
 	<nav class="hidden lg:flex links justify-between items-center space-x-12">
-		<a href="#about"><p class="text-gray-800 dark:text-gray-50 font-light ">About</p></a>
-		<a href="#web-development"><p class="text-gray-800 dark:text-gray-50 font-light ">Web dev</p></a>
-		<a href="#graphic-design"><p class="text-gray-800 dark:text-gray-50 font-light ">Design</p></a>
-		<a href="#game-development"><p class="text-gray-800 dark:text-gray-50 font-light ">Game dev</p></a>
-		<a href="#contact"><p class="text-gray-800 dark:text-gray-50 font-light">Contact</p></a>
+		<a href="#about"><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a>
+		<a href="#web-development"><p class="text-gray-800 dark:text-gray-50 font-mono ">Web dev</p></a>
+		<a href="#graphic-design"><p class="text-gray-800 dark:text-gray-50 font-mono ">Design</p></a>
+		<a href="#game-development"><p class="text-gray-800 dark:text-gray-50 font-mono ">Game dev</p></a>
+		<a href="#contact"><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a>
     <button on:click={toggleTheme} class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50"><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2"></i>{dark ? 'Light' : 'Dark'}</button>
   </nav>
   
@@ -51,7 +51,7 @@
 				<div class="clear-right" />
 				<nav class="py-3 mb-5">
 					<a on:click={() => (open = false)} class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5" href="#about">
-						<p class="text-gray-800 dark:text-gray-50 font-light text-xl text-left">
+						<p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
 							<i class="far fa-smile-wink mr-3" />About Me
 						</p>
 					</a>
@@ -59,7 +59,7 @@
 						on:click={() => (open = false)}
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="#web-development"
-						><p class="text-gray-800 dark:text-gray-50 font-light text-xl text-left">
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
 							<i class="fas fa-code mr-3" />Web Development
 						</p></a
 					>
@@ -67,7 +67,7 @@
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="#graphic-design"
-						><p class="text-gray-800 dark:text-gray-50 font-light text-xl text-left">
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
 							<i class="fas fa-vector-square mr-3" />Graphic Design
 						</p></a
 					>
@@ -75,12 +75,12 @@
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="#game-development"
-						><p class="text-gray-800 dark:text-gray-50 font-light text-xl text-left">
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
 							<i class="fas fa-gamepad mr-3" />Game Development
 						</p></a
 					>
 					<a on:click={() => (open = false)} class="block  bg-gray-50 dark:bg-gray-800 p-5" href="#contact"
-						><p class="text-gray-800 dark:text-gray-50 font-light text-xl text-left">
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
 							<i class="far fa-paper-plane mr-3" />Contact Me
 						</p></a
           >

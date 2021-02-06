@@ -2,44 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import "colors.scss"; */
-
 @layer base {
-	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
-
-	.main {
-		/* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
-
+  .main {
+    /* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
+    
 		/* @apply w-full; */
 		/* @apply w-90% mx-auto; */
-
+    
 		/* @apply px-auto; */
-
+    
 		/* @apply min-h-screen; */
 		/* @apply self-stretch; */
 	}
 	.title {
-		@apply text-3xl lg:text-5xl font-semibold text-gray-600 dark:text-gray-50;
+    @apply text-3xl lg:text-5xl font-bold text-gray-600 dark:text-gray-50;
 	}
-
+  
   .subtitle {
     @apply text-gray-500 dark:text-gray-300 lg:text-lg;
   }
-
+  
   .section {
     @apply w-10/12 m-auto lg:w-8/12 xl:w-7/12 py-20 lg:py-52;
   }
-
+  
 	body {
-		@apply p-0;
+    @apply p-0;
 	}
 	a {
-		@apply hover:no-underline;
+    @apply hover:no-underline;
 	}
 
 	html {
 		scroll-behavior: smooth;
 	}
+
+  @font-face {
+    font-family: Proxima Nova;
+    font-weight: 400;
+    src: url(/fonts/proxima-nova/400-regular.woff) format("woff");
+  }
+  @font-face {
+    font-family: Proxima Nova;
+    font-weight: 500;
+    src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
+  }
 
 	.image {
 		border-top: 0.75rem solid rgba(191, 219, 254);

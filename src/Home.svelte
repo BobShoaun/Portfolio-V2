@@ -22,11 +22,11 @@
 		{#if ready}
 			<h1
 				transition:blur={{}}
-				class="text-5xl lg:text-7xl font-semibold text-gray-600 dark:text-white mb-2"
+				class="text-5xl lg:text-7xl font-extrabold text-gray-600 dark:text-white mb-2"
 			>
 				{welcomeMessage}
 			</h1>
-			<p transition:slide={{}} class="lg:text-2xl mb-10 text-gray-500 dark:text-gray-300 ml-1">
+			<p transition:slide={{}} class="lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1">
 				I am Ng Bob Shoaun. I write good code with good designs.
 			</p>
 		{/if}
@@ -43,13 +43,13 @@
 				class="px-4 py-2 mb-3 lg:ml-1 inline-block leading-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3 text-gray-700 font-mono"
 				noroute
 			>
-				<p class="text-gray-700 font-bold font-mono">View resume</p></Link
+				<p class="text-gray-700 font-semibold font-mono">View resume</p></Link
 			>
 			<a
 				type="button"
 				href="#contact"
 				class="px-4 py-2 inline-block border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none"
-				><p class="text-gray-700 font-bold font-mono leading-4">Let's talk</p></a
+				><p class="text-gray-700 font-semibold font-mono leading-4">Let's talk</p></a
 			>
 		</div>
 	</section>

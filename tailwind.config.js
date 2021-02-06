@@ -20,7 +20,8 @@ module.exports = {
         "90%": "90%",
       },
 			fontFamily: {
-				sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+				sans: ['Nunito\\ Sans', ...defaultTheme.fontFamily.sans],
+        mono: ['Roboto\\ Mono', ...defaultTheme.fontFamily.mono]
       },
       listStyleType: {
        square: 'square',

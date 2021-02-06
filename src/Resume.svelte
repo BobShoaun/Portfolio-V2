@@ -239,12 +239,16 @@
 
 <style>
   /* only use light, regular, regular italic, bold */
-	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+	/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap'); */
 
 	.resume {
-		font-family: "Open Sans", sans-serif;
+		/* font-family: "Open Sans", sans-serif; */
+		/* font-family: "Noto Sans", sans-serif; */
+		font-family: ui-sans-serif, sans-serif;
+
+
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Source Sans Pro', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */

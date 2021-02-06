@@ -49,7 +49,7 @@
 				rows="10"
 				required
 			/>
-			<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"
+			<button class="bg-green-200 py-1 px-4 float-right rounded-none font-semibold font-mono"
 				><i class="far fa-paper-plane mr-3" />Send</button
 			>
 			<div class="clear-right" />
