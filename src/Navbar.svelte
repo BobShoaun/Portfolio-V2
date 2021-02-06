@@ -24,7 +24,7 @@
 			><p class="text-gray-800 dark:text-gray-50">Ng Bob Shoaun</p></a
 		>
 	</div>
-	<nav class="hidden lg:flex links justify-between items-center space-x-16">
+	<nav class="hidden lg:flex links justify-between items-center space-x-12">
 		<a href="#about"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">About</p></a>
 		<a href="#web-development"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Web dev</p></a>
 		<a href="#graphic-design"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Design</p></a>

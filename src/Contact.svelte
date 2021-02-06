@@ -16,7 +16,7 @@
       <span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
     </h5>
     <!-- on:submit|preventDefault={submitForm} -->
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form name="contact" on:submit|preventDefault={submitForm} method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact" />
       <p class="hidden">
         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
