@@ -6,6 +6,7 @@
 	</p>
 
 	<form name="contact" action="/" method="POST" netlify>
+    <input type="hidden" name="form-name" value="contact" />
 		<input
 			name="email"
 			class="w-full mb-2 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
