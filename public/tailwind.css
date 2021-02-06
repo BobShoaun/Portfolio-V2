@@ -4,7 +4,7 @@
 
 @layer base {
   .main {
-    @apply px-6 md:px-18 lg:px-24;
+    @apply px-6 md:px-16 lg:px-24;
 
     /* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
     
