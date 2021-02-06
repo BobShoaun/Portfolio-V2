@@ -1,14 +1,11 @@
 <script>
 	import { Link } from "svelte-routing";
+  import {copyEmail} from "./helper.svelte";
 	let frameworks = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Figma", "Illustrator"];
 	let codingLanguages = ["JS", "HTML", "(S)CSS", "C#", "C++", "SQL", "Python", "Java"];
 	let interests = ["Drums", "PC Building", "Ukulele", "Table Tennis"];
 	let languages = ["English", "Chinese", "Malay"];
 
-	async function copyEmail() {
-		await navigator.clipboard.writeText("ngbobshoaun2000@gmail.com");
-		alert("copied to clipboard!");
-	}
 </script>
 
 <main class="bg-gray-500 dark:bg-gray-800 py-32 overflow-auto flex">
