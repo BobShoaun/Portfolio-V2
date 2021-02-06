@@ -8,49 +8,64 @@
 	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
 	.main {
-		@apply py-52 px-10 md:px-20 lg:px-52 xl:px-96;
-		@apply w-full;
+		/* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
+
+		/* @apply w-full; */
 		/* @apply w-90% mx-auto; */
 
+		/* @apply px-auto; */
+
 		/* @apply min-h-screen; */
+		/* @apply self-stretch; */
 	}
+	h2 {
+		@apply text-3xl lg:text-5xl font-semibold text-gray-600 dark:text-gray-50;
+	}
+
+  h5 {
+    @apply text-gray-500 dark:text-gray-300 lg:text-lg;
+  }
+
+  section {
+    @apply w-10/12 m-auto lg:w-2/3 xl:w-1/2 py-20 lg:py-52;
+  }
+
 	body {
 		@apply p-0;
-		@apply w-full;
+		/* @apply w-full; */
 	}
 	a {
 		@apply hover:no-underline;
-  }
+	}
 
-  .image {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	.image {
 		border-top: 0.75rem solid rgba(191, 219, 254);
 		border-left: 0.75rem solid rgba(191, 219, 254);
 		border-right: 0.75rem solid rgba(167, 243, 208);
 		border-bottom: 0.75rem solid rgba(167, 243, 208);
-  }
-  .image-inverted {
-    border-right: 0.75rem solid rgba(191, 219, 254);
-    border-bottom: 0.75rem solid rgba(191, 219, 254);
-    border-top: 0.75rem solid rgba(167, 243, 208);
-    border-left: 0.75rem solid rgba(167, 243, 208);
-  }
-  @screen md {
+	}
+	.image-inverted {
+		border-right: 0.75rem solid rgba(191, 219, 254);
+		border-bottom: 0.75rem solid rgba(191, 219, 254);
+		border-top: 0.75rem solid rgba(167, 243, 208);
+		border-left: 0.75rem solid rgba(167, 243, 208);
+	}
+	@screen md {
 		.image {
 			border-top: 1.25rem solid rgba(191, 219, 254);
 			border-left: 1.25rem solid rgba(191, 219, 254);
 			border-right: 1.25rem solid rgba(167, 243, 208);
 			border-bottom: 1.25rem solid rgba(167, 243, 208);
-    }
-    .image-inverted {
-      border-right: 1.25rem solid rgba(191, 219, 254);
-      border-bottom: 1.25rem solid rgba(191, 219, 254);
-      border-top: 1.25rem solid rgba(167, 243, 208);
-      border-left: 1.25rem solid rgba(167, 243, 208);
-    }
+		}
+		.image-inverted {
+			border-right: 1.25rem solid rgba(191, 219, 254);
+			border-bottom: 1.25rem solid rgba(191, 219, 254);
+			border-top: 1.25rem solid rgba(167, 243, 208);
+			border-left: 1.25rem solid rgba(167, 243, 208);
+		}
 	}
-
-}
-
-html {
-	scroll-behavior: smooth;
 }

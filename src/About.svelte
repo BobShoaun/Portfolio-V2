@@ -3,30 +3,32 @@
 	import { Link } from "svelte-routing";
 </script>
 
-<main id="about" class="main bg-gray-100 dark:bg-gray-800 md:flex justify-between md:space-x-20">
-	<div class="m-10 md:m-0 mb-14 md:mb-0 max-w-xs">
-		<Image src="images/me.jpg" alt="me" inverted cornerColor="bg-gray-100 dark:bg-gray-800" />
-	</div>
+<main id="about" class="bg-gray-100 dark:bg-gray-800">
+	<section class="flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0">
+		<div class="lg:mr-20 min-w-min max-w-sm">
+			<Image src="images/me.jpg" alt="me" inverted cornerColor="bg-gray-100 dark:bg-gray-800" />
+		</div>
 
-	<!-- <img src= class="w-1/3 h-auto object-contain" alt="me" /> -->
-
-	<div class="my-auto md:max-w-1/2">
-		<h1 class="text-5xl font-semibold mb-6 text-gray-600 dark:text-gray-50">About me</h1>
-		<p class="text-gray-500 dark:text-gray-300 text-lg mb-6">
-			Hi, I’m Bob, a passionate software developer currently earning my degree in University of
-			Toronto, alongside a part-time job as a web developer.
-			<br /><br />
-			I have started coding since the age of 14 and have since been driven to create and design quality,
-			intuitive softwares for others to use. My expertise in software development lies in Unity game
-			engine, C#, Python, and Vue. Besides coding, my hobbies include graphic designing, building computers
-			and playing the drums.
-		</p>
-		<Link
-			to="facts"
-			class="px-4 py-2 inline-block leading-4 border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none mr-3 text-gray-700 font-mono"
-			noroute
-		>
-			<p class="text-gray-700 font-bold font-mono">Some fun facts about me <i class="fas fa-long-arrow-alt-right"></i></p>  </Link
-		>
-	</div>
+		<div class="">
+			<h2 class="mb-5">About me</h2>
+			<p class="text-gray-500 dark:text-gray-300 lg:text-lg mb-9">
+				Hi, I’m Bob, a passionate software developer currently earning my degree in University of
+				Toronto, alongside a part-time job as a web developer.
+				<br /><br />
+				I have started coding since the age of 14 and have since been driven to create and design quality,
+				intuitive softwares for others to use. My expertise in software development lies in Unity game
+				engine, C#, Python, and Vue. Besides coding, my hobbies include graphic designing, building computers
+				and playing the drums.
+			</p>
+			<Link
+				to="facts"
+				class="px-4 py-2 inline-block leading-4 border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none mr-3 text-gray-700 font-mono"
+				noroute
+			>
+				<p class="text-gray-700 font-bold font-mono">
+					Some fun facts about me <i class="fas fa-long-arrow-alt-right" />
+				</p>
+			</Link>
+		</div>
+	</section>
 </main>

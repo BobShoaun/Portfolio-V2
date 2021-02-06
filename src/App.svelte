@@ -24,7 +24,7 @@
 	let dark = localStorage.theme === "dark";
 </script>
 
-<main class={dark ? "dark" : ""}>
+<main class="{dark ? "dark" : ""} flex flex-col" >
 	<Router {url}>
 		<!-- <nav>
       <Link to="/" noroute>Home</Link>
@@ -33,7 +33,7 @@
     </nav> -->
 		<Route path="/">
 			<Navbar bind:dark />
-			<Home />
+			<Home bind:dark/>
 			<About />
 			<WebDev />
 			<Designs />
