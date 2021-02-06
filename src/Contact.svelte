@@ -9,8 +9,9 @@
 		name="contact"
 		action="/"
 		method="POST"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
+		data-netlify="true"
+		netlify-honeypot="bot-field"
+		data-netlify-recaptcha="true"
 	>
 		<input type="hidden" name="form-name" value="contact" />
 		<p class="hidden">
@@ -21,7 +22,7 @@
 			class="w-full mb-4 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
 			type="text"
 			placeholder="Your email"
-      required
+			required
 		/>
 		<textarea
 			name="message"
@@ -29,9 +30,9 @@
 			placeholder="Hey..."
 			id=""
 			rows="10"
-      required
+			required
 		/>
-		<!-- <div data-netlify-recaptcha="true" /> -->
+		<div data-netlify-recaptcha="true" />
 		<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"
 			><i class="far fa-paper-plane mr-3" />Send</button
 		>
