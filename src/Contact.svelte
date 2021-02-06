@@ -10,7 +10,6 @@
 		action="/"
 		method="POST"
 		netlify-honeypot="bot-field"
-		data-netlify-recaptcha="true"
 		netlify
 	>
 		<input type="hidden" name="form-name" value="contact" />
@@ -32,7 +31,7 @@
 			rows="10"
       required
 		/>
-		<div data-netlify-recaptcha="true" />
+		<!-- <div data-netlify-recaptcha="true" /> -->
 		<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"
 			><i class="far fa-paper-plane mr-3" />Send</button
 		>
