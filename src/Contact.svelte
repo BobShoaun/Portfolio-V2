@@ -10,11 +10,11 @@
 <main id="contact" class="main bg-gray-100 dark:bg-gray-800">
 	<h1 class="text-5xl font-semibold text-gray-600 dark:text-white mb-3">Contact me</h1>
 	<p class="text-gray-500 dark:text-gray-300 text-xl mb-10">
-		Shoot me a message and I will get back to you as soon as I can. My email is .
-		<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>
+		Shoot me a message and I will get back to you as soon as I can. My email is:
+		<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
 	</p>
-
-	<form name="contact" on:submit|preventDefault={submitForm} method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <!-- on:submit|preventDefault={submitForm} -->
+	<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 		<input type="hidden" name="form-name" value="contact" />
 		<p class="hidden">
 			<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
