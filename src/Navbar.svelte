@@ -25,11 +25,11 @@
 		>
 	</div>
 	<nav class="hidden lg:flex links justify-between items-center space-x-12">
-		<a href="#about"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">About</p></a>
-		<a href="#web-development"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Web dev</p></a>
-		<a href="#graphic-design"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Design</p></a>
-		<a href="#game-development"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Game dev</p></a>
-		<a href="#contact"><p class="text-gray-800 dark:text-gray-50 font-light text-lg">Contact</p></a>
+		<a href="#about"><p class="text-gray-800 dark:text-gray-50 font-light ">About</p></a>
+		<a href="#web-development"><p class="text-gray-800 dark:text-gray-50 font-light ">Web dev</p></a>
+		<a href="#graphic-design"><p class="text-gray-800 dark:text-gray-50 font-light ">Design</p></a>
+		<a href="#game-development"><p class="text-gray-800 dark:text-gray-50 font-light ">Game dev</p></a>
+		<a href="#contact"><p class="text-gray-800 dark:text-gray-50 font-light">Contact</p></a>
     <button on:click={toggleTheme} class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50"><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2"></i>{dark ? 'Light' : 'Dark'}</button>
   </nav>
   
