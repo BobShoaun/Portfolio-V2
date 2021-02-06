@@ -23,7 +23,7 @@
   }
   
   .section {
-    @apply w-10/12 m-auto lg:w-8/12 xl:w-7/12 py-20 lg:py-52;
+    @apply w-10/12 m-auto xl:w-7/12 py-20 lg:py-52;
   }
   
 	body {
