@@ -9,13 +9,12 @@
 		name="contact"
 		action="/"
 		method="POST"
-		netlify-honeypot="bot-field"
-		netlify
+    netlify
 	>
 		<input type="hidden" name="form-name" value="contact" />
-		<p class="hidden">
+		<!-- <p class="hidden">
 			<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-		</p>
+		</p> -->
 		<input
 			name="email"
 			class="w-full mb-4 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
