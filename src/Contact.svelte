@@ -5,7 +5,7 @@
 		My email is <a href="mailto:ngbobshoaun2000@gmail.com">ngbobshoaun2000@gmail.com</a>.
 	</p>
 
-	<form name="contact" action="POST" data-netlify="true">
+	<form name="contact" action="/" method="POST" netlify>
 		<input
 			name="email"
 			class="w-full mb-2 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
