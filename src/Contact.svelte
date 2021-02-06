@@ -2,15 +2,15 @@
 	import { copyEmail } from "./helper.svelte";
 	import { onMount } from "svelte";
 
-	// onMount(() => {
-	// 	let contactForm = document.querySelector("form");
-	// 	contactForm.addEventListener("submit", submitForm);
-	// 	function submitForm(e) {
-	// 		e.preventDefault();
-	// 		contactForm.reset();
-	// 		alert("Message sent!");
-	// 	}
-	// });
+	onMount(() => {
+		let contactForm = document.querySelector("form");
+		contactForm.addEventListener("submit", submitForm);
+		function submitForm(e) {
+			e.preventDefault();
+			contactForm.reset();
+			alert("Message sent!");
+		}
+	});
 </script>
 
 <main id="contact" class="bg-gray-100 dark:bg-gray-800">
