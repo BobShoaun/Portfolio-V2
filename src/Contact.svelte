@@ -1,15 +1,8 @@
 <script>
 	import { copyEmail } from "./helper.svelte";
-	import { onMount } from "svelte";
 
-	onMount(() => {
-		// let contactForm = document.querySelector("form");
-		// contactForm.addEventListener("submit", submitForm);
-	});
-
-	async function submitForm(e) {
+	async function submitForm() {
 		let contactForm = document.querySelector("form");
-		e.preventDefault();
 
 		const formData = new FormData(contactForm);
 		let res = await fetch(contactForm.getAttribute("action"), {
@@ -38,7 +31,7 @@
 			<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
 		</h5>
 		<form
-			on:submit={submitForm}
+			on:submit|preventDefault={submitForm}
 			name="contact"
 			action="action"
 			method="POST"
