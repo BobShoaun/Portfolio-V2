@@ -22,6 +22,7 @@
 			class="w-full mb-4 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
 			type="text"
 			placeholder="Your email"
+      required
 		/>
 		<textarea
 			name="message"
@@ -29,6 +30,7 @@
 			placeholder="Hey..."
 			id=""
 			rows="10"
+      required
 		/>
 		<div data-netlify-recaptcha="true" />
 		<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"
