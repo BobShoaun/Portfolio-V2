@@ -5,7 +5,7 @@
 		My email is <a href="mailto:ngbobshoaun2000@gmail.com">ngbobshoaun2000@gmail.com</a>.
 	</p>
 
-	<form action="POST" data-netlify="true">
+	<form name="contact" action="POST" data-netlify="true">
 		<input
 			name="email"
 			class="w-full mb-2 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
@@ -19,7 +19,7 @@
 			id=""
 			rows="10"
 		/>
-    <div data-netlify-recaptcha="true"></div>
+    <div netlify-recaptcha></div>
 		<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"
 			><i class="far fa-paper-plane mr-3" />Send</button>
 	</form>
