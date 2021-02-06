@@ -19,7 +19,10 @@
 <body>
   <div id="remove-me" style="display: none">
 
-    <form name="contact" action="/" method="POST" netlify>
+    <form name="contact" action="/" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <p class="hidden">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </p>
       <input name="email" class="w-full mb-4 px-4 py-2 dark:bg-gray-600 dark:text-gray-50" type="text"
         placeholder="Your email" required />
       <textarea name="message" class="w-full px-4 py-2 mb-3 min-h-1/4 dark:bg-gray-600 dark:text-gray-50"
