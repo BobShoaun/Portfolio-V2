@@ -18,16 +18,35 @@
 
 <body>
   <div id="remove-me" style="display: none">
-    <form name="contact" action="/" method="POST" netlify>
-      <input type="hidden" name="form-name" value="contact" />
-      <input name="email" class="w-full mb-2 px-4 py-2 dark:bg-gray-600 dark:text-gray-50" type="text"
-        placeholder="Your email" />
-      <textarea name="message" class="w-full px-4 py-2 mb-3 min-h-1/4 dark:bg-gray-600 dark:text-gray-50"
-        placeholder="Hey..." id="" rows="10">
-      <div netlify-recaptcha></div>
-      <button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"><i
-          class="far fa-paper-plane mr-3">Send</button>
-    </form>
+    <form
+		name="contact"
+		action="/"
+		method="POST"
+		netlify-honeypot="bot-field"
+		data-netlify-recaptcha="true"
+		netlify
+	>
+		<p class="hidden">
+			<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+		</p>
+		<input
+			name="email"
+			class="w-full mb-4 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
+			type="text"
+			placeholder="Your email"
+		/>
+		<textarea
+			name="message"
+			class="w-full px-4 py-2 mb-3 min-h-1/4 dark:bg-gray-600 dark:text-gray-50"
+			placeholder="Hey..."
+			id=""
+			rows="10"
+		/>
+		<div data-netlify-recaptcha="true" />
+		<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"
+			><i class="far fa-paper-plane mr-3" />Send</button
+		>
+	</form>
 
 
     <!-- <form name="nice" method="POST" netlify netlify-honeypot="bot-field" class="svelte-155sndc">

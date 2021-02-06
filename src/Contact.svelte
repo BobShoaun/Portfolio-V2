@@ -5,11 +5,21 @@
 		My email is <a href="mailto:ngbobshoaun2000@gmail.com">ngbobshoaun2000@gmail.com</a>.
 	</p>
 
-	<form name="contact" action="/" method="POST" netlify>
-    <input type="hidden" name="form-name" value="contact" />
+	<form
+		name="contact"
+		action="/"
+		method="POST"
+		netlify-honeypot="bot-field"
+		data-netlify-recaptcha="true"
+		netlify
+	>
+		<input type="hidden" name="form-name" value="contact" />
+		<p class="hidden">
+			<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+		</p>
 		<input
 			name="email"
-			class="w-full mb-2 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
+			class="w-full mb-4 px-4 py-2 dark:bg-gray-600 dark:text-gray-50"
 			type="text"
 			placeholder="Your email"
 		/>
@@ -20,8 +30,9 @@
 			id=""
 			rows="10"
 		/>
-    <div netlify-recaptcha></div>
+		<div data-netlify-recaptcha="true" />
 		<button class="bg-green-200 py-1 px-4 float-right rounded-none font-bold font-mono"
-			><i class="far fa-paper-plane mr-3" />Send</button>
+			><i class="far fa-paper-plane mr-3" />Send</button
+		>
 	</form>
 </main>
