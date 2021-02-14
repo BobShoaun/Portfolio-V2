@@ -39,7 +39,7 @@
 	html {
 		scroll-behavior: smooth;
 	}
-
+/* 
   @font-face {
     font-family: Proxima Nova;
     font-weight: 400;
@@ -49,7 +49,7 @@
     font-family: Proxima Nova;
     font-weight: 500;
     src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
-  }
+  } */
 
 	.image {
 		border-top: 0.75rem solid rgba(191, 219, 254);

@@ -1,18 +1,17 @@
 <script>
 	import { slide } from "svelte/transition";
-	import { createEventDispatcher, onMount } from "svelte";
+	import { onMount } from "svelte";
 
-	const dispatch = createEventDispatcher();
 	let open = false;
 	export let dark = false;
 
 	function toggleTheme() {
 		dark = !dark;
-		if (dark) {
+		if (dark)
 			localStorage.theme = "dark";
-		} else {
+		else
 			localStorage.theme = "light";
-		}
+		
 	}
 
 	onMount(() => {
