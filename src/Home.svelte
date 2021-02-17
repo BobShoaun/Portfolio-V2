@@ -3,9 +3,9 @@
 	import { blur, slide } from "svelte/transition";
 	import { onMount } from "svelte";
 
-	let ready = false;
+	let ready = true;
 	onMount(() => {
-		setTimeout(() => (ready = true), 200);
+		// setTimeout(() => (ready = true), 500);
 	});
 
   export let dark;
@@ -19,17 +19,16 @@
 	<!-- <section class="min-h-screen flex"> -->
 	<section class="section w-full">
 		<div class="bg-purple-400 w-7 h-1.5 lg:w-12 lg:h-3 ml-0.5 mb-2" />
-		{#if ready}
+		<!-- {#if ready} -->
 			<h1
-				transition:blur={{}}
-				class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-600 dark:text-white mb-2"
+				class="animate__animated animate__fadeIn text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-600 dark:text-white mb-2"
 			>
 				{welcomeMessage}
 			</h1>
-			<p transition:slide={{}} class="text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1">
+			<p class="animate__animated animate__fadeInDown text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1">
 				I am Ng Bob Shoaun. I write good code with good designs.
 			</p>
-		{/if}
+		<!-- {/if} -->
 		<!-- <a
 				type="button"
 				href="/images/resume.pdf"
@@ -37,8 +36,9 @@
 				class="ml-1 py-2 px-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3">
 				<p class="text-gray-700 font-mono">View resume</p>
       </a> -->
-		<div class="">
+		<div in:slide class="animate__animated animate__fadeInDown animate__delay-1s">
 			<Link
+        
 				to="resume"
 				class="px-4 py-2 mb-3 lg:ml-1 inline-block leading-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3 text-gray-700 font-mono"
 				noroute

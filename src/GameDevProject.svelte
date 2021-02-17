@@ -11,7 +11,7 @@
 </script>
 
 <main class="py-16">
-	<div class="mb-10">
+	<div data-aos="fade-up" class="mb-10">
 		{#if video}
 			<video autoplay loop muted playsinline src={video} />
 		{:else}
@@ -20,7 +20,7 @@
 		{/if}
 	</div>
 
-	<div class="ml-5">
+	<div data-aos="fade-down" class="ml-5">
 		<h1 class="font-bold text-3xl dark:text-gray-50">{name}</h1>
 		<p class="font-bold font-mono text-sm text-purple-700 mb-3 dark:text-purple-300">
 			{collaborators}

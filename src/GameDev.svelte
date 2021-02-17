@@ -8,8 +8,8 @@
 
 <main id="game-development" class="main dark:bg-gray-700">
   <section class="section">
-    <h2 class="title mb-2">Game development</h2>
-    <h5 class="subtitle mb-20">
+    <h2 data-aos="fade" class="title mb-2">Game development</h2>
+    <h5 data-aos="fade" class="subtitle mb-20">
       Fun fact: game development was what got me into coding in the first place.
     </h5>
     <!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->

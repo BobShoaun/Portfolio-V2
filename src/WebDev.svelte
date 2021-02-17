@@ -8,10 +8,10 @@
 
 <main id="web-development" class="main dark:bg-gray-700">
 	<section class="section">
-		<h2 class="title mb-2">
+		<h2 data-aos="fade-in" class="title mb-2">
 			Web development
     </h2>
-		<h5 class="subtitle mb-20">
+		<h5 data-aos="fade-in" class="subtitle mb-20">
 			Here are some web development projects i have worked on.
     </h5>
 

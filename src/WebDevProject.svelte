@@ -11,10 +11,10 @@
 </script>
 
 <main class="lg:flex lg:items-center justify-around">
-	<div class="mb-5 md:mb-0">
+	<div data-aos="{right ? 'fade-left' : 'fade-right'}" class="mb-5 md:mb-0">
 		<Image src={image} alt={name} />
 	</div>
-	<div class="{right ? 'lg:order-first lg:pr-28' : 'lg:pl-28'}">
+	<div data-aos="{right ? 'fade-right' : 'fade-left'}" class="{right ? 'lg:order-first lg:pr-28' : 'lg:pl-28'}">
 		<h1 class="text-xl font-bold lg:text-3xl dark:text-gray-50">{name}</h1>
 		<p class="font-bold font-mono text-purple-700 dark:text-purple-400 mb-4">
 			{collaborators}
