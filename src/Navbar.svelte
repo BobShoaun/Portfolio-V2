@@ -66,56 +66,61 @@
 			>
 				<button
 					on:click={() => (open = false)}
-					class="text-right text-lg text-gray-800 dark:text-gray-50 float-right bg-gray-50 dark:bg-gray-800 px-4 py-2 mb-4 mr-4 border-none"
-					><i class="fas fa-times" /></button
+					class="text-right text-lg text-gray-800 dark:text-gray-50 float-right bg-gray-50 dark:bg-gray-800 px-3 py-1 mb-2 mr-2 border-none"
+					><i class="fas fa-times fa-sm" /></button
 				>
 				<div class="clear-right" />
-				<nav class="py-3 mb-5">
+				<nav class="mb-3">
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="#about"
 					>
-						<p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
-							<i class="far fa-smile-wink mr-3" />About Me
+						<p class="text-gray-800 dark:text-gray-50 font-mono text-center">
+							<!-- <i class="far fa-smile-wink mr-3" /> -->
+              About Me
 						</p>
 					</a>
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="#web-development"
-						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
-							<i class="fas fa-code mr-3" />Web Development
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
+							<!-- <i class="fas fa-code mr-3" /> -->
+              Web Development
 						</p></a
 					>
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="#graphic-design"
-						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
-							<i class="fas fa-vector-square mr-3" />Graphic Design
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
+							<!-- <i class="fas fa-vector-square mr-3" /> -->
+              Graphic Design
 						</p></a
 					>
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="#game-development"
-						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
-							<i class="fas fa-gamepad mr-3" />Game Development
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
+							<!-- <i class="fas fa-gamepad mr-3" /> -->
+              Game Development
 						</p></a
 					>
 					<a
 						on:click={() => (open = false)}
 						class="block  bg-gray-50 dark:bg-gray-800 p-5"
 						href="#contact"
-						><p class="text-gray-800 dark:text-gray-50 font-mono text-xl text-left">
-							<i class="far fa-paper-plane mr-3" />Contact Me
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
+							<!-- <i class="far fa-paper-plane mr-3 text-left" /> -->
+              Contact Me
 						</p></a
 					>
 				</nav>
 				<button
 					on:click={toggleTheme}
-					class="border-gray-500 border-2 py-2 px-4 text-xl dark:text-gray-50"
+					class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50"
 					><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
 				>
 			</div>

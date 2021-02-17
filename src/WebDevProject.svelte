@@ -11,7 +11,7 @@
 </script>
 
 <main class="lg:flex lg:items-center justify-around">
-	<div data-aos="{right ? 'fade-left' : 'fade-right'}" class="mb-5 md:mb-0">
+	<div data-aos="{right ? 'fade-left' : 'fade-right'}" class="mb-5 md:mb-0 image2">
 		<Image src={image} alt={name} />
 	</div>
 	<div data-aos="{right ? 'fade-right' : 'fade-left'}" class="{right ? 'lg:order-first lg:pr-28' : 'lg:pl-28'}">
@@ -37,3 +37,9 @@
 		{/if}
 	</div>
 </main>
+
+<style>
+  .image2 {
+    /* max-width: 10rem; */
+  }
+</style>
