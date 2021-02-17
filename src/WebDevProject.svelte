@@ -15,21 +15,21 @@
 		<Image src={image} alt={name} />
 	</div>
 	<div
-		data-aos={right ? "fade-right" : "fade-left"}
+		
 		class={right ? "lg:order-first lg:pr-28" : "lg:pl-28"}
 	>
-		<h1 class="text-2xl font-bold lg:text-3xl dark:text-gray-50">{name}</h1>
-		<p class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-4">
+		<h1 data-aos={right ? "fade-right" : "fade-left"} class="text-2xl font-bold lg:text-3xl dark:text-gray-50">{name}</h1>
+		<p data-aos={right ? "fade-right" : "fade-left"} data-aos-delay="100" class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-4">
 			{collaborators}
 		</p>
-		<p class="mb-3 text-gray-700 dark:text-gray-300">{description}</p>
+		<p data-aos={right ? "fade-right" : "fade-left"} data-aos-delay="200" class="mb-3 text-gray-700 dark:text-gray-300">{description}</p>
 
-		<p class="text-md font-mono font-semibold mb-4 dark:text-gray-100">
+		<p data-aos={right ? "fade-right" : "fade-left"} data-aos-delay="300" class="text-md font-mono font-semibold mb-4 dark:text-gray-100">
 			{technologies.join(" // ")}
 		</p>
 
     {#if github || website}
-		<div class="float-right">
+		<div data-aos={right ? "fade-right" : "fade-left"} data-aos-delay="400" class="float-right">
 			{#if github}
 				<a href={github} target="_blank"
 					><i class="text-gray-800 dark:text-gray-50 fa-lg fab fa-md fa-github mr-4" /></a

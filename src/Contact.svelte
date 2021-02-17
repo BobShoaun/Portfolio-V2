@@ -25,13 +25,13 @@
 
 <main id="contact" class="main bg-gray-100 dark:bg-gray-800">
 	<section class="section">
-		<h2 data-aos="fade" class="title mb-2">Contact me</h2>
-		<h5 data-aos="fade" class="subtitle mb-16">
+		<h2 data-aos="fade-right" class="title mb-2">Contact me</h2>
+		<h5 data-aos="fade-right" class="subtitle mb-16">
 			Shoot me a message and I will get back to you as soon as I can. My email is:
 			<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
 		</h5>
 		<form
-      data-aos="fade-down"
+      data-aos="fade-right"
 			on:submit|preventDefault={submitForm}
 			name="contact"
 			action="action"
@@ -67,7 +67,7 @@
 				rows="10"
 				required
 			/>
-			<button class="bg-green-200 py-1 px-4 float-right rounded-none font-semibold font-mono"
+			<button data-aos="fade-right" class="bg-green-200 py-1 px-4 float-right rounded-none font-semibold font-mono"
 				><i class="far fa-paper-plane mr-3" />Send</button
 			>
 			<div class="clear-right" />

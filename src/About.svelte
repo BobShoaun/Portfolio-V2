@@ -11,7 +11,7 @@
 
 		<div class="">
 			<h2 data-aos="fade-left" class="title mb-5">About me</h2>
-			<p data-aos="fade-left" class="text-gray-500 dark:text-gray-300 lg:text-lg mb-9">
+			<p data-aos="fade-left" data-aos-delay="100" class="text-gray-500 dark:text-gray-300 lg:text-lg mb-9">
 				Hi, I’m Bob, a passionate software developer currently earning my degree in University of
 				Toronto, alongside a part-time job as a web developer.
 				<br /><br />
