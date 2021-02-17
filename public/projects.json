@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Assembly Doodle Jump",
+		"video": "videos/doodle jump.mp4",
+		"collaborators": "by myself",
+		"description": "Doodle jump game recreated using assembly language. It features different types of platforms, and powerups like springs and jetpacks. This was a final project for my CSC258 course.",
+		"technologies": ["mips assembly", "mars simulator"],
+		"github": "https://github.com/BobShoaun/Assembly-Doodle-Jump"
+	},
+	{
+		"name": "Maze Runner",
+		"image": "images/maze-runner.jpg",
+		"collaborators": "with some friends",
+		"description": "A game made entirely with ascii graphics to display in the console, with the help of a console game engine. The game features local multiplayer with two players, a runner and a chaser.",
+		"technologies": ["c++", "visual studio"],
+		"github": "https://github.com/BobShoaun/Maze-Runner"
+	},
+  {
+		"name": "Doxel Core Unity Package",
+		"image": "images/doxel-core.png",
+		"collaborators": "by myself",
+		"description": "A unity package that provides a framework for serializing data easily. It also contains many frequently used utility classes, functions and extension methods.",
+		"technologies": ["unity", "c#"],
+		"github": "https://github.com/BobShoaun/Doxel-Core"
+	},
+  {
+		"name": "Csgo Replica",
+		"image": "images/placeholder.png",
+		"collaborators": "by myself",
+		"description": "My recreation of CSGO's complex shooting mechanics like spray patterns, accuracy decay, and recoil. Moreover, the character movement includes quake-like strafe jumping and bunny hopping mechanics.",
+		"technologies": ["unity", "c#"],
+		"github": "https://github.com/BobShoaun/Doxel-Core"
+	},
+  {
+		"name": "Restaurant Game",
+		"image": "images/placeholder.png",
+		"collaborators": "by myself",
+		"description": "A fast paced restaurant management game, inspired by games like hot dog bush.",
+		"technologies": ["unity", "c#"],
+		"github": "https://github.com/BobShoaun/Doxel-Core"
+	},
+  {
+		"name": "Multiplayer Character Movement",
+		"image": "images/placeholder.png",
+		"collaborators": "by myself",
+		"description": "To explore complex character movements in networked games. I explore how to implement client-side prediction and server-side reconciliation in an authoritive server and client model.",
+		"technologies": ["unity", "c#"],
+		"github": "https://github.com/BobShoaun/Doxel-Core"
+	}
+]

@@ -15,7 +15,7 @@
 			Here are some web development projects i have worked on.
     </h5>
 
-		<div class="mb-20">
+		<div class="mb-20 lg:mb-32">
 			<WebDevProject
 				image={"images/pathforge.png"}
 				name={"Pathforge"}
@@ -25,7 +25,7 @@
 				website={null}
 			/>
 		</div>
-		<div class="mb-20">
+		<div class="mb-20 lg:mb-32">
 			<WebDevProject
 				image={"images/course-checker 2.png"}
 				name={"ADP Timetabler (aka Course Checker)"}
@@ -38,7 +38,7 @@
 			/>
 		</div>
 
-		<div class="mb-20">
+		<div class="mb-20 lg:mb-32">
 			<WebDevProject
 				image={"images/todo app 2.png"}
 				name={"things to do"}

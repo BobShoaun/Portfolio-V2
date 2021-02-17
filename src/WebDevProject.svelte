@@ -11,35 +11,43 @@
 </script>
 
 <main class="lg:flex lg:items-center justify-around">
-	<div data-aos="{right ? 'fade-left' : 'fade-right'}" class="mb-5 md:mb-0 image2">
+	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-5 md:mb-0 image2">
 		<Image src={image} alt={name} />
 	</div>
-	<div data-aos="{right ? 'fade-right' : 'fade-left'}" class="{right ? 'lg:order-first lg:pr-28' : 'lg:pl-28'}">
-		<h1 class="text-xl font-bold lg:text-3xl dark:text-gray-50">{name}</h1>
-		<p class="font-bold font-mono text-purple-700 dark:text-purple-400 mb-4">
+	<div
+		data-aos={right ? "fade-right" : "fade-left"}
+		class={right ? "lg:order-first lg:pr-28" : "lg:pl-28"}
+	>
+		<h1 class="text-2xl font-bold lg:text-3xl dark:text-gray-50">{name}</h1>
+		<p class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-4">
 			{collaborators}
 		</p>
-		<p class="mb-4 text-gray-700 dark:text-gray-300">{description}</p>
+		<p class="mb-3 text-gray-700 dark:text-gray-300">{description}</p>
 
-		<p class="font-mono font-semibold mb-4 dark:text-gray-100">
+		<p class="text-md font-mono font-semibold mb-4 dark:text-gray-100">
 			{technologies.join(" // ")}
 		</p>
 
-		{#if github}
-			<a href={github} target="_blank"
-				><i class="text-gray-800 dark:text-gray-50 fa-lg fab fa-md fa-github mr-4" /></a
-			>
-		{/if}
-		{#if website}
-			<a href={website} target="_blank"
-				><i class="text-gray-800 dark:text-gray-50 fa-lg fas fa-external-link-alt" /></a
-			>
-		{/if}
+    {#if github || website}
+		<div class="float-right">
+			{#if github}
+				<a href={github} target="_blank"
+					><i class="text-gray-800 dark:text-gray-50 fa-lg fab fa-md fa-github mr-4" /></a
+				>
+			{/if}
+			{#if website}
+				<a href={website} target="_blank"
+					><i class="text-gray-800 dark:text-gray-50 fa-lg fas fa-external-link-alt" /></a
+				>
+			{/if}
+		</div>
+    <div class="clear-right"></div>
+    {/if}
 	</div>
 </main>
 
 <style>
-  .image2 {
-    /* max-width: 10rem; */
-  }
+	.image2 {
+		/* max-width: 10rem; */
+	}
 </style>
