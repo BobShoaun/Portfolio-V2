@@ -3,7 +3,7 @@
 	import { onMount } from "svelte";
 
 	function more() {
-		alert("more coming soon!");
+		projectsNum += 3;
 	}
 
 	onMount(mounted);
