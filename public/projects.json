@@ -15,7 +15,7 @@
 		"technologies": ["c++", "visual studio"],
 		"github": "https://github.com/BobShoaun/Maze-Runner"
 	},
-  {
+	{
 		"name": "Doxel Core Unity Package",
 		"image": "images/doxel-core.png",
 		"collaborators": "by myself",
@@ -23,7 +23,7 @@
 		"technologies": ["unity", "c#"],
 		"github": "https://github.com/BobShoaun/Doxel-Core"
 	},
-  {
+	{
 		"name": "Csgo Replica",
 		"image": "images/placeholder.png",
 		"collaborators": "by myself",
@@ -31,7 +31,7 @@
 		"technologies": ["unity", "c#"],
 		"github": "https://github.com/BobShoaun/Doxel-Core"
 	},
-  {
+	{
 		"name": "Restaurant Game",
 		"image": "images/placeholder.png",
 		"collaborators": "by myself",
@@ -39,7 +39,7 @@
 		"technologies": ["unity", "c#"],
 		"github": "https://github.com/BobShoaun/Doxel-Core"
 	},
-  {
+	{
 		"name": "Multiplayer Character Movement",
 		"image": "images/placeholder.png",
 		"collaborators": "by myself",
