@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Pathforge",
+		"image": "images/pathforge.png",
+		"collaborators": "with pathforge team",
+		"description": "An elearning site that aims to redefine the self learning experience. It provides a community for online learners to help eachother out and step through the materials together.",
+		"technologies": ["vue", "buefy", "graphql", "postgres"]
+	},
+	{
+		"name": "ADP Timetabler (aka Course Checker)",
+		"image": "images/course-checker 2.png",
+		"collaborators": "by myself",
+		"description": "A web application for students in the ADP program of Taylor’s university to generate a visually appealing timetable based on courses they want to take for their next semester.",
+		"technologies": ["html", "css", "unity", "c#", "webGL"],
+		"github": "https://github.com/BobShoaun/Course-Checker",
+		"website": "https://bobshoaun.github.io/Course-Checker/"
+	},
+	{
+		"name": "things to do",
+		"image": "images/todo app 2.png",
+		"collaborators": "by myself",
+		"description": "A simple and elegant to do list application built as practice while learning the vue framework and firebase firestore.",
+		"technologies": ["vue", "tailwind css", "firebase"],
+		"github": "https://github.com/BobShoaun/Vue-Todo-App",
+		"website": "https://bobshoaun.github.io/Vue-Todo-App/#/"
+	}
+]

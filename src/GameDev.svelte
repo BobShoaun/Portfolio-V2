@@ -3,7 +3,7 @@
 	import { onMount } from "svelte";
 
 	function more() {
-    projectsNum += 2;
+    projectsNum += 3;
 	}
 
 	onMount(mounted);
@@ -20,8 +20,8 @@
 
 <main id="game-development" class="main dark:bg-gray-700">
 	<section class="section">
-		<h2 data-aos="fade" class="title mb-2">Game development</h2>
-		<h5 data-aos="fade" class="subtitle mb-20">
+		<h2 data-aos="fade" class="title mb-2 text-center">Game development</h2>
+		<h5 data-aos="fade" class="subtitle mb-20 text-center">
 			Game development was what got me into coding in the first place.
 		</h5>
 		<!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
