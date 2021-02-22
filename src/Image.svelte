@@ -5,17 +5,22 @@
 	export let inverted = false;
 </script>
 
+<!-- 
 <main class="">
 	<div class="relative h-auto w-auto">
 		<div class="absolute w-3 md:w-5 h-3 md:h-5 right-0 {cornerColor}" />
 		<div class="absolute w-3 md:w-5 h-3 md:h-5 bottom-0 {cornerColor}" />
 		<img {src} class="{inverted ? 'image-inverted' : 'image'} object-contain" {alt} />
 	</div>
+</main> -->
+
+<main>
+	<div class="h-auto w-auto bg-gradient-to-br from-green-300 to-blue-300 rounded-md">
+		<img {src} class="p-4 lg:p-5 rounded-2xl" {alt} />
+	</div>
 </main>
 
 <style>
-	
-
 	/* .image {
 		border-top: 10px solid rgba(191, 219, 254);
 		border-left: 10px solid rgba(191, 219, 254);
@@ -30,7 +35,4 @@
 			border-bottom: 20px solid rgba(167, 243, 208);
 		}
 	} */
-
-
-
 </style>

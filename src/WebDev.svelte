@@ -18,7 +18,7 @@
 	}
 </script>
 
-<main id="web-development" class="main dark:bg-gray-700">
+<main id="web-development" class="main dark:bg-gray-700 bg-gradient-to-b dark:from-gray-900 dark:to-gray-700">
 	<section class="section">
 		<h2 data-aos="fade-in" class="title mb-2">Web development</h2>
 		<h5 data-aos="fade-in" class="subtitle mb-20">

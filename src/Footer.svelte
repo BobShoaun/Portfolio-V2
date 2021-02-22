@@ -1,4 +1,4 @@
-<main class=" main bg-gray-100 dark:bg-gray-700">
+<main class=" main bg-gray-100 dark:bg-gray-700 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900">
 	<section class="section">
 		<div data-aos="fade-down" class="text-center space-x-5 mb-10">
 			<a href="https://github.com/BobShoaun" target="_blank"

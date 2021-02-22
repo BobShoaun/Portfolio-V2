@@ -15,7 +15,7 @@
 
 <main
 	id="home"
-	class="relative main bg-gray-50 -dark:bg-gray-700 h-screen flex bg-gradient-to-b dark:from-gray-700 dark:to-gray-900"
+	class="relative main bg-gray-50 h-screen flex bg-gradient-to-b dark:from-gray-700 dark:to-gray-900"
 >
 	<!-- <div class="background absolute bg-gray-100" /> -->
 
@@ -25,7 +25,7 @@
 			<div class="bg-purple-400 w-7 h-1.5 lg:w-12 lg:h-3 ml-0.5 mb-2" />
 			<!-- {#if ready} -->
 			<h1
-				class="animate__animated animate__fadeIn text-6xl md:text-7xl lg:text-7xl font-extrabold text-gray-600 dark:text-white mb-2"
+				class="animate__animated animate__fadeIn text-5xl md:text-6xl lg:text-6xl font-extrabold text-gray-600 dark:text-white mb-2"
 			>
 				{welcomeMessage}
 			</h1>
@@ -45,7 +45,7 @@
 			<div class="animate__animated animate__fadeInDown animate__delay-0.5s">
 				<Link
 					to="resume"
-					class="px-4 py-2 mb-3 lg:ml-1 inline-block leading-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3 text-gray-700 font-mono"
+					class="px-4 py-2 mb-3 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 mr-3 text-gray-700 font-mono"
 					noroute
 				>
 					<p class="text-gray-700 font-semibold font-mono">View resume</p></Link
@@ -53,13 +53,13 @@
 				<a
 					type="button"
 					href="#contact"
-					class="px-4 py-2 inline-block border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none"
+					class="px-4 py-2 inline-block bg-blue-200 hover:bg-blue-300 rounded-sm border border-blue-400"
 					><p class="text-gray-700 font-semibold font-mono leading-4">Let's talk</p></a
 				>
 			</div>
 		</div>
 		<div
-			class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-300 -border-gray-300 -border-8 -border-dotted w-full h-20 mb-10 lg:w-52 lg:h-52 design-element"
+			class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-400 rounded-sm w-full h-16 mb-6 lg:m-0 lg:w-60 lg:h-60 moving-gradient-y"
 		/>
 	</section>
 
@@ -82,22 +82,55 @@
 		z-index: -1;
 	}
 	:root {
-		--gradient: linear-gradient(45deg, red, green
-    );
+		--gradient: linear-gradient(45deg, #818cf8, #60a5fa, #6ee7b7, #60a5fa, #818cf8);
 	}
 	.design-element {
 		/* border-radius: 5px; */
+
 		background-size: 100% 200%;
-    background-position: top;
-    animation: bg-animation 10s infinite alternate;
+		background-position: top;
+		animation: gradient-animation-y 10s infinite alternate;
 	}
-/* 
+	.moving-gradient-y {
+		background-image: var(--gradient);
+		background-size: 400% 400%;
+		background-position: top;
+		animation: gradient-animation-y 10s infinite ease-in-out;
+	}
+	.moving-gradient-x {
+		background-size: 500%;
+		background-position: left;
+		animation: gradient-animation-x 10s infinite alternate;
+	}
+
+	.moving-gradient-x:hover,
+	.moving-gradient-x:focus {
+		animation: gradient-animation-x 2s infinite alternate;
+	}
+	/* 
   .design-element:hover, .design-element:focus {
     background-position: right;
   } */
 
-  @keyframes bg-animation {
-    0% { background-position: top; }
-    100% { background-position: bottom; }
-  }
+	@keyframes gradient-animation-y {
+		0% {
+			background-position: 0% 50%;
+		}
+    50% {
+			background-position: 100% 50%;
+
+
+    }
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+	@keyframes gradient-animation-x {
+		0% {
+			background-position: left;
+		}
+		100% {
+			background-position: right;
+		}
+	}
 </style>
