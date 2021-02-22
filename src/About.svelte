@@ -23,7 +23,7 @@
 			<Link
       data-aos="fade-left"
 				to="facts"
-				class="px-4 py-2 inline-block leading-4 border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none mr-3 text-gray-700 font-mono"
+				class="px-4 py-2 inline-block leading-4 border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-sm mr-3 text-gray-700 font-mono"
 				noroute
 			>
 				<p class="text-gray-700 font-bold font-mono">

@@ -23,7 +23,7 @@
 	}
 </script>
 
-<main id="contact" class="main bg-gray-100 dark:bg-gray-800">
+<main id="contact" class="main relative bg-gray-100 dark:bg-gray-800">
 	<section class="section">
 		<h2 data-aos="fade-right" class="title mb-2">Contact me</h2>
 		<h5 data-aos="fade-right" class="subtitle mb-16">
@@ -31,7 +31,7 @@
 			<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
 		</h5>
 		<form
-      data-aos="fade-right"
+			data-aos="fade-right"
 			on:submit|preventDefault={submitForm}
 			name="contact"
 			action="action"
@@ -67,10 +67,19 @@
 				rows="10"
 				required
 			/>
-			<button data-aos="fade-right" class="bg-green-200 py-1 px-4 float-right rounded-none font-semibold font-mono"
+			<button
+				data-aos="fade-right"
+				class="bg-green-200 border border-green-500 hover:bg-green-400 text-gray-700 py-1 px-4 float-right rounded-sm font-semibold font-mono"
 				><i class="far fa-paper-plane mr-3" />Send</button
 			>
 			<div class="clear-right" />
 		</form>
 	</section>
+	<p
+		data-aos="fade-down"
+    on:click={() => window.scrollTo(0, 0)}
+		class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-28 right-0 left-0"
+	>
+		<i class="fas fa-angle-up" />
+	</p>
 </main>

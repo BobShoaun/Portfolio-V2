@@ -66,7 +66,8 @@
 	<!-- <div class="absolute w-40 h-40 bg-transparent border-gray-300 border-8 top-64 right-64 design-element"></div> -->
 	<p
 		data-aos="fade-down"
-		class="text-xl lg:text-3xl text-gray-700 dark:text-white text-center absolute bottom-28 right-0 left-0"
+		on:click={() => document.getElementById("about").scrollIntoView()}
+		class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-28 right-0 left-0"
 	>
 		<i class="fas fa-angle-down" />
 	</p>
@@ -116,11 +117,9 @@
 		0% {
 			background-position: 0% 50%;
 		}
-    50% {
+		50% {
 			background-position: 100% 50%;
-
-
-    }
+		}
 		100% {
 			background-position: 0% 50%;
 		}
