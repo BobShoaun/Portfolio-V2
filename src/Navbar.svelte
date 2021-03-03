@@ -1,17 +1,16 @@
 <script>
 	import { slide } from "svelte/transition";
 	import { onMount } from "svelte";
+	import { Link } from "svelte-routing";
+	import { links, Router } from "svelte-routing";
 
 	let open = false;
 	export let dark = false;
 
 	function toggleTheme() {
 		dark = !dark;
-		if (dark)
-			localStorage.theme = "dark";
-		else
-			localStorage.theme = "light";
-		
+		if (dark) localStorage.theme = "dark";
+		else localStorage.theme = "light";
 	}
 
 	onMount(() => {
@@ -37,15 +36,21 @@
 			><p class="text-gray-800 dark:text-gray-50">Ng Bob Shoaun</p></a
 		>
 	</div>
-	<nav class="hidden lg:flex links justify-between items-center space-x-12">
-		<a href="#about"><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a>
-		<a href="#web-development"><p class="text-gray-800 dark:text-gray-50 font-mono ">Web dev</p></a>
-		<a href="#graphic-design"><p class="text-gray-800 dark:text-gray-50 font-mono ">Design</p></a>
-		<a href="#game-development"
-			><p class="text-gray-800 dark:text-gray-50 font-mono ">Game dev</p></a
-		>
-		<a href="#contact"><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a>
-		<button on:click={toggleTheme} class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md"
+	<nav use:links class="hidden lg:flex links justify-between items-center space-x-12">
+		<Router>
+			<a href="/#about" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a>
+			<a href="/#web-development" noroute
+				><p class="text-gray-800 dark:text-gray-50 font-mono ">Web dev</p></a
+			>
+			<a href="/#graphic-design" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">Design</p></a>
+			<a href="/#game-development" noroute
+				><p class="text-gray-800 dark:text-gray-50 font-mono ">Game dev</p></a
+			>
+			<a href="/#contact" noroute><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a>
+		</Router>
+		<button
+			on:click={toggleTheme}
+			class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md"
 			><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
 		>
 	</nav>
@@ -74,47 +79,47 @@
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
-						href="#about"
+						href="/#about"
 					>
 						<p class="text-gray-800 dark:text-gray-50 font-mono text-center">
 							<!-- <i class="far fa-smile-wink mr-3" /> -->
-              About Me
+							About Me
 						</p>
 					</a>
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
-						href="#web-development"
+						href="/#web-development"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
 							<!-- <i class="fas fa-code mr-3" /> -->
-              Web Development
+							Web Development
 						</p></a
 					>
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
-						href="#graphic-design"
+						href="/#graphic-design"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
 							<!-- <i class="fas fa-vector-square mr-3" /> -->
-              Graphic Design
+							Graphic Design
 						</p></a
 					>
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
-						href="#game-development"
+						href="/#game-development"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
 							<!-- <i class="fas fa-gamepad mr-3" /> -->
-              Game Development
+							Game Development
 						</p></a
 					>
 					<a
 						on:click={() => (open = false)}
 						class="block  bg-gray-50 dark:bg-gray-800 p-5"
-						href="#contact"
+						href="/#contact"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
 							<!-- <i class="far fa-paper-plane mr-3 text-left" /> -->
-              Contact Me
+							Contact Me
 						</p></a
 					>
 				</nav>

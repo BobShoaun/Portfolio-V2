@@ -1,11 +1,16 @@
 <script>
 	import { Link } from "svelte-routing";
-  import {copyEmail} from "./helper.svelte";
-	let frameworks = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Figma", "Illustrator"];
-	let codingLanguages = ["JS", "HTML", "(S)CSS", "C#", "C++", "SQL", "Python", "Java"];
-	let interests = ["Drums", "PC Building", "Ukulele", "Table Tennis"];
-	let languages = ["English", "Chinese", "Malay"];
+	import { copyEmail } from "./helper.svelte";
 
+	// Netlify, Github,
+	let frameworks = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Hasura", "Postgres", "Firebase", "WSL", "Figma", "Illustrator"];
+
+	// ES6
+	let codingLanguages = ["JS", "HTML", "(S)CSS", "C#", "C(++)", "(PLPG)SQL", "Python", "GraphQL", "Java"];
+	
+  // Ukulele
+  let interests = ["Drums", "Graphic Design", "PC Building", "Table Tennis"];
+	let languages = ["English", "Chinese", "Malay"];
 </script>
 
 <main class="bg-gray-500 dark:bg-gray-800 py-32 overflow-auto flex">
@@ -14,7 +19,7 @@
 			<Link
 				to="/"
 				class="px-4 py-2 inline-block leading-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3 text-gray-700 font-mono"
-				noroute
+				
 			>
 				<p class="text-gray-700 font-bold font-mono">
 					<i class="fas fa-arrow-left mr-3" />Go Back
@@ -29,11 +34,19 @@
 
 		<section class="resume bg-white shadow-xl">
 			<aside class="sidebar bg-red-50 px-5 pt-5 pb-6 border-red-400 border-t-4">
-				<h1 class="text-gray-700 text-5xl font-bold mb-1">Ng Bob Shoaun</h1>
+				<h1 class="text-gray-700 text-5xl -font-bold font-extrabold mb-1">Ng Bob Shoaun</h1>
 				<h3 class="text-red-400 font- text-xl mb-2">Software Developer <br />& Designer</h3>
 				<div class="info">
 					<i class="text-gray-700 text-center fas fa-phone" />
 					<p class="text-gray-700 text-sm">+60 18-2943 168</p>
+
+          <i class="text-gray-700 text-center fas fa-globe" />
+					<a
+						href="https://www.bobng.me/"
+						target="_blank"
+						class="text-gray-700 text-sm">bobng.me</a
+					>
+
 					<i class="text-gray-700 text-center fas fa-envelope" />
 					<p class="text-gray-700 text-sm cursor-pointer" on:click={copyEmail}>
 						ngbobshoaun2000@gmail
@@ -214,7 +227,7 @@
 					</div>
 				</div>
 
-				<div>
+				<!-- <div>
 					<h2
 						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
 					>
@@ -227,10 +240,12 @@
 							</h4>
 						{/each}
 					</div>
-				</div>
+				</div> -->
 
 				<div class="bg-red-50 border-red-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
-					<h3 class="text-red-400 text-sm">Last updated on: <span class="italic">6 Feb 2021</span></h3>
+					<h3 class="text-red-400 text-sm">
+						Last updated on: <span class="italic">4 March 2021</span>
+					</h3>
 				</div>
 			</section>
 		</section>
@@ -238,20 +253,19 @@
 </main>
 
 <style>
-  /* only use light, regular, regular italic, bold */
+	/* only use light, regular, regular italic, bold */
 	/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap'); */
+	/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap'); */
+	/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap'); */
 
 	.resume {
 		/* font-family: "Open Sans", sans-serif; */
 		/* font-family: "Noto Sans", sans-serif; */
-		font-family: ui-sans-serif, sans-serif;
+		/* font-family: ui-sans-serif, sans-serif; */
 
-
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
+		/* font-family: 'Lato', sans-serif; */
+		/* font-family: 'Source Sans Pro', sans-serif; */
+		/* font-family: 'Roboto', sans-serif; */
 
 		display: grid;
 		grid-template-columns: 1fr 3fr;
