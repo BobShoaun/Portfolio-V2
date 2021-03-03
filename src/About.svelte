@@ -8,16 +8,16 @@
 	<section
 		class="section flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0"
 	>
-		<div data-aos="flip-up" class="lg:mr-20 min-w-min max-w-sm">
+		<div data-aos="zoom-in-left" class="lg:mr-20 min-w-min max-w-sm">
 			<Border>
 				<img src="images/me.jpg" alt="me" class="p-3 rounded-sm" />
 			</Border>
 		</div>
 
 		<div class="">
-			<h2 data-aos="fade-left" class="title mb-5">About me</h2>
+			<h2 data-aos="zoom-in-left" class="title mb-5">About me</h2>
 			<p
-				data-aos="fade-left"
+				data-aos="zoom-in-left"
 				data-aos-delay="100"
 				class="text-gray-500 dark:text-gray-300 lg:text-lg mb-9"
 			>
