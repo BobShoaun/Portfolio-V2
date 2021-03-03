@@ -25,7 +25,7 @@
 
 <main id="contact" class="main bg-gray-100 dark:bg-gray-800">
 	<section class="section">
-		<h2 data-aos="fade-right" class="title mb-2">Contact me</h2>
+		<h2 data-aos="fade-right" class="title mb-2 heading">Contact me</h2>
 		<h5 data-aos="fade-right" class="subtitle mb-16">
 			Shoot me a message and I will get back to you as soon as I can. My email is:
 			<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
@@ -84,3 +84,6 @@
 		</p>
 	</section>
 </main>
+
+<style>
+</style>

@@ -17,7 +17,7 @@
 			>
 		</div>
 
-		<p data-aos="fade-up" class="text-medium font-mono text-center mb-8 dark:text-gray-50">
+		<p data-aos="-fade-up" class="text-medium font-mono text-center mb-8 dark:text-gray-50">
 			Created by Ng Bob Shoaun. &copy; 2021
     </p>
 		<p data-aos="" class="text-medium text-center dark:text-gray-300">

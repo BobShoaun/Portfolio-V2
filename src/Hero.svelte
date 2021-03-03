@@ -22,7 +22,7 @@
 	<!-- <section class="min-h-screen flex"> -->
 	<section class="section w-full flex flex-col-reverse justify-between lg:flex-row">
 		<div class="hero">
-			<div class="bg-purple-400 w-7 h-1.5 lg:w-12 lg:h-3 ml-0.5 mb-2" />
+			<div class="bg-purple-400 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2" />
 			<!-- {#if ready} -->
 			<h1
 				class="animate__animated animate__fadeIn text-5xl md:text-6xl lg:text-6xl font-extrabold text-gray-600 dark:text-white mb-2"

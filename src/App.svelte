@@ -26,28 +26,18 @@
 
 <main class="{dark ? "dark" : ""} flex flex-col" >
 	<Router {url}>
-		<!-- <nav>
-      <Link to="/" noroute>Home</Link>
-      <Link to="about" noroute>About</Link>
-      <Link to="resume" noroute>Resume</Link>
-    </nav> -->
-    <Route path="/about">
-      <About />
-    </Route>
-
+  
 		<Route path="/">
 			<Navbar bind:dark />
 			<Hero bind:dark/>
 			<About />
 			<WebDev />
-			<Designs />
+			<!-- <Designs /> -->
 			<GameDev />
 			<Contact />
 			<Footer />
 		</Route>
    
-		<!-- <Route path="about" component={About} />
-		<Route path="About" component={About} /> -->
     <Route path="resume">
       <Navbar bind:dark />
       <Resume />
@@ -56,8 +46,7 @@
       <Navbar bind:dark />
       <Resume />
     </Route>
-		<!-- <Route path="resume" component={Resume} /> -->
-		<!-- <Route path="Resume" component={Resume} /> -->
+
 		<Route path="Facts" component={FunFacts} />
 		<Route path="facts" component={FunFacts} />
 	</Router>

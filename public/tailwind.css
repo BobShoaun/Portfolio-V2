@@ -23,6 +23,13 @@
   .subtitle {
     @apply text-gray-500 dark:text-gray-300 text-lg;
   }
+
+  .heading::before {
+    content: '';
+    display: block;
+    @apply w-8 h-1.5 mb-1.5;
+    @apply bg-purple-400;
+  }
   
   .section {
     max-width: 1000px;

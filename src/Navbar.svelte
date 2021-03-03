@@ -42,11 +42,15 @@
 			<a href="/#web-development" noroute
 				><p class="text-gray-800 dark:text-gray-50 font-mono ">Web dev</p></a
 			>
-			<a href="/#graphic-design" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">Design</p></a>
+			<!-- <a href="/#graphic-design" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">Design</p></a> -->
 			<a href="/#game-development" noroute
 				><p class="text-gray-800 dark:text-gray-50 font-mono ">Game dev</p></a
 			>
-			<a href="/#contact" noroute><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a>
+			<a href="/#contact" noroute
+				><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a
+			>
+
+			<a href="/resume"><p class="text-gray-800 dark:text-gray-50 font-mono">Resume</p></a>
 		</Router>
 		<button
 			on:click={toggleTheme}
@@ -95,15 +99,15 @@
 							Web Development
 						</p></a
 					>
-					<a
+					<!-- <a
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#graphic-design"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
-							<!-- <i class="fas fa-vector-square mr-3" /> -->
+						
 							Graphic Design
 						</p></a
-					>
+					> -->
 					<a
 						on:click={() => (open = false)}
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
@@ -115,12 +119,19 @@
 					>
 					<a
 						on:click={() => (open = false)}
-						class="block  bg-gray-50 dark:bg-gray-800 p-5"
+						class="block mb-2 bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#contact"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
 							<!-- <i class="far fa-paper-plane mr-3 text-left" /> -->
 							Contact Me
 						</p></a
+					>
+
+					<a
+						on:click={() => (open = false)}
+						class="block bg-gray-50 dark:bg-gray-800 p-5"
+						href="/resume"
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">Resume</p></a
 					>
 				</nav>
 				<button
