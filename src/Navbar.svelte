@@ -83,6 +83,7 @@
 				<nav class="mb-3">
 					<a
 						on:click={() => (open = false)}
+            data-aos="slide-left" data-aos-delay="200"
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#about"
 					>
@@ -93,6 +94,7 @@
 					</a>
 					<a
 						on:click={() => (open = false)}
+            data-aos="slide-right" data-aos-delay="200"
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#web-development"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
@@ -111,6 +113,7 @@
 					> -->
 					<a
 						on:click={() => (open = false)}
+            data-aos="slide-left" data-aos-delay="200"
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#game-development"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
@@ -120,6 +123,7 @@
 					>
 					<a
 						on:click={() => (open = false)}
+            data-aos="slide-right" data-aos-delay="200"
 						class="block mb-2 bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#contact"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
@@ -130,12 +134,14 @@
 
 					<a
 						on:click={() => (open = false)}
+            data-aos="slide-left" data-aos-delay="200"
 						class="block bg-gray-50 dark:bg-gray-800 p-5"
 						href="/resume"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">Resume</p></a
 					>
 				</nav>
 				<button
+        data-aos="flip-up" data-aos-delay="400"
 					on:click={toggleTheme}
 					class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50 rounded-md"
 					><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
