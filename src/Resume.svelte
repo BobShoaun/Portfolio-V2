@@ -289,6 +289,7 @@
 			height: 100% !important;
 			width: 100% !important;
 			position: fixed !important;
+      z-index: 100000 !important;
 			top: 0 !important;
 			left: 0 !important;
 			margin: 0 !important;

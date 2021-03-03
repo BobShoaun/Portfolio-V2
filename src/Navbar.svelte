@@ -21,7 +21,7 @@
 
 		window.onscroll = () => {
 			let currentScrollPos = window.pageYOffset;
-			console.log(currentScrollPos, prevScrollpos);
+			// console.log(currentScrollPos, prevScrollpos);
 			if (prevScrollpos > currentScrollPos) {
 				navbar.style.top = "0";
 			} else {
