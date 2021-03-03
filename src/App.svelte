@@ -38,11 +38,11 @@
 			<Footer />
 		</Route>
    
-    <Route path="/resume">
+    <Route path="resume">
       <Navbar bind:dark />
       <Resume />
     </Route>
-    <Route path="/Resume">
+    <Route path="Resume">
       <Navbar bind:dark />
       <Resume />
     </Route>

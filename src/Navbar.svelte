@@ -1,13 +1,12 @@
 <script>
 	import { slide } from "svelte/transition";
 	import { onMount } from "svelte";
-	import { Link } from "svelte-routing";
-	import { links, Router } from "svelte-routing";
+	import { links, Router, link } from "svelte-routing";
 
 	let open = false;
 	export let dark = false;
 
-  let scrollThreshold = 10;
+	let scrollThreshold = 10;
 
 	function toggleTheme() {
 		dark = !dark;
@@ -21,13 +20,13 @@
 		let navbar = document.getElementById("navbar");
 
 		window.onscroll = () => {
-      let currentScrollPos = window.pageYOffset;
-      console.log(currentScrollPos, prevScrollpos);
-      if (prevScrollpos > currentScrollPos) {
-        navbar.style.top = '0';
-      } else {
-        navbar.style.top = `-${navbar.offsetHeight}px`
-      }
+			let currentScrollPos = window.pageYOffset;
+			console.log(currentScrollPos, prevScrollpos);
+			if (prevScrollpos > currentScrollPos) {
+				navbar.style.top = "0";
+			} else {
+				navbar.style.top = `-${navbar.offsetHeight}px`;
+			}
 			// navbar.style.top = prevScrollpos > currentScrollPos ? "0" : `-${navbar.offsetHeight}px`;
 			prevScrollpos = currentScrollPos;
 		};
@@ -46,7 +45,9 @@
 	</div>
 	<nav use:links class="hidden lg:flex links justify-between items-center space-x-12">
 		<Router>
-			<a href="/#about" data-aos="zoom-in" data-aos-delay="100" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a>
+			<a href="/#about" data-aos="zoom-in" data-aos-delay="100" noroute
+				><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a
+			>
 			<a href="/#web-development" data-aos="zoom-in" data-aos-delay="200" noroute
 				><p class="text-gray-800 dark:text-gray-50 font-mono ">Web dev</p></a
 			>
@@ -58,10 +59,13 @@
 				><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a
 			>
 
-			<a href="/resume" data-aos="zoom-in" data-aos-delay="500"><p class="text-gray-800 dark:text-gray-50 font-mono">Resume</p></a>
+			<a href="/resume" data-aos="zoom-in" data-aos-delay="500"
+				><p class="text-gray-800 dark:text-gray-50 font-mono">Resume</p></a
+			>
 		</Router>
 		<button
-    data-aos="flip-up" data-aos-delay="600"
+			data-aos="flip-up"
+			data-aos-delay="600"
 			on:click={toggleTheme}
 			class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md"
 			><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
@@ -91,7 +95,8 @@
 				<nav class="mb-3">
 					<a
 						on:click={() => (open = false)}
-            data-aos="slide-left" data-aos-delay="200"
+						data-aos="slide-left"
+						data-aos-delay="200"
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#about"
 					>
@@ -102,7 +107,8 @@
 					</a>
 					<a
 						on:click={() => (open = false)}
-            data-aos="slide-right" data-aos-delay="200"
+						data-aos="slide-right"
+						data-aos-delay="200"
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#web-development"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
@@ -121,7 +127,8 @@
 					> -->
 					<a
 						on:click={() => (open = false)}
-            data-aos="slide-left" data-aos-delay="200"
+						data-aos="slide-left"
+						data-aos-delay="200"
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#game-development"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
@@ -131,7 +138,8 @@
 					>
 					<a
 						on:click={() => (open = false)}
-            data-aos="slide-right" data-aos-delay="200"
+						data-aos="slide-right"
+						data-aos-delay="200"
 						class="block mb-2 bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#contact"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
@@ -142,14 +150,17 @@
 
 					<a
 						on:click={() => (open = false)}
-            data-aos="slide-left" data-aos-delay="200"
+						use:link
+						data-aos="slide-left"
+						data-aos-delay="200"
 						class="block bg-gray-50 dark:bg-gray-800 p-5"
 						href="/resume"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">Resume</p></a
 					>
 				</nav>
 				<button
-        data-aos="flip-up" data-aos-delay="400"
+					data-aos="flip-up"
+					data-aos-delay="400"
 					on:click={toggleTheme}
 					class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50 rounded-md"
 					><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
