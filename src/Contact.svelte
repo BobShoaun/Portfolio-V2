@@ -82,7 +82,7 @@
     on:click={() => window.scrollTo(0, 0)}
     class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-5 right-0 left-0"
   >
-    <i class="fas fa-angle-up" />
+    <i class="hover-vertical fas fa-angle-up" />
   </p>
 </main>
 

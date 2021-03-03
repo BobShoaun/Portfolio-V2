@@ -30,6 +30,21 @@
     @apply w-8 h-1.5 mb-1.5;
     @apply bg-purple-400;
   }
+
+  .hover-vertical {
+		animation: hover-vertical 2s ease infinite;
+		position: relative;
+	}
+
+	@keyframes hover-vertical {
+		0%,
+		100% {
+			top: 0;
+		}
+		50% {
+			top: 20px;
+		}
+	}
   
   .section {
     max-width: 1000px;

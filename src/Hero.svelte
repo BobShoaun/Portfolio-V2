@@ -22,16 +22,22 @@
 	<!-- <section class="min-h-screen flex"> -->
 	<section class="section w-full flex flex-col-reverse justify-between lg:flex-row">
 		<div class="hero">
-			<div data-aos="flip-up" data-aos-delay="700" class="bg-purple-400 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2" />
+			<div
+				data-aos="flip-up"
+				data-aos-delay="700"
+				class="bg-purple-400 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2"
+			/>
 			<!-- {#if ready} -->
 			<h1
-      data-aos="zoom-in-right" data-aos-delay="900"
+				data-aos="zoom-in-right"
+				data-aos-delay="900"
 				class="-animate__animated -animate__fadeIn text-5xl md:text-6xl lg:text-6xl font-extrabold text-gray-600 dark:text-white mb-2"
 			>
 				{welcomeMessage}
 			</h1>
 			<p
-      data-aos="zoom-in-right" data-aos-delay="1100"
+				data-aos="zoom-in-right"
+				data-aos-delay="1100"
 				class="-animate__animated -animate__fadeInDown text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
 			>
 				I am Ng Bob Shoaun. I write good code with good designs.
@@ -44,7 +50,11 @@
           class="ml-1 py-2 px-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3">
           <p class="text-gray-700 font-mono">View resume</p>
         </a> -->
-			<div data-aos="flip-up" data-aos-delay="1300" class="-animate__animated -animate__fadeInDown animate__delay-0.5s">
+			<div
+				data-aos="flip-up"
+				data-aos-delay="1300"
+				class="-animate__animated -animate__fadeInDown animate__delay-0.5s"
+			>
 				<Link
 					to="resume"
 					class="px-4 py-2 mb-3 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 mr-3 text-gray-700 font-mono"
@@ -61,7 +71,8 @@
 			</div>
 		</div>
 		<div
-    data-aos="flip-up" data-aos-delay="900"
+			data-aos="flip-up"
+			data-aos-delay="900"
 			class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-400 rounded-sm w-full h-16 mb-6 lg:m-0 lg:w-60 lg:h-60 moving-gradient-y"
 		/>
 	</section>
@@ -69,11 +80,11 @@
 	<!-- <div class="absolute w-40 h-40 bg-transparent border-gray-300 border-8 top-64 right-64 design-element"></div> -->
 	<p
 		data-aos="fade-down"
-    data-aos-delay="2000"
+		data-aos-delay="2000"
 		on:click={() => document.getElementById("about").scrollIntoView()}
 		class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-28 right-0 left-0"
 	>
-		<i class="fas fa-angle-down" />
+		<i class="hover-vertical fas fa-angle-down" />
 	</p>
 </main>
 
@@ -112,6 +123,8 @@
 	.moving-gradient-x:focus {
 		animation: gradient-animation-x 2s infinite alternate;
 	}
+
+
 	/* 
   .design-element:hover, .design-element:focus {
     background-position: right;
