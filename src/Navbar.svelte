@@ -31,28 +31,29 @@
 	class="flex items-center justify-between px-6 lg:px-10 py-5 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50"
 >
 	<div class="logo font-semibold">
-		<div class="bg-purple-400 w-4 h-4 mr-3 inline-block" />
-		<a href="#home" class="hover:no-underline inline-block"
+		<div data-aos="flip-up" class="bg-purple-400 w-4 h-4 mr-3 inline-block" />
+		<a href="/#home" data-aos="flip-up" class="hover:no-underline inline-block"
 			><p class="text-gray-800 dark:text-gray-50">Ng Bob Shoaun</p></a
 		>
 	</div>
 	<nav use:links class="hidden lg:flex links justify-between items-center space-x-12">
 		<Router>
-			<a href="/#about" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a>
-			<a href="/#web-development" noroute
+			<a href="/#about" data-aos="zoom-in" data-aos-delay="100" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a>
+			<a href="/#web-development" data-aos="zoom-in" data-aos-delay="200" noroute
 				><p class="text-gray-800 dark:text-gray-50 font-mono ">Web dev</p></a
 			>
 			<!-- <a href="/#graphic-design" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">Design</p></a> -->
-			<a href="/#game-development" noroute
+			<a href="/#game-development" data-aos="zoom-in" data-aos-delay="300" noroute
 				><p class="text-gray-800 dark:text-gray-50 font-mono ">Game dev</p></a
 			>
-			<a href="/#contact" noroute
+			<a href="/#contact" data-aos="zoom-in" data-aos-delay="400" noroute
 				><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a
 			>
 
-			<a href="/resume"><p class="text-gray-800 dark:text-gray-50 font-mono">Resume</p></a>
+			<a href="/resume" data-aos="zoom-in" data-aos-delay="500"><p class="text-gray-800 dark:text-gray-50 font-mono">Resume</p></a>
 		</Router>
 		<button
+    data-aos="flip-up" data-aos-delay="600"
 			on:click={toggleTheme}
 			class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md"
 			><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button

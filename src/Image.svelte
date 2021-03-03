@@ -15,8 +15,8 @@
 </main> -->
 
 <main>
-	<div class="h-auto w-auto bg-gradient-to-br from-green-300 to-blue-300 rounded-md">
-		<img {src} class="p-4 lg:p-5 rounded-2xl" {alt} />
+	<div class="h-auto w-auto bg-gradient-to-br from-green-300 to-blue-300 rounded-sm">
+		<img {src} class="p-1 lg:p-3 rounded-sm" {alt} />
 	</div>
 </main>
 

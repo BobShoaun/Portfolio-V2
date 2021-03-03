@@ -16,11 +16,11 @@
 		{#if video}
     <Border>
 
-			<video autoplay loop muted playsinline src={video} class="p-4" />
+			<video autoplay loop muted playsinline src={video} class="p-1.5 lg:p-3" />
     </Border>
 		{:else}
 			<Border>
-        <img src={image} class="p-4 rounded-2xl" alt={name} />
+        <img src={image} class="p-1.5 lg:p-3 rounded-sm" alt={name} />
       </Border>
 			<!-- <Image src={image} alt={name} /> -->
 			<!-- <img src={image} class="object-contain" alt={name} /> -->
