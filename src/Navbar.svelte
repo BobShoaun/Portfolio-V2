@@ -7,6 +7,8 @@
 	let open = false;
 	export let dark = false;
 
+  let scrollThreshold = 10;
+
 	function toggleTheme() {
 		dark = !dark;
 		if (dark) localStorage.theme = "dark";
@@ -19,8 +21,14 @@
 		let navbar = document.getElementById("navbar");
 
 		window.onscroll = () => {
-			let currentScrollPos = window.pageYOffset;
-			navbar.style.top = prevScrollpos > currentScrollPos ? "0" : `-${navbar.offsetHeight}px`;
+      let currentScrollPos = window.pageYOffset;
+      console.log(currentScrollPos, prevScrollpos);
+      if (prevScrollpos > currentScrollPos) {
+        navbar.style.top = '0';
+      } else {
+        navbar.style.top = `-${navbar.offsetHeight}px`
+      }
+			// navbar.style.top = prevScrollpos > currentScrollPos ? "0" : `-${navbar.offsetHeight}px`;
 			prevScrollpos = currentScrollPos;
 		};
 	});
