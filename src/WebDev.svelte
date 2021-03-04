@@ -20,9 +20,27 @@
 
 <main
 	id="web-development"
-	class="main dark:bg-gray-700 bg-gradient-to-b dark:from-gray-900 dark:to-gray-700"
+	class="main relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
-	<section class="section">
+	<div
+  data-aos="slide-down"
+		data-aos-delay="900"
+		style="z-index: 0"
+		class="bg-gradient-to-b from-gray-700 to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
+	/>
+
+	<div class="absolute right-14 top-0">
+		<div class="w-5 h-28 bg-white mb-6" />
+
+		<p
+			class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right right-0 absolute"
+		>
+			010
+		</p>
+	</div>
+
+
+	<section class="section relative">
 		<h2 data-aos="fade-in" class="title mb-2 text-center">Web development</h2>
 		<h5 data-aos="fade-in" class="subtitle mb-20 text-center">
 			Here are some web development projects i have worked on.

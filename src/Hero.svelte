@@ -20,7 +20,7 @@
 	<div
 		data-aos="flip-up"
 		data-aos-delay="900"
-		class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-400 rounded-sm absolute bottom-0 right-0 w-16 h-16 mb-6 lg:m-0 lg:w-1/3 lg:h-full moving-gradient-y"
+		class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-400 absolute background right-0 w-1/3 h-full moving-gradient-y"
 	/>
 
 	<!-- <div class="background absolute bg-gray-100" /> -->
@@ -46,7 +46,7 @@
 				data-aos-delay="1100"
 				class="font-mono text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
 			>
-				// I am Ng Bob Shoaun. I write good code with good designs.
+				// I'm Ng Bob Shoaun. I write good code with good designs.
 			</p>
 			<!-- {/if} -->
 			<!-- <a
@@ -106,12 +106,12 @@
 
 <style>
 	.background {
-		transform: rotate(45deg);
-		height: 2000px;
-		width: 250px;
-		right: 500px;
-		top: -500px;
-		z-index: -1;
+		transform: rotate(20deg);
+		/* height: 2000px; */
+		/* width: 250px; */
+		/* right: 500px; */
+		/* top: -500px; */
+		/* z-index: -1; */
 	}
 	:root {
 		--gradient: linear-gradient(45deg, #818cf8, #60a5fa, #6ee7b7, #60a5fa, #818cf8);
