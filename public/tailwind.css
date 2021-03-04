@@ -3,35 +3,35 @@
 @tailwind utilities;
 
 @layer base {
-  .main {
-    @apply px-6 md:px-16 lg:px-24;
+	.main {
+		@apply px-6 md:px-16 lg:px-24;
 
-    /* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
-    
+		/* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
+
 		@apply w-full overflow-hidden;
 		/* @apply w-90% mx-auto; */
-    
+
 		/* @apply px-auto; */
-    
+
 		/* @apply min-h-screen; */
 		/* @apply self-stretch; */
 	}
 	.title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-gray-600 dark:text-gray-50;
+		@apply text-3xl md:text-4xl lg:text-5xl font-bold text-gray-600 dark:text-gray-50;
 	}
-  
-  .subtitle {
-    @apply text-gray-500 dark:text-gray-300 text-lg;
-  }
 
-  .heading::before {
-    content: '';
-    display: block;
-    @apply w-8 h-1.5 mb-1.5;
-    @apply bg-purple-400;
-  }
+	.subtitle {
+		@apply text-gray-500 dark:text-gray-300 text-lg;
+	}
 
-  .hover-vertical {
+	.heading::before {
+		content: "";
+		display: block;
+		@apply w-8 h-1.5 mb-1.5;
+		@apply bg-purple-400;
+	}
+
+	.hover-vertical {
 		animation: hover-vertical 2s ease infinite;
 		position: relative;
 	}
@@ -45,23 +45,23 @@
 			top: 20px;
 		}
 	}
-  
-  .section {
-    max-width: 1000px;
-    @apply m-auto py-20 lg:py-52;
-  }
-  
+
+	.section {
+		max-width: 1000px;
+		@apply m-auto py-20 lg:py-52;
+	}
+
 	body {
-    @apply p-0;
+		@apply p-0;
 	}
 	a {
-    @apply hover:no-underline;
+		@apply hover:no-underline;
 	}
 
 	html {
 		scroll-behavior: smooth;
 	}
-/* 
+	/* 
   @font-face {
     font-family: Proxima Nova;
     font-weight: 400;
@@ -73,13 +73,22 @@
     src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
   } */
 
-  .moving-gradient-y {
-    --gradient: linear-gradient(45deg, #818cf8, #60a5fa, #6ee7b7, #60a5fa, #818cf8);
-		background-image: var(--gradient);
+	.moving-gradient-1 {
+		--gradient-1: linear-gradient(45deg, #818cf8, #60a5fa, #6ee7b7, #60a5fa, #818cf8);
+		background-image: var(--gradient-1);
 		background-size: 400% 400%;
 		background-position: top;
 		animation: gradient-animation-y 10s infinite ease-in-out;
 	}
+
+	.moving-gradient-2 {
+		--gradient-2: linear-gradient(45deg, #f87171, #a78bfa, #f87171, #a78bfa, #f87171);
+		background-image: var(--gradient-2);
+		background-size: 400% 400%;
+		background-position: top;
+		animation: gradient-animation-y 10s infinite ease-in-out;
+	}
+
 	.moving-gradient-x {
 		background-size: 500%;
 		background-position: left;
@@ -91,7 +100,7 @@
 		animation: gradient-animation-x 2s infinite alternate;
 	}
 
-  @keyframes gradient-animation-y {
+	@keyframes gradient-animation-y {
 		0% {
 			background-position: 0% 50%;
 		}

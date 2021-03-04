@@ -11,7 +11,7 @@
 	<div
 		data-aos="slide-right"
 		data-aos-offset="100"
-		class="bg-gradient-to-b from-red-400 to-purple-400 absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-y"
+		class="absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-2"
 	/>
 
 	<div
@@ -33,7 +33,7 @@
 			<!-- </Border> -->
 		</div>
 
-		<div class="bg-white dark:bg-gray-900 px-5 py-8 lg:py-14 lg:px-10 shadow-2xl relative">
+		<div class="bg-white dark:bg-gray-900 px-5 py-8 lg:py-14 lg:px-10 shadow-2xl max-w-2xl relative">
 			<h2 data-aos="zoom-in-left" class="title mb-12 font-mono">> About me</h2>
 			<p
 				data-aos="zoom-in-left"
@@ -46,7 +46,8 @@
 				My coding journey started at the age of 14, when I created my first game that ran in a Java Applet.
 				Since then I have been driven to build quality, intuitive software with the keen interest of
 				learning new and better ways to write code; To improve on existing ways, and grow as a developer.
-				My software development expertise include Javascript, Vue, SQL, Unity game engine, and C#. While
+        <br><br>
+        My software development expertise include Javascript, Vue, SQL, Unity game engine, and C#. While
 				I'm not coding, you will find me playing video games, building computers and playing the drums.
 			</p>
 			<!-- <Link

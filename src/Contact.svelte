@@ -30,7 +30,7 @@
 	<div
 		data-aos="slide-down"
 		data-aos-delay="900"
-		class="absolute background left-0 w-2/5 h-full moving-gradient-y"
+		class="absolute background left-0 w-2/5 h-full moving-gradient-1"
 	/>
 
 	<div class="hidden lg:block absolute right-14 top-0">

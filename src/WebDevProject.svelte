@@ -11,7 +11,7 @@
 </script>
 
 <main class="lg:flex lg:items-center justify-between">
-	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-5 image2">
+	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-5">
 		<Image src={image} alt={name} />
 	</div>
 	<div
@@ -47,7 +47,4 @@
 </main>
 
 <style>
-	.image2 {
-		/* max-width: 10rem; */
-	}
 </style>
