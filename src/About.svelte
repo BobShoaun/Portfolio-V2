@@ -30,7 +30,7 @@
 			<!-- </Border> -->
 		</div>
 
-		<div class="bg-white dark:bg-gray-900 p-5 lg:py-14 lg:px-10 shadow-2xl relative">
+		<div class="bg-white dark:bg-gray-900 px-5 py-8 lg:py-14 lg:px-10 shadow-2xl relative">
 			<h2 data-aos="zoom-in-left" class="title mb-12 font-mono">> About me</h2>
 			<p
 				data-aos="zoom-in-left"
