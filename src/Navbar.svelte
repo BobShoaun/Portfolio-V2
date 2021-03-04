@@ -46,21 +46,21 @@
 	<nav use:links class="hidden lg:flex links justify-between items-center space-x-12">
 		<Router>
 			<a href="/#about" data-aos="zoom-in" data-aos-delay="100" noroute
-				><p class="text-gray-800 dark:text-gray-50 font-mono ">About</p></a
+				><p class="nav-text">About</p></a
 			>
 			<a href="/#web-development" data-aos="zoom-in" data-aos-delay="200" noroute
-				><p class="text-gray-800 dark:text-gray-50 font-mono ">Web dev</p></a
+				><p class="nav-text">Web dev</p></a
 			>
 			<!-- <a href="/#graphic-design" noroute><p class="text-gray-800 dark:text-gray-50 font-mono ">Design</p></a> -->
 			<a href="/#game-development" data-aos="zoom-in" data-aos-delay="300" noroute
-				><p class="text-gray-800 dark:text-gray-50 font-mono ">Game dev</p></a
+				><p class="nav-text">Game dev</p></a
 			>
 			<a href="/#contact" data-aos="zoom-in" data-aos-delay="400" noroute
-				><p class="text-gray-800 dark:text-gray-50 font-mono">Contact</p></a
+				><p class="nav-text">Contact</p></a
 			>
 
 			<a href="/resume" data-aos="zoom-in" data-aos-delay="500"
-				><p class="text-gray-800 dark:text-gray-50 font-mono">Resume</p></a
+				><p class="nav-text">Resume</p></a
 			>
 		</Router>
 		<button

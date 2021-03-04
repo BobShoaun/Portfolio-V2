@@ -61,6 +61,13 @@
 	html {
 		scroll-behavior: smooth;
 	}
+
+  .nav-text {
+    @apply font-mono;
+    @apply text-gray-800 dark:text-gray-50;
+    @apply hover:bg-gray-600 hover:text-gray-50;
+    @apply dark:hover:bg-gray-50 dark:hover:text-gray-800;
+  }
 	/* 
   @font-face {
     font-family: Proxima Nova;
