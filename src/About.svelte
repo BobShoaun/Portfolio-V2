@@ -16,9 +16,9 @@
 
 	<div data-aos="slide-down"
   data-aos-offset="200" class="hidden lg:block absolute left-14 top-0 text-center">
-		<div class="w-5 h-28 bg-gray-50 mb-6" />
+		<div class="w-5 h-28 bg-gray-50 dark:bg-gray-800 mb-6" />
 
-		<p class="text-gray-100 font-mono font-bold text-4xl">001</p>
+		<p class="text-gray-100 dark:text-gray-800 font-mono font-bold text-4xl">001</p>
 	</div>
 
 	<section

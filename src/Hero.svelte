@@ -26,7 +26,7 @@
 	<!-- <div class="background absolute bg-gray-100" /> -->
 
 	<!-- <section class="min-h-screen flex"> -->
-	<section class="section w-full z-50 max-w-5xl">
+	<section class="section relative w-full max-w-5xl">
 		<div class="bg-white dark:bg-gray-900 px-5 py-10 lg:py-20 lg:px-10 shadow-2xl">
 			<div
 				data-aos="flip-up"

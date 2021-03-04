@@ -79,7 +79,7 @@
 
 				<textarea
 					name="message"
-					class="w-full px-4 py-2 mb-2 min-h-1/4 bg-gray-200 dark:bg-gray-600 dark:text-gray-50"
+					class="w-full px-4 py-2 mb-2 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50"
 					placeholder="Message..."
 					rows="10"
 					required
