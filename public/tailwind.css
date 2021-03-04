@@ -73,6 +73,44 @@
     src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
   } */
 
+  .moving-gradient-y {
+    --gradient: linear-gradient(45deg, #818cf8, #60a5fa, #6ee7b7, #60a5fa, #818cf8);
+		background-image: var(--gradient);
+		background-size: 400% 400%;
+		background-position: top;
+		animation: gradient-animation-y 10s infinite ease-in-out;
+	}
+	.moving-gradient-x {
+		background-size: 500%;
+		background-position: left;
+		animation: gradient-animation-x 10s infinite alternate;
+	}
+
+	.moving-gradient-x:hover,
+	.moving-gradient-x:focus {
+		animation: gradient-animation-x 2s infinite alternate;
+	}
+
+  @keyframes gradient-animation-y {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+	@keyframes gradient-animation-x {
+		0% {
+			background-position: left;
+		}
+		100% {
+			background-position: right;
+		}
+	}
+
 	.image {
 		border-top: 0.75rem solid rgba(191, 219, 254);
 		border-left: 0.75rem solid rgba(191, 219, 254);

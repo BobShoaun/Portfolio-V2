@@ -6,15 +6,15 @@
 
 <main
 	id="about"
-	class="main relative bg-gray-100 bg-gradient-to-b dark:from-gray-700 dark:to-gray-800"
+	class="main relative bg-gray-100 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
 >
 	<div
 		data-aos="flip-up"
 		data-aos-delay="900"
-		class="bg-gradient-to-b from-red-400 to-purple-400 absolute background left-0 w-1/4 h-full moving-gradient-y"
+		class="bg-gradient-to-b from-red-400 to-purple-400 absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-y"
 	/>
 
-	<div class="absolute left-14 top-0 text-center">
+	<div class="hidden lg:block absolute left-14 top-0 text-center">
 		<div class="w-5 h-28 bg-white mb-6" />
 
 		<p class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl">001</p>
@@ -23,13 +23,13 @@
 	<section
 		class="section flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0"
 	>
-		<div data-aos="zoom-in-left" class="lg:mr-20 min-w-min max-w-sm ">
+		<div data-aos="zoom-in-left" class="lg:mr-20 min-w-min max-w-sm m-10">
 			<!-- <Border> -->
-			<img src="images/me.jpg" alt="me" class="rounded-sm shadow-xl" />
+			<img src="images/me.jpg" alt="me" class="rounded-sm shadow-xl " />
 			<!-- </Border> -->
 		</div>
 
-		<div class="bg-gray-900 p-10 shadow-2xl">
+		<div class="bg-gray-900 p-5 lg:p-10 shadow-2xl relative">
 			<h2 data-aos="zoom-in-left" class="title mb-5">About me</h2>
 			<p
 				data-aos="zoom-in-left"
@@ -57,7 +57,7 @@
 		</div>
 	</section>
 
-  <div class="absolute right-14 bottom-0">
+  <div class="hidden lg:block absolute right-14 bottom-0">
 		<div class="w-5 h-28 bg-white" />
 	</div>
 </main>

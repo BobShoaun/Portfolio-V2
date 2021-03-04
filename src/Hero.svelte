@@ -18,16 +18,16 @@
 	class="relative main bg-gray-50 h-screen flex bg-gradient-to-b dark:from-gray-700 dark:to-gray-900"
 >
 	<div
-		data-aos="flip-up"
+		data-aos="slide-down"
 		data-aos-delay="900"
-		class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-400 absolute background right-0 w-1/3 h-full moving-gradient-y"
+		class="absolute background right-0 w-2/5 lg:w-1/3 h-full moving-gradient-y"
 	/>
 
 	<!-- <div class="background absolute bg-gray-100" /> -->
 
 	<!-- <section class="min-h-screen flex"> -->
 	<section class="section w-full z-50 max-w-5xl">
-		<div class="bg-gray-900 py-20 px-10 shadow-2xl">
+		<div class="bg-gray-900 px-5 py-10 lg:py-20 lg:px-10 shadow-2xl">
 			<div
 				data-aos="flip-up"
 				data-aos-delay="700"
@@ -37,7 +37,7 @@
 			<h1
 				data-aos="zoom-in-right"
 				data-aos-delay="900"
-				class="font-mono text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-600 dark:text-white mb-5"
+				class="font-mono text-2xl md:text-4xl lg:text-5xl font-extrabold text-gray-600 dark:text-white mb-5"
 			>
 				{welcomeMessage}
 			</h1>
@@ -59,11 +59,11 @@
 			<div
 				data-aos="flip-up"
 				data-aos-delay="1300"
-				class="-animate__animated -animate__fadeInDown animate__delay-0.5s"
+				class=""
 			>
 				<Link
 					to="resume"
-					class="px-4 py-2 mb-3 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 mr-3 text-gray-700 font-mono"
+					class="px-4 py-2 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 mr-3 text-gray-700 font-mono"
 					noroute
 				>
 					<p class="text-gray-700 font-semibold font-mono">View resume</p></Link
@@ -78,7 +78,7 @@
 		</div>
 	</section>
 
-	<div class="absolute left-14 bottom-0 text-center">
+	<div class="hidden lg:block absolute left-14 bottom-0 text-center">
 		<a href="https://github.com/BobShoaun" target="_blank" class="block mb-8"
 			><i class="text-gray-800 dark:text-gray-50 fab fa-github fa-lg" /></a
 		>
@@ -113,9 +113,7 @@
 		/* top: -500px; */
 		/* z-index: -1; */
 	}
-	:root {
-		--gradient: linear-gradient(45deg, #818cf8, #60a5fa, #6ee7b7, #60a5fa, #818cf8);
-	}
+	
 	.design-element {
 		/* border-radius: 5px; */
 
@@ -123,45 +121,12 @@
 		background-position: top;
 		animation: gradient-animation-y 10s infinite alternate;
 	}
-	.moving-gradient-y {
-		background-image: var(--gradient);
-		background-size: 400% 400%;
-		background-position: top;
-		animation: gradient-animation-y 10s infinite ease-in-out;
-	}
-	.moving-gradient-x {
-		background-size: 500%;
-		background-position: left;
-		animation: gradient-animation-x 10s infinite alternate;
-	}
-
-	.moving-gradient-x:hover,
-	.moving-gradient-x:focus {
-		animation: gradient-animation-x 2s infinite alternate;
-	}
+	
 
 	/* 
   .design-element:hover, .design-element:focus {
     background-position: right;
   } */
 
-	@keyframes gradient-animation-y {
-		0% {
-			background-position: 0% 50%;
-		}
-		50% {
-			background-position: 100% 50%;
-		}
-		100% {
-			background-position: 0% 50%;
-		}
-	}
-	@keyframes gradient-animation-x {
-		0% {
-			background-position: left;
-		}
-		100% {
-			background-position: right;
-		}
-	}
+
 </style>

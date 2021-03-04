@@ -26,11 +26,11 @@
   data-aos="slide-down"
 		data-aos-delay="900"
 		style="z-index: 0"
-		class="bg-gradient-to-b from-gray-700 to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
+		class="bg-gradient-to-b from-gray-800 to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
 	/>
 
-	<div class="absolute right-14 top-0">
-		<div class="w-5 h-28 bg-white mb-6" />
+	<div class="hidden lg:block absolute right-14 top-0">
+		<div class="w-5 h-36 bg-white mb-6" />
 
 		<p
 			class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right right-0 absolute"
@@ -68,4 +68,8 @@
 			See More
 		</button>
 	</section>
+
+  <div class="hidden lg:block absolute left-14 bottom-0">
+		<div class="w-5 h-28 bg-white" />
+	</div>
 </main>
