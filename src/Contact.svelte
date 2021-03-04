@@ -40,7 +40,7 @@
 	</div>
 	<section class="section relative">
 		<div class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-20 mb-16">
-			<h2 data-aos="zoom-in-right" class="title mb-2 heading">Contact me</h2>
+			<h2 data-aos="zoom-in-right" class="title mb-4 heading font-mono">Contact(Me);</h2>
 			<h5 data-aos="zoom-in-right" class="subtitle mb-10">
 				Shoot me a message and I will get back to you as soon as I can. My email is:
 				<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.

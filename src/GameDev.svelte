@@ -29,7 +29,7 @@
 		</p>
 	</div>
   <section class="section">
-		<h2 data-aos="fade" class="title mb-2 text-center">Game development</h2>
+		<h2 data-aos="fade" class="title mb-6 text-center font-mono">/* Game development */</h2>
 		<h5 data-aos="fade" class="subtitle mb-20 text-center">
 			Game development was what got me into coding in the first place.
 		</h5>

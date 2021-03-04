@@ -41,7 +41,7 @@
 
 
 	<section class="section relative">
-		<h2 data-aos="fade-in" class="title mb-2 text-center">Web development</h2>
+		<h2 data-aos="fade-in" class="title mb-6 text-center font-mono">Web development_</h2>
 		<h5 data-aos="fade-in" class="subtitle mb-20 text-center">
 			Here are some web development projects i have worked on.
 		</h5>

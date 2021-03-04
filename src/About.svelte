@@ -30,12 +30,12 @@
 			<!-- </Border> -->
 		</div>
 
-		<div class="bg-white dark:bg-gray-900 p-5 lg:p-10 shadow-2xl relative">
-			<h2 data-aos="zoom-in-left" class="title mb-5">About me</h2>
+		<div class="bg-white dark:bg-gray-900 p-5 lg:py-14 lg:px-10 shadow-2xl relative">
+			<h2 data-aos="zoom-in-left" class="title mb-12 font-mono">> About me</h2>
 			<p
 				data-aos="zoom-in-left"
 				data-aos-delay="100"
-				class="text-gray-500 dark:text-gray-300 lg:text-lg mb-9"
+				class="text-gray-500 dark:text-gray-300 lg:text-lg mb-10"
 			>
 				Hi, I’m Bob, a passionate software developer currently earning my degree in University of
 				Toronto, alongside a part-time job as a web developer.
