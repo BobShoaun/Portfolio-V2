@@ -14,8 +14,11 @@
 		class="bg-gradient-to-b from-red-400 to-purple-400 absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-y"
 	/>
 
-	<div data-aos="slide-down"
-  data-aos-offset="200" class="hidden lg:block absolute left-14 top-0 text-center">
+	<div
+		data-aos="slide-down"
+		data-aos-offset="200"
+		class="hidden lg:block absolute left-14 top-0 text-center"
+	>
 		<div class="w-5 h-28 bg-gray-50 dark:bg-gray-800 mb-6" />
 
 		<p class="text-gray-100 dark:text-gray-800 font-mono font-bold text-4xl">001</p>
@@ -24,7 +27,7 @@
 	<section
 		class="section flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0"
 	>
-		<div data-aos="zoom-in-left" class="lg:mr-20 min-w-min max-w-sm m-10 lg:m-0">
+		<div data-aos="zoom-in-left" class="min-w-min max-w-sm m-10 lg:m-0 lg:mr-16">
 			<!-- <Border> -->
 			<img src="images/me.jpg" alt="me" class="rounded-sm shadow-xl " />
 			<!-- </Border> -->
@@ -35,15 +38,16 @@
 			<p
 				data-aos="zoom-in-left"
 				data-aos-delay="100"
-				class="text-gray-500 dark:text-gray-300 lg:text-lg mb-10"
+				class="text-gray-500 dark:text-gray-300 lg:text-lg"
 			>
 				Hi, I’m Bob, a passionate software developer currently earning my degree in University of
 				Toronto, alongside a part-time job as a web developer.
 				<br /><br />
-				I have started coding since the age of 14 and have since been driven to create and design quality,
-				intuitive softwares for others to use. My expertise in software development lies in Unity game
-				engine, C#, Python, and Vue. Besides coding, my hobbies include graphic designing, building computers
-				and playing the drums.
+				My coding journey started at the age of 14, when I created my first game that ran in a Java Applet.
+				Since then I have been driven to build quality, intuitive software with the keen interest of
+				learning new and better ways to write code; To improve on existing ways, and grow as a developer.
+				My software development expertise include Javascript, Vue, SQL, Unity game engine, and C#. While
+				I'm not coding, you will find me playing video games, building computers and playing the drums.
 			</p>
 			<!-- <Link
 				data-aos="fade-left"
@@ -58,7 +62,7 @@
 		</div>
 	</section>
 
-  <div class="hidden lg:block absolute right-14 bottom-0">
+	<div class="hidden lg:block absolute right-14 bottom-0">
 		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
 	</div>
 </main>
