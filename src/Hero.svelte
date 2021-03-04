@@ -78,7 +78,8 @@
 		</div>
 	</section>
 
-	<div class="hidden lg:block absolute left-14 bottom-0 text-center">
+	<div data-aos="slide-up"
+  data-aos-delay="2000" class="hidden lg:block absolute left-14 bottom-0 text-center">
 		<a href="https://github.com/BobShoaun" target="_blank" class="block mb-8"
 			><i class="text-gray-800 dark:text-gray-50 fab fa-github fa-lg" /></a
 		>

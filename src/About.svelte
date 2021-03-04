@@ -9,12 +9,13 @@
 	class="main relative bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
 >
 	<div
-		data-aos="flip-up"
-		data-aos-delay="900"
+		data-aos="slide-right"
+		data-aos-offset="100"
 		class="bg-gradient-to-b from-red-400 to-purple-400 absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-y"
 	/>
 
-	<div class="hidden lg:block absolute left-14 top-0 text-center">
+	<div data-aos="slide-down"
+  data-aos-offset="200" class="hidden lg:block absolute left-14 top-0 text-center">
 		<div class="w-5 h-28 bg-gray-50 mb-6" />
 
 		<p class="text-gray-100 font-mono font-bold text-4xl">001</p>
