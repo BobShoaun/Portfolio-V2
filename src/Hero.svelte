@@ -10,12 +10,12 @@
 
 	export let dark;
 
-	$: welcomeMessage = dark ? 'console.log("Hi");' : "Hello there.";
+	$: welcomeMessage = dark ? 'console.log("Hey");' : 'console.log("Hi");';
 </script>
 
 <main
 	id="home"
-	class="relative main bg-gray-50 h-screen flex bg-gradient-to-b dark:from-gray-700 dark:to-gray-900"
+	class="relative main bg-gray-100 h-screen flex bg-gradient-to-b dark:from-gray-700 dark:to-gray-900"
 >
 	<div
 		data-aos="slide-down"
@@ -27,7 +27,7 @@
 
 	<!-- <section class="min-h-screen flex"> -->
 	<section class="section w-full z-50 max-w-5xl">
-		<div class="bg-gray-900 px-5 py-10 lg:py-20 lg:px-10 shadow-2xl">
+		<div class="bg-white dark:bg-gray-900 px-5 py-10 lg:py-20 lg:px-10 shadow-2xl">
 			<div
 				data-aos="flip-up"
 				data-aos-delay="700"
@@ -90,7 +90,7 @@
 			><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
 		>
 
-		<div class="w-5 h-28 bg-white" />
+		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
 	</div>
 
 	<!-- <div class="absolute w-40 h-40 bg-transparent border-gray-300 border-8 top-64 right-64 design-element"></div> -->

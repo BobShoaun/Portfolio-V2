@@ -6,7 +6,7 @@
 
 <main
 	id="about"
-	class="main relative bg-gray-100 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
+	class="main relative bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
 >
 	<div
 		data-aos="flip-up"
@@ -15,21 +15,21 @@
 	/>
 
 	<div class="hidden lg:block absolute left-14 top-0 text-center">
-		<div class="w-5 h-28 bg-white mb-6" />
+		<div class="w-5 h-28 bg-gray-50 mb-6" />
 
-		<p class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl">001</p>
+		<p class="text-gray-100 font-mono font-bold text-4xl">001</p>
 	</div>
 
 	<section
 		class="section flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0"
 	>
-		<div data-aos="zoom-in-left" class="lg:mr-20 min-w-min max-w-sm m-10">
+		<div data-aos="zoom-in-left" class="lg:mr-20 min-w-min max-w-sm m-10 lg:m-0">
 			<!-- <Border> -->
 			<img src="images/me.jpg" alt="me" class="rounded-sm shadow-xl " />
 			<!-- </Border> -->
 		</div>
 
-		<div class="bg-gray-900 p-5 lg:p-10 shadow-2xl relative">
+		<div class="bg-white dark:bg-gray-900 p-5 lg:p-10 shadow-2xl relative">
 			<h2 data-aos="zoom-in-left" class="title mb-5">About me</h2>
 			<p
 				data-aos="zoom-in-left"
@@ -58,6 +58,6 @@
 	</section>
 
   <div class="hidden lg:block absolute right-14 bottom-0">
-		<div class="w-5 h-28 bg-white" />
+		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
 	</div>
 </main>
