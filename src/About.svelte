@@ -4,7 +4,18 @@
 	import { Link } from "svelte-routing";
 </script>
 
-<main id="about" class="main bg-gray-100 dark:bg-gray-800">
+<main id="about" class="main relative bg-gray-100 dark:bg-gray-800">
+  <div class="absolute left-14 top-0 text-center">
+    
+
+    <div class="w-5 h-28 bg-white mb-6">
+    </div>
+
+    <p class="text-gray-800 dark:text-gray-50 font-mono text-4xl">
+      01.
+    </p>
+   
+  </div>
 	<section
 		class="section flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0"
 	>

@@ -10,18 +10,24 @@
 
 	export let dark;
 
-	$: welcomeMessage = dark ? "Hey there." : "Hello there.";
+	$: welcomeMessage = dark ? 'console.log("Hi");' : "Hello there.";
 </script>
 
 <main
 	id="home"
 	class="relative main bg-gray-50 h-screen flex bg-gradient-to-b dark:from-gray-700 dark:to-gray-900"
 >
+	<div
+		data-aos="flip-up"
+		data-aos-delay="900"
+		class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-400 rounded-sm absolute bottom-0 right-0 w-16 h-16 mb-6 lg:m-0 lg:w-1/3 lg:h-full moving-gradient-y"
+	/>
+
 	<!-- <div class="background absolute bg-gray-100" /> -->
 
 	<!-- <section class="min-h-screen flex"> -->
-	<section class="section w-full flex flex-col-reverse justify-between lg:flex-row">
-		<div class="hero">
+	<section class="section w-full z-50 max-w-5xl">
+		<div class="bg-gray-900 py-20 px-10 shadow-2xl">
 			<div
 				data-aos="flip-up"
 				data-aos-delay="700"
@@ -31,16 +37,16 @@
 			<h1
 				data-aos="zoom-in-right"
 				data-aos-delay="900"
-				class="-animate__animated -animate__fadeIn text-5xl md:text-6xl lg:text-6xl font-extrabold text-gray-600 dark:text-white mb-2"
+				class="font-mono text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-600 dark:text-white mb-5"
 			>
 				{welcomeMessage}
 			</h1>
 			<p
 				data-aos="zoom-in-right"
 				data-aos-delay="1100"
-				class="-animate__animated -animate__fadeInDown text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
+				class="font-mono text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
 			>
-				I am Ng Bob Shoaun. I write good code with good designs.
+				// I am Ng Bob Shoaun. I write good code with good designs.
 			</p>
 			<!-- {/if} -->
 			<!-- <a
@@ -70,12 +76,22 @@
 				>
 			</div>
 		</div>
-		<div
-			data-aos="flip-up"
-			data-aos-delay="900"
-			class="bg-gradient-to-b via-green-300 from-indigo-400 to-blue-400 rounded-sm w-full h-16 mb-6 lg:m-0 lg:w-60 lg:h-60 moving-gradient-y"
-		/>
 	</section>
+
+	<div class="absolute left-14 bottom-0 text-center">
+		<a href="https://github.com/BobShoaun" target="_blank" class="block mb-8"
+			><i class="text-gray-800 dark:text-gray-50 fab fa-github fa-lg" /></a
+		>
+		<a href="https://www.linkedin.com/in/ngbobshoaun/" target="_blank" class="block mb-8">
+			<i class="text-gray-800 dark:text-gray-50 fab fa-linkedin-in fa-lg" /></a
+		>
+
+		<a href="https://www.instagram.com/n.bob.s/" target="_blank" class="block mb-8"
+			><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
+		>
+
+		<div class="w-5 h-28 bg-white" />
+	</div>
 
 	<!-- <div class="absolute w-40 h-40 bg-transparent border-gray-300 border-8 top-64 right-64 design-element"></div> -->
 	<p
@@ -123,7 +139,6 @@
 	.moving-gradient-x:focus {
 		animation: gradient-animation-x 2s infinite alternate;
 	}
-
 
 	/* 
   .design-element:hover, .design-element:focus {
