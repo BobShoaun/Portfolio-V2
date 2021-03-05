@@ -34,9 +34,9 @@
 			Game development was what got me into coding in the first place.
 		</h5>
 		<!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
-		<div class="md:flex md:flex-wrap md:justify-between">
+		<div class="md:flex md:flex-wrap md:justify-around">
 			{#each visibleProjects as project}
-				<div class="md:w-72">
+				<div class="md:w-80">
 					<GameDevProject
 						image={project.image}
 						video={project.video}

@@ -24,16 +24,18 @@
 		<p class="text-gray-100 dark:text-gray-800 font-mono font-bold text-4xl">001</p>
 	</div>
 
-	<section
-		class="section flex flex-col items-center lg:flex-row justify-between space-y-20 lg:space-y-0"
-	>
-		<div data-aos="zoom-in-left" class="min-w-min max-w-sm m-10 lg:m-0 lg:mr-16">
-			<!-- <Border> -->
-			<img src="images/me.jpg" alt="me" class="rounded-sm shadow-xl " />
-			<!-- </Border> -->
+	<section class="section flex flex-col items-center lg:flex-row justify-between">
+
+		<div data-aos="zoom-in-left" class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28">
+			<img
+				src="images/me.jpg"
+				alt="me"
+				class="rounded-sm shadow-xl"
+			/>
 		</div>
 
-		<div class="bg-white dark:bg-gray-900 px-5 py-8 lg:py-14 lg:px-10 shadow-2xl max-w-2xl relative">
+
+		<div class="bg-white dark:bg-gray-900 px-6 py-8 lg:py-14 lg:px-10 shadow-2xl relative">
 			<h2 data-aos="zoom-in-left" class="title mb-12 font-mono">> About me</h2>
 			<p
 				data-aos="zoom-in-left"
@@ -46,8 +48,8 @@
 				My coding journey started at the age of 14, when I created my first game that ran in a Java Applet.
 				Since then I have been driven to build quality, intuitive software with the keen interest of
 				learning new and better ways to write code; To improve on existing ways, and grow as a developer.
-        <br><br>
-        My software development expertise include Javascript, Vue, SQL, Unity game engine, and C#. While
+				<br /><br />
+				My software development expertise include Javascript, Vue, SQL, Unity game engine, and C#. While
 				I'm not coding, you will find me playing video games, building computers and playing the drums.
 			</p>
 			<!-- <Link

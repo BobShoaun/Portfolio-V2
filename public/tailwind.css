@@ -47,7 +47,7 @@
 	}
 
 	.section {
-		max-width: 1000px;
+		max-width: 1200px;
 		@apply m-auto py-20 lg:py-52;
 	}
 
