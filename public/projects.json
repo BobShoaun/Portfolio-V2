@@ -29,7 +29,7 @@
 		"collaborators": "by myself",
 		"description": "My recreation of CSGO's complex shooting mechanics like spray patterns, accuracy decay, and recoil. Moreover, the character movement includes quake-like strafe jumping and bunny hopping mechanics.",
 		"technologies": ["unity", "c#"],
-		"github": "https://github.com/BobShoaun/Doxel-Core"
+		"github": ""
 	},
 	{
 		"name": "Restaurant Game",
@@ -37,7 +37,7 @@
 		"collaborators": "by myself",
 		"description": "A fast paced restaurant management game, inspired by games like hot dog bush.",
 		"technologies": ["unity", "c#"],
-		"github": "https://github.com/BobShoaun/Doxel-Core"
+		"github": ""
 	},
 	{
 		"name": "Multiplayer Character Movement",
@@ -45,6 +45,6 @@
 		"collaborators": "by myself",
 		"description": "To explore complex character movements in networked games. I explore how to implement client-side prediction and server-side reconciliation in an authoritive server and client model.",
 		"technologies": ["unity", "c#"],
-		"github": "https://github.com/BobShoaun/Doxel-Core"
+		"github": ""
 	}
 ]
