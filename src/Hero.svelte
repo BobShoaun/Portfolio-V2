@@ -20,7 +20,7 @@
 	<div
 		data-aos="slide-down"
 		data-aos-delay="900"
-		class="absolute background right-0 w-2/5 lg:w-1/3 h-full moving-gradient-1"
+		class="absolute background top-0 right-0 h-1/2 w-full md:w-1/3 md:h-full moving-gradient-1"
 	/>
 
 	<!-- <div class="background absolute bg-gray-100" /> -->
