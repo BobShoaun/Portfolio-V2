@@ -18,7 +18,7 @@
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >
-	<div
+	<!-- <div
 		class="hidden md:max-w-20
     md:max-w-30
     md:max-w-40
@@ -27,7 +27,7 @@
     md:max-w-60
     md:max-w-70
     md:max-w-80"
-	/>
+	/> -->
 
 	<div data-aos="fade-left" class="mb-10">
 		{#if project.video}

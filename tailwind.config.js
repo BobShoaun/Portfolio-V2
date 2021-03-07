@@ -7,14 +7,14 @@ module.exports = {
 		// These options are passed through directly to PurgeCSS
 		options: {
 			safelist: [
-				"max-w-20",
-				"max-w-30",
-				"max-w-40",
-				"max-w-50",
-				"max-w-55",
-				"max-w-60",
-				"max-w-70",
-				"max-w-80",
+				"md:max-w-20",
+				"md:max-w-30",
+				"md:max-w-40",
+				"md:max-w-50",
+				"md:max-w-55",
+				"md:max-w-60",
+				"md:max-w-70",
+				"md:max-w-80",
 			],
 			blocklist: [/^debug-/],
 			keyframes: true,
