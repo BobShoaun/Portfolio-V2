@@ -86,7 +86,7 @@
 				/>
 				<button
 					data-aos="fade-right"
-					class="bg-green-200 border border-green-500 hover:bg-green-400 text-gray-700 py-1 px-4 float-right rounded-sm font-semibold font-mono"
+					class="bg-purple-200 border border-purple-500 hover:bg-purple-400 text-gray-700 py-1 px-4 float-right rounded-sm font-semibold font-mono"
 					><i class="far fa-paper-plane mr-3" />Send</button
 				>
 				<div class="clear-right" />
