@@ -18,6 +18,17 @@
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >
+	<div
+		class="hidden max-w-20
+    max-w-30
+    max-w-40
+    max-w-50
+    max-w-55
+    max-w-60
+    max-w-70
+    max-w-80"
+	/>
+
 	<div data-aos="fade-left" class="mb-10">
 		{#if project.video}
 			<Border>
