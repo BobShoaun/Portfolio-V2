@@ -1,64 +1,71 @@
 <script>
 	import Image from "./Image.svelte";
 	import Border from "./Border.svelte";
-	export let image = "images/pathforge.png";
-	export let video = null;
-	export let name = "awesome website";
-	export let collaborators = "with some people";
-	export let description = "none.";
-	export let technologies = ["svelte", "tailwind css"];
-	export let github = null;
-	export let website = null;
+	// export let image = "images/pathforge.png";
+	// export let video = null;
+	// export let name = "awesome website";
+	// export let collaborators = "with some people";
+	// export let description = "none.";
+	// export let technologies = ["svelte", "tailwind css"];
+	// export let github = null;
+	// export let website = null;
+	export let project = null;
 </script>
 
-<main class="py-16">
+<main
+	style="-max-width: {project.width}%"
+	class="py-16 mx-20 md:m-0 flex {project.right
+		? 'flex-row space-x-10'
+		: 'flex-col'} md:max-w-{project.width}"
+>
 	<div data-aos="zoom-in-left" class="mb-10">
-		{#if video}
-    <Border>
-
-			<video autoplay loop muted playsinline src={video} class="p-1.5 lg:p-3" />
-    </Border>
+		{#if project.video}
+			<Border>
+				<video autoplay loop muted playsinline src={project.video} class="p-1.5 lg:p-3" />
+			</Border>
 		{:else}
 			<Border>
-        <img src={image} class="p-1.5 lg:p-3 rounded-sm" alt={name} />
-      </Border>
+				<img src={project.image} class="p-1.5 lg:p-3 rounded-sm" alt={project.name} />
+			</Border>
 			<!-- <Image src={image} alt={name} /> -->
 			<!-- <img src={image} class="object-contain" alt={name} /> -->
 		{/if}
 	</div>
 
-	<div class="">
-		<h1 data-aos="zoom-in-left" class="font-bold text-2xl lg:text-3xl dark:text-gray-50">{name}</h1>
+	<div>
+		<h1 data-aos="zoom-in-left" class="font-bold text-2xl lg:text-3xl dark:text-gray-50">
+			{project.name}
+		</h1>
 		<p
 			data-aos="zoom-in-left"
 			data-aos-delay="100"
 			class="font-bold font-mono text-sm text-purple-700 mb-3 dark:text-purple-400"
 		>
-			{collaborators}
+			{project.collaborators}
 		</p>
 		<p
 			data-aos="zoom-in-left"
 			data-aos-delay="200"
 			class="text-md mb-3 text-gray-700 dark:text-gray-300"
 		>
-			{description}
+			{project.description}
 		</p>
 		<p
 			data-aos="zoom-in-left"
 			data-aos-delay="300"
 			class="text-md font-semibold font-mono mb-4 dark:text-gray-50"
 		>
-			{technologies.join(" // ")}
+			{project.technologies.join(" // ")}
 		</p>
-		{#if github || website}
+		{#if project.github || project.website}
 			<div data-aos="zoom-in-left" data-aos-delay="400" class="float-right">
-				{#if github}
-					<a href={github} target="_blank"
+				{#if project.github}
+					<a href={project.github} target="_blank"
 						><i class="text-gray-800 dark:text-gray-50 fab fa-lg fa-github mr-4" /></a
 					>
 				{/if}
-				{#if website}
-					<a href={website} target="_blank"
+				{#if project.website}
+					<a href={project.website} target="_blank"
 						><i class="text-gray-800 dark:text-gray-50 fas fa-lg fa-external-link-alt" /></a
 					>
 				{/if}
@@ -67,3 +74,11 @@
 		{/if}
 	</div>
 </main>
+
+<style lang="scss">
+	@screen md {
+		.ratio {
+			max-width: var(--width);
+		}
+	}
+</style>

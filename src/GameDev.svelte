@@ -3,18 +3,19 @@
 	import { onMount } from "svelte";
 
 	function more() {
-    projectsNum += 3;
+    projectsNum += 10;
 	}
 
 	onMount(mounted);
 
 	let projects = [];
   $: visibleProjects = projects.slice(0, projectsNum);
-  let projectsNum = 3;
+  let projectsNum = 10;
 
 	async function mounted() {
 		let response = await fetch("projects.json");
 		projects = await response.json();
+    console.log(projects)
 	}
 </script>
 
@@ -34,20 +35,16 @@
 			Game development was what got me into coding in the first place.
 		</h5>
 		<!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
-		<div class="md:flex md:flex-wrap md:justify-around">
+		<div class="md:flex md:flex-wrap md:justify-between w-auto">
+      <!-- {#if projects} -->
 			{#each visibleProjects as project}
-				<div class="md:w-80">
+				<!-- <div class="m-auto"> -->
 					<GameDevProject
-						image={project.image}
-						video={project.video}
-						name={project.name}
-						collaborators={project.collaborators}
-						description={project.description}
-						technologies={project.technologies}
-						github={project.github}
+            project={project}
 					/>
-				</div>
-			{/each}
+				<!-- </div> -->
+        {/each}
+        <!-- {/if} -->
 		</div>
 
 		<button

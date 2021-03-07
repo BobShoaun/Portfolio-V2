@@ -5,23 +5,43 @@
 		"collaborators": "by myself",
 		"description": "Doodle jump game recreated using assembly language. It features different types of platforms, and powerups like springs and jetpacks. This was a final project for my CSC258 course.",
 		"technologies": ["mips assembly", "mars simulator"],
-		"github": "https://github.com/BobShoaun/Assembly-Doodle-Jump"
+		"github": "https://github.com/BobShoaun/Assembly-Doodle-Jump",
+    "width": 30
 	},
+  {
+    "name": "Water Chef",
+    "video": "videos/water chef.mp4",
+    "collaborators": "by myself",
+    "description": "A fast paced restaurant management game, inspired by games like hot dog bush. You are a chef specializing in serving water to very demanding and impatient customers.",
+    "technologies": ["unity", "c#"],
+    "width": 55
+  },
+  {
+    "name": "Doxel Core Unity Package",
+    "image": "images/doxel-core.png",
+    "collaborators": "by myself",
+    "description": "A unity package that provides a framework for serializing data easily. It also contains many frequently used utility classes, functions and extension methods.",
+    "technologies": ["unity", "c#"],
+    "github": "https://github.com/BobShoaun/Doxel-Core",
+    "width": 40
+  },
+  {
+    "name": "Dicey",
+    "video": "videos/dicey.mp4",
+    "collaborators": "by myself",
+    "description": "A simple dice app with options for multiple dice and shake to roll feature.",
+    "technologies": ["unity", "c#"],
+    "width": 50,
+    "right": true
+  },
 	{
 		"name": "Maze Runner",
 		"image": "images/maze-runner.jpg",
 		"collaborators": "with some friends",
 		"description": "A game made entirely with ascii graphics to display in the console, with the help of a console game engine. The game features local multiplayer with two players, a runner and a chaser.",
 		"technologies": ["c++", "visual studio"],
-		"github": "https://github.com/BobShoaun/Maze-Runner"
-	},
-	{
-		"name": "Doxel Core Unity Package",
-		"image": "images/doxel-core.png",
-		"collaborators": "by myself",
-		"description": "A unity package that provides a framework for serializing data easily. It also contains many frequently used utility classes, functions and extension methods.",
-		"technologies": ["unity", "c#"],
-		"github": "https://github.com/BobShoaun/Doxel-Core"
+		"github": "https://github.com/BobShoaun/Maze-Runner",
+    "width": 40
 	},
 	{
 		"name": "Csgo Replica",
@@ -29,15 +49,7 @@
 		"collaborators": "by myself",
 		"description": "My recreation of CSGO's complex shooting mechanics like spray patterns, accuracy decay, and recoil. Moreover, the character movement includes quake-like strafe jumping and bunny hopping mechanics.",
 		"technologies": ["unity", "c#"],
-		"github": ""
-	},
-	{
-		"name": "Restaurant Game",
-		"image": "images/placeholder.png",
-		"collaborators": "by myself",
-		"description": "A fast paced restaurant management game, inspired by games like hot dog bush.",
-		"technologies": ["unity", "c#"],
-		"github": ""
+    "width": 40
 	},
 	{
 		"name": "Multiplayer Character Movement",
@@ -45,14 +57,6 @@
 		"collaborators": "by myself",
 		"description": "To explore complex character movements in networked games. I explore how to implement client-side prediction and server-side reconciliation in an authoritive server and client model.",
 		"technologies": ["unity", "c#"],
-		"github": ""
-	},
-  {
-		"name": "Dicey",
-		"video": "videos/dicey.mp4",
-		"collaborators": "by myself",
-		"description": "A simple dice app with options for multiple dice and shake to roll feature.",
-		"technologies": ["unity", "c#"],
-		"github": ""
+    "width": 40
 	}
 ]
