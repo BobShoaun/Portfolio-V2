@@ -18,7 +18,7 @@
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >
-	<div data-aos="zoom-in-left" class="mb-10">
+	<div data-aos="fade-left" class="mb-10">
 		{#if project.video}
 			<Border>
 				<video autoplay loop muted playsinline src={project.video} class="p-1.5 lg:p-3" />
