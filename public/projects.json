@@ -46,5 +46,13 @@
 		"description": "To explore complex character movements in networked games. I explore how to implement client-side prediction and server-side reconciliation in an authoritive server and client model.",
 		"technologies": ["unity", "c#"],
 		"github": ""
+	},
+  {
+		"name": "Dicey",
+		"video": "videos/dicey.mp4",
+		"collaborators": "by myself",
+		"description": "A simple dice app with options for multiple dice and shake to roll feature.",
+		"technologies": ["unity", "c#"],
+		"github": ""
 	}
 ]

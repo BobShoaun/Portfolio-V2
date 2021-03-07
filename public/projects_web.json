@@ -4,7 +4,8 @@
 		"image": "images/pathforge.png",
 		"collaborators": "with pathforge team",
 		"description": "An elearning site that aims to redefine the self learning experience. It provides a community for online learners to help eachother out and step through the materials together.",
-		"technologies": ["vue", "buefy", "graphql", "postgres"]
+		"technologies": ["vue", "buefy", "graphql", "postgres"],
+    "website": "https://pathforge.co/"
 	},
 	{
 		"name": "ADP Timetabler (aka Course Checker)",
