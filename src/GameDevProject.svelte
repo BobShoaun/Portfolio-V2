@@ -18,25 +18,15 @@
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >
-	<!-- <div
-		class="hidden md:max-w-20
-    md:max-w-30
-    md:max-w-40
-    md:max-w-50
-    md:max-w-55
-    md:max-w-60
-    md:max-w-70
-    md:max-w-80"
-	/> -->
 
 	<div data-aos="fade-left" class="mb-10">
 		{#if project.video}
-			<Border>
-				<video autoplay loop muted playsinline src={project.video} class="p-1.5 lg:p-3" />
+			<Border secondary>
+				<video autoplay loop muted playsinline src={project.video} class="p-2 lg:p-3 rounded-sm" />
 			</Border>
 		{:else}
-			<Border>
-				<img src={project.image} class="p-1.5 lg:p-3 rounded-sm" alt={project.name} />
+			<Border secondary>
+				<img src={project.image} class="p-2 lg:p-3 rounded-sm" alt={project.name} />
 			</Border>
 			<!-- <Image src={image} alt={name} /> -->
 			<!-- <img src={image} class="object-contain" alt={name} /> -->
