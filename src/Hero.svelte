@@ -59,7 +59,7 @@
 			<div data-aos="flip-up" data-aos-delay="1200" class="">
 				<Link
 					to="resume"
-					class="px-4 py-2 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 mr-3 text-gray-700 font-mono"
+					class="px-4 py-2 mb-3 mr-3 lg:mb-0 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 text-gray-700 font-mono"
 					noroute
 				>
 					<p class="text-gray-700 font-semibold font-mono">View resume</p></Link

@@ -60,17 +60,17 @@
 				<p class="hidden">
 					<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
 				</p>
-				<div class="flex">
+				<div class="flex flex-col md:flex-row">
 					<input
 						name="name"
-						class="w-full mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
+						class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
 						type="text"
 						placeholder="Name..."
 						required
 					/>
 					<input
 						name="email"
-						class="w-full mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
+						class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
 						type="text"
 						placeholder="Email..."
 						required
