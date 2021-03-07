@@ -47,7 +47,7 @@
 		<p
 			data-aos="zoom-in-left"
 			data-aos-delay="200"
-			class="text-md mb-3 text-gray-700 dark:text-gray-300"
+			class="text-md mb-3 text-gray-700 dark:text-gray-300 max-w-lg"
 		>
 			{project.description}
 		</p>
