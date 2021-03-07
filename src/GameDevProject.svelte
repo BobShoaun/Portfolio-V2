@@ -14,7 +14,7 @@
 
 <main
 	style="-max-width: {project.width}%"
-	class="py-16 mx-20 md:m-0 flex {project.right
+	class="py-16 mx-4 md:m-0 flex {project.right
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >

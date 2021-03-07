@@ -10,7 +10,7 @@
 	export let right = false;
 </script>
 
-<main class="lg:flex lg:items-center justify-between">
+<main class="mx-4 lg:m-0 lg:flex lg:items-center justify-between">
 	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-5">
 		<Image src={image} alt={name} />
 	</div>

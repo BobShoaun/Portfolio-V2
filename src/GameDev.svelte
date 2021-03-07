@@ -3,14 +3,14 @@
 	import { onMount } from "svelte";
 
 	function more() {
-    projectsNum += 10;
+    projectsNum += 4;
 	}
 
 	onMount(mounted);
 
 	let projects = [];
   $: visibleProjects = projects.slice(0, projectsNum);
-  let projectsNum = 10;
+  let projectsNum = 4;
 
 	async function mounted() {
 		let response = await fetch("projects.json");
