@@ -10,6 +10,7 @@
 		"Svelte",
 		"Node.js",
 		"Hasura",
+		"Tailwind",
 		"Postgres",
 		"Firebase",
 		"WSL",
@@ -170,7 +171,7 @@
 				</div>
 			</section>
 
-      <!-- CONTENT SECTION -->
+			<!-- CONTENT SECTION -->
 
 			<article class="content flex flex-col justify-between">
 				<!-- <div>
@@ -237,7 +238,8 @@
 							programming and web dev.
 						</li>
 						<li>
-							Used technologies like Vue, Graphql, Hasura, and Postgres to build a social e-learning site.
+							Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning
+							site.
 						</li>
 					</ul>
 
@@ -245,10 +247,15 @@
 					<p class="text-sm text-gray-400 float-right text-right">May - Aug 2019</p>
 					<p class="text-sm text-gray-400 mb-0.5 italic">Intern / Frontend developer</p>
 					<ul class="list-square text-gray-600 pl-5 text-sm">
-						<li>Revamped the frontend of the company's internal timesheet management system using Angular.js.</li>
+						<li>
+							Revamped the frontend of the company's internal timesheet management system using
+							Angular.js and Bootstrap.
+						</li>
 						<li>Fixed bugs and introduced new quality of life features.</li>
 						<li>Presented my work during head of department meetings.</li>
-            <li>Wrote extensive documentation for a proper handover of the project in the future.</li>
+						<li>
+							Wrote extensive documentation for a proper handover of the project in the future.
+						</li>
 					</ul>
 				</div>
 
@@ -259,7 +266,7 @@
 						Projects
 					</h2>
 
-          <div class="flex justify-between items-baseline mb-0.5">
+					<div class="flex justify-between items-baseline mb-0.5">
 						<h3 class="text-gray-700 text-lg font-bold">Course Checker</h3>
 						<p class="text-sm text-gray-400 italic">Personal project</p>
 					</div>
@@ -272,7 +279,10 @@
 							Highly customizable, lets you change the colors of the timetable, and show/hide
 							additional info and timestamps.
 						</li>
-            <li>Developed with the Unity Engine, and built as a WebGL frame embedded into a website using HTML + CSS.</li>
+						<li>
+							Developed with the Unity Engine, and built as a WebGL frame embedded into a website
+							using HTML + CSS.
+						</li>
 					</ul>
 
 					<div class="flex justify-between items-baseline mb-0.5">
@@ -297,12 +307,12 @@
 						<li>
 							A fast paced restaurant simulator game developed with Unity Engine and written in C#.
 						</li>
-            <!-- <li>Developed custom audio manager component for managing audio tracks.</li> -->
+						<!-- <li>Developed custom audio manager component for managing audio tracks.</li> -->
 						<li>
-							Complete with multiple levels, objectives, animations, music, and save load functionality. 
+							Complete with multiple levels, objectives, animations, music, and save load
+							functionality.
 						</li>
 					</ul>
-
 				</div>
 			</article>
 		</section>
@@ -361,7 +371,7 @@
 		display: grid;
 		grid-template-columns: auto 1fr;
 		grid-template-rows: repeat(4, 1fr);
-    /* grid-template-rows: 1fr; */
+		/* grid-template-rows: 1fr; */
 		column-gap: 0.6rem;
 		row-gap: 0.6rem;
 	}
