@@ -3,13 +3,35 @@
 	import { copyEmail } from "./helper.svelte";
 
 	// Netlify, Github,
-	let frameworks = ["Vue", "Unity Engine", "Git", "Svelte", "Node.js", "Hasura", "Postgres", "Firebase", "WSL", "Figma", "Illustrator"];
+	let frameworks = [
+		"Vue",
+		"Unity Engine",
+		"Git",
+		"Svelte",
+		"Node.js",
+		"Hasura",
+		"Postgres",
+		"Firebase",
+		"WSL",
+		"Figma",
+		"Illustrator",
+	];
 
 	// ES6
-	let codingLanguages = ["JS", "HTML", "(S)CSS", "C#", "C(++)", "(PLPG)SQL", "Python", "GraphQL", "Java"];
-	
-  // Ukulele
-  let interests = ["Drums", "Graphic Design", "PC Building", "Table Tennis"];
+	let codingLanguages = [
+		"JS",
+		"HTML",
+		"(S)CSS",
+		"C#",
+		"C(++)",
+		"GraphQL",
+		"Python",
+		"(PLPG)SQL",
+		"Java",
+	];
+
+	// Ukulele
+	let interests = ["Drums", "Graphic Design", "PC Building", "Table Tennis"];
 	let languages = ["English", "Chinese", "Malay"];
 </script>
 
@@ -19,7 +41,6 @@
 			<Link
 				to="/"
 				class="px-4 py-2 inline-block leading-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3 text-gray-700 font-mono"
-				
 			>
 				<p class="text-gray-700 font-bold font-mono">
 					<i class="fas fa-arrow-left mr-3" />Go Back
@@ -33,42 +54,40 @@
 		</div>
 
 		<section class="resume bg-white shadow-xl">
-			<aside class="sidebar bg-red-50 px-5 pt-5 pb-6 border-red-400 border-t-4">
-				<h1 class="text-gray-700 text-5xl -font-bold font-extrabold mb-1">Ng Bob Shoaun</h1>
-				<h3 class="text-red-400 font- text-xl mb-2">Software Developer <br />& Designer</h3>
-				<div class="info">
-					<i class="text-gray-700 text-center fas fa-phone" />
-					<p class="text-gray-700 text-sm">+60 18-2943 168</p>
+			<section class="sidebar relative flex flex-col justify-between">
+				<aside class="bg-red-50 px-5 pt-5 pb-6 border-red-400 border-t-4">
+					<h1 class="text-gray-700 text-5xl -font-bold font-extrabold mb-1">Ng Bob Shoaun</h1>
+					<h3 class="text-red-400 font- text-xl mb-2">Software Developer <br />& Designer</h3>
+					<div class="info">
+						<i class="text-gray-700 text-center fas fa-phone" />
+						<p class="text-gray-700 text-sm">+60 18-2943 168</p>
 
-          <i class="text-gray-700 text-center fas fa-globe" />
-					<a
-						href="https://www.bobng.me/"
-						target="_blank"
-						class="text-gray-700 text-sm">bobng.me</a
-					>
+						<i class="text-gray-700 text-center fas fa-globe" />
+						<a href="https://www.bobng.me/" target="_blank" class="text-gray-700 text-sm"
+							>bobng.me</a
+						>
 
-					<i class="text-gray-700 text-center fas fa-envelope" />
-					<p class="text-gray-700 text-sm cursor-pointer" on:click={copyEmail}>
-						ngbobshoaun2000@gmail
-					</p>
-					<i class="text-gray-700 text-center fab fa-linkedin" />
-					<a
-						href="https://www.linkedin.com/in/ngbobshoaun/"
-						target="_blank"
-						class="text-gray-700 text-sm">linkedin.com/in/ngbobshoaun</a
-					>
-					<i class="text-gray-700 text-center fab fa-github" />
-					<a href="https://github.com/BobShoaun" target="_blank" class="text-gray-700 text-sm"
-						>github.com/BobShoaun</a
-					>
-					<i class="text-gray-700 text-center fas fa-map-marker-alt" />
-					<p class="text-gray-700 text-sm">Toronto, Canada.</p>
-					<i class="text-gray-700 text-center fas fa-home" />
-					<p class="text-gray-700 text-sm">Selangor, Malaysia.</p>
-				</div>
-			</aside>
+						<i class="text-gray-700 text-center fas fa-envelope" />
+						<p class="text-gray-700 text-sm cursor-pointer" on:click={copyEmail}>
+							ngbobshoaun2000@gmail
+						</p>
+						<i class="text-gray-700 text-center fab fa-linkedin" />
+						<a
+							href="https://www.linkedin.com/in/ngbobshoaun/"
+							target="_blank"
+							class="text-gray-700 text-sm">linkedin.com/in/ngbobshoaun</a
+						>
+						<i class="text-gray-700 text-center fab fa-github" />
+						<a href="https://github.com/BobShoaun" target="_blank" class="text-gray-700 text-sm"
+							>github.com/BobShoaun</a
+						>
+						<i class="text-gray-700 text-center fas fa-map-marker-alt" />
+						<p class="text-gray-700 text-sm">Toronto, Canada.</p>
+						<i class="text-gray-700 text-center fas fa-home" />
+						<p class="text-gray-700 text-sm">Selangor, Malaysia.</p>
+					</div>
+				</aside>
 
-			<article class="content flex flex-col justify-between">
 				<div>
 					<h2
 						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
@@ -78,11 +97,96 @@
 					<p class="text-gray-600 text-sm">
 						<q
 							>Skilled and diligent programmer with an eye for good designs. Always seeking to learn
-							and improve on existing ways. A resourceful and avid self-learner passionate in coding
-							since the age of 14.</q
+							and improve on existing ways. A resourceful and avid self-learner passionate in
+							coding.</q
 						>
 					</p>
 				</div>
+
+				<div>
+					<h2
+						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-1"
+					>
+						Coding Languages
+					</h2>
+					<div class="flex flex-wrap justify-start">
+						{#each codingLanguages as codingLanguage}
+							<h4 class="bg-red-400 px-2.5 py-1.5 mt-1.5 mr-1.5 font-bold text-sm text-white">
+								{codingLanguage}
+							</h4>
+						{/each}
+					</div>
+				</div>
+
+				<div>
+					<h2
+						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-1"
+					>
+						Tools & Frameworks
+					</h2>
+					<div class="flex flex-wrap justify-start">
+						{#each frameworks as framework}
+							<h4 class="bg-red-400 px-2.5 py-1.5 mt-1.5 mr-1.5 font-bold text-sm text-white">
+								{framework}
+							</h4>
+						{/each}
+					</div>
+				</div>
+
+				<!-- <div>
+					<h2
+						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+					>
+						Interests
+					</h2>
+					<div class="flex flex-wrap justify-start">
+						{#each interests as interest}
+							<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
+								{interest}
+							</h4>
+						{/each}
+					</div>
+				</div> -->
+
+				<!-- <div>
+					<h2
+						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
+					>
+						Languages
+					</h2>
+					<div class="flex flex-wrap justify-start">
+						{#each languages as language}
+							<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
+								{language}
+							</h4>
+						{/each}
+					</div>
+				</div> -->
+
+				<div class="bg-red-50 border-red-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
+					<h3 class="text-red-400 text-sm">
+						Last updated on: <span class="italic">9 March 2021</span>
+					</h3>
+				</div>
+			</section>
+
+      <!-- CONTENT SECTION -->
+
+			<article class="content flex flex-col justify-between">
+				<!-- <div>
+					<h2
+						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2"
+					>
+						About Me
+					</h2>
+					<p class="text-gray-600 text-sm">
+						<q
+							>Skilled and diligent programmer with an eye for good designs. Always seeking to learn
+							and improve on existing ways. A resourceful and avid self-learner passionate in
+							coding.</q
+						>
+					</p>
+				</div> -->
 
 				<div>
 					<h2
@@ -97,8 +201,8 @@
 					</div>
 
 					<p class="text-sm text-gray-400 float-right text-right">Sept 2019 - Present</p>
-					<p class="text-sm text-gray-400 mb-1 italic">Computer Science Specialist (2nd year)</p>
-					<ul class="list-square text-gray-700 pl-5 text-sm mb-1">
+					<p class="text-sm text-gray-400 mb-0.5 italic">Computer Science Specialist (2nd year)</p>
+					<ul class="list-square text-gray-700 pl-5 text-sm">
 						<li>
 							MAT137: Calculus!
 							<p class="float-right">A+</p>
@@ -125,7 +229,7 @@
 					</h2>
 					<h3 class="text-gray-700 text-lg font-bold">Pathforge Pte. Ltd.</h3>
 					<p class="text-sm text-gray-400 float-right text-right">Sept 2020 - Present</p>
-					<p class="text-sm text-gray-400 mb-1 italic">Fullstack developer</p>
+					<p class="text-sm text-gray-400 mb-0.5 italic">Fullstack developer</p>
 					<ul class="list-square text-gray-600 pl-5 text-sm mb-2">
 						<li>Communicated with developers and designers in a startup environment.</li>
 						<li>
@@ -133,17 +237,18 @@
 							programming and web dev.
 						</li>
 						<li>
-							Used technologies like Vue, Graphql, and Hasura to build a site that seeks to
-							revolutionize self-learning.
+							Used technologies like Vue, Graphql, Hasura, and Postgres to build a social e-learning site.
 						</li>
 					</ul>
-					<h3 class="text-gray-700 text-lg font-bold">N2N Berhad</h3>
+
+					<h3 class="text-gray-700 text-lg font-bold">N2N Connect Bhd.</h3>
 					<p class="text-sm text-gray-400 float-right text-right">May - Aug 2019</p>
-					<p class="text-sm text-gray-400 mb-1 italic">Intern / Frontend developer</p>
+					<p class="text-sm text-gray-400 mb-0.5 italic">Intern / Frontend developer</p>
 					<ul class="list-square text-gray-600 pl-5 text-sm">
-						<li>Revamped the frontend for the company's internal timesheet management system.</li>
+						<li>Revamped the frontend of the company's internal timesheet management system using Angular.js.</li>
 						<li>Fixed bugs and introduced new quality of life features.</li>
 						<li>Presented my work during head of department meetings.</li>
+            <li>Wrote extensive documentation for a proper handover of the project in the future.</li>
 					</ul>
 				</div>
 
@@ -153,101 +258,53 @@
 					>
 						Projects
 					</h2>
-					<div class="flex justify-between items-baseline mb-1">
+
+          <div class="flex justify-between items-baseline mb-0.5">
+						<h3 class="text-gray-700 text-lg font-bold">Course Checker</h3>
+						<p class="text-sm text-gray-400 italic">Personal project</p>
+					</div>
+					<ul class="list-square text-gray-600 pl-5 text-sm mb-2">
+						<li>
+							Helps students plan courses for the upcoming semester by dynamically generating a
+							visual timetable.
+						</li>
+						<li>
+							Highly customizable, lets you change the colors of the timetable, and show/hide
+							additional info and timestamps.
+						</li>
+            <li>Developed with the Unity Engine, and built as a WebGL frame embedded into a website using HTML + CSS.</li>
+					</ul>
+
+					<div class="flex justify-between items-baseline mb-0.5">
 						<h3 class="text-gray-700 text-lg font-bold">Assembly Doodle Jump</h3>
 						<p class="text-sm text-gray-400 italic">Final academic project</p>
 					</div>
 					<ul class="list-square text-gray-600 pl-5 text-sm mb-2">
 						<li>
-							Simple game coded from scratch using MIPS assembly as a final project for CSC258.
+							Simple game coded from scratch using MIPS assembly running on the MARS simulator.
 						</li>
 						<li>
-							Features include sound effects, powerups like springs and jetpacks, and various
-							platform types.
+							Features sound effects, powerups like springs and jetpacks, different platform types,
+							and scalable difficulty.
 						</li>
 					</ul>
 
-					<div class="flex justify-between items-baseline mb-1">
-						<h3 class="text-gray-700 text-lg font-bold">Course Checker</h3>
+					<div class="flex justify-between items-baseline mb-0.5">
+						<h3 class="text-gray-700 text-lg font-bold">Water Chef</h3>
 						<p class="text-sm text-gray-400 italic">Personal project</p>
 					</div>
 					<ul class="list-square text-gray-600 pl-5 text-sm">
 						<li>
-							Helps students plan courses for the upcoming semester by dynamically generating a
-							visual timetable.
+							A fast paced restaurant simulator game developed with Unity Engine and written in C#.
 						</li>
-						<li>Made for Taylor's university ADP students.</li>
+            <!-- <li>Developed custom audio manager component for managing audio tracks.</li> -->
+						<li>
+							Complete with multiple levels, objectives, animations, music, and save load functionality. 
+						</li>
 					</ul>
+
 				</div>
 			</article>
-
-			<section class="stats relative flex flex-col justify-between">
-				<div>
-					<h2
-						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
-					>
-						Coding Languages
-					</h2>
-					<div class="flex flex-wrap justify-start">
-						{#each codingLanguages as codingLanguage}
-							<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
-								{codingLanguage}
-							</h4>
-						{/each}
-					</div>
-				</div>
-
-				<div>
-					<h2
-						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
-					>
-						Tools & Frameworks
-					</h2>
-					<div class="flex flex-wrap justify-start">
-						{#each frameworks as framework}
-							<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
-								{framework}
-							</h4>
-						{/each}
-					</div>
-				</div>
-
-				<div>
-					<h2
-						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
-					>
-						Interests
-					</h2>
-					<div class="flex flex-wrap justify-start">
-						{#each interests as interest}
-							<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
-								{interest}
-							</h4>
-						{/each}
-					</div>
-				</div>
-
-				<!-- <div>
-					<h2
-						class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 text-xl mb-2.5"
-					>
-						Languages
-					</h2>
-					<div class="flex flex-wrap justify-start">
-						{#each languages as language}
-							<h4 class="bg-red-400 px-2.5 py-1.5 mb-1.5 mr-1.5 font-bold text-sm text-white">
-								{language}
-							</h4>
-						{/each}
-					</div>
-				</div> -->
-
-				<div class="bg-red-50 border-red-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
-					<h3 class="text-red-400 text-sm">
-						Last updated on: <span class="italic">4 March 2021</span>
-					</h3>
-				</div>
-			</section>
 		</section>
 	</div>
 </main>
@@ -269,19 +326,17 @@
 
 		display: grid;
 		grid-template-columns: 1fr 3fr;
-		grid-template-rows: auto 1fr;
-		grid-template-areas:
-			"sidebar content"
-			"stats content";
-		column-gap: 2.5em;
-		row-gap: 2em;
+		grid-template-rows: auto;
+		grid-template-areas: "sidebar content";
+		column-gap: 2em;
+		/* row-gap: 2em; */
 
 		/* a4 size */
 		width: 21cm;
 		height: 29.7cm;
 
 		box-sizing: border-box;
-		padding: 3em;
+		padding: 2.25em;
 	}
 
 	@media print {
@@ -289,7 +344,7 @@
 			height: 100% !important;
 			width: 100% !important;
 			position: fixed !important;
-      z-index: 100000 !important;
+			z-index: 100000 !important;
 			top: 0 !important;
 			left: 0 !important;
 			margin: 0 !important;
@@ -306,12 +361,13 @@
 		display: grid;
 		grid-template-columns: auto 1fr;
 		grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: 1fr; */
 		column-gap: 0.6rem;
 		row-gap: 0.6rem;
 	}
-	.stats {
+	/* .stats {
 		grid-area: stats;
-	}
+	} */
 	.content {
 		grid-area: content;
 	}

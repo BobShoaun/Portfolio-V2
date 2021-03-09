@@ -15,7 +15,7 @@
 	async function mounted() {
 		let response = await fetch("projects.json");
 		projects = await response.json();
-    console.log(projects)
+    // console.log(projects)
 	}
 </script>
 
