@@ -1,5 +1,5 @@
 <script>
-	import Image from "./Image.svelte";
+	// import Image from "./Image.svelte";
 	import Border from "./Border.svelte";
 	// export let image = "images/pathforge.png";
 	// export let video = null;
@@ -76,10 +76,5 @@
 	</div>
 </main>
 
-<style lang="scss">
-	@screen md {
-		.ratio {
-			max-width: var(--width);
-		}
-	}
+<style>
 </style>

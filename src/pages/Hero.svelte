@@ -3,7 +3,6 @@
 	import { blur, slide } from "svelte/transition";
 	import { onMount } from "svelte";
 
-	let ready = true;
 	onMount(() => {
 		// setTimeout(() => (ready = true), 500);
 	});

@@ -1,5 +1,5 @@
 <script>
-	import Image from "./Image.svelte";
+	// import Image from "./Image.svelte";
 	import Border from "./Border.svelte";
 
 	export let image = "images/doodle jump.gif";
