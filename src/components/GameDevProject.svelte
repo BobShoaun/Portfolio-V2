@@ -1,24 +1,13 @@
 <script>
-	// import Image from "./Image.svelte";
 	import Border from "./Border.svelte";
-	// export let image = "images/pathforge.png";
-	// export let video = null;
-	// export let name = "awesome website";
-	// export let collaborators = "with some people";
-	// export let description = "none.";
-	// export let technologies = ["svelte", "tailwind css"];
-	// export let github = null;
-	// export let website = null;
 	export let project = null;
 </script>
 
 <main
-	style="-max-width: {project.width}%"
 	class="py-16 mx-4 md:m-0 flex {project.right
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >
-
 	<div data-aos="fade-left" class="mb-10">
 		{#if project.video}
 			<Border secondary>
