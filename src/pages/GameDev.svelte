@@ -48,7 +48,7 @@
 
 		<button
 			on:click={more}
-      class="py-1 px-4 bg-purple-200 border border-purple-500 hover:bg-purple-400 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
+      class="py-1 px-4 bg-purple-200 border border-purple-400 hover:bg-purple-400 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
 
 		>
 			See More

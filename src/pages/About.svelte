@@ -8,6 +8,7 @@
 	<div
 		data-aos="slide-right"
 		data-aos-offset="100"
+    data-aos-duration="700"
 		class="absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-2"
 	/>
 
@@ -23,7 +24,7 @@
 
 	<section class="section flex flex-col items-center lg:flex-row justify-between">
 
-		<div data-aos="zoom-in-left" class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28">
+		<div data-aos="zoom-in-left" data-aos-duration="700" class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28">
 			<img
 				src="images/me.jpg"
 				alt="me"

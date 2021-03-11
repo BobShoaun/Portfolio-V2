@@ -30,6 +30,7 @@
 	<div
 		data-aos="slide-down"
 		data-aos-delay="900"
+    data-aos-duration="700"
 		class="absolute background left-0 w-2/5 h-full moving-gradient-1"
 	/>
 
@@ -48,6 +49,7 @@
 
 			<form
 				data-aos="zoom-in-right"
+        data-aos-duration="700"
 				on:submit|preventDefault={submitForm}
 				name="contact"
 				action="action"
@@ -86,7 +88,7 @@
 				/>
 				<button
 					data-aos="fade-right"
-					class="bg-purple-200 border border-purple-500 hover:bg-purple-400 text-gray-700 py-1 px-4 float-right rounded-sm font-semibold font-mono"
+					class="bg-purple-200 border border-purple-400 hover:bg-purple-400 text-gray-700 py-1 px-4 float-right rounded-sm font-semibold font-mono"
 					><i class="far fa-paper-plane mr-3" />Send</button
 				>
 				<div class="clear-right" />
@@ -96,6 +98,7 @@
 	<p
 		data-aos="fade-up"
 		data-aos-offset="200"
+    data-aos-duration="700"
 		on:click={() => window.scrollTo(0, 0)}
 		class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-20 right-0 left-0"
 	>
