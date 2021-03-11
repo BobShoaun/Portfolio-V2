@@ -1,6 +1,6 @@
 <script>
 	import { Link } from "svelte-routing";
-	import { copyEmail } from "./helper.svelte";
+	import { copyEmail } from "../helper";
 
 	// Netlify, Github,
 	let frameworks = [

@@ -1,5 +1,5 @@
 <script>
-	import { copyEmail } from "./helper.svelte";
+	import { copyEmail } from "../helper";
 
 	async function submitForm() {
 		let contactForm = document.querySelector("form");

@@ -1,14 +1,14 @@
 <script>
-	import Navbar from "./Navbar.svelte";
-	import Hero from "./Hero.svelte";
-	import About from "./About.svelte";
-	import WebDev from "./WebDev.svelte";
-	import Designs from "./Designs.svelte";
-	import GameDev from "./GameDev.svelte";
-	import Contact from "./Contact.svelte";
-	import Footer from "./Footer.svelte";
-	import Resume from "./Resume.svelte";
-	import FunFacts from "./FunFacts.svelte";
+	import Navbar from "./components/Navbar.svelte";
+	import Hero from "./pages/Hero.svelte";
+	import About from "./pages/About.svelte";
+	import WebDev from "./pages/WebDev.svelte";
+	import Designs from "./pages/Designs.svelte";
+	import GameDev from "./pages/GameDev.svelte";
+	import Contact from "./pages/Contact.svelte";
+	import Footer from "./pages/Footer.svelte";
+	import Resume from "./pages/Resume.svelte";
+	import FunFacts from "./pages/FunFacts.svelte";
 
 	import { Router, Route } from "svelte-routing";
 	export let url = ""; //This property is necessary declare to avoid ignore the Router

@@ -1,5 +1,5 @@
 <script>
-	import GameDevProject from "./GameDevProject.svelte";
+	import GameDevProject from "../components/GameDevProject.svelte";
 	import { onMount } from "svelte";
 
 	function more() {

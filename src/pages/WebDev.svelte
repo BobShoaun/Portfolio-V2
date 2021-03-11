@@ -1,5 +1,5 @@
 <script>
-	import WebDevProject from "./WebDevProject.svelte";
+	import WebDevProject from "../components/WebDevProject.svelte";
 	import { onMount } from "svelte";
 
 	function more() {

@@ -1,7 +1,4 @@
 <script>
-	import Image from "./Image.svelte";
-	import Border from "./Border.svelte";
-	import { Link } from "svelte-routing";
 </script>
 
 <main
