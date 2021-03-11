@@ -9,6 +9,7 @@
 	export let technologies = ["unity", "c#"];
 	export let github = null;
 	export let website = null;
+	// export let privateRepo = true;
 	export let right = false;
 </script>
 
@@ -54,13 +55,17 @@
 		{#if github || website}
 			<div data-aos={right ? "fade-right" : "fade-left"} data-aos-delay="400" class="float-right">
 				{#if github}
-					<a href={github} target="_blank"
-						><i class="text-gray-800 dark:text-gray-50 fa-lg fab fa-md fa-github mr-4" /></a
+					<a href={github} target="_blank" class="inline-block text-xl"
+						><i class="text-gray-800 dark:text-gray-50 fab fa-github mr-5" /></a
 					>
+				{:else}
+					<p class="text-gray-400 dark:text-gray-500 font-mono font-semibold inline-block mr-5 text-lg">
+						private <i class="text-gray-400 dark:text-gray-500 fas fa-code" />
+					</p>
 				{/if}
 				{#if website}
-					<a href={website} target="_blank"
-						><i class="text-gray-800 dark:text-gray-50 fa-lg fas fa-external-link-alt" /></a
+					<a href={website} target="_blank" class="inline-block text-lg"
+						><i class="text-gray-800 dark:text-gray-50 fas fa-external-link-alt" /></a
 					>
 				{/if}
 			</div>

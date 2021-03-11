@@ -50,13 +50,13 @@
 		{#if project.github || project.website}
 			<div data-aos="zoom-in-left" data-aos-delay="400" class="float-right">
 				{#if project.github}
-					<a href={project.github} target="_blank"
-						><i class="text-gray-800 dark:text-gray-50 fab fa-lg fa-github mr-4" /></a
+					<a href={project.github} target="_blank" class="text-xl"
+						><i class="text-gray-800 dark:text-gray-50 fab fa-github" /></a
 					>
 				{/if}
 				{#if project.website}
-					<a href={project.website} target="_blank"
-						><i class="text-gray-800 dark:text-gray-50 fas fa-lg fa-external-link-alt" /></a
+					<a href={project.website} target="_blank" class="text-lg"
+						><i class="text-gray-800 dark:text-gray-50 fas fa-external-link-alt ml-5" /></a
 					>
 				{/if}
 			</div>

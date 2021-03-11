@@ -91,7 +91,7 @@
 	</nav>
 
 	<button class="lg:hidden border-none">
-		<button on:click={() => (open = !open)} class="border-none text-lg dark:text-white"
+		<button on:click={() => (open = !open)} class="text-lg dark:text-white focus:outline-none"
 			><i class="fas fa-bars" /></button
 		>
 
@@ -106,7 +106,7 @@
 			>
 				<button
 					on:click={() => (open = false)}
-					class="text-right text-lg text-gray-800 dark:text-gray-50 float-right bg-gray-50 dark:bg-gray-800 px-3 py-1 mb-2 mr-2 border-none"
+					class="text-right text-lg text-gray-800 dark:text-gray-50 float-right bg-gray-50 dark:bg-gray-800 px-3 py-1 mb-2 mr-4 focus:outline-none"
 					><i class="fas fa-times fa-sm" /></button
 				>
 				<div class="clear-right" />
@@ -180,7 +180,7 @@
 					data-aos="flip-up"
 					data-aos-delay="400"
 					on:click={toggleTheme}
-					class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50 rounded-md"
+					class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50 rounded-md focus:outline-none"
 					><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
 				>
 			</div>
