@@ -8,7 +8,7 @@
     "website": "https://pathforge.co/"
 	},
 	{
-		"name": "ADP Timetabler (aka Course Checker)",
+		"name": "ADP Timetabler <br>(aka Course Checker)",
 		"image": "images/course-checker 2.png",
 		"collaborators": "by myself",
 		"description": "A web application for students in the ADP program of Taylor’s university to generate a visually appealing timetable based on courses they want to take for their next semester.",

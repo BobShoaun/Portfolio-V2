@@ -27,7 +27,7 @@
 			data-aos={right ? "fade-right" : "fade-left"}
 			class="text-2xl font-bold lg:text-3xl dark:text-gray-50"
 		>
-			{name}
+			{@html name}
 		</h1>
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
