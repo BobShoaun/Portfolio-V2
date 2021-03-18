@@ -31,7 +31,7 @@
   <section class="section">
 		<h2 data-aos="fade" class="title mb-6 text-center font-mono">/* Game development */</h2>
 		<h5 data-aos="fade" class="subtitle mb-20 text-center max-w-xl mx-auto">
-			Game development was what got me into coding in the first place. Here are some featured game dev projects I've worked on.
+			Game development was what got me into coding in the first place. Here are some featured game development projects I've worked on.
 		</h5>
 		<!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
 		<div class="md:flex md:flex-wrap md:justify-between w-auto">

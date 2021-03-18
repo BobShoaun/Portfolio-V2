@@ -3,7 +3,7 @@
 		"name": "Pathforge",
 		"image": "images/pathforge.png",
 		"collaborators": "with pathforge team",
-		"description": "An elearning site that aims to redefine the self learning experience. It provides a community for online learners to help eachother out and step through the materials together.",
+		"description": "An e-learning site that aims to redefine the self learning experience. It provides a community for online learners to help each other out and step through the materials together.",
 		"technologies": ["vue", "buefy", "graphql", "postgres"],
     "website": "https://pathforge.co/"
 	},
@@ -11,7 +11,7 @@
 		"name": "ADP Timetabler <br>(aka Course Checker)",
 		"image": "images/course-checker 2.png",
 		"collaborators": "by myself",
-		"description": "A web application for students in the ADP program of Taylor’s university to generate a visually appealing timetable based on courses they want to take for their next semester.",
+		"description": "A web application for students in the ADP program of Taylor’s University to generate a visually appealing timetable based on courses they want to take for their next semester.",
 		"technologies": ["html", "css", "unity", "c#", "webgl"],
 		"github": "https://github.com/BobShoaun/Course-Checker",
 		"website": "https://bobshoaun.github.io/Course-Checker/"

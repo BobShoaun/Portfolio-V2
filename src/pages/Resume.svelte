@@ -166,7 +166,7 @@
 
 				<div class="bg-red-50 border-red-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full">
 					<h3 class="text-red-400 text-sm">
-						Last updated on: <span class="italic">9 March 2021</span>
+						Last updated on: <span class="italic">18 March 2021</span>
 					</h3>
 				</div>
 			</section>
@@ -298,7 +298,7 @@
 							and scalable difficulty.
 						</li>
 					</ul>
-
+<!-- 
 					<div class="flex justify-between items-baseline mb-0.5">
 						<h3 class="text-gray-700 text-lg font-bold">Water Chef</h3>
 						<p class="text-sm text-gray-400 italic">Personal project</p>
@@ -307,10 +307,22 @@
 						<li>
 							A fast paced restaurant simulator game developed with Unity Engine and written in C#.
 						</li>
-						<!-- <li>Developed custom audio manager component for managing audio tracks.</li> -->
 						<li>
 							Complete with multiple levels, objectives, animations, music, and save load
 							functionality.
+						</li>
+					</ul> -->
+
+          <div class="flex justify-between items-baseline mb-0.5">
+						<h3 class="text-gray-700 text-lg font-bold">Fishackathon 2018</h3>
+						<p class="text-sm text-gray-400 italic">by HackerNest</p>
+					</div>
+					<ul class="list-square text-gray-600 pl-5 text-sm">
+						<li>
+              Built an andriod app to generate awareness of region specific fishing laws.
+						</li>
+						<li>
+							Presented to judges working in the fishing industry.
 						</li>
 					</ul>
 				</div>
