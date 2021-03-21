@@ -31,7 +31,7 @@
 			prevScrollpos = currentScrollPos;
 		};
 
-    // show navbar when hover over
+		// show navbar when hover over
 		onmousemove = e => {
 			if (e.clientY < navbar.offsetHeight) navbar.style.top = "0";
 		};
@@ -42,14 +42,17 @@
 	id="navbar"
 	class="flex items-center justify-between px-6 lg:px-10 py-4 top-0 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50"
 >
-	<div class="logo font-semibold">
+	<div class="logo flex items-center">
 		<div
 			data-aos="flip-up"
 			data-aos-duration="700"
-			class="bg-purple-400 w-4 h-4 mr-3 inline-block"
-		/>
-		<a href="/#home" data-aos="flip-up" class="hover:no-underline inline-block"
-			><p class="text-gray-800 dark:text-gray-50">Ng Bob Shoaun</p></a
+			class="bg-gradient-to-br from-purple-400 to-red-400 w-6 h-6 mr-5 relative"
+		>
+    <!-- <div class="logo-element bg-gray-900 w-1 h-5"></div> -->
+			<p class="logo-type text-white dark:text-gray-900 text-3xl font-black absolute bottom-0">B</p>
+		</div>
+		<a href="/#home" data-aos="flip-up" class="hover:no-underline"
+			><p class="text-gray-800 dark:text-gray-50 font-semibold">Ng Bob Shoaun</p></a
 		>
 	</div>
 	<nav use:links class="hidden lg:flex links justify-between items-center space-x-12">
@@ -192,4 +195,13 @@
 	#navbar {
 		transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	}
+  .logo-type {
+    bottom: -.7rem;
+    left: -.46rem;
+    font-size: 2rem;
+  }
+  /* .logo-element {
+    margin-left: 1.29rem;
+    width: .21rem;
+  } */
 </style>
