@@ -84,8 +84,8 @@
 						>
 						<i class="text-gray-700 text-center fas fa-map-marker-alt" />
 						<p class="text-gray-700 text-sm">Toronto, Canada.</p>
-						<i class="text-gray-700 text-center fas fa-home" />
-						<p class="text-gray-700 text-sm">Selangor, Malaysia.</p>
+						<!-- <i class="text-gray-700 text-center fas fa-home" />
+						<p class="text-gray-700 text-sm">Selangor, Malaysia.</p> -->
 					</div>
 				</aside>
 
