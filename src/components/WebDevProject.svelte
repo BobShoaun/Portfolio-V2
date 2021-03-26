@@ -22,7 +22,7 @@
 	<!-- <div data-aos={right ? "fade-left" : "fade-right"} class="mb-5">
 		<Image src={image} alt={name} />
 	</div> -->
-	<div class={right ? "lg:order-first lg:pr-28" : "lg:pl-28"}>
+	<div class="{right ? "lg:order-first lg:pr-28" : "lg:pl-28"} lg:max-w-3/5">
 		<h1
 			data-aos={right ? "fade-right" : "fade-left"}
 			class="text-2xl font-bold lg:text-3xl dark:text-gray-50"

@@ -10,7 +10,7 @@
 
 	let projects = [];
 	$: visibleProjects = projects.slice(0, projectsNum);
-	let projectsNum = 3;
+	let projectsNum = 4;
 
 	async function mounted() {
 		let response = await fetch("projects_web.json");
