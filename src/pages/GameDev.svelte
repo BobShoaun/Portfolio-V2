@@ -3,14 +3,14 @@
 	import { onMount } from "svelte";
 
 	function more() {
-    projectsNum += 4;
+		projectsNum += 4;
 	}
 
 	onMount(mounted);
 
 	let projects = [];
-  $: visibleProjects = projects.slice(0, projectsNum);
-  let projectsNum = 4;
+	$: visibleProjects = projects.slice(0, projectsNum);
+	let projectsNum = 4;
 
 	async function mounted() {
 		let response = await fetch("projects.json");
@@ -18,43 +18,47 @@
 	}
 </script>
 
-<main id="game-development" class="main relative dark:bg-gray-700 bg-gradient-to-b dark:from-gray-900 dark:to-gray-700">
-  <div class="hidden lg:block absolute left-14 top-0">
-		<div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-6" />
+<main
+	id="game-development"
+	class="main relative dark:bg-gray-700 bg-gradient-to-b dark:from-gray-900 dark:to-gray-700"
+>
+	<div
+		data-aos="slide-down"
+		data-aos-delay="900"
+		style="z-index: 0"
+		class="bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
+	/>
 
-		<p
-			class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl left-0 absolute"
-		>
-			011
-		</p>
+	<div class="hidden lg:block absolute left-14 top-0">
+		<div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-6" />
+		<p class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl left-0 absolute">011</p>
 	</div>
-  <section class="section">
+
+	<section class="section relative">
 		<h2 data-aos="fade" class="title mb-6 text-center font-mono">/* Game development */</h2>
 		<h5 data-aos="fade" class="subtitle mb-20 text-center max-w-xl mx-auto">
-			Game development was what got me into coding in the first place. Here are some featured game development projects I've worked on.
+			Game development was what got me into coding in the first place. Here are some featured game
+			development projects I've worked on.
 		</h5>
 		<!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
 		<div class="md:flex md:flex-wrap md:justify-between w-auto">
-      <!-- {#if projects} -->
+			<!-- {#if projects} -->
 			{#each visibleProjects as project}
 				<!-- <div class="m-auto"> -->
-					<GameDevProject
-            project={project}
-					/>
+				<GameDevProject {project} />
 				<!-- </div> -->
-        {/each}
-        <!-- {/if} -->
+			{/each}
+			<!-- {/if} -->
 		</div>
 
 		<button
 			on:click={more}
-      class="py-1 px-4 bg-purple-200 border border-purple-400 hover:bg-purple-400 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
-
+			class="py-1 px-4 bg-purple-200 border border-purple-400 hover:bg-purple-400 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
 		>
 			See More
 		</button>
 	</section>
-  <div class="hidden lg:block absolute right-14 bottom-0">
+	<div class="hidden lg:block absolute right-14 bottom-0">
 		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
 	</div>
 </main>

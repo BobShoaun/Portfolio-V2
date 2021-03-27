@@ -23,7 +23,7 @@
 	class="main relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
 	<div
-  data-aos="slide-down"
+		data-aos="slide-down"
 		data-aos-delay="900"
 		style="z-index: 0"
 		class="bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
@@ -31,14 +31,12 @@
 
 	<div class="hidden lg:block absolute right-14 top-0">
 		<div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-6" />
-
 		<p
 			class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right right-0 absolute"
 		>
 			010
 		</p>
 	</div>
-
 
 	<section class="section relative">
 		<h2 data-aos="fade-in" class="title mb-6 text-center font-mono">Web development_</h2>
@@ -69,7 +67,7 @@
 		</button> -->
 	</section>
 
-  <div class="hidden lg:block absolute left-14 bottom-0">
+	<div class="hidden lg:block absolute left-14 bottom-0">
 		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
 	</div>
 </main>

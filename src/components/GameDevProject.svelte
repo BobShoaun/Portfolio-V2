@@ -8,7 +8,7 @@
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >
-	<div data-aos="fade-left" class="mb-10">
+	<div data-aos="fade-left" class="mb-10 shadow-2xl">
 		{#if project.video}
 			<Border secondary>
 				<video autoplay loop muted playsinline src={project.video} class="p-2 lg:p-3 rounded-sm" />
@@ -17,8 +17,6 @@
 			<Border secondary>
 				<img src={project.image} class="p-2 lg:p-3 rounded-sm" alt={project.name} />
 			</Border>
-			<!-- <Image src={image} alt={name} /> -->
-			<!-- <img src={image} class="object-contain" alt={name} /> -->
 		{/if}
 	</div>
 

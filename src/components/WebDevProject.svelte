@@ -14,7 +14,7 @@
 </script>
 
 <main class="mx-4 lg:m-0 lg:flex lg:items-center justify-between">
-	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-5">
+	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-5 shadow-2xl">
 		<Border>
 			<img src={image} alt={name} class="p-2 lg:p-3 rounded-sm" />
 		</Border>
