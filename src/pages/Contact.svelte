@@ -1,5 +1,5 @@
 <script>
-	import { copyEmail } from "../helper";
+	import { copyToClipboard } from "../helper";
 
 	async function submitForm() {
 		let contactForm = document.querySelector("form");
@@ -30,7 +30,7 @@
 	<div
 		data-aos="slide-down"
 		data-aos-delay="900"
-    data-aos-duration="700"
+		data-aos-duration="700"
 		class="absolute background left-0 w-2/5 h-full moving-gradient-1"
 	/>
 
@@ -43,13 +43,23 @@
 		<div class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-20 mb-16">
 			<h2 data-aos="zoom-in-right" class="title mb-4 heading font-mono">Contact(Me);</h2>
 			<h5 data-aos="zoom-in-right" class="subtitle mb-10">
-				Shoot me a message and I will get back to you as soon as I can. My email is:
-				<span class="cursor-pointer" on:click={copyEmail}>ngbobshoaun2000@gmail.com</span>.
+				Shoot me a message and I will get back to you as soon as I can. <br />
+				My emails are
+				<span
+					class="cursor-pointer bg-green-300 dark:text-gray-800"
+					on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}>ngbobshoaun2000@gmail.com</span
+				>
+				and
+				<span
+					class="cursor-pointer bg-blue-300 dark:text-gray-800"
+					on:click={() => copyToClipboard("bobshoaun.ng@mail.utoronto.ca")}
+					>bobshoaun.ng@mail.utoronto.ca</span
+				>
 			</h5>
 
 			<form
 				data-aos="zoom-in-right"
-        data-aos-duration="700"
+				data-aos-duration="700"
 				on:submit|preventDefault={submitForm}
 				name="contact"
 				action="action"
@@ -98,7 +108,7 @@
 	<p
 		data-aos="fade-up"
 		data-aos-offset="200"
-    data-aos-duration="700"
+		data-aos-duration="700"
 		on:click={() => window.scrollTo(0, 0)}
 		class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-20 right-0 left-0"
 	>

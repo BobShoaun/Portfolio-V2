@@ -1,6 +1,6 @@
 <main class=" main bg-gray-50 dark:bg-gray-700 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900">
 	<section class="section">
-		<div data-aos="fade-down" class="text-center space-x-5 mb-10">
+		<div data-aos="fade-down" class="text-center space-x-10 mb-10">
 			<a href="https://github.com/BobShoaun" target="_blank"
 				><i class="text-gray-800 dark:text-gray-50 fab fa-github fa-lg" /></a
 			>
@@ -20,8 +20,8 @@
 		<p data-aos="-fade-up" class="text-medium font-mono text-center mb-8 dark:text-gray-50">
 			Created by Ng Bob Shoaun. &copy; 2021
     </p>
-		<p data-aos="" class="text-medium text-center dark:text-gray-300">
+		<!-- <p data-aos="" class="text-medium text-center dark:text-gray-300">
 			This site is still a work in progress.
-    </p>
+    </p> -->
 	</section>
 </main>

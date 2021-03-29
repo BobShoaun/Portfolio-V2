@@ -1,6 +1,6 @@
 <script>
 	import { Link } from "svelte-routing";
-	import { copyEmail } from "../helper";
+	import { copyToClipboard } from "../helper";
 
 	// Netlify, Github,
 	let frameworks = [
@@ -69,7 +69,7 @@
 						>
 
 						<i class="text-gray-700 text-center fas fa-envelope" />
-						<p class="text-gray-700 text-sm cursor-pointer" on:click={copyEmail}>
+						<p class="text-gray-700 text-sm cursor-pointer" on:click={() => copyToClipboard('ngbobshoaun2000@gmail.com')}>
 							ngbobshoaun2000@gmail
 						</p>
 						<i class="text-gray-700 text-center fab fa-linkedin" />
@@ -83,7 +83,7 @@
 							>github.com/BobShoaun</a
 						>
 						<i class="text-gray-700 text-center fas fa-map-marker-alt" />
-						<p class="text-gray-700 text-sm">Toronto, Canada.</p>
+						<p class="text-gray-700 text-sm">Toronto, Ontario, Canada</p>
 						<!-- <i class="text-gray-700 text-center fas fa-home" />
 						<p class="text-gray-700 text-sm">Selangor, Malaysia.</p> -->
 					</div>
@@ -232,7 +232,7 @@
 					<p class="text-sm text-gray-400 float-right text-right">Sept 2020 - Present</p>
 					<p class="text-sm text-gray-400 mb-0.5 italic">Fullstack developer</p>
 					<ul class="list-square text-gray-600 pl-5 text-sm mb-2">
-						<li>Communicated with developers and designers in a startup environment.</li>
+						<li>Worked with developers and designers in a startup environment.</li>
 						<li>
 							Conducted zoom lectures and provided mentorship to groups of learners about
 							programming and web dev.
@@ -241,6 +241,9 @@
 							Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning
 							site.
 						</li>
+            <li>
+              Developed a CMS for course materials, integrated leaderboards, and the entire feed and company flow.
+            </li>
 					</ul>
 
 					<h3 class="text-gray-700 text-lg font-bold">N2N Connect Bhd.</h3>
@@ -319,7 +322,7 @@
 					</div>
 					<ul class="list-square text-gray-600 pl-5 text-sm">
 						<li>
-              Built an andriod app to generate awareness of region specific fishing laws.
+              Built an app to generate awareness of region specific fishing laws.
 						</li>
 						<li>
 							Presented to judges working in the fishing industry.
