@@ -19,7 +19,7 @@
 	<div
 		data-aos="slide-down"
 		data-aos-delay="700"
-    data-aos-duration="700"
+		data-aos-duration="700"
 		class="absolute background top-0 right-0 h-1/2 w-full md:w-1/3 md:h-full moving-gradient-1"
 	/>
 
@@ -31,14 +31,14 @@
 			<div
 				data-aos="flip-up"
 				data-aos-delay="600"
-        data-aos-duration="700"
+				data-aos-duration="700"
 				class="bg-purple-400 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2"
 			/>
 			<!-- {#if ready} -->
 			<h1
 				data-aos="zoom-in-right"
 				data-aos-delay="800"
-        data-aos-duration="700"
+				data-aos-duration="700"
 				class="font-mono text-2xl md:text-4xl lg:text-5xl font-extrabold text-gray-600 dark:text-white mb-5"
 			>
 				{welcomeMessage}
@@ -46,7 +46,7 @@
 			<p
 				data-aos="zoom-in-right"
 				data-aos-delay="1000"
-        data-aos-duration="700"
+				data-aos-duration="700"
 				class="font-mono text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
 			>
 				// I'm Ng Bob Shoaun. I write good code with good designs.
@@ -80,7 +80,7 @@
 	<div
 		data-aos="slide-up"
 		data-aos-delay="1500"
-    data-aos-duration="700"
+		data-aos-duration="700"
 		class="hidden lg:block absolute left-14 bottom-0 text-center"
 	>
 		<a href="https://github.com/BobShoaun" target="_blank" class="block mb-8"
@@ -90,8 +90,11 @@
 			<i class="text-gray-800 dark:text-gray-50 fab fa-linkedin-in fa-lg" /></a
 		>
 
-		<a href="https://www.instagram.com/n.bob.s/" target="_blank" class="block mb-8"
+		<!-- <a href="https://www.instagram.com/n.bob.s/" target="_blank" class="block mb-8"
 			><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
+		>	 -->
+		<a href="https://codepen.io/bobshoaun" target="_blank" class="block mb-8"
+			><i class="text-gray-800 dark:text-gray-50 fab fa-codepen fa-lg" /></a
 		>
 
 		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
@@ -101,7 +104,7 @@
 	<p
 		data-aos="fade-down"
 		data-aos-delay="1500"
-    data-aos-duration="700"
+		data-aos-duration="700"
 		on:click={() => document.getElementById("about").scrollIntoView()}
 		class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-28 right-0 left-0"
 	>
