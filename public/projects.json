@@ -3,7 +3,7 @@
 		"name": "Assembly Doodle Jump",
 		"video": "videos/doodle jump.mp4",
 		"collaborators": "by myself",
-		"description": "Doodle jump game recreated using assembly language. It features different types of platforms, and powerups like springs and jetpacks. This was a final project for my CSC258 course.",
+		"description": "Doodle jump game recreated using assembly language. It features different types of platforms, and powerups like springs and jetpacks.",
 		"technologies": ["mips assembly", "mars simulator"],
 		"github": "https://github.com/BobShoaun/Assembly-Doodle-Jump",
     "width": 30
@@ -13,7 +13,7 @@
     "video": "videos/water chef.mp4",
     "collaborators": "by myself",
     "description": "A fast paced restaurant management game, inspired by games like hot dog bush. You are a chef specializing in serving water to very demanding and impatient customers.",
-    "technologies": ["unity", "c#"],
+    "technologies": ["unity", "c#", "photoshop"],
     "width": 55
   },
   {
