@@ -20,7 +20,7 @@
 		"name": "Countries of the World",
 		"image": "images/countries-of-the-world.png",
 		"collaborators": "with my students",
-		"description": "A website displaying information about all the coutries in the world, gathered from an external api. It was built in less than 3 hours whilst teaching my students about the basics of the fetch api and javascript's promise callback chains.",
+		"description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst teaching my students about the basics of the fetch api and javascript's promise callback chains.",
 		"technologies": ["html", "css", "js", "restcountries api"],
 		"github": "https://github.com/BobShoaun/Countries-Of-The-World",
 		"website": "https://bobshoaun.github.io/Countries-Of-The-World/"
