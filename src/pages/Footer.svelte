@@ -8,9 +8,9 @@
 				<i class="text-gray-800 dark:text-gray-50 fab fa-linkedin-in fa-lg" /></a
 			>
 
-			<!-- <a href="https://www.instagram.com/n.bob.s/" target="_blank"
+			<a href="https://www.instagram.com/n.bob.s/" target="_blank"
 				><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
-			> -->
+			>
 
 			<a href="https://codepen.io/bobshoaun" target="_blank"
 				><i class="text-gray-800 dark:text-gray-50 fab fa-codepen fa-lg" /></a

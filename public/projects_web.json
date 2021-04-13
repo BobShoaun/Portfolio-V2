@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Pathforge",
-		"image": "images/pathforge-3.png",
+		"image": "images/pathforge.png",
 		"collaborators": "with pathforge team",
 		"description": "An e-learning site that aims to redefine the self learning experience. It provides a community for online learners to help each other out and step through the materials together.",
 		"technologies": ["vue", "buefy", "graphql", "postgres"],
@@ -22,8 +22,8 @@
 		"collaborators": "with my students",
 		"description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst teaching my students about the basics of the fetch api and javascript's promise callback chains.",
 		"technologies": ["html", "css", "js", "restcountries api"],
-		"github": "https://github.com/BobShoaun/Countries-Of-The-World",
-		"website": "https://bobshoaun.github.io/Countries-Of-The-World/"
+		"github": "https://github.com/BobShoaun/Countries-of-the-World",
+		"website": "https://bobshoaun.github.io/Countries-of-the-World/"
 	},
 	{
 		"name": "things to do",

@@ -90,12 +90,13 @@
 			<i class="text-gray-800 dark:text-gray-50 fab fa-linkedin-in fa-lg" /></a
 		>
 
-		<!-- <a href="https://www.instagram.com/n.bob.s/" target="_blank" class="block mb-8"
+		<a href="https://www.instagram.com/n.bob.s/" target="_blank" class="block mb-8"
 			><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
-		>	 -->
-		<a href="https://codepen.io/bobshoaun" target="_blank" class="block mb-8"
+		>	
+    
+		<!-- <a href="https://codepen.io/bobshoaun" target="_blank" class="block mb-8"
 			><i class="text-gray-800 dark:text-gray-50 fab fa-codepen fa-lg" /></a
-		>
+		> -->
 
 		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
 	</div>
