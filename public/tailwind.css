@@ -25,10 +25,10 @@
 	}
 
 	.heading::before {
+		@apply w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2 rounded-lg;
+		@apply bg-purple-300;
 		content: "";
 		display: block;
-		@apply w-8 h-1.5 mb-1.5;
-		@apply bg-purple-400;
 	}
 
 	.hover-vertical {
@@ -159,5 +159,9 @@
 			border-top: 1.25rem solid rgba(167, 243, 208);
 			border-left: 1.25rem solid rgba(167, 243, 208);
 		}
+	}
+
+	.button-anim {
+		transition-duration: 0.5s !important;
 	}
 }

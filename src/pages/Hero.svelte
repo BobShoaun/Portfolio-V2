@@ -32,7 +32,7 @@
 				data-aos="flip-up"
 				data-aos-delay="600"
 				data-aos-duration="700"
-				class="bg-purple-400 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2"
+				class="bg-purple-300 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2 round-lg"
 			/>
 			<!-- {#if ready} -->
 			<h1
@@ -62,7 +62,7 @@
 			<div data-aos="flip-up" data-aos-delay="1200" data-aos-duration="700" class="">
 				<Link
 					to="resume"
-					class="px-4 py-2 mb-3 mr-3 lg:mb-0 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 text-gray-700 font-mono"
+					class="transition-colors button-anim px-4 py-2 mb-3 mr-3 lg:mb-0 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300  text-gray-700 font-mono"
 					noroute
 				>
 					<p class="text-gray-700 font-semibold font-mono">View resume</p></Link
@@ -70,7 +70,7 @@
 				<a
 					type="button"
 					href="#contact"
-					class="px-4 py-2 inline-block bg-blue-200 hover:bg-blue-300 rounded-sm border border-blue-400"
+					class="transition-colors button-anim px-4 py-2 inline-block bg-blue-200 hover:bg-blue-300 rounded-sm border border-blue-400"
 					><p class="text-gray-700 font-semibold font-mono leading-4">Let's talk</p></a
 				>
 			</div>

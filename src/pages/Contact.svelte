@@ -46,7 +46,7 @@
 			<h2 data-aos="zoom-in-right" class="title mb-4 heading font-mono">Contact(Me);</h2>
 			<h5
 				data-aos="zoom-in-right"
-				class="text-gray-500 dark:text-gray-300 text-md lg:text-xl mb-10"
+				class="text-gray-500 dark:text-gray-300 text-md lg:text-xl mb-7 lg:mb-10"
 			>
 				Shoot me a message and I will get back to you as soon as I can. <br />
 				My emails are
@@ -81,24 +81,24 @@
 				<div class="flex flex-col md:flex-row">
 					<input
 						name="name"
-						class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
+						class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
 						type="text"
-						placeholder="Name..."
+						placeholder="Your name"
 						required
 					/>
 					<input
 						name="email"
-						class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
+						class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
 						type="text"
-						placeholder="Email..."
+						placeholder="Your email"
 						required
 					/>
 				</div>
 
 				<textarea
 					name="message"
-					class="w-full px-4 py-2 mb-2 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50"
-					placeholder="Message..."
+					class="w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50 focus:outline-none"
+					placeholder="Tell me what you think!"
 					rows="10"
 					required
 				/>

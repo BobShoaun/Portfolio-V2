@@ -27,7 +27,7 @@
 		<p
 			data-aos="zoom-in-left"
 			data-aos-delay="100"
-			class="font-bold font-mono text-sm text-purple-700 mb-3 dark:text-purple-400 mb-6"
+			class="font-bold font-mono text-sm text-purple-600 dark:text-purple-300 mb-6"
 		>
 			{project.collaborators}
 		</p>

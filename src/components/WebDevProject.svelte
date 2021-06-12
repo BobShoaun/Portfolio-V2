@@ -32,14 +32,14 @@
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="100"
-			class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-6"
+			class="font-bold font-mono text-sm text-purple-600 dark:text-purple-300 mb-6"
 		>
 			{collaborators}
 		</p>
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="200"
-			class="mb-7 text-gray-700 dark:text-gray-300 lg:text-lg xl:text-xl"
+			class="mb-5 text-gray-700 dark:text-gray-300 lg:text-lg xl:text-xl"
 		>
 			{description}
 		</p>
@@ -47,31 +47,43 @@
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="300"
-			class="text-md font-mono font-semibold mb-4 dark:text-gray-100"
+			class="text-sm font-mono font-semibold mb-7 dark:text-red-300"
 		>
 			{technologies.join(" // ")}
 		</p>
 
 		{#if github || website}
-			<div data-aos={right ? "fade-right" : "fade-left"} data-aos-delay="400" class="float-right">
+			<div
+				data-aos={right ? "fade-right" : "fade-left"}
+				data-aos-delay="400"
+				class="flex items-center justify-end"
+			>
 				{#if github}
-					<a href={github} target="_blank" class="inline-block text-xl"
-						><i class="text-gray-800 dark:text-gray-50 fab fa-github mr-5" /></a
+					<a
+						href={github}
+						target="_blank"
+						class="shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-800 dark:text-gray-50 mr-6"
+					>
+						<p class="text-lg">Github</p>
+						<i class="fab fa-github ml-3 text-xl" /></a
 					>
 				{:else}
-					<p
-						class="text-gray-400 dark:text-gray-500 font-mono font-semibold inline-block mr-5 text-lg"
-					>
-						private <i class="text-gray-400 dark:text-gray-500 fas fa-code" />
-					</p>
+					<div class="flex items-center text-gray-400 dark:text-gray-500 mr-6">
+						<p class="text-lg">Private</p>
+						<i class="fas fa-code ml-3 text-xl" />
+					</div>
 				{/if}
 				{#if website}
-					<a href={website} target="_blank" class="inline-block text-lg"
-						><i class="text-gray-800 dark:text-gray-50 fas fa-external-link-alt" /></a
+					<a
+						href={website}
+						target="_blank"
+						class="flex items-center text-gray-800 dark:text-gray-50"
 					>
+						<p class="text-lg">Link</p>
+						<i class="fas fa-external-link-alt ml-3 text-lg" />
+					</a>
 				{/if}
 			</div>
-			<div class="clear-right" />
 		{/if}
 	</div>
 </main>
