@@ -89,8 +89,8 @@
 			data-aos-delay="600"
 			data-aos-duration="700"
 			on:click={toggleTheme}
-			class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md"
-			><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
+			class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md focus:outline-none"
+			><i class="{dark ? 'fa fa-moon' : 'far fa-sun'} mr-2" />{dark ? "Dark" : "Light"}</button
 		>
 	</nav>
 
@@ -184,8 +184,8 @@
 					data-aos="flip-up"
 					data-aos-delay="400"
 					on:click={toggleTheme}
-					class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50 rounded-md focus:outline-none"
-					><i class="{dark ? 'fa fa-sun' : 'far fa-moon'} mr-2" />{dark ? "Light" : "Dark"}</button
+					class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50 rounded-md focus:outline-none outline-none"
+					><i class="{dark ? 'fa fa-moon' : 'far fa-sun'} mr-2" />{dark ? "Dark" : "Light"}</button
 				>
 			</div>
 		{/if}
