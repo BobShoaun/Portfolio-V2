@@ -49,7 +49,7 @@
 				data-aos-duration="700"
 				class="font-mono text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
 			>
-				// I'm Ng Bob Shoaun. I write good code with good designs.
+				// I'm Ng Bob Shoaun. I create nice things.
 			</p>
 			<!-- {/if} -->
 			<!-- <a
@@ -92,8 +92,8 @@
 
 		<a href="https://www.instagram.com/n.bob.s/" target="_blank" class="block mb-8"
 			><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
-		>	
-    
+		>
+
 		<!-- <a href="https://codepen.io/bobshoaun" target="_blank" class="block mb-8"
 			><i class="text-gray-800 dark:text-gray-50 fab fa-codepen fa-lg" /></a
 		> -->

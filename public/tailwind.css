@@ -4,7 +4,7 @@
 
 @layer base {
 	.main {
-		@apply px-8 md:px-24 lg:px-28;
+		@apply px-5 md:px-24 lg:px-28;
 
 		/* @apply py-52 px-10 md:px-24 lg:px-52 xl:px-80 2xl:px-96 mx-auto; */
 
@@ -21,7 +21,7 @@
 	}
 
 	.subtitle {
-		@apply text-gray-500 dark:text-gray-300 text-xl;
+		@apply text-gray-500 dark:text-gray-300 text-lg lg:text-2xl;
 	}
 
 	.heading::before {

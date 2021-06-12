@@ -1,10 +1,14 @@
 <script>
-	export let secondary = false;
+	export let type = 0;
 </script>
 
 <main>
-	{#if secondary}
-		<div class="bg-gradient-to-br from-purple-400 to-red-400 rounded-sm shadow-3xl">
+	{#if type === 1}
+		<div class="bg-gradient-to-br from-purple-400 to-red-300 rounded-sm shadow-3xl">
+			<slot />
+		</div>
+	{:else if type === 2}
+		<div class="bg-gradient-to-br from-purple-300 to-red-200 rounded-sm shadow-3xl">
 			<slot />
 		</div>
 	{:else}

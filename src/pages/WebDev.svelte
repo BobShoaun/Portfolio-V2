@@ -41,11 +41,12 @@
 	<section class="section relative">
 		<h2 data-aos="fade-in" class="title mb-6 text-center font-mono">Web development_</h2>
 		<h5 data-aos="fade-in" class="subtitle mb-20 text-center">
-			Here are some web development projects I have worked on.
+			I have industry experience working as a fullstack web developer, here are some featured
+			projects.
 		</h5>
 
 		{#each visibleProjects as project, index}
-			<div class="mb-20 lg:mb-32">
+			<div class="py-20 lg:py-32">
 				<WebDevProject
 					image={project.image}
 					name={project.name}

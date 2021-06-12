@@ -14,7 +14,7 @@
 </script>
 
 <main class="mx-4 lg:m-0 lg:flex lg:items-center justify-between">
-	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-5 shadow-lg">
+	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-7 shadow-lg">
 		<Border>
 			<img src={image} alt={name} class="p-2 lg:p-3 rounded-sm" />
 		</Border>
@@ -22,24 +22,24 @@
 	<!-- <div data-aos={right ? "fade-left" : "fade-right"} class="mb-5">
 		<Image src={image} alt={name} />
 	</div> -->
-	<div class="{right ? "lg:order-first lg:pr-28" : "lg:pl-28"} lg:max-w-3/5">
+	<div class="{right ? 'lg:order-first lg:pr-28' : 'lg:pl-28'} lg:max-w-3/5">
 		<h1
 			data-aos={right ? "fade-right" : "fade-left"}
-			class="text-2xl font-bold lg:text-3xl dark:text-gray-50"
+			class="text-2xl font-bold lg:text-3xl dark:text-gray-50 mb-1.5"
 		>
 			{@html name}
 		</h1>
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="100"
-			class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-4"
+			class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-6"
 		>
 			{collaborators}
 		</p>
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="200"
-			class="mb-3 text-gray-700 dark:text-gray-300"
+			class="mb-7 text-gray-700 dark:text-gray-300 lg:text-lg xl:text-xl"
 		>
 			{description}
 		</p>
@@ -59,7 +59,9 @@
 						><i class="text-gray-800 dark:text-gray-50 fab fa-github mr-5" /></a
 					>
 				{:else}
-					<p class="text-gray-400 dark:text-gray-500 font-mono font-semibold inline-block mr-5 text-lg">
+					<p
+						class="text-gray-400 dark:text-gray-500 font-mono font-semibold inline-block mr-5 text-lg"
+					>
 						private <i class="text-gray-400 dark:text-gray-500 fas fa-code" />
 					</p>
 				{/if}

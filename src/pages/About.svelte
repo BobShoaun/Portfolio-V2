@@ -1,4 +1,5 @@
 <script>
+	import Border from "../components/Border.svelte";
 </script>
 
 <main
@@ -28,25 +29,26 @@
 			data-aos-duration="700"
 			class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28"
 		>
-			<img src="images/me.jpg" alt="me" class="rounded-sm shadow-xl" />
+			<Border type={2}>
+				<img src="images/me.jpg" alt="me" class="p-2 lg:p-3 rounded-lg shadow-xl" />
+			</Border>
 		</div>
 
 		<div class="bg-white dark:bg-gray-900 px-6 py-8 lg:py-14 lg:px-10 shadow-2xl relative">
-			<h2 data-aos="zoom-in-left" class="title mb-12 font-mono">> About me</h2>
+			<h2 data-aos="zoom-in-left" class="title mb-6 lg:mb-10 font-mono">> About me</h2>
 			<p
 				data-aos="zoom-in-left"
 				data-aos-delay="100"
 				class="text-gray-500 dark:text-gray-300 lg:text-lg"
 			>
-				Hi, I’m Bob, a passionate software developer currently earning my degree in University of
-				Toronto, alongside a part-time job as a web developer.
+				What's up? I’m Bob, a student currently earning my degree in University of Toronto, and also
+				working as a software developer.
 				<br /><br />
-				My coding journey started at the age of 14, when I created my first game that ran in a Java Applet.
-				Since then I have been driven to build quality, intuitive software with the keen interest of
-				learning new and better ways to write code; To improve on existing ways, and grow as a developer.
+				The passion to create and innovate has always been in me. I strive to build quality, intuitive
+				products with the goal of learning and improving my coding skills.
 				<br /><br />
-				My software development expertise include Javascript, Vue, SQL, Unity game engine, and C#. While
-				I'm not coding, you will find me playing video games, building computers and playing the drums.
+				My expertise include JS, React, Vue, Unity, and C#. Recently I have been intrigue with blockchain
+				technologies. Aside from coding, I enjoy playing table tennis, video games, and the drums.
 			</p>
 			<!-- <Link
 				data-aos="fade-left"

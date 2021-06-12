@@ -15,10 +15,12 @@
 		});
 
 		if (res.ok) {
-			alert("Message sent!");
+			alert("Thank you for your message! I will get back to you as soon as I can.");
 			contactForm.reset();
 		} else {
-			alert("Message failed to send...");
+			alert(
+				"Uh oh... message failed to send. You can email me directly at ngbobshoaun2000@gmail.com"
+			);
 		}
 	}
 </script>
@@ -42,7 +44,10 @@
 	<section class="section relative">
 		<div class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-20 mb-16">
 			<h2 data-aos="zoom-in-right" class="title mb-4 heading font-mono">Contact(Me);</h2>
-			<h5 data-aos="zoom-in-right" class="subtitle mb-10">
+			<h5
+				data-aos="zoom-in-right"
+				class="text-gray-500 dark:text-gray-300 text-md lg:text-xl mb-10"
+			>
 				Shoot me a message and I will get back to you as soon as I can. <br />
 				My emails are
 				<span
