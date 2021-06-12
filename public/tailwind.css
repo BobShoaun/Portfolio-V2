@@ -25,7 +25,7 @@
 	}
 
 	.heading::before {
-		@apply w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2 rounded-lg;
+		@apply w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2;
 		@apply bg-purple-300;
 		content: "";
 		display: block;
@@ -67,6 +67,8 @@
 		@apply text-gray-800 dark:text-gray-50;
 		@apply hover:bg-gray-600 hover:text-gray-50;
 		@apply dark:hover:bg-gray-50 dark:hover:text-gray-800;
+		@apply transition-colors;
+		transition-duration: 0.25s !important;
 	}
 
 	.nav-text-home {
@@ -74,6 +76,8 @@
 		@apply text-gray-800 dark:text-gray-50;
 		@apply hover:bg-purple-300 hover:text-gray-50;
 		@apply dark:hover:bg-purple-300 dark:hover:text-gray-800;
+		@apply transition-colors;
+		transition-duration: 0.25s !important;
 	}
 	/* 
   @font-face {

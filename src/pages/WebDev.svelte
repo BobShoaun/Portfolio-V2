@@ -46,7 +46,7 @@
 		</h5>
 
 		{#each visibleProjects as project, index}
-			<div class="py-20 lg:py-32">
+			<div class="py-16 lg:py-32">
 				<WebDevProject
 					image={project.image}
 					name={project.name}

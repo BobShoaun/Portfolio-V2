@@ -37,8 +37,8 @@
 	<section class="section relative">
 		<h2 data-aos="fade" class="title mb-6 text-center font-mono">/* Game development */</h2>
 		<h5 data-aos="fade" class="subtitle mb-20 text-center max-w-xl mx-auto">
-			Game development was what got me into coding in the first place. Here are some featured game
-			development projects I've worked on.
+			Game development was what got me into coding in the first place, here are some featured
+			projects.
 		</h5>
 		<!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
 		<div class="md:flex md:flex-wrap md:justify-between w-auto">
@@ -53,7 +53,7 @@
 
 		<button
 			on:click={more}
-			class="py-1 px-4 bg-purple-200 border border-purple-400 hover:bg-purple-400 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
+			class="button-anim transition-colors py-1 px-4 bg-purple-200 border border-purple-400 hover:bg-purple-300 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
 		>
 			See More
 		</button>

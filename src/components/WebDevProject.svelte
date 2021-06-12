@@ -47,7 +47,7 @@
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="300"
-			class="text-sm font-mono font-semibold mb-7 dark:text-red-300"
+			class="text-sm font-mono font-semibold mb-7 text-red-400 dark:text-red-300"
 		>
 			{technologies.join(" // ")}
 		</p>
@@ -62,22 +62,25 @@
 					<a
 						href={github}
 						target="_blank"
-						class="shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-800 dark:text-gray-50 mr-6"
+						class="shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-800 dark:text-gray-50"
 					>
 						<p class="text-lg">Github</p>
 						<i class="fab fa-github ml-3 text-xl" /></a
 					>
 				{:else}
-					<div class="flex items-center text-gray-400 dark:text-gray-500 mr-6">
+					<button
+						class="shadow-md rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
+						disabled
+					>
 						<p class="text-lg">Private</p>
 						<i class="fas fa-code ml-3 text-xl" />
-					</div>
+					</button>
 				{/if}
 				{#if website}
 					<a
 						href={website}
 						target="_blank"
-						class="flex items-center text-gray-800 dark:text-gray-50"
+						class="flex items-center text-gray-800 dark:text-gray-50 ml-6"
 					>
 						<p class="text-lg">Link</p>
 						<i class="fas fa-external-link-alt ml-3 text-lg" />

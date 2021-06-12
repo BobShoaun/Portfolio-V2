@@ -102,12 +102,12 @@
 					rows="10"
 					required
 				/>
-				<button
-					data-aos="fade-right"
-					class="bg-purple-200 border border-purple-400 hover:bg-purple-400 text-gray-700 py-1 px-4 float-right rounded-sm font-semibold font-mono"
-					><i class="far fa-paper-plane mr-3" />Send</button
-				>
-				<div class="clear-right" />
+				<div data-aos="fade-right" class="text-right">
+					<button
+						class="transition-colors button-anim bg-purple-200 border border-purple-400 hover:bg-purple-300 text-gray-700 py-1 px-4 rounded-sm font-semibold font-mono"
+						><i class="far fa-paper-plane mr-3" />Send</button
+					>
+				</div>
 			</form>
 		</div>
 	</section>
