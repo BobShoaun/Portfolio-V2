@@ -51,13 +51,13 @@
 				Shoot me a message and I will get back to you as soon as I can. <br />
 				My emails are
 				<span
-					class="cursor-pointer bg-green-300 dark:text-gray-800"
+					class="cursor-pointer bg-green-300 dark:text-gray-800 px-1"
 					on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
 					>ngbobshoaun2000@gmail.com</span
 				>
 				and
 				<span
-					class="cursor-pointer bg-blue-300 dark:text-gray-800"
+					class="cursor-pointer bg-blue-300 dark:text-gray-800 px-1"
 					on:click={() => copyToClipboard("bobshoaun.ng@mail.utoronto.ca")}
 					>bobshoaun.ng@mail.utoronto.ca</span
 				>

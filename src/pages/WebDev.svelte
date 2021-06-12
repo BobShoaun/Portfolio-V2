@@ -69,6 +69,6 @@
 	</section>
 
 	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute left-14 bottom-0">
-		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-300" />
+		<div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
 	</div>
 </main>

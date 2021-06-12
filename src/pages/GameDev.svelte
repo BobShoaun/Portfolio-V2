@@ -20,13 +20,13 @@
 
 <main
 	id="game-development"
-	class="main relative dark:bg-gray-700 bg-gradient-to-b dark:from-gray-900 dark:to-gray-700"
+	class="main relative from-gray-100 to-white  dark:bg-gray-700 bg-gradient-to-b dark:from-gray-900 dark:to-gray-700"
 >
 	<div
 		data-aos="slide-down"
 		data-aos-delay="900"
 		style="z-index: 0"
-		class="bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
+		class="from-white to-gray-200 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
 	/>
 
 	<div data-aos="slide-down" data-aos-offset="200" class="hidden lg:block absolute left-14 top-0">
@@ -59,6 +59,6 @@
 		</button>
 	</section>
 	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute right-14 bottom-0">
-		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-300" />
+		<div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
 	</div>
 </main>

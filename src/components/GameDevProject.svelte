@@ -8,7 +8,7 @@
 		? 'flex-row space-x-10'
 		: 'flex-col'} md:max-w-{project.width}"
 >
-	<div data-aos="fade-left" class="mb-7 shadow-lg">
+	<div data-aos="fade-left" class="mb-7 shadow-lg" style="height: fit-content">
 		{#if project.video}
 			<Border type={1}>
 				<video autoplay loop muted playsinline src={project.video} class="p-2 lg:p-3 rounded-sm" />
@@ -41,7 +41,7 @@
 		<p
 			data-aos="zoom-in-left"
 			data-aos-delay="300"
-			class="text-md font-semibold font-mono mb-7 text-green-400 dark:text-green-300"
+			class="text-md font-semibold font-mono mb-7 text-green-500 dark:text-green-300"
 		>
 			{project.technologies.join(" // ")}
 		</p>
