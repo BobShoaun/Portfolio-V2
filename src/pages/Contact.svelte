@@ -34,7 +34,7 @@
 		class="absolute background left-0 w-2/5 h-full moving-gradient-1"
 	/>
 
-	<div class="hidden lg:block absolute right-14 top-0">
+	<div data-aos="slide-down" data-aos-offset="200" class="hidden lg:block absolute right-14 top-0">
 		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50 mb-6" />
 
 		<p class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl right-0 absolute">100</p>
@@ -47,7 +47,8 @@
 				My emails are
 				<span
 					class="cursor-pointer bg-green-300 dark:text-gray-800"
-					on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}>ngbobshoaun2000@gmail.com</span
+					on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
+					>ngbobshoaun2000@gmail.com</span
 				>
 				and
 				<span

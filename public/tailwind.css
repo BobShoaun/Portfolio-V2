@@ -21,7 +21,7 @@
 	}
 
 	.subtitle {
-		@apply text-gray-500 dark:text-gray-300 text-lg;
+		@apply text-gray-500 dark:text-gray-300 text-xl;
 	}
 
 	.heading::before {
@@ -62,19 +62,19 @@
 		scroll-behavior: smooth;
 	}
 
-  .nav-text {
-    @apply font-mono;
-    @apply text-gray-800 dark:text-gray-50;
-    @apply hover:bg-gray-600 hover:text-gray-50;
-    @apply dark:hover:bg-gray-50 dark:hover:text-gray-800;
-  }
+	.nav-text {
+		@apply font-mono;
+		@apply text-gray-800 dark:text-gray-50;
+		@apply hover:bg-gray-600 hover:text-gray-50;
+		@apply dark:hover:bg-gray-50 dark:hover:text-gray-800;
+	}
 
-  .nav-text-home {
-    @apply font-semibold;
-    @apply text-gray-800 dark:text-gray-50;
-    @apply hover:bg-purple-300 hover:text-gray-50;
-    @apply dark:hover:bg-purple-300 dark:hover:text-gray-800;
-  }
+	.nav-text-home {
+		@apply font-semibold;
+		@apply text-gray-800 dark:text-gray-50;
+		@apply hover:bg-purple-300 hover:text-gray-50;
+		@apply dark:hover:bg-purple-300 dark:hover:text-gray-800;
+	}
 	/* 
   @font-face {
     font-family: Proxima Nova;

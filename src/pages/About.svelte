@@ -8,7 +8,7 @@
 	<div
 		data-aos="slide-right"
 		data-aos-offset="100"
-    data-aos-duration="700"
+		data-aos-duration="700"
 		class="absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-2"
 	/>
 
@@ -23,15 +23,13 @@
 	</div>
 
 	<section class="section flex flex-col items-center lg:flex-row justify-between">
-
-		<div data-aos="zoom-in-left" data-aos-duration="700" class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28">
-			<img
-				src="images/me.jpg"
-				alt="me"
-				class="rounded-sm shadow-xl"
-			/>
+		<div
+			data-aos="zoom-in-left"
+			data-aos-duration="700"
+			class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28"
+		>
+			<img src="images/me.jpg" alt="me" class="rounded-sm shadow-xl" />
 		</div>
-
 
 		<div class="bg-white dark:bg-gray-900 px-6 py-8 lg:py-14 lg:px-10 shadow-2xl relative">
 			<h2 data-aos="zoom-in-left" class="title mb-12 font-mono">> About me</h2>
@@ -63,7 +61,7 @@
 		</div>
 	</section>
 
-	<div class="hidden lg:block absolute right-14 bottom-0">
-		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
+	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute right-14 bottom-0">
+		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-300" />
 	</div>
 </main>
