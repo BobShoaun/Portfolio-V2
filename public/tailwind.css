@@ -21,7 +21,7 @@
 	}
 
 	.subtitle {
-		@apply text-gray-500 dark:text-gray-300 text-lg lg:text-2xl;
+		@apply text-gray-500 dark:text-gray-400 text-lg lg:text-2xl font-semibold;
 	}
 
 	.heading::before {

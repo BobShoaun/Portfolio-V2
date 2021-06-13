@@ -9,7 +9,7 @@
 
 	export let dark;
 
-	$: welcomeMessage = dark ? 'console.log("Hey");' : 'console.log("Hi");';
+	$: welcomeMessage = dark ? 'console.log("Hey")' : 'console.log("Hi")';
 </script>
 
 <main
@@ -39,7 +39,7 @@
 				data-aos="zoom-in-right"
 				data-aos-delay="800"
 				data-aos-duration="700"
-				class="font-mono text-2xl md:text-4xl lg:text-5xl font-extrabold text-gray-600 dark:text-white mb-5"
+				class="font-mono text-2xl md:text-4xl lg:text-4xl font-extrabold text-gray-600 dark:text-white mb-4 lg:mb-5"
 			>
 				{welcomeMessage}
 			</h1>
@@ -49,7 +49,7 @@
 				data-aos-duration="700"
 				class="font-mono text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
 			>
-				// I'm Ng Bob Shoaun. I create nice things.
+				I'm Ng Bob Shoaun. I create nice things.
 			</p>
 			<!-- {/if} -->
 			<!-- <a

@@ -39,7 +39,7 @@
 	</div>
 
 	<section class="section relative">
-		<h2 data-aos="fade-in" class="title mb-6 text-center font-mono">Web development_</h2>
+		<h2 data-aos="fade-in" class="title mb-6 text-center font-mono">&lt; Web development /&gt;</h2>
 		<h5 data-aos="fade-in" class="subtitle mb-20 text-center">
 			I have industry experience working as a fullstack web developer, here are some featured
 			projects.

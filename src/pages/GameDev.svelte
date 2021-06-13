@@ -35,7 +35,7 @@
 	</div>
 
 	<section class="section relative">
-		<h2 data-aos="fade" class="title mb-6 text-center font-mono">/* Game development */</h2>
+		<h2 data-aos="fade" class="title mb-6 text-center font-mono">// Game development</h2>
 		<h5 data-aos="fade" class="subtitle mb-20 text-center max-w-xl mx-auto">
 			Game development was what got me into coding in the first place, here are some featured
 			projects.
