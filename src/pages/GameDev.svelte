@@ -2,18 +2,14 @@
 	import GameDevProject from "../components/GameDevProject.svelte";
 	import { onMount } from "svelte";
 
-	function more() {
-		projectsNum += 4;
-	}
-
 	onMount(mounted);
 
 	let projects = [];
-	$: visibleProjects = projects.slice(0, projectsNum);
-	let projectsNum = 4;
+	$: visibleProjects = projects.slice(0, expanded ? projects.length : 5);
+	let expanded = false;
 
 	async function mounted() {
-		let response = await fetch("projects.json");
+		const response = await fetch("projects.json");
 		projects = await response.json();
 	}
 </script>
@@ -40,22 +36,17 @@
 			Game development was what got me into coding in the first place, here are some featured
 			projects.
 		</h5>
-		<!-- <video autoplay loop muted playsinline src="videos/doodle jump.mp4"></video> -->
-		<div class="md:flex md:flex-wrap md:justify-between w-auto">
-			<!-- {#if projects} -->
+		<div class="md:flex md:flex-wrap md:justify-around w-auto">
 			{#each visibleProjects as project}
-				<!-- <div class="m-auto"> -->
 				<GameDevProject {project} />
-				<!-- </div> -->
 			{/each}
-			<!-- {/if} -->
 		</div>
 
 		<button
-			on:click={more}
-			class="button-anim transition-colors py-1 px-4 bg-purple-200 border border-purple-400 hover:bg-purple-300 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
+			on:click={() => (expanded = !expanded)}
+			class="button-anim transition-colors py-1 px-8 shadow-lg hover:shadow-xl bg-red-300 border border-red-400 hover:bg-red-200 text-gray-800 rounded-sm block mx-auto mt-10 font-bold focus:outline-none"
 		>
-			See More
+			{expanded ? "Show Less" : "Show More"}
 		</button>
 	</section>
 	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute right-14 bottom-0">

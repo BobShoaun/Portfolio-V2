@@ -1,93 +1,84 @@
 <script>
-	// import Image from "./Image.svelte";
 	import Border from "./Border.svelte";
 
-	export let image = "images/doodle jump.gif";
-	export let name = "awesome game";
-	export let collaborators = "with some people";
-	export let description = "none.";
-	export let technologies = ["unity", "c#"];
-	export let github = null;
-	export let website = null;
-	// export let privateRepo = true;
+	export let project = null;
 	export let right = false;
 </script>
 
 <main class="mx-4 lg:m-0 lg:flex lg:items-center justify-between">
 	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-7 shadow-lg">
 		<Border>
-			<img src={image} alt={name} class="p-2 lg:p-3 rounded-sm" />
+			<img src={project.image} alt={project.name} class="p-2 lg:p-3 rounded-sm" />
 		</Border>
 	</div>
-	<!-- <div data-aos={right ? "fade-left" : "fade-right"} class="mb-5">
-		<Image src={image} alt={name} />
-	</div> -->
+
 	<div class="{right ? 'lg:order-first lg:pr-28' : 'lg:pl-28'} lg:max-w-3/5">
 		<h1
 			data-aos={right ? "fade-right" : "fade-left"}
-			class="text-2xl font-bold lg:text-3xl dark:text-gray-50 mb-1.5"
+			class="text-2xl lg:text-3xl font-bold dark:text-gray-50 mb-1"
 		>
-			{@html name}
+			{@html project.name}
+			<span class="font-light text-right text-xl lg:text-2xl dark:text-gray-300"
+				>{project.year}</span
+			>
 		</h1>
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="100"
-			class="font-bold font-mono text-sm text-purple-600 dark:text-purple-300 mb-6"
+			class="font-bold font-mono text-sm text-purple-600 dark:text-purple-300 mb-4"
 		>
-			{collaborators}
+			{project.collaborators}
 		</p>
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="200"
-			class="mb-5 text-gray-700 dark:text-gray-300 lg:text-lg xl:text-xl"
+			class="mb-4 text-gray-700 dark:text-gray-300 lg:text-lg"
 		>
-			{description}
+			{project.description}
 		</p>
 
 		<p
 			data-aos={right ? "fade-right" : "fade-left"}
 			data-aos-delay="300"
-			class="text-sm font-mono font-semibold mb-7 text-red-400 dark:text-red-300"
+			class="text-sm font-mono font-semibold mb-6 text-red-400 dark:text-red-300"
 		>
-			{technologies.join(" // ")}
+			{project.technologies.join(" // ")}
 		</p>
 
-		{#if github || website}
-			<div
-				data-aos={right ? "fade-right" : "fade-left"}
-				data-aos-delay="400"
-				class="flex items-center justify-end"
-			>
-				{#if github}
-					<a
-						href={github}
-						target="_blank"
-						class="shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-800 dark:text-gray-50"
-					>
-						<p class="text-lg">Github</p>
-						<i class="fab fa-github ml-3 text-xl" /></a
-					>
-				{:else}
-					<button
-						class="shadow-md rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
-						disabled
-					>
-						<p class="text-lg">Private</p>
-						<i class="fas fa-code ml-3 text-xl" />
-					</button>
-				{/if}
-				{#if website}
-					<a
-						href={website}
-						target="_blank"
-						class="flex items-center text-gray-800 dark:text-gray-50 ml-6"
-					>
-						<p class="text-lg">Link</p>
-						<i class="fas fa-external-link-alt ml-3 text-lg" />
-					</a>
-				{/if}
-			</div>
-		{/if}
+		<div
+			data-aos={right ? "fade-right" : "fade-left"}
+			data-aos-delay="400"
+			class="flex items-center justify-end"
+		>
+			{#if project.github}
+				<a
+					href={project.github}
+					target="_blank"
+					class="shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-800 dark:text-gray-50"
+				>
+					<p class="text-md">Github</p>
+					<i class="fab fa-github ml-3 text-lg" /></a
+				>
+			{:else}
+				<button
+					class="shadow-md rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
+					disabled
+				>
+					<p class="text-md">Private</p>
+					<i class="fas fa-code ml-3 text-lg" />
+				</button>
+			{/if}
+			{#if project.website}
+				<a
+					href={project.website}
+					target="_blank"
+					class="flex items-center text-gray-800 dark:text-gray-50 ml-6"
+				>
+					<p class="text-md">Link</p>
+					<i class="fas fa-external-link-alt ml-3 text-md" />
+				</a>
+			{/if}
+		</div>
 	</div>
 </main>
 

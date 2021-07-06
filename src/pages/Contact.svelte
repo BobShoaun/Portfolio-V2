@@ -46,18 +46,18 @@
 			<h2 data-aos="zoom-in-right" class="title mb-4 heading font-mono">Contact(Me);</h2>
 			<h5
 				data-aos="zoom-in-right"
-				class="text-gray-500 dark:text-gray-300 text-md lg:text-xl mb-7 lg:mb-10"
+				class="text-gray-500 dark:text-gray-300 text-base lg:text-lg mb-7 lg:mb-10"
 			>
 				Shoot me a message and I will get back to you as soon as I can. <br />
 				My emails are
 				<span
-					class="cursor-pointer bg-green-300 dark:text-gray-800 px-1"
+					class="cursor-pointer text-green-300"
 					on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
 					>ngbobshoaun2000@gmail.com</span
 				>
 				and
 				<span
-					class="cursor-pointer bg-blue-300 dark:text-gray-800 px-1"
+					class="cursor-pointer text-blue-300"
 					on:click={() => copyToClipboard("bobshoaun.ng@mail.utoronto.ca")}
 					>bobshoaun.ng@mail.utoronto.ca</span
 				>

@@ -40,23 +40,14 @@
 
 	<section class="section relative">
 		<h2 data-aos="fade-in" class="title mb-6 text-center font-mono">&lt; Web development /&gt;</h2>
-		<h5 data-aos="fade-in" class="subtitle mb-20 text-center">
+		<h5 data-aos="fade-in" class="subtitle mb-20 text-center max-w-xl mx-auto">
 			I have industry experience working as a fullstack web developer, here are some featured
 			projects.
 		</h5>
 
 		{#each visibleProjects as project, index}
 			<div class="py-16 lg:py-32">
-				<WebDevProject
-					image={project.image}
-					name={project.name}
-					collaborators={project.collaborators}
-					description={project.description}
-					technologies={project.technologies}
-					website={project.website}
-					github={project.github}
-					right={index % 2}
-				/>
+				<WebDevProject {project} right={index % 2} />
 			</div>
 		{/each}
 

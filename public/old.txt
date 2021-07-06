@@ -1,0 +1,8 @@
+// {
+// 	"name": "Multiplayer Character Movement",
+// 	"image": "images/placeholder.png",
+// 	"collaborators": "by myself",
+// 	"description": "To explore complex character movements in networked games. I explore how to implement client-side prediction and server-side reconciliation in an authoritive server and client model.",
+// 	"technologies": ["unity", "c#"],
+// 	"width": 40
+// }
