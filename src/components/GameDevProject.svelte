@@ -11,7 +11,7 @@
 	<div
 		data-aos="fade-left"
 		class="mb-7 shadow-lg flex-shrink-0"
-		style="height: fit-content; flex-basis: 40%"
+		style="height: fit-content; {project.right ? 'flex-basis: 40%' : ''}"
 	>
 		{#if project.video}
 			<Border type={1}>
