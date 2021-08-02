@@ -25,7 +25,7 @@
 		data-aos-offset="200"
 		class="hidden lg:block absolute right-14 top-0 z-0"
 	>
-		<div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-6" />
+		<div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-5" />
 		<p
 			class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right right-0 absolute"
 		>
@@ -64,6 +64,10 @@
 			{/each}
 		</div>
 	</section>
+
+	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute left-14 bottom-0">
+		<div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
+	</div>
 </main>
 
 <style>

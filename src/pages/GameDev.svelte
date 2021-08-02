@@ -21,13 +21,12 @@
 	<div
 		data-aos="slide-down"
 		data-aos-delay="900"
-		style="z-index: 0"
-		class="from-white to-gray-200 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y"
+		class="from-white to-gray-200 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y z-0"
 	/>
 
-	<div data-aos="slide-down" data-aos-offset="200" class="hidden lg:block absolute left-14 top-0">
-		<div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-6" />
-		<p class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl left-0 absolute">011</p>
+	<div data-aos="slide-down" data-aos-offset="200" class="hidden lg:block absolute right-14 top-0">
+		<div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-5" />
+		<p class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl right-0 absolute">100</p>
 	</div>
 
 	<section class="section relative">
@@ -49,7 +48,7 @@
 			{expanded ? "Show Less" : "Show More"}
 		</button>
 	</section>
-	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute right-14 bottom-0">
-		<div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
+	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute left-14 bottom-0">
+		<div class="w-5 h-28 bg-gray-600 dark:bg-gray-50" />
 	</div>
 </main>

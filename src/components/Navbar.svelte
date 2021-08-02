@@ -135,6 +135,14 @@
 						data-aos="slide-right"
 						data-aos-delay="200"
 						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
+						href="/#experience"
+						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">Experience</p></a
+					>
+					<a
+						on:click={() => (open = false)}
+						data-aos="slide-left"
+						data-aos-delay="200"
+						class="block mb-2  bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#web-development"
 						><p class="text-gray-800 dark:text-gray-50 font-mono text-center">
 							<!-- <i class="fas fa-code mr-3" /> -->
@@ -152,7 +160,7 @@
 					> -->
 					<a
 						on:click={() => (open = false)}
-						data-aos="slide-left"
+						data-aos="slide-right"
 						data-aos-delay="200"
 						class="block mb-2   bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#game-development"
@@ -163,7 +171,7 @@
 					>
 					<a
 						on:click={() => (open = false)}
-						data-aos="slide-right"
+						data-aos="slide-left"
 						data-aos-delay="200"
 						class="block mb-2 bg-gray-50 dark:bg-gray-800 p-5"
 						href="/#contact"
@@ -176,7 +184,7 @@
 					<a
 						on:click={() => (open = false)}
 						use:link
-						data-aos="slide-left"
+						data-aos="slide-right"
 						data-aos-delay="200"
 						class="block bg-gray-50 dark:bg-gray-800 p-5"
 						href="/resume"

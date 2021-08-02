@@ -36,10 +36,9 @@
 		class="absolute background left-0 w-2/5 h-full moving-gradient-1"
 	/>
 
-	<div data-aos="slide-down" data-aos-offset="200" class="hidden lg:block absolute right-14 top-0">
-		<div class="w-5 h-28 bg-gray-800 dark:bg-gray-50 mb-6" />
-
-		<p class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl right-0 absolute">100</p>
+	<div data-aos="slide-down" data-aos-offset="200" class="hidden lg:block absolute left-14 top-0">
+		<div class="w-5 h-28 bg-gray-50 dark:bg-gray-800 mb-4" />
+		<p class="text-gray-100 dark:text-gray-800 font-mono font-bold text-4xl left-0 absolute">101</p>
 	</div>
 	<section class="section relative">
 		<div class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-20 mb-16">
