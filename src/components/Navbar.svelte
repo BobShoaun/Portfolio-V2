@@ -61,10 +61,13 @@
 			<a href="/#about" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700" noroute
 				><p class="nav-text">About</p></a
 			>
+			<a href="/#experience" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700" noroute
+				><p class="nav-text">Experience</p></a
+			>
 			<a
 				href="/#web-development"
 				data-aos="zoom-in"
-				data-aos-delay="200"
+				data-aos-delay="300"
 				data-aos-duration="700"
 				noroute><p class="nav-text">Web dev</p></a
 			>
@@ -72,21 +75,21 @@
 			<a
 				href="/#game-development"
 				data-aos="zoom-in"
-				data-aos-delay="300"
+				data-aos-delay="400"
 				data-aos-duration="700"
 				noroute><p class="nav-text">Game dev</p></a
 			>
-			<a href="/#contact" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="700" noroute
+			<a href="/#contact" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="700" noroute
 				><p class="nav-text">Contact</p></a
 			>
 
-			<a href="/resume" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="700"
+			<a href="/resume" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="700"
 				><p class="nav-text">Resume</p></a
 			>
 		</Router>
 		<button
 			data-aos="flip-up"
-			data-aos-delay="600"
+			data-aos-delay="700"
 			data-aos-duration="700"
 			on:click={toggleTheme}
 			class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md focus:outline-none"

@@ -2,6 +2,7 @@
 	import Navbar from "./components/Navbar.svelte";
 	import Hero from "./pages/Hero.svelte";
 	import About from "./pages/About.svelte";
+	import Experience from "./pages/Experience.svelte";
 	import WebDev from "./pages/WebDev.svelte";
 	import Designs from "./pages/Designs.svelte";
 	import GameDev from "./pages/GameDev.svelte";
@@ -32,6 +33,7 @@
 			<Navbar bind:dark />
 			<Hero bind:dark />
 			<About />
+			<Experience />
 			<WebDev />
 			<!-- <Designs /> -->
 			<GameDev />
@@ -54,9 +56,4 @@
 </main>
 
 <style>
-	/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
-
-    * {
-      font-family: "Open Sans", sans-serif;
-    } */
 </style>

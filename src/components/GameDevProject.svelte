@@ -15,7 +15,19 @@
 	>
 		{#if project.video}
 			<Border type={1}>
-				<video autoplay loop muted playsinline src={project.video} class="p-2 lg:p-3 rounded-sm" />
+				<div class="overflow-hidden m-2 lg:m-3 rounded-sm cursor-pointer img-container">
+					<video
+						data-aos={"slide-down"}
+						data-aos-duration="700"
+						data-aos-delay="100"
+						autoplay
+						loop
+						muted
+						playsinline
+						src={project.video}
+						on:click={() => window.open(project.github)}
+					/>
+				</div>
 			</Border>
 		{:else}
 			<Border type={1}>
@@ -78,4 +90,11 @@
 </main>
 
 <style>
+	.img-container {
+		opacity: 1;
+		transition: opacity 500ms ease !important;
+	}
+	.img-container:is(:hover, :focus) {
+		opacity: 0.4;
+	}
 </style>

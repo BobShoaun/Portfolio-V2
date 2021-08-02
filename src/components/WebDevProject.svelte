@@ -8,7 +8,16 @@
 <main class="mx-4 lg:m-0 lg:flex lg:items-center justify-between">
 	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-7 shadow-lg">
 		<Border>
-			<img src={project.image} alt={project.name} class="p-2 lg:p-3 rounded-sm" />
+			<div class="relative overflow-hidden m-2 lg:m-3 rounded-sm cursor-pointer img-container">
+				<img
+					data-aos={right ? "slide-right" : "slide-left"}
+					data-aos-duration="700"
+					data-aos-delay="100"
+					src={project.image}
+					alt={project.name}
+					on:click={() => window.open(project.website)}
+				/>
+			</div>
 		</Border>
 	</div>
 
@@ -83,4 +92,11 @@
 </main>
 
 <style>
+	.img-container {
+		opacity: 1;
+		transition: opacity 500ms ease !important;
+	}
+	.img-container:is(:hover, :focus) {
+		opacity: 0.4;
+	}
 </style>

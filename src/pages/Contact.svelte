@@ -64,8 +64,9 @@
 			</h5>
 
 			<form
-				data-aos="zoom-in-right"
+				data-aos="fade"
 				data-aos-duration="700"
+				data-aos-delay="200"
 				on:submit|preventDefault={submitForm}
 				name="contact"
 				action="action"

@@ -1,5 +1,6 @@
 <script>
 	import Border from "../components/Border.svelte";
+	import "./about.css";
 </script>
 
 <main
@@ -24,14 +25,19 @@
 	</div>
 
 	<section class="section flex flex-col items-center lg:flex-row justify-between">
-		<div
-			data-aos="zoom-in-left"
-			data-aos-duration="700"
-			class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28"
-		>
-			<Border type={2}>
-				<img src="images/me.jpg" alt="me" class="p-2 lg:p-3 rounded-lg shadow-xl" />
-			</Border>
+		<div class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28 z-10">
+			<div class="bg-gray-800 dark:bg-gray-100 overflow-hidden rounded-sm shadow-2xl">
+				<div class="overflow-hidden m-3 lg:m-4 rounded-sm">
+					<img
+						data-aos="slide-right"
+						data-aos-duration="700"
+						data-aos-delay="700"
+						src="images/me.jpg"
+						alt="me"
+						class=""
+					/>
+				</div>
+			</div>
 		</div>
 
 		<div class="bg-white dark:bg-gray-900 px-6 py-8 lg:py-14 lg:px-10 shadow-2xl relative">

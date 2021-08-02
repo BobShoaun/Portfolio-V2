@@ -23,9 +23,6 @@
 		class="absolute background top-0 right-0 h-1/2 w-full md:w-1/3 md:h-full moving-gradient-1"
 	/>
 
-	<!-- <div class="background absolute bg-gray-100" /> -->
-
-	<!-- <section class="min-h-screen flex"> -->
 	<section class="section relative w-full max-w-5xl">
 		<div class="bg-white dark:bg-gray-900 px-5 py-10 lg:py-20 lg:px-10 shadow-2xl">
 			<div
