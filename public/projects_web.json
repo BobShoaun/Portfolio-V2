@@ -1,5 +1,15 @@
 [
 	{
+		"name": "Bobcoin",
+		"image": "images/bobcoin.png",
+		"collaborators": "by myself",
+		"description": "My own blockchain cryptocurrency coded from scratch. It is fully featured with a proof of work consensus mechanism, elliptic curve keys and signatures, the UTXO model, a standard format wallet, a block explorer and many more.",
+		"technologies": ["mongodb", "express", "react", "node.js", "bulma", "socket.io"],
+		"website": "https://bobcoin.cash",
+		"github": "https://github.com/BobShoaun/Bobcoin-Node",
+		"year": 2021
+	},
+	{
 		"name": "Pathforge",
 		"image": "images/pathforge.png",
 		"collaborators": "with pathforge team",

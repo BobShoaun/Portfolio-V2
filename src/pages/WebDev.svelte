@@ -2,18 +2,14 @@
 	import WebDevProject from "../components/WebDevProject.svelte";
 	import { onMount } from "svelte";
 
-	function more() {
-		projectsNum += 3;
-	}
-
 	onMount(mounted);
 
 	let projects = [];
-	$: visibleProjects = projects.slice(0, projectsNum);
-	let projectsNum = 4;
+	$: visibleProjects = projects.slice(0, expanded ? projects.length : 4);
+	let expanded = false;
 
 	async function mounted() {
-		let response = await fetch("projects_web.json");
+		const response = await fetch("projects_web.json");
 		projects = await response.json();
 	}
 </script>
@@ -50,12 +46,12 @@
 			</div>
 		{/each}
 
-		<!-- <button
-			on:click={more}
-			class="py-1 px-4 bg-purple-300 border border-purple-500 hover:bg-purple-400 text-gray-700 rounded-sm block mx-auto mt-10 font-semibold font-mono"
+		<button
+			on:click={() => (expanded = !expanded)}
+			class="button-anim transition-colors py-1 px-8 shadow-lg hover:shadow-xl bg-purple-300 border border-purple-400 hover:bg-purple-200 text-gray-800 rounded-sm block mx-auto mt-10 font-bold focus:outline-none"
 		>
-			See More
-		</button> -->
+			{expanded ? "Show Less" : "Show More"}
+		</button>
 	</section>
 
 	<div data-aos="slide-up" data-aos-offset="200" class="hidden lg:block absolute right-14 bottom-0">

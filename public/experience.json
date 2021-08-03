@@ -3,25 +3,38 @@
 		"name": "N2N Connect Bhd.",
 		"logo": "images/n2n connect logo.png",
 		"background": "moving-gradient-1",
-		"position": "Frontend Developer / Trainee"
+		"position": "Frontend Developer / Trainee",
+		"start": "June",
+		"end": "August 2019",
+		"highlight": "text-blue-400",
+		"description": "<ul class='list-disc'><li>Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.</li><li>Fixed bugs and introduced new quality of life features.</li><li>Presented my work during head of department meetings.</li><li>Wrote extensive documentation for a proper handover of the project in the future.</li></ul>"
 	},
 	{
 		"name": "Pathforge Pte. Ltd.",
 		"logo": "images/pathforge logo.jpg",
 		"background": "bg-white",
-		"position": "Fullstack Developer"
+		"position": "Fullstack Developer",
+		"start": "Sept 2020",
+		"end": "April 2021",
+		"highlight": "text-green-400"
 	},
 	{
 		"name": "The Hacker Collective",
 		"logo": "images/thc logo.png",
 		"background": "bg-gray-700",
-		"position": "Mentor / Jumpstarter"
+		"position": "Mentor / Jumpstarter",
+		"start": "Sept 2020",
+		"end": "April 2021",
+		"highlight": "text-red-400"
 	},
 	{
 		"name": "X-CD Technologies",
 		"logo": "images/x-cd logo.png",
 		"background": "moving-gradient-2",
 		"blend": "multiply",
-		"position": "Software Developer"
+		"position": "Software Developer",
+		"start": "April 2021",
+		"end": "Present",
+		"highlight": "text-indigo-400"
 	}
 ]

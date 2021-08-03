@@ -36,12 +36,12 @@
 	<section class="section relative">
 		<h2 data-aos="fade-in" class="title mb-6 text-center font-mono">Experience_</h2>
 		<h5 data-aos="fade-in" class="subtitle mb-20 text-center max-w-xl mx-auto">
-			I have industry experience working as a fullstack web developer, here are some featured
-			projects.
+			I currently have more than 2 years of work experience and counting. Here are some companies I
+			have worked at before.
 		</h5>
 
 		<div class="grid lg:grid-cols-2 m-0 lg:m-28 shadow-2xl">
-			{#each experiences as experience, index}
+			{#each experiences as experience}
 				<div class="exp flex {experience.background}">
 					<img
 						class="m-auto w-36 lg:w-64"
@@ -50,14 +50,18 @@
 						style="mix-blend-mode: {experience.blend}"
 					/>
 					<div class="exp-desc bg-gray-800 p-5 lg:p-10">
-						<h1 class="font-bold text-white text-base lg:text-xl">
+						<h1 class="font-bold text-white text-base lg:text-2xl">
 							{experience.position}
 						</h1>
-						<h3 class="text-gray-200 mb-3">{experience.name}</h3>
+						<h1 class="font-bold {experience.highlight} text-base lg:text-2xl mb-1">
+							@ {experience.name}
+						</h1>
+						<p class="text-gray-200 mb-4">{experience.start} - {experience.end}</p>
 						<p class="text-sm lg:text-lg text-white">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in minus error
+							{@html experience.description}
+							<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in minus error
 							cupiditate maiores voluptatibus dolorum ipsa quaerat nobis! Assumenda, nesciunt
-							officiis? Voluptas vel quia dolorum aliquam dolor sed nihil.
+							officiis? Voluptas vel quia dolorum aliquam dolor sed nihil. -->
 						</p>
 					</div>
 				</div>
@@ -78,6 +82,7 @@
 		overflow: hidden;
 		cursor: pointer;
 		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		background-attachment: fixed;
 	}
 
 	.exp .exp-desc {
@@ -89,19 +94,19 @@
 		overflow-y: scroll;
 		z-index: 1;
 		background: inherit;
-		background-color: rgba(31, 41, 55, 1);
 		overflow: hidden;
 	}
 
 	.exp .exp-desc::before {
 		content: "";
 		position: absolute;
-		background: inherit;
 		z-index: -1;
 		inset: 0;
-		box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1);
-		filter: blur(10px);
-		margin: -20px;
+		/* background: inherit; */
+		box-shadow: inset 0 0 2000px rgba(122, 122, 122, 0.486);
+		background-color: rgba(31, 41, 55, 0.7);
+		filter: blur(30px);
+		margin: -40px;
 	}
 
 	.exp:hover .exp-desc {
