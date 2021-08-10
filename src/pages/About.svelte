@@ -1,6 +1,5 @@
 <script>
 	import Border from "../components/Border.svelte";
-	import "./about.css";
 </script>
 
 <main
