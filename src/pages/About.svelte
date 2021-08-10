@@ -28,8 +28,8 @@
 				<div class="overflow-hidden m-3 lg:m-4 rounded-sm">
 					<img
 						data-aos="slide-right"
-						data-aos-duration="700"
-						data-aos-delay="700"
+						data-aos-duration="500"
+						data-aos-delay="200"
 						src="images/me.jpg"
 						alt="me"
 						class=""

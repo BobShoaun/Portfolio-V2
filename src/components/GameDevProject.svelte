@@ -9,7 +9,6 @@
 		: 'flex-col'} md:max-w-{project.width}"
 >
 	<div
-		data-aos="fade-left"
 		class="mb-7 shadow-lg flex-shrink-0"
 		style="height: fit-content; {project.right ? 'flex-basis: 40%' : ''}"
 	>
@@ -18,7 +17,7 @@
 				<div class="overflow-hidden m-2 lg:m-3 rounded-sm cursor-pointer img-container">
 					<video
 						data-aos={"slide-down"}
-						data-aos-duration="700"
+						data-aos-duration="500"
 						data-aos-delay="100"
 						autoplay
 						loop
@@ -37,33 +36,33 @@
 	</div>
 
 	<div class="p-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-xl" style="height: fit-content">
-		<h1 data-aos="zoom-in-left" class="font-bold text-2xl dark:text-gray-50 mb-1">
+		<h1 data-aos="flip-down" class="font-bold text-2xl dark:text-gray-50 mb-1">
 			{project.name}
 			<span class="font-light text-right text-xl dark:text-gray-300">{project.year}</span>
 		</h1>
 		<p
-			data-aos="zoom-in-left"
+			data-aos="fade-up"
 			data-aos-delay="100"
 			class="font-bold font-mono text-sm text-blue-500 dark:text-blue-300 mb-4"
 		>
 			{project.collaborators}
 		</p>
 		<p
-			data-aos="zoom-in-left"
+			data-aos="fade-up"
 			data-aos-delay="200"
 			class="mb-4 text-gray-700 dark:text-gray-300 text-base"
 		>
 			{project.description}
 		</p>
 		<p
-			data-aos="zoom-in-left"
+			data-aos="fade-up"
 			data-aos-delay="300"
 			class="text-sm font-semibold font-mono mb-4 text-green-500 dark:text-green-300"
 		>
 			{project.technologies.join(" // ")}
 		</p>
 		{#if project.github || project.website}
-			<div data-aos="zoom-in-left" data-aos-delay="400" class="flex items-center justify-end">
+			<div data-aos="flip-up" data-aos-delay="400" class="flex items-center justify-end">
 				{#if project.github}
 					<a
 						href={project.github}

@@ -6,12 +6,12 @@
 </script>
 
 <main class="mx-4 lg:m-0 lg:flex lg:items-center justify-between">
-	<div data-aos={right ? "fade-left" : "fade-right"} class="mb-7 shadow-lg">
+	<div fdata-aos={right ? "fade-left" : "fade-right"} class="mb-7 shadow-lg">
 		<Border>
 			<div class="relative overflow-hidden m-2 lg:m-3 rounded-sm cursor-pointer img-container">
 				<img
 					data-aos={right ? "slide-right" : "slide-left"}
-					data-aos-duration="700"
+					data-aos-duration="500"
 					data-aos-delay="100"
 					src={project.image}
 					alt={project.name}
@@ -55,7 +55,7 @@
 		</p>
 
 		<div
-			data-aos={right ? "fade-right" : "fade-left"}
+			data-aos={right ? "flip-up" : "flip-up"}
 			data-aos-delay="400"
 			class="flex items-center justify-end"
 		>

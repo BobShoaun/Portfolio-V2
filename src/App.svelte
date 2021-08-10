@@ -33,7 +33,7 @@
 			<Navbar bind:dark />
 			<Hero bind:dark />
 			<About />
-			<!-- <Experience /> -->
+			<Experience />
 			<WebDev />
 			<!-- <Designs /> -->
 			<GameDev />

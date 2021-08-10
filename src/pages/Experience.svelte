@@ -109,8 +109,8 @@
 		margin: -40px;
 	}
 
-	.exp:hover .exp-desc {
+	/* .exp:hover .exp-desc {
 		transform: translateY(0);
 		opacity: 1;
-	}
+	} */
 </style>
