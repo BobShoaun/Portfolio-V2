@@ -50,19 +50,21 @@
 						style="mix-blend-mode: {experience.blend}"
 					/>
 					<div class="exp-desc bg-gray-800 p-5 lg:p-10">
-						<h1 class="font-bold text-white text-base lg:text-2xl">
+						<h1 class="font-bold text-white text-base lg:text-lg">
 							{experience.position}
 						</h1>
-						<h1 class="font-bold {experience.highlight} text-base lg:text-2xl mb-1">
+						<h1 class="font-bold {experience.highlight} text-base lg:text-2xl mb-4">
 							@ {experience.name}
 						</h1>
-						<p class="text-gray-200 mb-4">{experience.start} - {experience.end}</p>
-						<p class="text-sm lg:text-lg text-white">
-							{@html experience.description}
-							<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in minus error
-							cupiditate maiores voluptatibus dolorum ipsa quaerat nobis! Assumenda, nesciunt
-							officiis? Voluptas vel quia dolorum aliquam dolor sed nihil. -->
+						<p class="text-gray-200 mb-2 font-mono text-sm">
+							{experience.start} - {experience.end}
 						</p>
+						<hr class="mb-5" />
+						<ul class="text-sm lg:text-base text-gray-300 list-disc">
+							{#each experience.points as point}
+								<li class="mb-4 leading-5">{point}</li>
+							{/each}
+						</ul>
 					</div>
 				</div>
 			{/each}

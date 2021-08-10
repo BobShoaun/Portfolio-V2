@@ -69,7 +69,10 @@
 						>
 
 						<i class="text-gray-700 text-center fas fa-envelope" />
-						<p class="text-gray-700 text-sm cursor-pointer" on:click={() => copyToClipboard('ngbobshoaun2000@gmail.com')}>
+						<p
+							class="text-gray-700 text-sm cursor-pointer"
+							on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
+						>
 							ngbobshoaun2000@gmail
 						</p>
 						<i class="text-gray-700 text-center fab fa-linkedin" />
@@ -238,12 +241,13 @@
 							programming and web dev.
 						</li>
 						<li>
-							Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning
-							site.
+							Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social
+							e-learning site.
 						</li>
-            <li>
-              Developed a CMS for course materials, integrated leaderboards, and the entire feed and company flow.
-            </li>
+						<li>
+							Developed a CMS for course materials, integrated leaderboards, and the entire feed and
+							company flow.
+						</li>
 					</ul>
 
 					<h3 class="text-gray-700 text-lg font-bold">N2N Connect Bhd.</h3>
@@ -301,7 +305,7 @@
 							and scalable difficulty.
 						</li>
 					</ul>
-<!-- 
+					<!-- 
 					<div class="flex justify-between items-baseline mb-0.5">
 						<h3 class="text-gray-700 text-lg font-bold">Water Chef</h3>
 						<p class="text-sm text-gray-400 italic">Personal project</p>
@@ -316,17 +320,13 @@
 						</li>
 					</ul> -->
 
-          <div class="flex justify-between items-baseline mb-0.5">
+					<div class="flex justify-between items-baseline mb-0.5">
 						<h3 class="text-gray-700 text-lg font-bold">Fishackathon 2018</h3>
 						<p class="text-sm text-gray-400 italic">by HackerNest</p>
 					</div>
 					<ul class="list-square text-gray-600 pl-5 text-sm">
-						<li>
-              Built an app to generate awareness of region specific fishing laws.
-						</li>
-						<li>
-							Presented to judges working in the fishing industry.
-						</li>
+						<li>Built an app to generate awareness of region specific fishing laws.</li>
+						<li>Presented to judges working in the fishing industry.</li>
 					</ul>
 				</div>
 			</article>

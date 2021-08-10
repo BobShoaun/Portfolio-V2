@@ -3,11 +3,12 @@
 		"name": "Bobcoin",
 		"image": "images/bobcoin.png",
 		"collaborators": "by myself",
-		"description": "My own blockchain cryptocurrency coded from scratch. It is fully featured with a proof of work consensus mechanism, elliptic curve keys and signatures, the UTXO model, a standard format wallet, a block explorer and many more.",
+		"description": "Given my fascination in blockchain technologies, I've decided to make my own cryptocurrency from scratch. It uses the proof of work consensus, elliptic curve signatures, the UTXO model, a BIP compliant wallet format, a block explorer, and many more. This project deepened my understand of the inner workings of cryptocurrencies like Bitcoin.",
 		"technologies": ["mongodb", "express", "react", "node.js", "bulma", "socket.io"],
 		"website": "https://bobcoin.cash",
 		"github": "https://github.com/BobShoaun/Bobcoin-Node",
-		"year": 2021
+		"year": 2021,
+		"more": "articles/how-i-made-my-own-cryptocurrency"
 	},
 	{
 		"name": "Pathforge",
@@ -32,7 +33,7 @@
 		"name": "Countries of the World",
 		"image": "images/countries-of-the-world.png",
 		"collaborators": "with my students",
-		"description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst teaching my students about the basics of the fetch api and javascript's promise callback chains.",
+		"description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst mentoring learners about the basics of the fetch api and javascript's promise callback chains.",
 		"technologies": ["html", "css", "js", "restcountries api"],
 		"github": "https://github.com/BobShoaun/Countries-of-the-World",
 		"website": "https://bobshoaun.github.io/Countries-of-the-World/",

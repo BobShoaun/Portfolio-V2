@@ -57,8 +57,17 @@
 		<div
 			data-aos={right ? "flip-up" : "flip-up"}
 			data-aos-delay="400"
-			class="flex items-center justify-end"
+			class="flex flex-wrap items-center justify-end gap-4"
 		>
+			{#if project.more}
+				<a
+					href={project.more}
+					class="font-bold shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 bg-purple-300 flex items-center text-gray-800"
+				>
+					<p class="text-md">Read more</p>
+					<i class="fa fa-book ml-3 text-lg" />
+				</a>
+			{/if}
 			{#if project.github}
 				<a
 					href={project.github}
@@ -81,7 +90,7 @@
 				<a
 					href={project.website}
 					target="_blank"
-					class="flex items-center text-gray-800 dark:text-gray-50 ml-6"
+					class="flex px-2 py-2 items-center text-gray-800 dark:text-gray-50"
 				>
 					<p class="text-md">Link</p>
 					<i class="fas fa-external-link-alt ml-3 text-md" />

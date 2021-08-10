@@ -7,7 +7,12 @@
 		"start": "June",
 		"end": "August 2019",
 		"highlight": "text-blue-400",
-		"description": "<ul class='list-disc'><li>Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.</li><li>Fixed bugs and introduced new quality of life features.</li><li>Presented my work during head of department meetings.</li><li>Wrote extensive documentation for a proper handover of the project in the future.</li></ul>"
+		"points": [
+			"Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
+			"Fixed bugs and introduced new quality of life features.",
+			"Presented my work during head of department meetings.",
+			"Wrote extensive documentation for a proper handover of the project in the future."
+		]
 	},
 	{
 		"name": "Pathforge Pte. Ltd.",
@@ -16,7 +21,8 @@
 		"position": "Fullstack Developer",
 		"start": "Sept 2020",
 		"end": "April 2021",
-		"highlight": "text-green-400"
+		"highlight": "text-green-400",
+		"points": []
 	},
 	{
 		"name": "The Hacker Collective",
@@ -25,7 +31,8 @@
 		"position": "Mentor / Jumpstarter",
 		"start": "Sept 2020",
 		"end": "April 2021",
-		"highlight": "text-red-400"
+		"highlight": "text-red-400",
+		"points": []
 	},
 	{
 		"name": "X-CD Technologies",
@@ -35,6 +42,7 @@
 		"position": "Software Developer",
 		"start": "April 2021",
 		"end": "Present",
-		"highlight": "text-indigo-400"
+		"highlight": "text-indigo-400",
+		"points": []
 	}
 ]
