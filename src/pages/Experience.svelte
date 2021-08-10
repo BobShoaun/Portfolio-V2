@@ -82,7 +82,7 @@
 		overflow: hidden;
 		cursor: pointer;
 		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-		background-attachment: fixed;
+		/* background-attachment: fixed; */
 	}
 
 	.exp .exp-desc {
@@ -93,7 +93,7 @@
 		transition: all var(--hover-time) ease-out;
 		overflow-y: scroll;
 		z-index: 1;
-		background: inherit;
+		/* background: inherit; */
 		overflow: hidden;
 	}
 
@@ -105,12 +105,12 @@
 		/* background: inherit; */
 		box-shadow: inset 0 0 2000px rgba(122, 122, 122, 0.486);
 		background-color: rgba(31, 41, 55, 0.7);
-		filter: blur(30px);
+		/* filter: blur(30px); */
 		margin: -40px;
 	}
 
-	/* .exp:hover .exp-desc {
+	.exp:hover .exp-desc {
 		transform: translateY(0);
 		opacity: 1;
-	} */
+	}
 </style>
