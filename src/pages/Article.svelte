@@ -3,50 +3,46 @@
   import Footer from "./Footer.svelte";
   import marked from "marked";
 
-  import { onMount } from "svelte";
+  import { onMount, afterUpdate } from "svelte";
   onMount(mounted);
 
   let article = "";
-
-  const renderer = new marked.Renderer();
-  renderer.link = (href, title, text) =>
-    `<a target="_blank" href="${href}" title="${title}">${text}</a>`;
+  let articleLinks = [];
 
   async function mounted() {
     const response = await fetch("how-i-made-my-own-cryptocurrency.md");
-    article = await response.text();
+    const articleMD = await response.text();
+
+    const renderer = new marked.Renderer();
+    renderer.link = (href, title, text) =>
+      `<a target="_blank" href="${href}" title="${title}">${text}</a>`;
+
+    article = marked(articleMD, { renderer });
   }
+
+  afterUpdate(() => {
+    const headings = document.querySelectorAll("h2");
+    articleLinks = [...headings].map(heading => ({
+      label: heading.innerText,
+      link: `#${heading.id}`,
+    }));
+  });
 </script>
 
 <main class="bg-gray-50 dark:bg-gray-800 pt-32 pb-24 px-5 lg:px-10 flex gap-5">
   <div class="sticky top-16 text-gray-100 hidden lg:block ml-auto self-start">
-    <a class="article-content-link" href="#what-is-bobcoin">What is Bobcoin?</a>
-    <a class="article-content-link" href="#what-is-it-used-for"
-      >What is it used for?</a
-    >
-    <a class="article-content-link" href="#how-is-bobcoin-decentralized"
-      >How is bobcoin decentralized?</a
-    >
-    <a class="article-content-link" href="#the-blockchain">The blockchain</a>
-    <a class="article-content-link" href="#the-bobcoin-address"
-      >The bobcoin address</a
-    >
-    <a class="article-content-link" href="#transactions-and-utxos"
-      >Transactions and UTXOs</a
-    >
-    <a class="article-content-link" href="#bobcoin-wallet">Bobcoin wallet</a>
-    <a class="article-content-link" href="#coin-economics">Coin economics</a>
-    <a class="article-content-link" href="#scalability">Scalability</a>
-    <a class="article-content-link" href="#summary--conclusion"
-      >Summary / Conclusion</a
-    >
+    {#each articleLinks as articleLink}
+      <a class="article-content-link" href={articleLink.link}
+        >{articleLink.label}</a
+      >
+    {/each}
   </div>
   <article class="max-w-3xl mx-auto text-gray-700 dark:text-white">
     <h1 class="text-3xl lg:text-5xl font-bold mb-4">
-      How I made my own cryptocurrency
+      How I Made My Own Cryptocurrency
     </h1>
     <p class="text-gray-500 dark:text-gray-300 mb-7">
-      by Ng Bob Shoaun &nbsp;∙&nbsp; 2 August 2021 &nbsp;∙&nbsp; 5 minute read
+      by Ng Bob Shoaun &nbsp;∙&nbsp; 2 August 2021 &nbsp;∙&nbsp; 8 minute read
     </p>
     <hr class="mb-5 bg-gray-300 dark:bg-gray-800" />
 
@@ -60,7 +56,7 @@
     >
 
     <div class="article-content">
-      {@html marked(article, { renderer: renderer })}
+      {@html article}
     </div>
   </article>
 </main>
