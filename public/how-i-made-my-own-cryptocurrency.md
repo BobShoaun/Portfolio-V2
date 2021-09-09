@@ -1,8 +1,8 @@
 ## What is Bobcoin?
 
-Bobcoin is a decentralized cryptocurrency that I have made after reading about cryptocurrencies, bitcoin, and the revolutionary technologies enabled by blockchain and clever cryptography.
+Bobcoin is a decentralized cryptocurrency that I made completely by myself after reading extensively about the revolutionary technologies that are cryptocurrencies, bitcoin, which are enabled by blockchains and some clever cryptography.
 
-I made Bobcoin with the intention of imitating bitcoin, but also as a learning process. What better way to learn about cryptocurrencies than coding one yourself?
+I made Bobcoin with the intention of recreating bitcoin, but also as a learning process. What better way to learn about cryptocurrencies than coding one yourself?
 
 Bobcoin currently consists of 3 separate projects. The shared core functionality is written in javascript and packaged in npm as blockcrypto, it contains most of bobcoin’s common code shared between the frontend and backend, with unit and integration tests. Then there is bobcoin-client, which is the react frontend for interacting with bobcoin. It is a wallet software, a block explorer, and a marketing page all in one web application. Lastly, bobcoin-node is the node software responsible for maintaining and synchronizing the blockchain, and also serves as a backend for the block explorer. It is built using express and mongodb.
 
@@ -10,7 +10,7 @@ Bobcoin currently consists of 3 separate projects. The shared core functionality
 
 As for what it is used for, its utility for now is mainly just a fun way of introducing friends and families to cryptocurrencies. With the simple frontend interface, and the fact that bobcoins do not have any value, it serves as a risk free gateway for people into the daunting and complex world of cryptocurrencies. As I have followed many standards set by major cryptocurrencies when developing bobcoin, the education from learning how to use bobcoin translates well to other cryptocurrencies. If bobcoin ever catches on and starts having a significant demand and real world value, it would serve as a medium of exchange, and a store of value. If that is the case, I hope to be able to list this currency on an exchange, and eventually sites like coinmarketcap.
 
-## How is bobcoin decentralized?
+## How is it Decentralized?
 
 A copy of the bobcoin blockchain is distributed to every computer running the bobcoin-node software. A blockchain is essentially a chain of blocks, with each block containing transactions. Therefore the entire blockchain is a giant ledger. The blockchain is updated when a new block is appended to the end of it, adding new lines to the ledger. But who gets to decide what new block is added? And can’t I just add any block with any transaction within a block?
 
@@ -18,12 +18,12 @@ Here's how it works: when a block is created, it is broadcasted to all the nodes
 
 consensus is reached through a system called proof of work. Before adding a block to the blockchain, a certain amount of work has to be put in order for it to be valid. The work is in the form of brute force computation, and cryptographic hash functions allow for an untrusted party to show proof that they have done a certain amount of work. This prevents anyone from being able to spam appends to the blockchain, and allows only people who have invested time and energy to add to it. These people are called miners, and the act of brute forcing the correct hash to a block is mining. As a reward for their efforts to secure and update the blockchain, they are rewarded with the block reward, which is currently 512 bobcoins created from thin air and given to the miners.
 
-## The blockchain
+## The Blockchain
 
 Like all blockchains, the bobcoin blockchain started at its genesis block. Block explorer link: https://bobcoin.cash/block/0000000feec941f61402e216aad021939642cfee2e97e6fc45c7a692dd3a759f
-. The block was mined on a Thursday morning on 10th June 2021, when I have finalized the parameters for the blockchain. The initial target hash I have chosen starts with exactly 6 zeros, that means, a hash of all blocks must be smaller than the target hash (has greater or equal to 6 zeroes). It took roughly 15 minutes to mine the first block, at that time I thought that was too long, and considered decreasing the difficulty. But subsequent blocks showed that the average time is around the ballpark of 5 minutes, I was just unlucky on my first block. Therefore I stuck with that initial difficulty and it remains to this day. The address which is served the block reward, or the miner is 8GEN8Ab66ydbi82Q3wVcVwWKpvRVphN. A vanity address curated specifically to have the GEN word in front, I wanted a special address to receive the first ever bobcoins mined.
+. The block was mined on a Thursday morning on 10th June 2021, when I have finalized the parameters for the blockchain. The initial target hash I have chosen starts with exactly 6 zeros, that means, a hash of all blocks must be smaller than the target hash (has greater or equal to 6 zeroes). It took roughly 15 minutes to mine the first block, at that time I thought that was too long, and considered decreasing the difficulty. But subsequent blocks showed that the average time is around the ballpark of 5 minutes, I was just unlucky on my first block. Therefore I stuck with that initial difficulty and it remains to this day. The address which is served the block reward, or the miner is `8GEN8Ab66ydbi82Q3wVcVwWKpvRVphN`. A vanity address curated specifically to have the GEN word in front, I wanted a special address to receive the first ever bobcoins mined.
 
-## The Bobcoin address
+## Address Format
 
 All bobcoin addresses start with either an 8 or 9. Like bitcoin, which has 1 appended to legacy addresses, and 3 for segwit addresses, and dogecoin with a D in front of every address. In a world with multitudes of different cryptocurrencies using cryptic addresses, it is necessary to distinguish between addresses of different currencies. A bobcoin address is also encoded in base58, a standard adopted by most other cryptocurrencies as it eliminates common characters that can be confused with each other like 0, o, and O. Like a bank account number, it has a checksum built into the address, meaning there are “right” and “wrong” addresses, they are not just any random base58 string. This improves the user experience and saves them in the event of a typo, and thus sending their coins into the void.
 
@@ -37,7 +37,7 @@ The outputs are your friend’s address, and possibly your own address to receiv
 
 This UTXO based model allows for all transactions to be easily traceable, and the flow of each bobcoin known. It also allows for an efficient way of finding your current balance, since it is just the sum of all your current UTXOs.
 
-## Bobcoin Wallet
+## Wallet Implementation
 
 In my opinion, the term ‘wallet’ in the context of cryptocurrencies is misleading. It should really be called a keychain, as they contain a bunch of bobcoin addresses and the corresponding private keys required to access the funds in them. When designing the bobcoin wallet, I have considered current industry standards to make it as seamless to consume between other cryptocurrencies. These standards include:
 bip-39: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki. mnemonic seed phrases. Instead of having the user save a 512 bit seed of random gibberish, they can save it as 12-24 words in their preferred language.

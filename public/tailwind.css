@@ -209,6 +209,11 @@
     font-size: 1.2rem;
   }
 
+  .article-content code {
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+
   .article-content a {
     @apply text-gray-700 dark:text-white;
     @apply underline;
