@@ -4,6 +4,10 @@ Bobcoin is a decentralized cryptocurrency that I made completely by myself after
 
 I made Bobcoin with the intention of recreating bitcoin, but also as a learning process. What better way to learn about cryptocurrencies than coding one yourself?
 
+|                                                        ![rocket.jpg](images/bobcoin/rocket.jpg "Bobcoin going to Mars")                                                        |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| _Bobcoin going to Mars - [created by brgfx - www.freepik.com](https://www.freepik.com/free-vector/rocket-flying-through-astriods_4955149.htm#page=1&query=rocket&position=15)_ |
+
 Bobcoin currently consists of 3 separate projects. The shared core functionality is written in javascript and packaged in npm as blockcrypto, it contains most of bobcoin’s common code shared between the frontend and backend, with unit and integration tests. Then there is bobcoin-client, which is the react frontend for interacting with bobcoin. It is a wallet software, a block explorer, and a marketing page all in one web application. Lastly, bobcoin-node is the node software responsible for maintaining and synchronizing the blockchain, and also serves as a backend for the block explorer. It is built using express and mongodb.
 
 ## What is it used for?
@@ -21,7 +25,11 @@ consensus is reached through a system called proof of work. Before adding a bloc
 ## The Blockchain
 
 Like all blockchains, the bobcoin blockchain started at its genesis block. Block explorer link: https://bobcoin.cash/block/0000000feec941f61402e216aad021939642cfee2e97e6fc45c7a692dd3a759f
-. The block was mined on a Thursday morning on 10th June 2021, when I have finalized the parameters for the blockchain. The initial target hash I have chosen starts with exactly 6 zeros, that means, a hash of all blocks must be smaller than the target hash (has greater or equal to 6 zeroes). It took roughly 15 minutes to mine the first block, at that time I thought that was too long, and considered decreasing the difficulty. But subsequent blocks showed that the average time is around the ballpark of 5 minutes, I was just unlucky on my first block. Therefore I stuck with that initial difficulty and it remains to this day. The address which is served the block reward, or the miner is `8GEN8Ab66ydbi82Q3wVcVwWKpvRVphN`. A vanity address curated specifically to have the GEN word in front, I wanted a special address to receive the first ever bobcoins mined.
+. The block was mined on a Thursday morning on 10th June 2021, when I have finalized the parameters for the blockchain. The initial target hash I have chosen starts with exactly 6 zeros, that means, a hash of all blocks must be smaller than the target hash (has greater or equal to 6 zeroes). It took roughly 15 minutes to mine the first block, at that time I thought that was too long, and considered decreasing the difficulty. But subsequent blocks showed that the average time is around the ballpark of 5 minutes, I was just unlucky on my first block. Therefore I stuck with that initial difficulty and it remains to this day. The address which is served the block reward, or the miner is:
+
+> `8GEN8Ab66ydbi82Q3wVcVwWKpvRVphN`
+
+A vanity address curated specifically to have the GEN word in front, I wanted a special address to receive the first ever bobcoins mined.
 
 ## Address Format
 
@@ -35,20 +43,27 @@ A transaction is made from one address to another, and it consists of inputs and
 
 The outputs are your friend’s address, and possibly your own address to receive change, as UTXO inputs has to be spent in its entirety, think of each UTXO as a piece of cash, to spend it you need to give the cashier the entire cash and receive change for it.
 
+|       ![transactions.png](images/bobcoin/transactions.png "Traceable transactions")       |
+| :---------------------------------------------------------------------------------------: |
+| _Traceable transactions - [from the Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf)_ |
+
 This UTXO based model allows for all transactions to be easily traceable, and the flow of each bobcoin known. It also allows for an efficient way of finding your current balance, since it is just the sum of all your current UTXOs.
 
 ## Wallet Implementation
 
 In my opinion, the term ‘wallet’ in the context of cryptocurrencies is misleading. It should really be called a keychain, as they contain a bunch of bobcoin addresses and the corresponding private keys required to access the funds in them. When designing the bobcoin wallet, I have considered current industry standards to make it as seamless to consume between other cryptocurrencies. These standards include:
-bip-39: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki. mnemonic seed phrases. Instead of having the user save a 512 bit seed of random gibberish, they can save it as 12-24 words in their preferred language.
-bip-32: https://en.bitcoin.it/wiki/BIP_0032. Hierarchical deterministic wallets, meaning each new address (key pair) is generated deterministically from a master seed. So the user only has to keep track and store one private key, and not a bunch of them.
-bip-44: https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki. A specific implementation of bip-32, with outlines about what is known as a derivation path, a format to encode how each key pair is derived. Think of it like the folder structure in your computer.
+
+- bip-39: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki. mnemonic seed phrases. Instead of having the user save a 512 bit seed of random gibberish, they can save it as 12-24 words in their preferred language.
+
+- bip-32: https://en.bitcoin.it/wiki/BIP_0032. Hierarchical deterministic wallets, meaning each new address (key pair) is generated deterministically from a master seed. So the user only has to keep track and store one private key, and not a bunch of them.
+
+- bip-44: https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki. A specific implementation of bip-32, with outlines about what is known as a derivation path, a format to encode how each key pair is derived. Think of it like the folder structure in your computer.
 
 ## Coin economics
 
 As of now, with each block added to the blockchain, 512 bobcoins are introduced to the circulation in the form of block rewards. But at block 10,100, the reward will be halved to 256, and will continue to do so every 10,100 blocks until no more block reward can be obtained from mining, and thus revenue will only be from transaction fees. Since the reward decreases geometrically, a hard supply cap is naturally set to about 10 million bobcoins. This makes the currency deflationary in the long run.
 
-The value of existing bobcoins can also appreciate when they are “burnt”. The act of burning a cryptocurrency is essentially making a transaction to an address where the private keys to unlock them are unknown. Some verifiable burn addresses are manufactured manually just to fulfill its checksum, and have no private keys tied to them during its creation. If you lose access or forgot your mnemonic seed phrase, your coins are also essentially burnt.
+The value of existing bobcoins can also appreciate when they are “burnt”. The act of burning a cryptocurrency is essentially making a transaction to an address where the private keys to unlock them are unknown. Some verifiable burn addresses are manufactured manually just to fulfill its checksum, and have no private keys tied to them during its creation. If you lose access or forget your mnemonic seed phrase, your coins are also essentially burnt.
 
 ## Scalability
 
@@ -56,4 +71,6 @@ Aside from the speed and bandwidth of the servers hosting bobcoin-node. The scal
 
 ## Summary / Conclusion
 
-There is a lot more to talk about in this project, but I decided to limit this article for the sake of readability. Here is a TLDR: Bobcoin is a proof of work digital currency heavily inspired by Bitcoin. It employs current industry standards like BIP-32, 39, 44, and more, and the UTXO model for keeping track of balances and accounts. The source code can be found in github under 3 separate repositories. It is made as a means to improve my understanding of cryptocurrencies, and a way to spread education and introduce friends and family to the world of blockchains.
+There is a lot more to talk about in this project, but I decided to limit this article for the sake of readability. Here is a TLDR:
+
+> Bobcoin is a proof of work digital currency heavily inspired by Bitcoin. It employs current industry standards like BIP-32, 39, 44, and more, and the UTXO model for keeping track of balances and accounts. The source code can be found in github under 3 separate repositories. It is made as a means to improve my understanding of cryptocurrencies, and a way to spread education and introduce friends and family to the world of blockchains.

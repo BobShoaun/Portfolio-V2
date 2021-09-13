@@ -22,7 +22,12 @@
 		"start": "Sept 2020",
 		"end": "April 2021",
 		"highlight": "text-green-400",
-		"points": []
+		"points": [
+			"Worked with developers and designers in a startup environment.",
+			"Conducted zoom lectures and provided mentorship to groups of learners about programming and web dev.",
+			"Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning site.",
+			"Developed a CMS for course materials, integrated leaderboards, and the entire feed and company flow."
+		]
 	},
 	{
 		"name": "The Hacker Collective",
