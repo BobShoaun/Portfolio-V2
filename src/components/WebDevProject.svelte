@@ -43,7 +43,7 @@
     <p
       data-aos={right ? "fade-right" : "fade-left"}
       data-aos-delay="200"
-      class="mb-4 text-gray-700 dark:text-gray-300 lg:text-lg"
+      class="mb-4 text-gray-700 dark:text-gray-300 lg:text-base"
     >
       {project.description}
     </p>
@@ -51,7 +51,7 @@
     <p
       data-aos={right ? "fade-right" : "fade-left"}
       data-aos-delay="300"
-      class="text-sm font-mono font-semibold mb-6 text-red-400 dark:text-red-300"
+      class="text-sm font-mono font-semibold mb-8 text-red-400 dark:text-red-300"
     >
       {project.technologies.join(" // ")}
     </p>

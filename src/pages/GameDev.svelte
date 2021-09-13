@@ -38,13 +38,20 @@
   </div>
 
   <section class="section relative">
-    <h2 data-aos="fade" class="title mb-6 text-center font-mono">
-      // Game development
-    </h2>
-    <h5 data-aos="fade" class="subtitle mb-20 text-center max-w-xl mx-auto">
-      Game development was what got me into coding in the first place, here are
-      some featured projects.
-    </h5>
+    <div class="text-center">
+      <div
+        class="bg-white dark:bg-gray-900 p-10 mb-6 lg:mb-14 shadow-lg inline-block"
+      >
+        <h2 data-aos="fade" class="title mb-6 font-mono">
+          // Game development
+        </h2>
+        <h5 data-aos="fade" class="subtitle max-w-xl">
+          Game development was what got me into coding in the first place, here
+          are some featured projects.
+        </h5>
+      </div>
+    </div>
+
     <div class="md:flex md:flex-wrap md:justify-around w-auto">
       {#each visibleProjects as project}
         <GameDevProject {project} />
@@ -53,7 +60,7 @@
 
     <button
       on:click={() => (expanded = !expanded)}
-      class="py-1 px-6 shadow-lg transition-all hover:shadow-xl bg-gray-800 border-2 border-gray-400 hover:bg-gray-600 text-white block mx-auto mt-10 font-mono focus:outline-none"
+      class="py-1 px-6 shadow-md transition-all hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto mt-10 font-mono focus:outline-none"
     >
       {#if expanded}
         <i class="fas fa-angle-up mr-2" />

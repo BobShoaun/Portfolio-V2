@@ -34,15 +34,19 @@
   </div>
 
   <section class="section relative">
-    <h2 data-aos="fade-in" class="title mb-6 text-center font-mono">
-      Experience_
-    </h2>
-    <h5 data-aos="fade-in" class="subtitle mb-20 text-center max-w-xl mx-auto">
-      I currently have more than 2 years of work experience and counting. Here
-      are some companies I have worked at before.
-    </h5>
+    <div class="text-center">
+      <div
+        class="bg-white dark:bg-gray-900 p-10 mb-10 lg:mb-20 shadow-lg inline-block"
+      >
+        <h2 data-aos="fade-in" class="title mb-6 font-mono">Experience_</h2>
+        <h5 data-aos="fade-in" class="subtitle max-w-xl">
+          I currently have more than 2 years of work experience and counting.
+          Here are some companies I have worked at before.
+        </h5>
+      </div>
+    </div>
 
-    <div class="grid lg:grid-cols-2 m-0 sm:m-10 md:m-14 lg:m-28 shadow-2xl">
+    <div class="grid lg:grid-cols-2 mx-0 sm:mx-10 md:mx-14 lg:mx-28 shadow-2xl">
       {#each experiences as experience}
         <div class="exp flex {experience.background}">
           <img

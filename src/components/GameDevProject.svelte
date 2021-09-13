@@ -62,7 +62,7 @@
     <p
       data-aos="fade-up"
       data-aos-delay="300"
-      class="text-sm font-semibold font-mono mb-4 text-green-500 dark:text-green-300"
+      class="text-sm font-semibold font-mono mb-6 text-green-500 dark:text-green-300"
     >
       {project.technologies.join(" // ")}
     </p>
