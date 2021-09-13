@@ -59,6 +59,10 @@ In my opinion, the term ‘wallet’ in the context of cryptocurrencies is misle
 
 - bip-44: https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki. A specific implementation of bip-32, with outlines about what is known as a derivation path, a format to encode how each key pair is derived. Think of it like the folder structure in your computer.
 
+|       ![mnemonic.png](images/bobcoin/mnemonic.png "A mnemonic seed phrase")       |
+| :-------------------------------------------------------------------------------: |
+| _A mnemonic seed phrase - [from the Bobcoin wallet](https://bobcoin.cash/wallet)_ |
+
 ## Coin economics
 
 As of now, with each block added to the blockchain, 512 bobcoins are introduced to the circulation in the form of block rewards. But at block 10,100, the reward will be halved to 256, and will continue to do so every 10,100 blocks until no more block reward can be obtained from mining, and thus revenue will only be from transaction fees. Since the reward decreases geometrically, a hard supply cap is naturally set to about 10 million bobcoins. This makes the currency deflationary in the long run.
