@@ -16,14 +16,8 @@
 
 <main
   id="web-development"
-  class="main relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
+  class="main relative dark:bg-gray-900"
 >
-  <div
-    data-aos="slide-down"
-    data-aos-delay="900"
-    class="bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y z-0"
-  />
-
   <div
     data-aos="slide-down"
     data-aos-offset="200"
@@ -40,7 +34,7 @@
   <section class="section relative">
     <div class="text-center">
       <div
-        class="bg-white dark:bg-gray-900 p-10 mb-6 lg:mb-14 shadow-lg inline-block"
+        class="bg-white dark:bg-gray-800 p-10 mb-6 lg:mb-14 shadow-lg inline-block"
       >
         <h2 data-aos="fade-in" class="title mb-6 font-mono">
           &lt; Web development /&gt;

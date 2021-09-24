@@ -4,7 +4,7 @@
   import About from "./pages/About.svelte";
   import Experience from "./pages/Experience.svelte";
   import WebDev from "./pages/WebDev.svelte";
-  // import Designs from "./pages/Designs.svelte";
+  import Designs from "./pages/Designs.svelte";
   import GameDev from "./pages/GameDev.svelte";
   import Contact from "./pages/Contact.svelte";
   import Footer from "./pages/Footer.svelte";
@@ -36,8 +36,8 @@
       <About />
       <Experience />
       <WebDev />
-      <!-- <Designs /> -->
       <GameDev />
+      <Designs />
       <Contact />
       <Footer />
     </Route>

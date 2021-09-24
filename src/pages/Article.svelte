@@ -22,7 +22,7 @@
 
   afterUpdate(() => {
     const headings = document.querySelectorAll("h2");
-    articleLinks = [...headings].map(heading => ({
+    articleLinks = [...headings].map((heading) => ({
       label: heading.innerText,
       link: `#${heading.id}`,
     }));
@@ -41,10 +41,10 @@
     <h1 class="text-3xl lg:text-5xl font-bold mb-4">
       How I Made My Own Cryptocurrency
     </h1>
-    <p class="text-gray-500 dark:text-gray-300 mb-7">
+    <p class="text-gray-500 dark:text-gray-300 mb-3">
       by Ng Bob Shoaun &nbsp;∙&nbsp; 2 August 2021 &nbsp;∙&nbsp; 8 minute read
     </p>
-    <hr class="mb-5 bg-gray-300 dark:bg-gray-800" />
+    <hr class="mb-5 border-gray-400 " />
 
     <Link
       to="/"
