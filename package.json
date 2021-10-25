@@ -6,7 +6,7 @@
     "watch:tailwind": "postcss public/tailwind.css -o public/index.css -w",
     "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/index.css",
     "build": "npm run build:tailwind && rollup -c",
-    "start": "sirv public -s --host",
+    "start": "sirv public -s",
     "serve": "serve public -p 80",
     "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\"",
     "deploy": "gh-pages -d public"
