@@ -6,11 +6,13 @@
 </script>
 
 <main>
-  <section class="mx-4 lg:mx-0 lg:flex lg:items-center justify-between">
-    <div fdata-aos={right ? "fade-left" : "fade-right"} class="mb-7 shadow-lg">
+  <section
+    class="mx-4 sm:mx-14 lg:mx-0 lg:flex lg:items-center lg:justify-between"
+  >
+    <div class="mb-7 shadow-lg">
       <Border>
         <div
-          class="relative overflow-hidden m-2 lg:m-3 cursor-pointer img-container"
+          class="relative overflow-hidden m-2 sm:m-3 cursor-pointer img-container"
         >
           <img
             data-aos={right ? "slide-right" : "slide-left"}
@@ -95,7 +97,7 @@
     </div>
   </section>
   {#if project.more}
-    <section data-aos="fade-up">
+    <section data-aos="fade-up" class="mx-2 sm:mx-4">
       <a
         href={project.more}
         class="mt-24 block relative text-gray-700 dark:text-white cursor-pointer featured-article "

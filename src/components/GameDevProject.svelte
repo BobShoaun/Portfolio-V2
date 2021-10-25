@@ -4,9 +4,9 @@
 </script>
 
 <main
-  class="py-16 md:py-24 mx-4 xl:px-7 md:m-0 flex box-border {project.right
-    ? 'flex-row space-x-5'
-    : 'flex-col'} md:max-w-{project.width}"
+  class="py-16 lg:py-24 xl:px-7 mx-4 sm:mx-14 lg:mx-0 {project.right
+    ? 'flex flex-row space-x-5'
+    : ''} lg:max-w-{project.width}"
 >
   <div
     class="mb-7 shadow-lg flex-shrink-0"
@@ -14,7 +14,7 @@
   >
     {#if project.video}
       <Border type={1}>
-        <div class="overflow-hidden m-2 lg:m-3 cursor-pointer img-container">
+        <div class="overflow-hidden m-2 sm:m-3 cursor-pointer img-container">
           <video
             data-aos={"slide-down"}
             data-aos-duration="500"
@@ -30,7 +30,7 @@
       </Border>
     {:else}
       <Border type={1}>
-        <img src={project.image} class="p-2 lg:p-3" alt={project.name} />
+        <img src={project.image} class="p-2 sm:p-3" alt={project.name} />
       </Border>
     {/if}
   </div>

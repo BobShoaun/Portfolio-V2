@@ -47,6 +47,7 @@ const resume = {
     "Postgres",
     "Redis",
     "Hasura",
+    "Github Actions",
     "Firebase",
     "Heroku",
     "Google Cloud",

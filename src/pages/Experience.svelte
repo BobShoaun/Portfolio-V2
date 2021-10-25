@@ -46,7 +46,9 @@
       </div>
     </div>
 
-    <div class="grid lg:grid-cols-2 mx-0 sm:mx-10 md:mx-14 lg:mx-28 shadow-2xl">
+    <div
+      class="md:grid md:grid-cols-2 mx-4 sm:mx-14 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
+    >
       {#each experiences as experience}
         <div class="exp flex {experience.background}">
           <img

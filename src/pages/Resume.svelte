@@ -27,10 +27,13 @@
       >
     </div>
 
-    <section class="resume bg-white shadow-xl">
-      <section class="sidebar relative flex flex-col justify-between">
+    <main class="resume bg-white shadow-xl">
+      <section class="sidebar flex flex-col justify-between gap-2">
         <aside class="bg-red-50 px-5 pt-5 pb-6 border-red-400 border-t-4">
-          <h1 class="text-gray-700 text-5xl -font-bold font-extrabold mb-1">
+          <h1
+            class="text-gray-700 text-5xl font-extrabold mb-1"
+            fstyle="font-size: 2.5rem; line-height: 1"
+          >
             {resume.name}
           </h1>
           <h3 class="text-red-400 font-semibold text-lg mb-3 leading-5">
@@ -84,15 +87,13 @@
 
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-1"
+            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
           >
             Coding Languages
           </h2>
-          <div class="flex flex-wrap justify-start">
+          <div class="tags flex flex-wrap justify-start">
             {#each resume.codingLanguages as codingLanguage}
-              <h4
-                class="bg-red-400 px-2.5 py-1.5 mt-1.5 mr-1.5 font-bold text-xs text-white"
-              >
+              <h4 class="bg-red-400 px-2.5 py-1.5 font-bold text-xs text-white">
                 {codingLanguage}
               </h4>
             {/each}
@@ -101,15 +102,13 @@
 
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-1"
+            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
           >
             Tech Stack
           </h2>
-          <div class="flex flex-wrap justify-start">
+          <div class="tags flex flex-wrap justify-start">
             {#each resume.techStack as framework}
-              <h4
-                class="bg-red-400 px-2.5 py-1.5 mt-1.5 mr-1.5 font-bold text-xs text-white"
-              >
+              <h4 class="bg-red-400 px-2.5 py-1.5 font-bold text-xs text-white">
                 {framework}
               </h4>
             {/each}
@@ -129,7 +128,7 @@
 
       <!-- CONTENT SECTION -->
 
-      <article class="content flex flex-col justify-between">
+      <article class="content flex flex-col justify-between gap-2">
         <div>
           <h2
             class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
@@ -222,7 +221,7 @@
           {/each}
         </div>
       </article>
-    </section>
+    </main>
   </div>
 </main>
 <Footer />
@@ -241,20 +240,20 @@
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Source Sans Pro', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
+    /* 
 
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-    grid-template-areas: "sidebar content";
-    column-gap: 2em;
-    /* row-gap: 2em; */
+    grid-template-columns: 1fr 3fr; */
+
+    display: flex;
+    gap: 2rem;
 
     /* a4 size */
     width: 21cm;
     height: 29.7cm;
 
     box-sizing: border-box;
-    padding: 2.25em;
+    padding: 2.25rem;
   }
 
   @media print {
@@ -278,33 +277,20 @@
   .info {
     /* display: grid; */
     grid-template-columns: auto 1fr;
-    /* grid-template-rows: repeat(4, 1fr); */
-    /* grid-template-rows: 1fr; */
     column-gap: 0.6rem;
-    row-gap: 0.6rem;
+    row-gap: 0.55rem;
   }
-  /* .stats {
-		grid-area: stats;
-	} */
   .content {
     grid-area: content;
   }
   .sidebar {
     grid-area: sidebar;
+    flex-shrink: 2;
+  }
+  .tags {
+    gap: 0.3rem;
   }
   a {
     color: rgba(55, 65, 81, var(--tw-text-opacity));
   }
-
-  /* ul.dash {
-		list-style: none;
-		margin-left: 0;
-		padding-left: 1em;
-	}
-	ul.dash > li:before {
-		display: inline-block;
-		content: "-";
-		width: 1em;
-		margin-left: -1em;
-	} */
 </style>

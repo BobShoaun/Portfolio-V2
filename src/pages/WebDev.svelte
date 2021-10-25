@@ -23,7 +23,7 @@
     data-aos-offset="200"
     class="hidden lg:block absolute left-14 top-0"
   >
-    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-5" />
+    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-4" />
     <p
       class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right left-0 absolute"
     >

@@ -16,7 +16,20 @@
   let currentIndex = 0;
 </script>
 
-<main id="graphic-design" class="main bg-gray-100 dark:bg-gray-900">
+<main id="graphic-design" class="main relative bg-gray-100 dark:bg-gray-900">
+  <div
+    data-aos="slide-down"
+    data-aos-offset="200"
+    class="hidden lg:block absolute left-14 top-0"
+  >
+    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-4" />
+    <p
+      class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right left-0 absolute"
+    >
+      101
+    </p>
+  </div>
+
   <section class="section">
     <div class="text-center">
       <div
@@ -74,6 +87,14 @@
       </div>
     </div>
   </section>
+
+  <div
+    data-aos="slide-up"
+    data-aos-offset="200"
+    class="hidden lg:block absolute right-14 bottom-0"
+  >
+    <div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
+  </div>
 </main>
 
 <style>

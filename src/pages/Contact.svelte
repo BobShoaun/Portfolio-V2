@@ -38,7 +38,7 @@
     class="absolute background left-0 w-2/5 h-full moving-gradient-1"
   />
 
-  <div
+  <!-- <div
     data-aos="slide-down"
     data-aos-offset="200"
     class="hidden lg:block absolute left-14 top-0"
@@ -49,7 +49,21 @@
     >
       101
     </p>
+  </div> -->
+
+  <div
+    data-aos="slide-down"
+    data-aos-offset="200"
+    class="hidden lg:block absolute right-14 top-0"
+  >
+    <div class="w-5 h-28 bg-gray-800 dark:bg-gray-50 mb-4" />
+    <p
+      class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl right-0 absolute"
+    >
+      110
+    </p>
   </div>
+
   <section class="section relative">
     <div
       class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-20 mb-16"
@@ -115,7 +129,7 @@
           name="message"
           class="w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50 focus:outline-none"
           placeholder="Tell me what you think!"
-          rows="10"
+          rows="6"
           required
         />
         <div data-aos="fade-right" class="text-right">

@@ -29,7 +29,7 @@
     data-aos-offset="200"
     class="hidden lg:block absolute right-14 top-0"
   >
-    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-5" />
+    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-4" />
     <p
       class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl right-0 absolute"
     >
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div class="md:flex md:flex-wrap md:justify-around w-auto">
+    <div class="lg:flex lg:flex-wrap lg:justify-around">
       {#each visibleProjects as project}
         <GameDevProject {project} />
       {/each}
