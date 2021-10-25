@@ -55,21 +55,19 @@
             alt={experience.name}
             style="mix-blend-mode: {experience.blend}"
           />
-          <div class="exp-desc bg-gray-800 p-5 lg:p-10">
+          <div class="exp-desc bg-gray-800 p-5 sm:p-10 lg:p-5">
             <h1 class="font-bold text-white text-base lg:text-lg">
               {experience.position}
             </h1>
-            <h1
-              class="font-bold {experience.highlight} text-base lg:text-2xl mb-1"
-            >
+            <h1 class="font-bold {experience.highlight} text-lg mb-1">
               @{experience.name}
             </h1>
-            <p class="text-gray-400 mb-7 font-mono text-sm">
+            <p class="text-gray-400 mb-5 font-mono text-sm">
               {experience.start} - {experience.end}
             </p>
-            <ul class="text-sm lg:text-base text-gray-300 list-square ml-4">
+            <ul class="text-sm text-gray-300 list-square ml-4">
               {#each experience.points as point}
-                <li class="mt-4">{point}</li>
+                <li class="mt-1">{point}</li>
               {/each}
             </ul>
           </div>

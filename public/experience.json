@@ -8,10 +8,10 @@
 		"end": "August 2019",
 		"highlight": "text-blue-400",
 		"points": [
-			"Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
-			"Fixed bugs and introduced new quality of life features.",
-			"Presented my work during head of department meetings.",
-			"Wrote extensive documentation for a proper handover of the project in the future."
+		  "Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
+        "Fixed bugs and introduced new quality of life features.",
+        "Presented my work during head of department meetings.",
+        "Wrote extensive documentation for proper project handover."
 		]
 	},
 	{
@@ -23,10 +23,9 @@
 		"end": "April 2021",
 		"highlight": "text-green-400",
 		"points": [
-			"Worked with developers and designers in a startup environment.",
-			"Conducted zoom lectures and provided mentorship to groups of learners about programming and web dev.",
-			"Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning site.",
-			"Developed a CMS for course materials, integrated leaderboards, and the entire feed and company flow."
+      "Worked with developers and designers in a startup environment.",
+      "Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning site.",
+      "Developed a CMS for course materials, integrated user leaderboards, and built the entire social feed and endorsement system."
 		]
 	},
 	{
@@ -37,7 +36,11 @@
 		"start": "Sept 2020",
 		"end": "April 2021",
 		"highlight": "text-red-400",
-		"points": []
+		"points": [
+      "Conducted zoom lectures and mentoring sessions to groups of learners about programming and web development.",
+      "Did live programming demonstrations to students, and guided them so they understood the concepts.",
+      "Topics covered include JavaScript fundamentals, Object-oriented programming, CSS basics, flexbox and grid, Git and Github crash course, using REST APIs, DOM manipulation, and a few mini projects."
+    ]
 	},
 	{
 		"name": "X-CD Technologies",
@@ -48,6 +51,10 @@
 		"start": "April 2021",
 		"end": "Present",
 		"highlight": "text-indigo-400",
-		"points": []
+		"points": [
+      "Developed client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
+      "Participated in code reviews, and provided feedback to improve code quality.",
+      "Worked on the frontend using React, Redux, Redux-saga, and the backend using Node.js, Express, and MySQL."
+    ]
 	}
 ]

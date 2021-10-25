@@ -104,7 +104,7 @@
           ><i class="fas fa-newspaper mr-2 text-lg" />Featured Article</em
         >
         <hr class="mb-4 border-gray-400" />
-        <h1 class="text-3xl lg:text-5xl font-bold mb-3">
+        <h1 class="text-2xl lg:text-3xl font-bold mb-3">
           How I Made My Own Cryptocurrency
         </h1>
         <p class="text-gray-500 dark:text-gray-300 mb-6">
