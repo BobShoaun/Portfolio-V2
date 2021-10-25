@@ -70,7 +70,7 @@ const resume = {
 
   experiences: [
     {
-      company: "X-CD Technologies",
+      company: "X-CD Technologies Inc.",
       position: "Software developer",
       timeline: "April 2021 - Present",
       points: [
