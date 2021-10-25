@@ -84,3 +84,5 @@ Aside from the speed and bandwidth of the servers hosting bobcoin-node. The scal
 There is a lot more to talk about in this project, but I decided to limit this article for the sake of readability. Here is a TLDR:
 
 > Bobcoin is a proof of work digital currency heavily inspired by Bitcoin. It employs current industry standards like BIP-32, 39, 44, and more, and the UTXO model for keeping track of balances and accounts. The source code can be found in github under 3 separate repositories. It is made as a means to improve my understanding of cryptocurrencies, and a way to spread education and introduce friends and family to the world of blockchains.
+
+Thank you for reading my article, hope you found it interesting, and perhaps learnt a thing or two.

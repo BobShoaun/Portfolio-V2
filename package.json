@@ -1,12 +1,12 @@
 {
-  "name": "svelte-app",
+  "name": "portfolio-v2",
   "version": "1.0.0",
   "homepage": "https://BobShoaun.github.io/Portfolio-V2",
   "scripts": {
     "watch:tailwind": "postcss public/tailwind.css -o public/index.css -w",
     "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/index.css",
     "build": "npm run build:tailwind && rollup -c",
-    "start": "sirv public -s",
+    "start": "sirv public -s --host",
     "serve": "serve public -p 80",
     "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\"",
     "deploy": "gh-pages -d public"
