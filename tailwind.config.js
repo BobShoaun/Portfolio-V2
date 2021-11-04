@@ -25,6 +25,7 @@ module.exports = {
         "bg-teal-50",
         "text-teal-600",
         "border-teal-600",
+        "bg-teal-600",
       ],
       blocklist: [/^debug-/],
       keyframes: true,
