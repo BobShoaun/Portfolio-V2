@@ -54,6 +54,9 @@ const resume = {
     "Figma",
     "Illustrator",
   ],
+  // Ukulele
+  interests: ["Drums", "Graphic Design", "PC Building", "Table Tennis"],
+  languages: ["English", "Chinese", "Malay"],
   lastUpdated: "24 Oct 2021",
   education: {
     school: "University of Toronto",
@@ -78,6 +81,7 @@ const resume = {
         "Developed client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
         "Participated in code reviews, and provided feedback to improve code quality.",
         "Worked on the frontend using React, Redux, Redux-saga, and the backend using Node.js, Express, and MySQL.",
+        // "Daily Scrum meetings",
       ],
     },
     {

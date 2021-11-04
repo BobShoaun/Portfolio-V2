@@ -4,9 +4,11 @@
   import Footer from "./Footer.svelte";
   import resume from "../resume.js";
 
-  // Ukulele
-  let interests = ["Drums", "Graphic Design", "PC Building", "Table Tennis"];
-  let languages = ["English", "Chinese", "Malay"];
+  // const primary = "red-500";
+  // const light = "red-50";
+
+  const primary = "teal-600";
+  const light = "teal-50";
 </script>
 
 <main class="bg-gray-500 dark:bg-gray-700 pt-32 pb-20 overflow-auto flex">
@@ -29,14 +31,16 @@
 
     <main class="resume bg-white shadow-xl">
       <section class="sidebar flex flex-col justify-between gap-2">
-        <aside class="bg-red-50 px-5 pt-5 pb-6 border-red-400 border-t-4">
+        <aside
+          class={`bg-${light} px-5 pt-5 pb-6 border-${primary} border-t-4`}
+        >
           <h1
             class="text-gray-700 text-5xl font-extrabold mb-1"
             fstyle="font-size: 2.5rem; line-height: 1"
           >
             {resume.name}
           </h1>
-          <h3 class="text-red-400 font-semibold text-lg mb-3 leading-5">
+          <h3 class={`text-${primary} font-semibold text-lg mb-3 leading-5`}>
             {resume.title}
           </h3>
           <div class="grid info items-center">
@@ -76,7 +80,7 @@
 
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
+            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
           >
             About Me
           </h2>
@@ -87,13 +91,15 @@
 
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
+            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
           >
             Coding Languages
           </h2>
           <div class="tags flex flex-wrap justify-start">
             {#each resume.codingLanguages as codingLanguage}
-              <h4 class="bg-red-400 px-2.5 py-1.5 font-bold text-xs text-white">
+              <h4
+                class={`bg-${primary} px-2.5 py-1.5 font-bold text-xs text-white`}
+              >
                 {codingLanguage}
               </h4>
             {/each}
@@ -102,13 +108,15 @@
 
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
+            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
           >
             Tech Stack
           </h2>
           <div class="tags flex flex-wrap justify-start">
             {#each resume.techStack as framework}
-              <h4 class="bg-red-400 px-2.5 py-1.5 font-bold text-xs text-white">
+              <h4
+                class={`bg-${primary} px-2.5 py-1.5 font-bold text-xs text-white`}
+              >
                 {framework}
               </h4>
             {/each}
@@ -116,9 +124,9 @@
         </div>
 
         <div
-          class="bg-red-50 border-red-400 border-b-4 px-5 pt-1.5 pb-1.5 w-full"
+          class={`bg-${light} border-${primary} border-b-4 px-5 pt-1.5 pb-1.5 w-full`}
         >
-          <h3 class="text-red-400 text-sm">
+          <h3 class={`text-${primary} text-sm`}>
             Last updated on: <span class="italic font-semibold"
               >{resume.lastUpdated}</span
             >
@@ -131,7 +139,7 @@
       <article class="content flex flex-col justify-between gap-2">
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
+            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
           >
             Education
           </h2>
@@ -164,7 +172,7 @@
 
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
+            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
           >
             Experience
           </h2>
@@ -195,7 +203,7 @@
 
         <div>
           <h2
-            class="text-red-400 bg-red-50 w-full border-red-400 pl-4 py-1 border-l-4 font-semibold text-xl mb-2"
+            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
           >
             Projects
           </h2>

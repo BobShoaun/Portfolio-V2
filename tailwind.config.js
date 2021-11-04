@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: {
@@ -21,6 +22,9 @@ module.exports = {
         "text-indigo-400",
         "bg-white",
         "bg-gray-700",
+        "bg-teal-50",
+        "text-teal-600",
+        "border-teal-600",
       ],
       blocklist: [/^debug-/],
       keyframes: true,
@@ -65,10 +69,14 @@ module.exports = {
         print: { raw: "print" },
       },
       colors: {
-        orange: {
-          400: "#FF7733",
-          50: "#FFF1EB",
-        },
+        // orange: {
+        //   400: "#FF7733",
+        //   50: "#FFF1EB",
+        // },
+        transparent: "transparent",
+        current: "currentColor",
+        ...colors,
+        gray: colors.blueGray,
       },
     },
   },
