@@ -57,10 +57,10 @@ const resume = {
   // Ukulele
   interests: ["Drums", "Graphic Design", "PC Building", "Table Tennis"],
   languages: ["English", "Chinese", "Malay"],
-  lastUpdated: "24 Oct 2021",
+  lastUpdated: "4 Nov 2021",
   education: {
     school: "University of Toronto",
-    cgpa: "3.93",
+    cgpa: "3.93 (Dean's List Scholar)",
     major: "Computer Science Specialist (3rd year)",
     timeline: "Sept 2019 - Present",
     courses: [
