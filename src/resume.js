@@ -20,7 +20,8 @@ const resume = {
   },
   location: "Toronto, Canada",
   about:
-    "Skilled and diligent programmer with an eye for good designs. Always seeking to learn and improve on existing ways. A resourceful and avid self-learner passionate in coding.",
+    // "Skilled and diligent programmer with an eye for good designs. Always seeking to learn and improve on existing ways. A resourceful and avid self-learner passionate in coding.",
+    "Accomplished and diligent software developer with a good eye for designs. Able to deliver products with high quality proven through customer satisfaction. Friendly, with strong communication skills with teammates. Seeking to learn and grow to become a professional software engineer.",
   codingLanguages: [
     "JavaScript (ES6)", // ES6
     "HTML",
@@ -57,7 +58,7 @@ const resume = {
   // Ukulele
   interests: ["Drums", "Graphic Design", "PC Building", "Table Tennis"],
   languages: ["English", "Chinese", "Malay"],
-  lastUpdated: "4 Nov 2021",
+  lastUpdated: "5 Nov 2021",
   education: {
     school: "University of Toronto",
     cgpa: "3.93 (Dean's List Scholar)",
@@ -78,10 +79,9 @@ const resume = {
       position: "Software developer",
       timeline: "April 2021 - Present",
       points: [
-        "Developed client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
-        "Participated in code reviews, and provided feedback to improve code quality.",
-        "Worked on the frontend using React, Redux, Redux-saga, and the backend using Node.js, Express, and MySQL.",
-        // "Daily Scrum meetings",
+        "Delivered more than 6 projects since, including client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
+        "Participated in code reviews, and proposed improved coding conventions resulting in an 80% increase in codebase quality.",
+        "Used React, Redux, Redux-saga, Node.js, Express, and MySQL.",
       ],
     },
     {
@@ -89,21 +89,21 @@ const resume = {
       position: "Fullstack developer",
       timeline: "Sept 2020 - April 2021",
       points: [
-        "Worked with developers and designers in a startup environment.",
+        "Worked with a cross-functional team in a startup environment.",
         "Conducted zoom lectures and mentoring sessions to groups of learners about programming and web development.",
-        "Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning site.",
-        "Developed a CMS for course materials, integrated user leaderboards, and built the entire social feed and endorsement system.",
+        "Used Vue, Graphql, Hasura, and Postgres to build a social e-learning site.",
+        "Developed a CMS for course materials, integrated user leaderboards, and implemented entire social feed and endorsement system from ground up.",
       ],
     },
     {
       company: "N2N Connect Bhd.",
       position: "Intern / Frontend developer",
-      timeline: "May - Aug 2019",
+      timeline: "May 2019 - Aug 2019",
       points: [
-        "Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
-        "Fixed bugs and introduced new quality of life features.",
-        "Presented my work during head of department meetings.",
-        "Wrote extensive documentation for proper project handover.",
+        "Revamped the company's internal timesheet management system using Angular.js and Bootstrap, improving user experience by 80%.",
+        "Fixed 90% of the bugs and introduced new quality of life features.",
+        "Presented and showcased my work during head of department meetings.",
+        "Authored extensive documentation for proper project handover.",
       ],
     },
   ],
@@ -113,7 +113,7 @@ const resume = {
       type: "Personal project",
       points: [
         "An open source, decentralized, peer to peer, proof of work cryptocurrency.",
-        "Built from scratch using Node.js for business logic. Express and MongoDB for the Node software/backend. React, Redux-toolkit, and Bulma for the frontend block explorer, wallet software, and mining client.",
+        "Created from scratch using Node.js for business logic. Express and MongoDB for the Node software/backend. React, Redux-toolkit, and Bulma for the frontend block explorer, wallet software, and mining client.",
         "Secured using cryptographic hash algorithms, elliptic curve digital signatures, public-key cryptography, merkle trees, and the UTXO model.",
       ],
     },
@@ -121,7 +121,7 @@ const resume = {
       name: "Assembly Doodle Jump",
       type: "Academic project",
       points: [
-        "Simple game coded from scratch using the MIPS assembly language.",
+        "Final coursework using MIPS assembly language, scored a grade of 100%.",
         "Features sound effects, powerups like springs and jetpacks, different platform types, and scalable difficulty.",
       ],
     },
@@ -129,8 +129,8 @@ const resume = {
       name: "Course Checker",
       type: "Personal project",
       points: [
-        "Help students plan courses for the upcoming semester by dynamically generating a visual timetable, given a selection of courses.",
-        "Able to customize colors, and show/hide additional info and timestamps.",
+        "Aids in course planning for upcoming semester by dynamically generating a visual timetable given a selection of courses.",
+        "Highly customizable in terms of colors, additional info, and timestamps",
         "Developed with C# using the Unity Engine, built as a WebGL frame embedded into a website made with HTML + CSS.",
       ],
     },
