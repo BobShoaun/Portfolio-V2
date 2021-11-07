@@ -103,7 +103,7 @@ const resume = {
         "Revamped the company's internal timesheet management system using Angular.js and Bootstrap, improving user experience by 80%.",
         "Fixed 90% of the bugs and introduced new quality of life features.",
         "Presented and showcased my work during head of department meetings.",
-        "Authored extensive documentation for proper project handover.",
+        "Authored extensive technical documentation for proper project handover.",
       ],
     },
   ],
@@ -113,7 +113,7 @@ const resume = {
       type: "Personal project",
       points: [
         "An open source, decentralized, peer to peer, proof of work cryptocurrency.",
-        "Created from scratch using Node.js for business logic. Express and MongoDB for the Node software/backend. React, Redux-toolkit, and Bulma for the frontend block explorer, wallet software, and mining client.",
+        "Created from scratch using Node.js for business logic. Express and MongoDB for the Node software/backend. Jest for unit testing. React, Redux-toolkit, and Bulma for the frontend block explorer, wallet software, and mining client.",
         "Secured using cryptographic hash algorithms, elliptic curve digital signatures, public-key cryptography, merkle trees, and the UTXO model.",
       ],
     },
