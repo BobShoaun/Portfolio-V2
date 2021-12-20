@@ -8,9 +8,10 @@
     // setTimeout(() => (ready = true), 500);
   });
 
-  export let dark;
+  export let theme;
 
-  $: welcomeMessage = dark ? 'console.log("Hey")' : 'console.log("Hi")';
+  $: welcomeMessage =
+    theme === "dark" ? 'console.log("Hey")' : 'console.log("Hi")';
 </script>
 
 <main

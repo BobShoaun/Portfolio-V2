@@ -1,18 +1,16 @@
 <script>
   import { slide } from "svelte/transition";
-  import { onMount } from "svelte";
+  import { onMount, createEventDispatcher } from "svelte";
   import { links, Router, link } from "svelte-routing";
 
+  const dispatch = createEventDispatcher();
+
   let open = false;
-  export let dark = false;
+  export let theme;
 
   let scrollThreshold = 10;
 
-  function toggleTheme() {
-    dark = !dark;
-    if (dark) localStorage.theme = "dark";
-    else localStorage.theme = "light";
-  }
+  const toggleTheme = () => dispatch("toggleTheme");
 
   onMount(() => {
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
@@ -122,9 +120,9 @@
       data-aos-duration="700"
       on:click={toggleTheme}
       class="border-gray-500 border-2 py-1 px-3 dark:text-gray-50 rounded-md focus:outline-none"
-      ><i class="{dark ? 'fa fa-moon' : 'far fa-sun'} mr-2" />{dark
-        ? "Dark"
-        : "Light"}</button
+      ><i
+        class="{theme === 'dark' ? 'fa fa-moon' : 'far fa-sun'} mr-2"
+      />{theme === "dark" ? "Dark" : "Light"}</button
     >
   </nav>
 
@@ -236,9 +234,9 @@
           data-aos-delay="400"
           on:click={toggleTheme}
           class="border-gray-500 border-2 py-2 px-4 dark:text-gray-50 rounded-md focus:outline-none outline-none"
-          ><i class="{dark ? 'fa fa-moon' : 'far fa-sun'} mr-2" />{dark
-            ? "Dark"
-            : "Light"}</button
+          ><i
+            class="{theme === 'dark' ? 'fa fa-moon' : 'far fa-sun'} mr-2"
+          />{theme === "dark" ? "Dark" : "Light"}</button
         >
       </div>
     {/if}

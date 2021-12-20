@@ -34,7 +34,7 @@
             data-aos="slide-right"
             data-aos-duration="500"
             data-aos-delay="200"
-            src="images/me.jpg"
+            src="/images/me.jpg"
             alt="me"
             class=""
           />

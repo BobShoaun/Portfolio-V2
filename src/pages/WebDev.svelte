@@ -1,6 +1,7 @@
 <script>
   import WebDevProject from "../components/WebDevProject.svelte";
   import { onMount } from "svelte";
+  import axios from "axios";
 
   onMount(mounted);
 
@@ -9,15 +10,12 @@
   let expanded = false;
 
   async function mounted() {
-    const response = await fetch("projects_web.json");
-    projects = await response.json();
+    const { data } = await axios("/projects_web.json");
+    projects = data;
   }
 </script>
 
-<main
-  id="web-development"
-  class="main relative dark:bg-gray-900"
->
+<main id="web-development" class="main relative dark:bg-gray-900">
   <div
     data-aos="slide-down"
     data-aos-offset="200"

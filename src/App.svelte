@@ -15,24 +15,32 @@
   import { Router, Route } from "svelte-routing";
   export let url = ""; //This property is necessary declare to avoid ignore the Router
 
-  // first time visitors
-  if (!("theme" in localStorage)) {
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  let theme = "dark";
+
+  const setTheme = (newTheme) => {
+    theme = newTheme;
+    localStorage.theme = newTheme;
+    document.documentElement.style.setProperty("--theme", newTheme);
+  };
+
+  if ("theme" in localStorage) setTheme(localStorage.theme);
+  else {
+    // new visitor
     // localStorage.theme = window.matchMedia("(prefers-color-scheme: dark)").matches
     // 	? "dark"
     // 	: "light";
-
-    localStorage.theme = "dark"; // force dark theme cuz its nicer
+    setTheme("dark"); // force dark theme cuz its nicer
   }
 
-  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-  let dark = localStorage.theme === "dark";
+  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 </script>
 
-<main class="{dark ? 'dark' : ''} flex flex-col">
-  <Navbar bind:dark />
+<main class="{theme === 'dark' ? 'dark' : ''} flex flex-col">
+  <Navbar bind:theme on:toggleTheme={toggleTheme} />
   <Router {url}>
     <Route path="/">
-      <Hero bind:dark />
+      <Hero bind:theme />
       <About />
       <Experience />
       <WebDev />
@@ -44,7 +52,14 @@
 
     <Route path="resume" component={Resume} />
     <Route path="Resume" component={Resume} />
-    <Route path="how-i-made-my-own-cryptocurrency" component={Article} />
+
+    <!-- <Route path="hello">
+      <Route path="how-i-made-my-own-cryptocurrency" component={Article} />
+    </Route> -->
+    <Route
+      path="articles/how-i-made-my-own-cryptocurrency"
+      component={Article}
+    />
 
     <!-- <Route path="articles/:title" component={Article} /> -->
     <!-- <Route path="Articles/:title" component={Article} /> -->

@@ -9,7 +9,7 @@
   let expanded = false;
 
   async function mounted() {
-    const response = await fetch("projects.json");
+    const response = await fetch("/projects.json");
     projects = await response.json();
   }
 </script>

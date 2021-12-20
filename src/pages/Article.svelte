@@ -10,7 +10,7 @@
   let articleLinks = [];
 
   async function mounted() {
-    const response = await fetch("how-i-made-my-own-cryptocurrency.md");
+    const response = await fetch("/how-i-made-my-own-cryptocurrency.md");
     const articleMD = await response.text();
 
     const renderer = new marked.Renderer();

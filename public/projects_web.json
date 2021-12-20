@@ -1,18 +1,18 @@
 [
 	{
 		"name": "Bobcoin",
-		"image": "images/bobcoin.png",
+		"image": "/images/bobcoin.png",
 		"collaborators": "by myself",
 		"description": "Given my fascination in blockchain technologies, I've decided to make my own cryptocurrency from scratch. It uses the proof of work consensus, elliptic curve signatures, the UTXO model, a BIP compliant wallet format, a block explorer, and many more. This project deepened my understand of the inner workings of cryptocurrencies like Bitcoin.",
 		"technologies": ["mongodb", "express", "react", "node.js", "bulma", "socket.io"],
 		"website": "https://bobcoin.cash",
 		"github": "https://github.com/BobShoaun/Bobcoin-Node",
 		"year": 2021,
-		"more": "how-i-made-my-own-cryptocurrency"
+		"more": "/articles/how-i-made-my-own-cryptocurrency"
 	},
 	{
 		"name": "Pathforge",
-		"image": "images/pathforge.png",
+		"image": "/images/pathforge.png",
 		"collaborators": "with pathforge team",
 		"description": "An e-learning site that aims to redefine the self learning experience. It provides a community for online learners to help each other out and step through the materials together.",
 		"technologies": ["vue", "buefy", "graphql", "postgres"],
@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "ADP Timetabler <br>(aka Course Checker)",
-		"image": "images/course-checker 2.png",
+		"image": "/images/course-checker 2.png",
 		"collaborators": "by myself",
 		"description": "A web application for students in the ADP program of Taylor’s University to generate a visually appealing & customizable timetable based on courses they want to take for their next semester.",
 		"technologies": ["html", "css", "unity", "c#", "webgl"],
@@ -31,7 +31,7 @@
 	},
 	{
 		"name": "Countries of the World",
-		"image": "images/countries-of-the-world.png",
+		"image": "/images/countries-of-the-world.png",
 		"collaborators": "with my students",
 		"description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst mentoring learners about the basics of the fetch api and javascript's promise callback chains.",
 		"technologies": ["html", "css", "js", "restcountries api"],
@@ -41,7 +41,7 @@
 	},
 	{
 		"name": "things to do",
-		"image": "images/todo app 2.png",
+		"image": "/images/todo app 2.png",
 		"collaborators": "by myself",
 		"description": "A simple and elegant to do list application with a great UI built as practice while learning the vue framework and firebase firestore.",
 		"technologies": ["vue", "tailwind", "firebase"],

@@ -4,7 +4,7 @@ Bobcoin is a decentralized cryptocurrency that I made completely by myself after
 
 I made Bobcoin with the intention of recreating bitcoin, but also as a learning process. What better way to learn about cryptocurrencies than coding one yourself?
 
-|                                                        ![rocket.jpg](images/bobcoin/rocket.jpg "Bobcoin going to Mars")                                                        |
+|                                                        ![rocket.jpg](/images/bobcoin/rocket.jpg "Bobcoin going to Mars")                                                        |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | _Bobcoin going to Mars - [created by brgfx - www.freepik.com](https://www.freepik.com/free-vector/rocket-flying-through-astriods_4955149.htm#page=1&query=rocket&position=15)_ |
 
@@ -49,7 +49,7 @@ A transaction is made from one address to another, and it consists of inputs and
 
 The outputs are your friend’s address, and possibly your own address to receive change, as UTXO inputs has to be spent in its entirety, think of each UTXO as a piece of cash, to spend it you need to give the cashier the entire cash and receive change for it.
 
-|       ![transactions.png](images/bobcoin/transactions.png "Traceable transactions")       |
+|       ![transactions.png](/images/bobcoin/transactions.png "Traceable transactions")       |
 | :---------------------------------------------------------------------------------------: |
 | _Traceable transactions - [from the Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf)_ |
 
@@ -65,7 +65,7 @@ In my opinion, the term “wallet” in the context of cryptocurrencies is misle
 
 - BIP-44: https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki. A specific implementation of bip-32, with outlines about what is known as a derivation path, a format to encode how each key pair is derived. Think of it like the folder structure in your computer.
 
-|       ![mnemonic.png](images/bobcoin/mnemonic.png "A mnemonic seed phrase")       |
+|       ![mnemonic.png](/images/bobcoin/mnemonic.png "A mnemonic seed phrase")       |
 | :-------------------------------------------------------------------------------: |
 | _A mnemonic seed phrase - [from the Bobcoin wallet](https://bobcoin.cash/wallet)_ |
 

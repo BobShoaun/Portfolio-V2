@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Assembly Doodle Jump",
-		"video": "videos/doodle jump.mp4",
+		"video": "/videos/doodle jump.mp4",
 		"collaborators": "by myself",
 		"description": "Doodle jump game recreated using assembly language. It features different types of platforms, powerups like springs and jetpacks, and a scaling difficulty.",
 		"technologies": ["mips assembly", "mars simulator"],
@@ -11,7 +11,7 @@
 	},
 	{
 		"name": "Water Chef",
-		"video": "videos/water chef.mp4",
+		"video": "/videos/water chef.mp4",
 		"collaborators": "by myself",
 		"description": "A fast paced restaurant management game, inspired by games like hot dog bush. You are a chef specializing in serving water to very demanding and impatient customers.",
 		"technologies": ["unity", "c#", "photoshop"],
@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "Maze Runner",
-		"video": "videos/maze runner.mp4",
+		"video": "/videos/maze runner.mp4",
 		"collaborators": "with some friends",
 		"description": "2 players spawn in a maze, the runner has to reach the end portal when it opens, while the chaser prevents the runner from doing so. The game is rendered entirely with ascii graphics with the help of a console game engine. Maps in each level are dynamic and customizable from serialized text files.",
 		"technologies": ["c++", "visual studio", "console game engine"],
@@ -31,7 +31,7 @@
 	},
 	{
 		"name": "Flappy Face",
-		"video": "videos/flappy face.mp4",
+		"video": "/videos/flappy face.mp4",
 		"collaborators": "with friends",
 		"description": "The first game I have made with some friends, a Flappy bird clone running as a Java applet. Fun fact: the sound effects and background music are all acapella.",
 		"technologies": ["eclipse", "java"],
@@ -41,7 +41,7 @@
 	},
 	{
 		"name": "UFO Destruction",
-		"video": "videos/ufo.mp4",
+		"video": "/videos/ufo.mp4",
 		"collaborators": "by myself",
 		"description": "You are an alien piloting a spaceship trying to invade Earth peacefully. However, since the cops aren't a big fan of you, destructive measures had to be taken. The game features realistic 2d physics, projectiles, explosives, and a tractor beam to manipulate gravity.",
 		"technologies": ["unity", "c#"],
@@ -51,7 +51,7 @@
 	},
 	{
 		"name": "Csgo Weapons",
-		"video": "videos/csgo weapons.mp4",
+		"video": "/videos/csgo weapons.mp4",
 		"collaborators": "by myself",
 		"description": "My recreation of CSGO's complex shooting mechanics - spray patterns, accuracy decay, recoil, and movement innacuracy. Moreover, each weapons has its own traits and parameters.",
 		"technologies": ["unity", "c#", "unet multiplayer"],
@@ -62,7 +62,7 @@
 
 	{
 		"name": "Dicey",
-		"video": "videos/dicey.mp4",
+		"video": "/videos/dicey.mp4",
 		"collaborators": "by myself",
 		"description": "A clean and simple dice app. Options available for multiple dice and a shake to roll feature. The total is tallied up for you.",
 		"technologies": ["unity", "c#"],
@@ -74,7 +74,7 @@
 
 	{
 		"name": "Zombie Game",
-		"video": "videos/zombie game.mp4",
+		"video": "/videos/zombie game.mp4",
 		"collaborators": "with project groupmates",
 		"description": "A survival zombie game written entirely in c++ and runs on ascii graphics. Featuring self implemented collision detection code, zombie waves, and A* pathfinding algorithm for zombies to path towards the player.",
 		"technologies": ["c++", "visual studio"],
@@ -84,7 +84,7 @@
 	},
 	{
 		"name": "Doxel Core Unity Package",
-		"image": "images/doxel-core.png",
+		"image": "/images/doxel-core.png",
 		"collaborators": "by myself",
 		"description": "A unity package that provides a library for serializing data easily. It also contains many frequently used utility classes, functions and extension methods.",
 		"technologies": ["unity", "c#"],

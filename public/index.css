@@ -654,6 +654,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0px;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -664,14 +668,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-0\.5 {
   margin-bottom: 0.125rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
 }
 
 .block {
@@ -1559,6 +1555,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:root {
+  --theme: light;
+  color-scheme: var(--theme);
+}
+
 /* ::-webkit-scrollbar {
   width: 0.75em;
 } */
@@ -2346,20 +2347,8 @@ html {
     margin-bottom: 5rem;
   }
 
-  .lg\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .lg\:ml-1 {
     margin-left: 0.25rem;
-  }
-
-  .lg\:mb-3 {
-    margin-bottom: 0.75rem;
   }
 
   .lg\:block {
@@ -2483,33 +2472,12 @@ html {
     padding-bottom: 8rem;
   }
 
-  .lg\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .lg\:pr-28 {
     padding-right: 7rem;
   }
 
   .lg\:pl-28 {
     padding-left: 7rem;
-  }
-
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .lg\:pb-14 {
-    padding-bottom: 3.5rem;
-  }
-
-  .lg\:pt-12 {
-    padding-top: 3rem;
-  }
-
-  .lg\:pt-14 {
-    padding-top: 3.5rem;
   }
 
   .lg\:text-3xl {

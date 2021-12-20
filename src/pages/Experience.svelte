@@ -5,7 +5,7 @@
   let experiences = [];
 
   async function mounted() {
-    let response = await fetch("experience.json");
+    let response = await fetch("/experience.json");
     experiences = await response.json();
   }
 </script>

@@ -1,7 +1,7 @@
 [
 	{
 		"name": "N2N Connect Bhd.",
-		"logo": "images/n2n connect logo.png",
+		"logo": "/images/n2n connect logo.png",
 		"background": "moving-gradient-1",
 		"position": "Frontend Developer / Trainee",
 		"start": "June",
@@ -16,7 +16,7 @@
 	},
 	{
 		"name": "Pathforge Pte. Ltd.",
-		"logo": "images/pathforge logo.jpg",
+		"logo": "/images/pathforge logo.jpg",
 		"background": "bg-white",
 		"position": "Fullstack Developer",
 		"start": "Sept 2020",
@@ -30,7 +30,7 @@
 	},
 	{
 		"name": "The Hacker Collective",
-		"logo": "images/thc logo.png",
+		"logo": "/images/thc logo.png",
 		"background": "bg-gray-700",
 		"position": "Mentor / Jumpstarter",
 		"start": "Sept 2020",
@@ -44,7 +44,7 @@
 	},
 	{
 		"name": "X-CD Technologies Inc.",
-		"logo": "images/x-cd logo.png",
+		"logo": "/images/x-cd logo.png",
 		"background": "moving-gradient-2",
 		"blend": "multiply",
 		"position": "Software Developer",
