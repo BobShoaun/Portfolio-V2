@@ -1,19 +1,20 @@
 [
-	{
-		"name": "N2N Connect Bhd.",
-		"logo": "/images/n2n connect logo.png",
-		"background": "moving-gradient-1",
-		"position": "Frontend Developer / Trainee",
-		"start": "June",
-		"end": "August 2019",
-		"highlight": "text-blue-400",
+  {
+		"name": "X-CD Technologies Inc.",
+		"logo": "/images/x-cd logo.png",
+		"background": "moving-gradient-2",
+		"blend": "multiply",
+		"position": "Software Developer",
+		"start": "April 2021",
+		"end": "Present",
+		"highlight": "text-indigo-400",
 		"points": [
-		  "Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
-        "Fixed bugs and introduced new quality of life features.",
-        "Presented my work during head of department meetings.",
-        "Wrote extensive documentation for proper project handover."
-		]
+      "Developed client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
+      "Participated in code reviews, and provided feedback to improve code quality.",
+      "Worked on the frontend using React, Redux, Redux-saga, and the backend using Node.js, Express, and MySQL."
+    ]
 	},
+
 	{
 		"name": "Pathforge Pte. Ltd.",
 		"logo": "/images/pathforge logo.jpg",
@@ -43,18 +44,18 @@
     ]
 	},
 	{
-		"name": "X-CD Technologies Inc.",
-		"logo": "/images/x-cd logo.png",
-		"background": "moving-gradient-2",
-		"blend": "multiply",
-		"position": "Software Developer",
-		"start": "April 2021",
-		"end": "Present",
-		"highlight": "text-indigo-400",
+		"name": "N2N Connect Bhd.",
+		"logo": "/images/n2n connect logo.png",
+		"background": "moving-gradient-1",
+		"position": "Frontend Developer / Trainee",
+		"start": "June",
+		"end": "August 2019",
+		"highlight": "text-blue-400",
 		"points": [
-      "Developed client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
-      "Participated in code reviews, and provided feedback to improve code quality.",
-      "Worked on the frontend using React, Redux, Redux-saga, and the backend using Node.js, Express, and MySQL."
-    ]
+		  "Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
+        "Fixed bugs and introduced new quality of life features.",
+        "Presented my work during head of department meetings.",
+        "Wrote extensive documentation for proper project handover."
+		]
 	}
 ]

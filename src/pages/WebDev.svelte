@@ -52,7 +52,7 @@
 
     <button
       on:click={() => (expanded = !expanded)}
-      class="py-1 px-6 shadow-md transition-all hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto mt-10 font-mono focus:outline-none"
+      class="py-2 px-4 shadow-md rounded-sm transition-color hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto mt-10 focus:outline-none"
     >
       {#if expanded}
         <i class="fas fa-angle-up mr-2" />

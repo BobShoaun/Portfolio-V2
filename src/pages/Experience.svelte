@@ -50,24 +50,30 @@
       class="md:grid md:grid-cols-2 mx-4 sm:mx-14 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
     >
       {#each experiences as experience}
-        <div class="exp flex {experience.background}">
+        <div class="exp aspect-square flex {experience.background}">
           <img
             class="m-auto w-40 sm:w-52 md:w-48 lg:w-40"
             src={experience.logo}
             alt={experience.name}
             style="mix-blend-mode: {experience.blend}"
           />
-          <div class="exp-desc bg-gray-800 p-5 sm:p-10 lg:p-5">
-            <h1 class="font-bold text-white text-base lg:text-lg">
+          <div
+            class="exp-desc bg-gray-100 dark:bg-gray-800 p-10 md:p-8 backdrop-blur-sm bg-opacity-70"
+          >
+            <h1
+              class="font-bold text-gray-700 dark:text-white text-lg lg:text-2xl"
+            >
               {experience.position}
             </h1>
-            <h1 class="font-bold {experience.highlight} text-lg mb-1">
+            <h1 class="font-bold {experience.highlight} lg:text-lg mb-1">
               @{experience.name}
             </h1>
-            <p class="text-gray-400 mb-5 font-mono text-sm">
+            <p class="text-gray-500 dark:text-gray-400 mb-5 font-mono text-sm">
               {experience.start} - {experience.end}
             </p>
-            <ul class="text-sm text-gray-300 list-square ml-4">
+            <ul
+              class="text-base text-gray-700 dark:text-gray-200 list-square ml-4"
+            >
               {#each experience.points as point}
                 <li class="mt-1">{point}</li>
               {/each}
@@ -105,21 +111,8 @@
     transform: translateY(100%);
     transition: all var(--hover-time) ease-out;
     z-index: 1;
-    /* background: inherit; */
     overflow-x: hidden;
     overflow-y: auto;
-  }
-
-  .exp .exp-desc::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    /* background: inherit; */
-    /* box-shadow: inset 0 0 2000px rgba(122, 122, 122, 0.486); */
-    background-color: rgba(31, 41, 55, 0.7);
-    /* filter: blur(30px); */
-    margin: -40px;
   }
 
   .exp:hover .exp-desc {

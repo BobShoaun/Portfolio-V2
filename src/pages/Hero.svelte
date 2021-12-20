@@ -33,7 +33,7 @@
         data-aos="flip-up"
         data-aos-delay="600"
         data-aos-duration="700"
-        class="bg-purple-300 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8 round-lg"
+        class="bg-purple-400 dark:bg-purple-300 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8"
       />
       <h1
         data-aos="zoom-in-right"
@@ -60,14 +60,14 @@
       >
         <Link
           to="resume"
-          class="transition-colors px-4 py-1 mr-3 lg:ml-1 inline-block bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 "
+          class="transition-colors px-4 py-1 mr-3 lg:ml-1 inline-block bg-green-200 shadow-green-300/20 shadow-lg border rounded-sm border-green-400  hover:bg-green-300 "
           noroute
         >
           <p class="text-gray-700 font-semibold font-mono">View resume</p></Link
         >
         <a
           href="#contact"
-          class="transition-colors px-4 py-1 inline-block bg-blue-200 hover:bg-blue-300 rounded-sm border border-blue-400"
+          class="transition-colors px-4 py-1 inline-block bg-blue-200 shadow-blue-300/20 shadow-lg hover:bg-blue-300 rounded-sm border border-blue-400"
           ><p class="text-gray-700 font-semibold font-mono">Let's talk</p></a
         >
       </div>

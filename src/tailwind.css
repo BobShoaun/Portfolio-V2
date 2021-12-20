@@ -2,15 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-  @apply dark:bg-gray-600 bg-gray-300;
-  @apply dark:text-white text-gray-700;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap'); */
 
 :root {
   --theme: light;
   color-scheme: var(--theme);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: 'Nunito Sans', sans-serif, 'Roboto Mono', monospace; */
+}
+
+a {
+  @apply hover:no-underline;
+}
+
+::selection {
+  @apply dark:bg-gray-600 bg-gray-300;
+  @apply dark:text-white text-gray-700;
+}
+
+
 
 /* ::-webkit-scrollbar {
   width: 0.75em;
@@ -41,8 +58,8 @@
 }
 
 .heading::before {
-  @apply w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2;
-  @apply bg-purple-300;
+  @apply w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8;
+  @apply bg-purple-400 dark:bg-purple-300;
   content: "";
   display: block;
 }
@@ -67,16 +84,7 @@
   @apply m-auto py-20 lg:py-52;
 }
 
-/* body {
-  @apply p-0;
-} */
-a {
-  @apply hover:no-underline;
-}
 
-html {
-  scroll-behavior: smooth;
-}
 
 .nav-text {
   @apply font-mono;
@@ -194,10 +202,6 @@ html {
     border-left: 1.25rem solid rgba(167, 243, 208);
   }
 }
-
-/* .button-anim {
-  transition-duration: 0.5s !important;
-} */
 
 .article-content h2 {
   @apply mt-9;

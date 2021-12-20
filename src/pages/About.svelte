@@ -27,23 +27,22 @@
   <section
     class="section flex flex-col items-center lg:flex-row justify-between"
   >
-    <div class="max-w-sm m-10 mb-20 lg:m-20 lg:mr-28 z-10">
-      <div class="bg-white dark:bg-gray-300 overflow-hidden shadow-2xl">
-        <div class="overflow-hidden m-3 lg:m-4">
-          <img
-            data-aos="slide-right"
-            data-aos-duration="500"
-            data-aos-delay="200"
-            src="/images/me.jpg"
-            alt="me"
-            class=""
-          />
-        </div>
+    <div class="max-w-xs m-10 mb-16 lg:m-16 lg:mr-20 z-10">
+      <div
+        class="bg-white dark:bg-gray-300 shadow-2xl overflow-hidden p-3 rounded-sm"
+      >
+        <img
+          data-aos="slide-right"
+          data-aos-duration="500"
+          data-aos-delay="200"
+          src="/images/me.jpg"
+          alt="me"
+        />
       </div>
     </div>
 
     <div
-      class="bg-white dark:bg-gray-900 px-6 py-8 lg:py-14 lg:px-10 shadow-2xl relative"
+      class="bg-white dark:bg-gray-900 px-6 py-6 lg:py-10 lg:px-10 shadow-2xl shrink relative"
     >
       <h2 data-aos="zoom-in-left" class="title mb-6 lg:mb-10 font-mono">
         > About me

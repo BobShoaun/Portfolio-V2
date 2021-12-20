@@ -66,12 +66,12 @@
 
   <section class="section relative">
     <div
-      class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-20 mb-16"
+      class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-14 mb-16"
     >
       <h2 data-aos="fade" class="title mb-4 heading font-mono">Contact(Me)</h2>
       <h5
         data-aos="fade"
-        class="text-gray-500 dark:text-gray-300 text-base lg:text-lg mb-7 lg:mb-10"
+        class="text-gray-500 dark:text-gray-300 mb-7 lg:mb-10"
       >
         Shoot me a message and I will get back to you as soon as I can. <br />
         My emails are
@@ -132,12 +132,12 @@
           rows="6"
           required
         />
-        <div data-aos="fade-right" class="text-right">
-          <button
-            class="transition-colors button-anim bg-purple-200 border border-purple-400 hover:bg-purple-300 text-gray-700 py-1 px-4 font-semibold font-mono"
-            ><i class="far fa-paper-plane mr-3" />Send</button
-          >
-        </div>
+        <button
+          type="submit"
+          class="transition-colors bg-purple-200 shadow-purple-300/20 shadow-lg rounded-sm border border-purple-400 hover:bg-purple-300 text-gray-700 py-1 px-4 flex items-center gap-2 ml-auto"
+          ><i class="far fa-paper-plane text-xs" />
+          <p class="font-semibold font-mono">Send</p>
+        </button>
       </form>
     </div>
   </section>

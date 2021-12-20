@@ -26,7 +26,7 @@
       </Border>
     </div>
 
-    <div class="{right ? 'lg:order-first lg:pr-28' : 'lg:pl-28'} lg:max-w-3/5">
+    <div class="{right ? 'lg:order-first lg:pr-16' : 'lg:pl-16'} lg:max-w-3/5">
       <h1
         data-aos={right ? "fade-right" : "fade-left"}
         class="text-2xl lg:text-3xl font-bold dark:text-gray-50 mb-1"
@@ -100,7 +100,7 @@
     <section data-aos="fade-up" class="mx-2 sm:mx-4">
       <a
         href={project.more}
-        class="mt-24 block relative text-gray-700 dark:text-white cursor-pointer featured-article "
+        class="mt-20 block relative text-gray-700 dark:text-white cursor-pointer featured-article "
       >
         <em class="block mb-2"
           ><i class="fas fa-newspaper mr-2 text-lg" />Featured Article</em
@@ -116,7 +116,7 @@
         <div class="text-center" data-aos="flip-up" data-aos-delay="100">
           <a
             href={project.more}
-            class="font-bold shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 bg-purple-300 text-gray-800"
+            class="font-bold shadow-md hover:shadow-lg transition-shadow rounded-sm px-4 py-2 bg-purple-300 text-gray-800"
           >
             Click Here to Read
           </a>
