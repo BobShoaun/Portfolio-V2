@@ -24,22 +24,21 @@
     class="absolute background top-0 right-0 h-1/2 w-full md:w-1/3 md:h-full moving-gradient-1"
   />
 
-  <section class="section relative w-full max-w-5xl">
+  <section class="m-auto pt-5 relative flex-grow max-w-5xl">
     <div
-      class="bg-white dark:bg-gray-900 px-5 py-10 lg:py-20 lg:px-10 shadow-2xl"
+      class="bg-white dark:bg-gray-900 px-5 py-10 lg:py-14 lg:px-10 shadow-2xl"
     >
       <div
         data-aos="flip-up"
         data-aos-delay="600"
         data-aos-duration="700"
-        class="bg-purple-300 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-2 round-lg"
+        class="bg-purple-300 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8 round-lg"
       />
-      <!-- {#if ready} -->
       <h1
         data-aos="zoom-in-right"
         data-aos-delay="800"
         data-aos-duration="700"
-        class="font-mono text-2xl md:text-4xl lg:text-4xl font-extrabold text-gray-600 dark:text-white mb-4 lg:mb-5"
+        class="mb-3 font-mono text-2xl md:text-3xl lg:text-3xl font-extrabold text-gray-600 dark:text-white "
       >
         {welcomeMessage}
       </h1>
@@ -47,18 +46,11 @@
         data-aos="zoom-in-right"
         data-aos-delay="1000"
         data-aos-duration="700"
-        class="font-mono text-lg md:text-xl lg:text-2xl mb-10 font-bold text-gray-500 dark:text-gray-400 ml-1"
+        class="font-mono text-lg md:text-xl lg:text-xl mb-12 font-bold text-gray-500 dark:text-gray-400 ml-1"
       >
-        I'm Ng Bob Shoaun. I create nice things.
+        My name is Bob and I create nice things.
       </p>
-      <!-- {/if} -->
-      <!-- <a
-          type="button"
-          href="/images/resume.pdf"
-          target="_blank"
-          class="ml-1 py-2 px-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3">
-          <p class="text-gray-700 font-mono">View resume</p>
-        </a> -->
+
       <div
         data-aos="flip-up"
         data-aos-delay="1200"
@@ -67,18 +59,15 @@
       >
         <Link
           to="resume"
-          class="transition-colors button-anim px-4 py-2 mb-3 mr-3 lg:mb-0 lg:ml-1 inline-block leading-4 bg-green-200 border rounded-sm border-green-400  hover:bg-green-300  text-gray-700 font-mono"
+          class="transition-colors px-4 py-1 mr-3 lg:ml-1 inline-block bg-green-200 border rounded-sm border-green-400  hover:bg-green-300 "
           noroute
         >
           <p class="text-gray-700 font-semibold font-mono">View resume</p></Link
         >
         <a
-          type="button"
           href="#contact"
-          class="transition-colors button-anim px-4 py-2 inline-block bg-blue-200 hover:bg-blue-300 rounded-sm border border-blue-400"
-          ><p class="text-gray-700 font-semibold font-mono leading-4">
-            Let's talk
-          </p></a
+          class="transition-colors px-4 py-1 inline-block bg-blue-200 hover:bg-blue-300 rounded-sm border border-blue-400"
+          ><p class="text-gray-700 font-semibold font-mono">Let's talk</p></a
         >
       </div>
     </div>
@@ -128,7 +117,7 @@
     data-aos-delay="1500"
     data-aos-duration="700"
     on:click={() => document.getElementById("about").scrollIntoView()}
-    class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-28 right-0 left-0"
+    class="text-2xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-28 right-0 left-0"
   >
     <i class="hover-vertical fas fa-angle-down" />
   </p>

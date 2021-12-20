@@ -40,36 +40,36 @@
 
 <header
   id="navbar"
-  class="flex items-center justify-between px-6 lg:px-10 py-4 top-0 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50"
+  class="px-6 lg:px-10 py-4 top-0 bg-white
+  dark:bg-gray-900 shadow-md fixed w-full z-50"
 >
-  <div class="logo flex items-center">
-    <a
-      href="/#home"
-      data-aos="flip-up"
-      data-aos-duration="700"
-      class="bg-gradient-to-br from-purple-400 to-red-400 w-6 h-6 mr-5 relative"
-    >
-      <!-- <div class="logo-element bg-gray-900 w-1 h-5"></div> -->
-      <p
-        class="logo-type text-white dark:text-gray-900 text-3xl font-black absolute bottom-0"
-      >
-        B
-      </p>
-    </a>
-    <a href="/#home" data-aos="flip-up" class="hover:no-underline"
-      ><p class="nav-text-home">Ng Bob Shoaun</p></a
-    >
-  </div>
-  <nav
-    use:links
-    class="hidden lg:flex links justify-between items-center space-x-12"
-  >
+  <nav use:links class="hidden lg:flex gap-10 items-center">
     <Router>
+      <div class="flex items-center gap-4">
+        <a
+          href="/#home"
+          data-aos="flip-up"
+          data-aos-duration="700"
+          class="bg-gradient-to-br from-purple-400 to-red-400 w-6 h-6 relative"
+          noroute
+        >
+          <p
+            class="logo-type text-white dark:text-gray-900 text-3xl font-black absolute bottom-0"
+          >
+            B
+          </p>
+        </a>
+        <a href="/#home" data-aos="flip-up" class="hover:no-underline" noroute
+          ><p class="nav-text-home">Ng Bob Shoaun</p></a
+        >
+      </div>
+
       <a
         href="/#about"
         data-aos="zoom-in"
         data-aos-delay="100"
         data-aos-duration="700"
+        class="ml-auto"
         noroute><p class="nav-text">About</p></a
       >
       <a

@@ -2,9 +2,9 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  content: ["./src/**/*.svelte"],
+  darkMode: "class",
   purge: {
-    content: ["./src/**/*.svelte"],
-
     // These options are passed through directly to PurgeCSS
     options: {
       safelist: [
@@ -32,7 +32,6 @@ module.exports = {
       fontFace: true,
     },
   },
-  darkMode: "class",
   theme: {
     extend: {
       minHeight: {
@@ -74,15 +73,12 @@ module.exports = {
         //   400: "#FF7733",
         //   50: "#FFF1EB",
         // },
-        transparent: "transparent",
-        current: "currentColor",
-        ...colors,
+        // transparent: "transparent",
+        // current: "currentColor",
+        // ...colors,
         gray: colors.blueGray,
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };

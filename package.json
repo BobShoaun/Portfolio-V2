@@ -3,27 +3,30 @@
   "version": "1.0.0",
   "homepage": "https://BobShoaun.github.io/Portfolio-V2",
   "scripts": {
-    "watch:tailwind": "postcss public/tailwind.css -o public/index.css -w",
-    "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/index.css",
-    "build": "npm run build:tailwind && rollup -c",
     "start": "sirv public -s",
     "serve": "serve public -p 80",
-    "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\"",
-    "deploy": "gh-pages -d public"
+    "deploy:ghpages": "gh-pages -d public",
+    "dev:tailwind": "npx tailwindcss -i src/tailwind.css -o public/index.css --watch",
+    "dev:svelte": "rollup -c -w",
+    "build:svelte": "rollup -c",
+    "dev": "concurrently \"npm run dev:svelte\" \"npm run dev:tailwind\"",
+    "build:tailwind": "npx tailwindcss -o public/index.css --minify",
+    "build": "npm run build:tailwind && npm run build:svelte"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
-    "autoprefixer": "^10.2.1",
+    "autoprefixer": "^10.4.0",
     "concurrently": "^5.3.0",
     "cross-env": "^7.0.3",
+    "postcss": "^8.4.5",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^3.0.7"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.1.3",
