@@ -49,6 +49,12 @@ a {
   @apply px-5 md:px-24 lg:px-28;
   @apply w-full overflow-hidden;
 }
+
+.section {
+  max-width: 1200px;
+  @apply m-auto py-20 lg:pt-52 lg:pb-52;
+}
+
 .title {
   @apply text-3xl md:text-4xl font-bold text-gray-600 dark:text-gray-50;
 }
@@ -79,10 +85,7 @@ a {
   }
 }
 
-.section {
-  max-width: 1200px;
-  @apply m-auto py-20 lg:py-52;
-}
+
 
 
 

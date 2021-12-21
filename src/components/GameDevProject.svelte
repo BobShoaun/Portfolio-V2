@@ -52,7 +52,7 @@
     <p
       data-aos="fade-up"
       data-aos-delay="200"
-      class="mb-4 text-gray-700 dark:text-gray-300 text-base"
+      class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed"
     >
       {project.description}
     </p>

@@ -16,7 +16,7 @@
 
 <main
   id="game-development"
-  class="main relative from-gray-100 to-white  -dark:bg-gray-700 bg-gradient-to-b dark:from-gray-900 dark:to-gray-700"
+  class="relative from-gray-100 to-white bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
   <!-- <div
     data-aos="slide-down"
@@ -29,29 +29,23 @@
     data-aos-offset="200"
     class="hidden lg:block absolute right-14 top-0"
   >
-    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-4" />
+    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-800" />
     <p
-      class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl right-0 absolute"
+      class="text-gray-800 dark:bg-gray-100 dark:text-gray-800 font-mono font-bold text-4xl right-0 absolute"
     >
       100
     </p>
   </div>
 
-  <section class="section relative">
-    <div class="text-center">
-      <div
-        class="bg-white dark:bg-gray-800 p-10 mb-6 lg:mb-14 shadow-lg inline-block"
-      >
-        <h2 data-aos="fade" class="title mb-6 font-mono">
-          // Game development
-        </h2>
-        <h5 data-aos="fade" class="subtitle max-w-xl">
-          Game development was what got me into coding in the first place, here
-          are some featured projects.
-        </h5>
-      </div>
-    </div>
+  <section class="moving-gradient-2 pt-36 pb-20 main">
+    <h2 class="text-7xl mb-2 font-black text-gray-800 ">GAME DEVELOPMENT</h2>
+    <p class="lg:ml-3 text-lg font-semibold text-gray-800 max-w-prose ">
+      Game development was what got me into coding in the first place, here are
+      some featured projects.
+    </p>
+  </section>
 
+  <section class="main relative">
     <div class="lg:flex lg:flex-wrap lg:justify-around">
       {#each visibleProjects as project}
         <GameDevProject {project} />

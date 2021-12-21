@@ -1,7 +1,6 @@
 <script>
   import { Link } from "svelte-routing";
   import { copyToClipboard } from "../helper";
-  import Footer from "./Footer.svelte";
   import resume from "../resume.js";
 
   // const primary = "red-500";
@@ -232,7 +231,6 @@
     </main>
   </div>
 </main>
-<Footer />
 
 <style>
   /* only use light, regular, regular italic, bold */

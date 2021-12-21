@@ -7,7 +7,7 @@
   import Designs from "./pages/Designs.svelte";
   import GameDev from "./pages/GameDev.svelte";
   import Contact from "./pages/Contact.svelte";
-  import Footer from "./pages/Footer.svelte";
+  import Footer from "./components/Footer.svelte";
   import Resume from "./pages/Resume.svelte";
   import FunFacts from "./pages/FunFacts.svelte";
   import Article from "./pages/Article.svelte";
@@ -47,7 +47,6 @@
       <GameDev />
       <Designs />
       <Contact />
-      <Footer />
     </Route>
 
     <Route path="resume" component={Resume} />
@@ -67,6 +66,7 @@
     <Route path="Facts" component={FunFacts} />
     <Route path="facts" component={FunFacts} />
   </Router>
+  <Footer />
 </main>
 
 <style>

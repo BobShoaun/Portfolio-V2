@@ -1,6 +1,5 @@
 <script>
   import { Link } from "svelte-routing";
-  import Footer from "./Footer.svelte";
   import marked from "marked";
 
   import { onMount, afterUpdate } from "svelte";
@@ -60,7 +59,6 @@
     </div>
   </article>
 </main>
-<Footer />
 
 <style>
 </style>

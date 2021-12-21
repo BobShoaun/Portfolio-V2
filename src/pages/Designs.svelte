@@ -31,7 +31,16 @@
   </div>
 
   <section class="section">
-    <div class="text-center">
+    <div class="lg:ml-10 mt-8">
+      <h2 class="text-7xl mb-2 font-black text-gray-600">GRAPHIC DESIGN</h2>
+      <p class="lg:ml-5 text-lg text-gray-300 max-w-prose ">
+        I also have an eye for good typography and graphic designs. Here are
+        some of my work designing various posters for university clubs and
+        events.
+      </p>
+    </div>
+
+    <!-- <div class="text-center">
       <div
         class="bg-white dark:bg-gray-800 p-10 mb-6 lg:mb-14 shadow-lg inline-block"
       >
@@ -42,7 +51,7 @@
           events.
         </h5>
       </div>
-    </div>
+    </div> -->
 
     <div class="mt-10 lg:flex items-center mb-20">
       <button

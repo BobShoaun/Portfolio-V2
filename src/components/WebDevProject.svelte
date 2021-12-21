@@ -1,16 +1,14 @@
 <script>
-  import Border from "./Border.svelte";
-
   export let project = null;
   export let right = false;
 </script>
 
-<main>
+<main class="">
   <section
-    class="mx-4 sm:mx-14 lg:mx-0 lg:flex lg:items-center lg:justify-between"
+    class="sm:mx-14 lg:mx-0 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12"
   >
     <div
-      class="max-h-80 w-fit mb-8 shadow-lg mx-auto bg-gradient-to-br from-green-300 to-blue-300 shadow-3xl overflow-hidden rounded-sm"
+      class="max-h-80 w-fit shadow-lg mx-auto bg-gradient-to-br from-green-300 to-blue-300 shadow-3xl overflow-hidden rounded-sm"
     >
       <img
         data-aos={right ? "slide-right" : "slide-left"}
@@ -23,7 +21,7 @@
       />
     </div>
 
-    <div class="{right ? 'lg:order-first lg:pr-16' : 'lg:pl-16'} lg:max-w-3/5">
+    <div class={right ? "lg:order-first" : ""}>
       <h1
         data-aos={right ? "fade-right" : "fade-left"}
         class="text-2xl lg:text-3xl font-bold dark:text-gray-50 mb-1"
@@ -44,7 +42,7 @@
       <p
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="200"
-        class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed"
+        class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed max-w-prose"
       >
         {project.description}
       </p>
@@ -94,10 +92,10 @@
     </div>
   </section>
   {#if project.more}
-    <section data-aos="fade-up" class="mx-2 sm:mx-4">
+    <section data-aos="fade-up" class="mt-14 mx-2 sm:mx-4">
       <a
         href={project.more}
-        class="mt-20 block relative text-gray-700 dark:text-white cursor-pointer featured-article "
+        class="block relative text-gray-700 dark:text-white cursor-pointer featured-article "
       >
         <em class="block mb-2"
           ><i class="fas fa-newspaper mr-2 text-lg" />Featured Article</em
@@ -106,18 +104,18 @@
         <h1 class="text-2xl lg:text-3xl font-bold mb-3">
           How I Made My Own Cryptocurrency
         </h1>
-        <p class="text-gray-500 dark:text-gray-300 mb-6">
+        <p class="text-gray-500 dark:text-gray-300">
           by Ng Bob Shoaun &nbsp;∙&nbsp; 2 August 2021 &nbsp;∙&nbsp; 8 minute
           read
         </p>
-        <div class="text-center" data-aos="flip-up" data-aos-delay="100">
+        <!-- <div class="text-center" data-aos="flip-up" data-aos-delay="100">
           <a
             href={project.more}
             class="font-bold shadow-md hover:shadow-lg transition-shadow rounded-sm px-4 py-2 bg-purple-300 text-gray-800"
           >
             Click Here to Read
           </a>
-        </div>
+        </div> -->
       </a>
     </section>
   {/if}
@@ -134,7 +132,7 @@
 
   .featured-article {
     outline: 2px dashed transparent;
-    outline-offset: 2em;
+    outline-offset: 1.5em;
     transition: outline ease 400ms;
   }
   .featured-article:is(:hover, :focus) {

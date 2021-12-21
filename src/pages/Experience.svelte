@@ -34,7 +34,21 @@
   </div>
 
   <section class="section relative">
-    <div class="text-center">
+    <div class="ml-20 mb-20">
+      <h2
+        class="text-7xl mb-2 font-black text-gray-500 -bg-gray-100 inline-block"
+      >
+        EXPERIENCE
+      </h2>
+      <p
+        class="ml-2 text-lg text-gray-400 max-w-prose font-semibold inline-block -bg-gray-100"
+      >
+        I currently have more than 2 years of work experience and counting. Here
+        are some companies I have worked at before.
+      </p>
+    </div>
+
+    <!-- <div class="text-center">
       <div
         class="bg-white dark:bg-gray-900 p-10 mb-10 lg:mb-20 shadow-lg inline-block"
       >
@@ -44,7 +58,7 @@
           Here are some companies I have worked at before.
         </h5>
       </div>
-    </div>
+    </div> -->
 
     <div
       class="md:grid md:grid-cols-2 mx-4 sm:mx-14 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"

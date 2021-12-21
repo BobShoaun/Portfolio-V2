@@ -11,7 +11,7 @@
   export let theme;
 
   $: welcomeMessage =
-    theme === "dark" ? 'console.log("Hey")' : 'console.log("Hi")';
+    theme === "dark" ? 'console.log("Hey!")' : 'console.log("Hi!")';
 </script>
 
 <main
@@ -43,7 +43,7 @@
         data-aos="zoom-in-right"
         data-aos-delay="800"
         data-aos-duration="700"
-        class="mb-3 font-mono text-2xl md:text-3xl lg:text-3xl font-extrabold text-gray-600 dark:text-white "
+        class="mb-3 font-mono text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-600 dark:text-white"
       >
         {welcomeMessage}
       </h1>

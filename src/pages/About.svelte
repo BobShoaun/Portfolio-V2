@@ -18,52 +18,58 @@
     data-aos-offset="200"
     class="hidden lg:block absolute left-14 top-0 text-center"
   >
-    <div class="w-5 h-28 bg-gray-50 dark:bg-gray-800 mb-4" />
-    <p class="text-gray-100 dark:text-gray-800 font-mono font-bold text-4xl">
+    <div class="w-5 h-28 bg-gray-50 dark:bg-gray-800 mb-2" />
+    <p class="text-gray-100 dark:text-gray-800 font-mono font-bold text-3xl">
       001
     </p>
   </div>
 
-  <section
-    class="section flex flex-col items-center lg:flex-row justify-between"
-  >
-    <div class="max-w-xs m-10 mb-16 lg:m-16 lg:mr-20 z-10">
-      <div
-        class="bg-gray-100  dark:bg-gray-300 shadow-gray-300/50 shadow-2xl overflow-hidden p-3 rounded-sm"
-      >
-        <img
-          data-aos="slide-right"
-          data-aos-duration="500"
-          data-aos-delay="200"
-          src="/images/me.jpg"
-          alt="me"
-        />
-      </div>
-    </div>
-
-    <div
-      class="bg-white dark:bg-gray-900 px-6 py-6 lg:py-10 lg:px-10 shadow-2xl shrink relative"
+  <section class="section">
+    <h2
+      data-aos="zoom-in-left"
+      class="mb-6 font-black text-7xl text-gray-700 text-right"
     >
-      <h2 data-aos="zoom-in-left" class="title mb-6 lg:mb-10 font-mono">
-        > About me
-      </h2>
-      <p
-        data-aos="zoom-in-left"
-        data-aos-delay="100"
-        class="text-gray-500 dark:text-gray-300 lg:text-lg"
+      ABOUT ME
+    </h2>
+
+    <div class="flex flex-col items-center lg:flex-row justify-between">
+      <div class="max-w-xs m-10 mb-16 lg:m-16 lg:mr-20 z-10">
+        <div
+          class="bg-gray-100 dark:bg-gray-300 shadow-gray-300/50 shadow-2xl overflow-hidden p-3 rounded-sm"
+        >
+          <img
+            data-aos="slide-right"
+            data-aos-duration="500"
+            data-aos-delay="200"
+            src="/images/me.jpg"
+            alt="me"
+          />
+        </div>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 px-6 py-6 lg:py-10 lg:px-10 shadow-2xl shrink relative"
       >
-        What's up? I’m Bob, a student currently earning my degree in University
-        of Toronto, and also working as a software developer.
-        <br /><br />
-        The passion to create and innovate has always been in me. I strive to build
-        quality, intuitive products with the goal of learning and improving my coding
-        skills.
-        <br /><br />
-        My expertise include JS, React, Vue, Unity, and C#. Recently I have been
-        intrigue with blockchain technologies. Aside from coding, I enjoy playing
-        table tennis, video games, and the drums.
-      </p>
-      <!-- <Link
+        <!-- <h2 data-aos="zoom-in-left" class="title mb-6 lg:mb-10 font-mono">
+        > About me
+      </h2> -->
+        <p
+          data-aos="zoom-in-left"
+          data-aos-delay="100"
+          class="text-gray-500 dark:text-gray-300 lg:text-lg max-w-prose"
+        >
+          What's up? I’m Bob, a student currently earning my degree in
+          University of Toronto, and also working as a software developer.
+          <br /><br />
+          The passion to create and innovate has always been in me. I strive to build
+          quality, intuitive products with the goal of learning and improving my
+          coding skills.
+          <br /><br />
+          My expertise include JS, React, Vue, Unity, and C#. Recently I have been
+          intrigue with blockchain technologies. Aside from coding, I enjoy playing
+          table tennis, video games, and the drums.
+        </p>
+        <!-- <Link
 				data-aos="fade-left"
 				to="facts"
 				class="px-4 py-2 inline-block leading-4 border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-sm mr-3 text-gray-700 font-mono"
@@ -73,6 +79,7 @@
 					Some fun facts about me <i class="fas fa-long-arrow-alt-right" />
 				</p>
 			</Link> -->
+      </div>
     </div>
   </section>
 
