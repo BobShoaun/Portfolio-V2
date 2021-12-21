@@ -3,7 +3,7 @@
 		"name": "Bobcoin",
 		"image": "/images/bobcoin.png",
 		"collaborators": "by myself",
-		"description": "Given my fascination in blockchain technologies, I've decided to make my own cryptocurrency from scratch. It uses the proof of work consensus, elliptic curve signatures, the UTXO model, a BIP compliant wallet format, a block explorer, and many more. This project deepened my understand of the inner workings of cryptocurrencies like Bitcoin.",
+		"description": "Given my fascination in blockchain technologies, I've decided to make my own cryptocurrency from scratch. It uses the proof of work consensus, elliptic curve signatures, the UTXO model, a BIP compliant wallet format, a block explorer, and many more. This project deepened my understanding of the inner workings of cryptocurrencies like Bitcoin.",
 		"technologies": ["mongodb", "express", "react", "node.js", "bulma", "socket.io"],
 		"website": "https://bobcoin.cash",
 		"github": "https://github.com/BobShoaun/Bobcoin-Node",
@@ -20,10 +20,10 @@
 		"year": 2020
 	},
 	{
-		"name": "ADP Timetabler <br>(aka Course Checker)",
+		"name": "Course Checker",
 		"image": "/images/course-checker 2.png",
 		"collaborators": "by myself",
-		"description": "A web application for students in the ADP program of Taylor’s University to generate a visually appealing & customizable timetable based on courses they want to take for their next semester.",
+		"description": "AKA The ADP Timetabler, A web application for students in the ADP program of Taylor’s University to generate a visually appealing & customizable timetable based on courses they want to take for their next semester.",
 		"technologies": ["html", "css", "unity", "c#", "webgl"],
 		"github": "https://github.com/BobShoaun/Course-Checker",
 		"website": "https://bobshoaun.github.io/Course-Checker/",

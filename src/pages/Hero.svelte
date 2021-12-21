@@ -25,7 +25,11 @@
     class="absolute background top-0 right-0 h-1/2 w-full md:w-1/3 md:h-full moving-gradient-1"
   />
 
-  <section class="m-auto pt-5 relative flex-grow max-w-5xl">
+  <section
+    data-aos="fade-in"
+    data-aos-delay="600"
+    class="m-auto pt-5 relative grow max-w-5xl"
+  >
     <div
       class="bg-white dark:bg-gray-900 px-5 py-10 lg:py-14 lg:px-10 shadow-2xl"
     >
@@ -33,7 +37,7 @@
         data-aos="flip-up"
         data-aos-delay="600"
         data-aos-duration="700"
-        class="bg-purple-400 dark:bg-purple-300 w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8"
+        class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8"
       />
       <h1
         data-aos="zoom-in-right"
@@ -80,13 +84,13 @@
     data-aos-duration="700"
     class="hidden lg:block absolute left-14 bottom-0 text-center"
   >
-    <a href="https://github.com/BobShoaun" target="_blank" class="block mb-8"
+    <a href="https://github.com/BobShoaun" target="_blank" class="block mb-6"
       ><i class="text-gray-800 dark:text-gray-50 fab fa-github fa-lg" /></a
     >
     <a
       href="https://www.linkedin.com/in/ngbobshoaun/"
       target="_blank"
-      class="block mb-8"
+      class="block mb-6"
     >
       <i class="text-gray-800 dark:text-gray-50 fab fa-linkedin-in fa-lg" /></a
     >
@@ -100,7 +104,7 @@
 
     <p
       on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
-      class="block mb-8 cursor-pointer"
+      class="block mb-6 cursor-pointer"
     >
       <i class="text-gray-800 dark:text-gray-50 far fa-envelope fa-lg" />
     </p>

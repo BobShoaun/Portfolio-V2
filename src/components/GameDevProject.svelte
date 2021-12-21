@@ -1,37 +1,34 @@
 <script>
-  import Border from "./Border.svelte";
   export let project = null;
 </script>
 
 <main
   class="py-16 lg:py-24 xl:px-7 mx-4 sm:mx-14 lg:mx-0 {project.right
-    ? 'flex flex-row space-x-5'
+    ? 'flex flex-row gap-5'
     : ''} lg:max-w-{project.width}"
 >
   <div
-    class="mb-7 shadow-lg flex-shrink-0"
-    style="height: fit-content; {project.right ? 'flex-basis: 40%' : ''}"
+    class="mb-8 shrink-0 max-h-80 w-fit mx-auto shadow-lg bg-gradient-to-br from-purple-400 to-red-300 shadow-3xl overflow-hidden rounded-sm"
   >
     {#if project.video}
-      <Border type={1}>
-        <div class="overflow-hidden m-2 sm:m-3 cursor-pointer img-container">
-          <video
-            data-aos={"slide-down"}
-            data-aos-duration="500"
-            data-aos-delay="100"
-            autoplay
-            loop
-            muted
-            playsinline
-            src={project.video}
-            on:click={() => window.open(project.github)}
-          />
-        </div>
-      </Border>
+      <video
+        data-aos={"slide-down"}
+        data-aos-duration="500"
+        data-aos-delay="100"
+        autoplay
+        loop
+        muted
+        playsinline
+        src={project.video}
+        class="max-h-[inherit] w-auto p-2 sm:p-3 cursor-pointer img-container"
+        on:click={() => window.open(project.github)}
+      />
     {:else}
-      <Border type={1}>
-        <img src={project.image} class="p-2 sm:p-3" alt={project.name} />
-      </Border>
+      <img
+        src={project.image}
+        class="max-h-[inherit] w-auto p-2 sm:p-3 cursor-pointer img-container"
+        alt={project.name}
+      />
     {/if}
   </div>
 

@@ -87,7 +87,7 @@ a {
 
 
 .nav-text {
-  @apply font-mono;
+  @apply font-mono text-sm;
   @apply text-gray-800 dark:text-gray-50;
   @apply hover:bg-gray-600 hover:text-gray-50;
   @apply dark:hover:bg-gray-50 dark:hover:text-gray-800;

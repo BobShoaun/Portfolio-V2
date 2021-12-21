@@ -29,7 +29,7 @@
   >
     <div class="max-w-xs m-10 mb-16 lg:m-16 lg:mr-20 z-10">
       <div
-        class="bg-white dark:bg-gray-300 shadow-2xl overflow-hidden p-3 rounded-sm"
+        class="bg-gray-100  dark:bg-gray-300 shadow-gray-300/50 shadow-2xl overflow-hidden p-3 rounded-sm"
       >
         <img
           data-aos="slide-right"

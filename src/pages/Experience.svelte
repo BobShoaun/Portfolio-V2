@@ -58,7 +58,7 @@
             style="mix-blend-mode: {experience.blend}"
           />
           <div
-            class="exp-desc bg-gray-100 dark:bg-gray-800 p-10 md:p-8 backdrop-blur-sm bg-opacity-70"
+            class="exp-desc bg-gray-100/80 dark:bg-gray-800/80 p-10 md:p-8 backdrop-blur-md"
           >
             <h1
               class="font-bold text-gray-700 dark:text-white text-lg lg:text-2xl"

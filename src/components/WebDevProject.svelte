@@ -9,21 +9,18 @@
   <section
     class="mx-4 sm:mx-14 lg:mx-0 lg:flex lg:items-center lg:justify-between"
   >
-    <div class="mb-7 shadow-lg">
-      <Border>
-        <div
-          class="relative overflow-hidden m-2 sm:m-3 cursor-pointer img-container"
-        >
-          <img
-            data-aos={right ? "slide-right" : "slide-left"}
-            data-aos-duration="500"
-            data-aos-delay="100"
-            src={project.image}
-            alt={project.name}
-            on:click={() => window.open(project.website)}
-          />
-        </div>
-      </Border>
+    <div
+      class="max-h-80 w-fit mb-8 shadow-lg mx-auto bg-gradient-to-br from-green-300 to-blue-300 shadow-3xl overflow-hidden rounded-sm"
+    >
+      <img
+        data-aos={right ? "slide-right" : "slide-left"}
+        data-aos-duration="500"
+        data-aos-delay="100"
+        class="max-h-[inherit] w-auto object-scale-down p-2 sm:p-3 cursor-pointer img-container"
+        src={project.image}
+        alt={project.name}
+        on:click={() => window.open(project.website)}
+      />
     </div>
 
     <div class="{right ? 'lg:order-first lg:pr-16' : 'lg:pl-16'} lg:max-w-3/5">
@@ -47,7 +44,7 @@
       <p
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="200"
-        class="mb-4 text-gray-700 dark:text-gray-300 lg:text-base"
+        class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed"
       >
         {project.description}
       </p>

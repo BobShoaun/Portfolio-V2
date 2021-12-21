@@ -38,30 +38,26 @@
 
 <header
   id="navbar"
-  class="px-6 lg:px-10 py-4 top-0 bg-white
-  dark:bg-gray-900 shadow-md fixed w-full z-50"
+  class="flex items-center gap-4 px-6 lg:px-10 py-4 top-0 bg-white/80
+  dark:bg-gray-900/80 backdrop-blur-md shadow-xl fixed w-full z-50"
 >
-  <nav use:links class="hidden lg:flex gap-10 items-center">
+  <a
+    href="/#home"
+    data-aos="flip-up"
+    data-aos-duration="700"
+    class="overflow-hidden bg-gradient-to-br from-purple-400 to-red-400 w-6 h-6 relative"
+  >
+    <p
+      class="logo-type text-white dark:text-gray-900 text-3xl font-black absolute bottom-0"
+    >
+      B
+    </p>
+  </a>
+  <a href="/#home" data-aos="flip-up" class="hover:no-underline"
+    ><p class="nav-text-home">Ng Bob Shoaun</p></a
+  >
+  <nav use:links class="hidden lg:flex gap-9 items-center ml-auto">
     <Router>
-      <div class="flex items-center gap-4">
-        <a
-          href="/#home"
-          data-aos="flip-up"
-          data-aos-duration="700"
-          class="bg-gradient-to-br from-purple-400 to-red-400 w-6 h-6 relative"
-          noroute
-        >
-          <p
-            class="logo-type text-white dark:text-gray-900 text-3xl font-black absolute bottom-0"
-          >
-            B
-          </p>
-        </a>
-        <a href="/#home" data-aos="flip-up" class="hover:no-underline" noroute
-          ><p class="nav-text-home">Ng Bob Shoaun</p></a
-        >
-      </div>
-
       <a
         href="/#about"
         data-aos="zoom-in"
@@ -119,14 +115,14 @@
       data-aos-delay="800"
       data-aos-duration="700"
       on:click={toggleTheme}
-      class="border-gray-500 border-2 hover:bg-gray-200 dark:hover:bg-gray-700 py-1 px-3 dark:text-gray-50 rounded-md focus:outline-none transition-colors"
+      class="text-sm border-gray-500 border-2 hover:bg-gray-200 dark:hover:bg-gray-700 py-1.5 px-3 dark:text-gray-50 rounded-md focus:outline-none transition-colors"
       ><i
         class="{theme === 'dark' ? 'fa fa-moon' : 'far fa-sun'} mr-2"
       />{theme === "dark" ? "Dark" : "Light"}</button
     >
   </nav>
 
-  <button class="lg:hidden border-none">
+  <button class="lg:hidden border-none ml-auto">
     <button
       on:click={() => (open = !open)}
       class="text-lg dark:text-white focus:outline-none"

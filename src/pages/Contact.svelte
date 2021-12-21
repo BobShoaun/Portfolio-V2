@@ -66,79 +66,91 @@
 
   <section class="section relative">
     <div
-      class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 py-10 lg:px-10 lg:py-14 mb-16"
+      class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 md:px-7 py-10 lg:px-10 lg:py-14 mb-16"
     >
-      <h2 data-aos="fade" class="title mb-4 heading font-mono">Contact(Me)</h2>
-      <h5
-        data-aos="fade"
-        class="text-gray-500 dark:text-gray-300 mb-7 lg:mb-10"
-      >
-        Shoot me a message and I will get back to you as soon as I can. <br />
-        My emails are
-        <span
-          class="cursor-pointer text-gray-700 dark:text-gray-100 underline"
-          on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
-          >ngbobshoaun2000@gmail.com</span
-        >
-        and
-        <span
-          class="cursor-pointer text-gray-700 dark:text-gray-100 underline"
-          on:click={() => copyToClipboard("bobshoaun.ng@mail.utoronto.ca")}
-          >bobshoaun.ng@mail.utoronto.ca</span
-        >
-      </h5>
-
-      <form
-        data-aos="fade"
-        data-aos-duration="700"
-        data-aos-delay="200"
-        on:submit|preventDefault={submitForm}
-        name="contact"
-        action="action"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        class=""
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p class="hidden">
-          <label
-            >Don’t fill this out if you’re human: <input
-              name="bot-field"
-            /></label
+      <div>
+        <div
+          data-aos="flip-up"
+          data-aos-delay="600"
+          data-aos-duration="700"
+          class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8"
+        />
+      </div>
+      <div class="lg:flex gap-10">
+        <div class="basis-2/5">
+          <h2 data-aos="fade" class="title mb-4 font-mono">Contact(Me)</h2>
+          <h5
+            data-aos="fade"
+            class="text-gray-500 dark:text-gray-300 mb-7 lg:mb-10"
           >
-        </p>
-        <div class="flex flex-col md:flex-row">
-          <input
-            name="name"
-            class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
-            type="text"
-            placeholder="Your name"
-            required
-          />
-          <input
-            name="email"
-            class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
-            type="text"
-            placeholder="Your email"
-            required
-          />
+            Shoot me a message and I will get back to you as soon as I can. My
+            emails are
+            <span
+              class="cursor-pointer text-gray-700 dark:text-gray-100 underline"
+              on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
+              >ngbobshoaun2000@gmail.com</span
+            >
+            and
+            <span
+              class="cursor-pointer text-gray-700 dark:text-gray-100 underline"
+              on:click={() => copyToClipboard("bobshoaun.ng@mail.utoronto.ca")}
+              >bobshoaun.ng@mail.utoronto.ca</span
+            >
+          </h5>
         </div>
 
-        <textarea
-          name="message"
-          class="w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50 focus:outline-none"
-          placeholder="Tell me what you think!"
-          rows="6"
-          required
-        />
-        <button
-          type="submit"
-          class="transition-colors bg-purple-200 shadow-purple-300/20 shadow-lg rounded-sm border border-purple-400 hover:bg-purple-300 text-gray-700 py-1 px-4 flex items-center gap-2 ml-auto"
-          ><i class="far fa-paper-plane text-xs" />
-          <p class="font-semibold font-mono">Send</p>
-        </button>
-      </form>
+        <form
+          data-aos="fade"
+          data-aos-duration="700"
+          data-aos-delay="200"
+          on:submit|preventDefault={submitForm}
+          name="contact"
+          action="action"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="basis-3/5"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label
+              >Don’t fill this out if you’re human: <input
+                name="bot-field"
+              /></label
+            >
+          </p>
+          <div class="flex flex-col md:flex-row lg:flex-col">
+            <input
+              name="name"
+              class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+            <input
+              name="email"
+              class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
+              type="text"
+              placeholder="Your email"
+              required
+            />
+          </div>
+
+          <textarea
+            name="message"
+            class="w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50 focus:outline-none"
+            placeholder="Tell me what you think!"
+            rows="6"
+            required
+          />
+          <button
+            type="submit"
+            class="transition-colors bg-purple-200 shadow-purple-300/20 shadow-lg rounded-sm border border-purple-400 hover:bg-purple-300 text-gray-700 py-1 px-4 flex items-center gap-2 ml-auto"
+            ><i class="far fa-paper-plane text-xs" />
+            <p class="font-semibold font-mono">Send</p>
+          </button>
+        </form>
+      </div>
     </div>
   </section>
   <p

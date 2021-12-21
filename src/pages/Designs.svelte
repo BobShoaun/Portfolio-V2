@@ -53,9 +53,9 @@
       >
         <i class="fas fa-caret-left text-4xl" />
       </button>
-      <div class="p-3 lg:p-5 shadow-2xl bg-white mx-auto">
+      <div class="p-3 lg:p-5 shadow-2xl bg-white max-w-md mx-auto">
         <img
-          class="poster  max-w-full lg:max-w-md"
+          class=""
           src={`/images/designs/${posters[currentIndex]}`}
           alt={posters[currentIndex]}
         />
@@ -72,17 +72,17 @@
           on:click={() =>
             (currentIndex =
               currentIndex - 1 < 0 ? posters.length - 1 : currentIndex - 1)}
-          class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5 flex items-center"
+          class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm px-5 py-2 flex items-center"
         >
-          <i class="fas fa-caret-left text-4xl mr-4" />
+          <i class="fas fa-caret-left text-2xl mr-4" />
           <p class="font-bold">Previous</p>
         </button>
         <button
           on:click={() => (currentIndex = (currentIndex + 1) % posters.length)}
-          class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5 flex items-center"
+          class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm px-5 py-2 flex items-center"
         >
           <p class="font-bold">Next</p>
-          <i class="fas fa-caret-right text-4xl ml-4" />
+          <i class="fas fa-caret-right text-2xl ml-4" />
         </button>
       </div>
     </div>
@@ -98,7 +98,7 @@
 </main>
 
 <style>
-  .poster {
+  /* .poster {
     max-height: 90vh;
-  }
+  } */
 </style>
