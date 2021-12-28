@@ -43,7 +43,7 @@
         data-aos="zoom-in-right"
         data-aos-delay="800"
         data-aos-duration="700"
-        class="mb-3 font-mono text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-600 dark:text-white"
+        class="mb-3 lg:mb-5 font-mono text-2xl md:text-3xl lg:text-5xl font-extrabold text-gray-600 dark:text-white"
       >
         {welcomeMessage}
       </h1>
@@ -51,7 +51,7 @@
         data-aos="zoom-in-right"
         data-aos-delay="1000"
         data-aos-duration="700"
-        class="font-mono text-lg md:text-xl lg:text-xl mb-12 font-bold text-gray-500 dark:text-gray-400 ml-1"
+        class="-font-mono text-lg md:text-xl lg:text-xl mb-12 font-bold text-gray-500 dark:text-gray-400 ml-1"
       >
         My name is Bob and I create nice things.
       </p>

@@ -18,9 +18,9 @@ body {
   /* font-family: 'Nunito Sans', sans-serif, 'Roboto Mono', monospace; */
 }
 
-a {
+/* a {
   @apply hover:no-underline;
-}
+} */
 
 ::selection {
   @apply dark:bg-gray-600 bg-gray-300;

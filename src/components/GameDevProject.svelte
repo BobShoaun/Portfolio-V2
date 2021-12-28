@@ -2,13 +2,9 @@
   export let project = null;
 </script>
 
-<main
-  class="py-16 lg:py-24 xl:px-7 mx-4 sm:mx-14 lg:mx-0 {project.right
-    ? 'flex flex-row gap-5'
-    : ''} lg:max-w-{project.width}"
->
+<main style="grid-column: {project.span ?? 'span 4'};">
   <div
-    class="mb-8 shrink-0 max-h-80 w-fit mx-auto shadow-lg bg-gradient-to-br from-purple-400 to-red-300 shadow-3xl overflow-hidden rounded-sm"
+    class="mb-8 max-h-80 w-fit mx-auto shadow-lg bg-gradient-to-br from-purple-400 to-red-300 shadow-3xl overflow-hidden rounded-sm"
   >
     {#if project.video}
       <video

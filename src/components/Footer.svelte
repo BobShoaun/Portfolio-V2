@@ -3,7 +3,7 @@
 </script>
 
 <main
-  class=" main bg-gray-50 dark:bg-gray-700 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900"
+  class="main shadow-2xl z-50 bg-gray-50 dark:bg-gray-700 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900"
 >
   <section class="py-32">
     <div data-aos="fade-down" class="text-center space-x-8 mb-8">

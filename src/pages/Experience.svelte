@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import SectionNumber from "../components/SectionNumber.svelte";
   onMount(mounted);
 
   let experiences = [];
@@ -20,19 +21,12 @@
     class="bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full"
   />
 
-  <div
-    data-aos="slide-down"
-    data-aos-offset="200"
-    class="hidden lg:block absolute right-14 top-0 z-0"
-  >
-    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-5" />
-    <p
-      class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right right-0 absolute"
-    >
-      010
-    </p>
-  </div>
-
+  <SectionNumber
+    right
+    number="010"
+    shaftClasses="bg-gray-800 dark:bg-gray-50"
+    textClasses="text-gray-800 dark:text-gray-50"
+  />
   <section class="section relative">
     <div class="ml-20 mb-20">
       <h2
@@ -61,7 +55,7 @@
     </div> -->
 
     <div
-      class="md:grid md:grid-cols-2 mx-4 sm:mx-14 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
+      class="md:grid md:grid-cols-2 mx-6 sm:mx-28 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
     >
       {#each experiences as experience}
         <div class="exp aspect-square flex {experience.background}">
@@ -72,14 +66,16 @@
             style="mix-blend-mode: {experience.blend}"
           />
           <div
-            class="exp-desc bg-gray-100/80 dark:bg-gray-800/80 p-10 md:p-8 backdrop-blur-md"
+            class="exp-desc bg-gray-100/80 dark:bg-gray-800/80 p-5 sm:p-10 backdrop-blur-md"
           >
             <h1
-              class="font-bold text-gray-700 dark:text-white text-lg lg:text-2xl"
+              class="font-bold text-gray-700 dark:text-white text-xl lg:text-2xl"
             >
               {experience.position}
             </h1>
-            <h1 class="font-bold {experience.highlight} lg:text-lg mb-1">
+            <h1
+              class="font-bold {experience.highlight} text-lg lg:text-lg mb-1"
+            >
               @{experience.name}
             </h1>
             <p class="text-gray-500 dark:text-gray-400 mb-5 font-mono text-sm">

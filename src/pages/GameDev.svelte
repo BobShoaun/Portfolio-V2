@@ -1,5 +1,7 @@
 <script>
   import GameDevProject from "../components/GameDevProject.svelte";
+  import SectionNumber from "../components/SectionNumber.svelte";
+  import SectionHeader from "../components/SectionHeader.svelte";
   import { onMount } from "svelte";
 
   onMount(mounted);
@@ -9,7 +11,7 @@
   let expanded = false;
 
   async function mounted() {
-    const response = await fetch("/projects.json");
+    const response = await fetch("/projects_game.json");
     projects = await response.json();
   }
 </script>
@@ -18,35 +20,17 @@
   id="game-development"
   class="relative from-gray-100 to-white bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
-  <!-- <div
-    data-aos="slide-down"
-    data-aos-delay="900"
-    class="from-white to-gray-200 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full moving-gradient-y z-0"
-  /> -->
+  <SectionHeader
+    wrapperClasses="moving-gradient-2"
+    headingText="GAME DEVELOPMENT"
+    subtitleText="Game development was what got me into coding in the first place, here are some featured projects."
+  />
+  <SectionNumber number="100" right />
 
-  <div
-    data-aos="slide-down"
-    data-aos-offset="200"
-    class="hidden lg:block absolute right-14 top-0"
-  >
-    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-800" />
-    <p
-      class="text-gray-800 dark:bg-gray-100 dark:text-gray-800 font-mono font-bold text-4xl right-0 absolute"
+  <section class="main pb-40 pt-32 max-w-6xl mx-auto">
+    <div
+      class="space-y-36 lg:space-y-0 lg:grid lg:grid-cols-8 gap-x-20 gap-y-36"
     >
-      100
-    </p>
-  </div>
-
-  <section class="moving-gradient-2 pt-36 pb-20 main">
-    <h2 class="text-7xl mb-2 font-black text-gray-800 ">GAME DEVELOPMENT</h2>
-    <p class="lg:ml-3 text-lg font-semibold text-gray-800 max-w-prose ">
-      Game development was what got me into coding in the first place, here are
-      some featured projects.
-    </p>
-  </section>
-
-  <section class="main relative">
-    <div class="lg:flex lg:flex-wrap lg:justify-around">
       {#each visibleProjects as project}
         <GameDevProject {project} />
       {/each}
@@ -54,7 +38,7 @@
 
     <button
       on:click={() => (expanded = !expanded)}
-      class="py-2 px-4 shadow-md rounded-sm transition-color hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto mt-10 focus:outline-none"
+      class="mt-40 py-2 px-4 shadow-md rounded-sm transition-color hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto  focus:outline-none"
     >
       {#if expanded}
         <i class="fas fa-angle-up mr-2" />

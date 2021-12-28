@@ -24,11 +24,11 @@
     <div class={right ? "lg:order-first" : ""}>
       <h1
         data-aos={right ? "fade-right" : "fade-left"}
-        class="text-2xl lg:text-3xl font-bold dark:text-gray-50 mb-1"
+        class="text-2xl lg:text-4xl font-bold dark:text-gray-50 mb-1"
       >
         {@html project.name}
         <span
-          class="font-light text-right text-xl lg:text-2xl dark:text-gray-300"
+          class="ml-0.5 font-light text-right text-xl lg:text-2xl dark:text-gray-300"
           >{project.year}</span
         >
       </h1>
@@ -92,7 +92,7 @@
     </div>
   </section>
   {#if project.more}
-    <section data-aos="fade-up" class="mt-14 mx-2 sm:mx-4">
+    <section data-aos="fade-up" class="mt-14 mx-4 md:mx-0">
       <a
         href={project.more}
         class="block relative text-gray-700 dark:text-white cursor-pointer featured-article "

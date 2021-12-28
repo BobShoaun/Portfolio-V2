@@ -1,4 +1,14 @@
 [
+  {
+		"name": "Water Chef",
+		"video": "/videos/water chef.mp4",
+		"collaborators": "by myself",
+		"description": "A fast paced restaurant management game, inspired by games like hot dog bush. You are a chef specializing in serving water to very demanding and impatient customers.",
+		"technologies": ["unity", "c#", "photoshop"],
+		"github": "https://github.com/BobShoaun/Water-Chef",
+		"year": 2017,
+    "span": "span 5"
+	},
 	{
 		"name": "Assembly Doodle Jump",
 		"video": "/videos/doodle jump.mp4",
@@ -7,17 +17,17 @@
 		"technologies": ["mips assembly", "mars simulator"],
 		"github": "https://github.com/BobShoaun/Assembly-Doodle-Jump",
 		"year": 2020,
-		"width": 30
+    "span": "span 3"
 	},
-	{
-		"name": "Water Chef",
-		"video": "/videos/water chef.mp4",
-		"collaborators": "by myself",
-		"description": "A fast paced restaurant management game, inspired by games like hot dog bush. You are a chef specializing in serving water to very demanding and impatient customers.",
-		"technologies": ["unity", "c#", "photoshop"],
-		"github": "https://github.com/BobShoaun/Water-Chef",
-		"year": 2017,
-		"width": 50
+  {
+		"name": "Flappy Face",
+		"video": "/videos/flappy face.mp4",
+		"collaborators": "with friends",
+		"description": "The first game I have made with some friends, a Flappy bird clone running as a Java applet. Fun fact: the sound effects and background music are all acapella.",
+		"technologies": ["eclipse", "java"],
+		"github": "https://github.com/BobShoaun/Flappy-Face",
+		"year": 2015,
+    "span": "span 3"
 	},
 	{
 		"name": "Maze Runner",
@@ -27,18 +37,9 @@
 		"technologies": ["c++", "visual studio", "console game engine"],
 		"github": "https://github.com/BobShoaun/Maze-Runner",
 		"year": 2019,
-		"width": 50
+    "span": "span 5"
 	},
-	{
-		"name": "Flappy Face",
-		"video": "/videos/flappy face.mp4",
-		"collaborators": "with friends",
-		"description": "The first game I have made with some friends, a Flappy bird clone running as a Java applet. Fun fact: the sound effects and background music are all acapella.",
-		"technologies": ["eclipse", "java"],
-		"github": "https://github.com/BobShoaun/Flappy-Face",
-		"year": 2015,
-		"width": 30
-	},
+
 	{
 		"name": "UFO Destruction",
 		"video": "/videos/ufo.mp4",
@@ -47,7 +48,7 @@
 		"technologies": ["unity", "c#"],
 		"github": "https://github.com/BobShoaun/Project-UFO",
 		"year": 2018,
-		"width": 70
+    "span": "2 / span 6"
 	},
 	{
 		"name": "Csgo Weapons",
@@ -57,7 +58,7 @@
 		"technologies": ["unity", "c#", "unet multiplayer"],
 		"github": "https://github.com/BobShoaun/Csgo-Weapons",
 		"year": 2017,
-		"width": 40
+    "span": "span 5"
 	},
 
 	{
@@ -68,8 +69,7 @@
 		"technologies": ["unity", "c#"],
 		"github": "https://github.com/BobShoaun/Dicey",
 		"year": 2019,
-		"width": 50,
-		"right": true
+    "span": "span 3"
 	},
 
 	{
@@ -80,7 +80,7 @@
 		"technologies": ["c++", "visual studio"],
 		"github": "https://github.com/BobShoaun/Zombie-Game",
 		"year": 2017,
-		"width": 50
+    "span": "span 5"
 	},
 	{
 		"name": "Doxel Core Unity Package",
@@ -90,6 +90,7 @@
 		"technologies": ["unity", "c#"],
 		"github": "https://github.com/BobShoaun/Doxel-Core",
 		"year": 2017,
-		"width": 30
+    "span": "span 3"
+
 	}
 ]
