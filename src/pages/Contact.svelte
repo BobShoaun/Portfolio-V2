@@ -29,7 +29,7 @@
 
 <main
   id="contact"
-  class="main relative bg-gray-100 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900"
+  class="main overflow-hidden relative bg-gray-100 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900"
 >
   <div
     data-aos="slide-down"

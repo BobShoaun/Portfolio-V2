@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import SectionNumber from "../components/SectionNumber.svelte";
+  import TextReveal from "../components/TextReveal.svelte";
   onMount(mounted);
 
   let experiences = [];
@@ -13,7 +14,7 @@
 
 <main
   id="experience"
-  class="main relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 z-0"
+  class="overflow-hidden relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
   <div
     data-aos="slide-down"
@@ -27,33 +28,24 @@
     shaftClasses="bg-gray-800 dark:bg-gray-50"
     textClasses="text-gray-800 dark:text-gray-50"
   />
-  <section class="section relative">
-    <div class="ml-20 mb-20">
-      <h2
-        class="text-7xl mb-2 font-black text-gray-500 -bg-gray-100 inline-block"
-      >
-        EXPERIENCE
-      </h2>
+
+  <header class="px-5 relative lg:flex pt-40 pb-24 gap-10 text-center">
+    <h2
+      class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-200 mb-4"
+    >
+      <TextReveal text="EXPERIENCE" />
+    </h2>
+    <div class="basis-1/2">
       <p
-        class="ml-2 text-lg text-gray-400 max-w-prose font-semibold inline-block -bg-gray-100"
+        class="text-base lg:text-lg text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
         I currently have more than 2 years of work experience and counting. Here
         are some companies I have worked at before.
       </p>
     </div>
+  </header>
 
-    <!-- <div class="text-center">
-      <div
-        class="bg-white dark:bg-gray-900 p-10 mb-10 lg:mb-20 shadow-lg inline-block"
-      >
-        <h2 data-aos="fade-in" class="title mb-6 font-mono">Experience_</h2>
-        <h5 data-aos="fade-in" class="subtitle max-w-xl">
-          I currently have more than 2 years of work experience and counting.
-          Here are some companies I have worked at before.
-        </h5>
-      </div>
-    </div> -->
-
+  <section class="main max-w-6xl mx-auto mb-40">
     <div
       class="md:grid md:grid-cols-2 mx-6 sm:mx-28 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
     >

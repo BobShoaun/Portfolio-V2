@@ -1,6 +1,7 @@
 <script>
   import { Link } from "svelte-routing";
   import { blur, slide } from "svelte/transition";
+  import TextReveal from "../components/TextReveal.svelte";
   import { copyToClipboard } from "../helper";
   import { onMount } from "svelte";
 
@@ -40,27 +41,25 @@
         class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8"
       />
       <h1
-        data-aos="zoom-in-right"
-        data-aos-delay="800"
-        data-aos-duration="700"
         class="mb-3 lg:mb-5 font-mono text-2xl md:text-3xl lg:text-5xl font-extrabold text-gray-600 dark:text-white"
       >
-        {welcomeMessage}
+        <TextReveal delay={800} once text={welcomeMessage} />
       </h1>
       <p
-        data-aos="zoom-in-right"
-        data-aos-delay="1000"
-        data-aos-duration="700"
         class="-font-mono text-lg md:text-xl lg:text-xl mb-12 font-bold text-gray-500 dark:text-gray-400 ml-1"
       >
-        My name is Bob and I create nice things.
+        <TextReveal
+          delay={1000}
+          once
+          text="My name is Bob and I create nice things."
+        />
       </p>
 
       <div
         data-aos="flip-up"
         data-aos-delay="1200"
         data-aos-duration="700"
-        class=""
+        class="text-sm"
       >
         <Link
           to="resume"

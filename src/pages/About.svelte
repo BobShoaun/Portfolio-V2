@@ -1,10 +1,11 @@
 <script>
-  import Border from "../components/Border.svelte";
+  import SectionNumber from "../components/SectionNumber.svelte";
+  import TextReveal from "../components/TextReveal.svelte";
 </script>
 
 <main
   id="about"
-  class="main relative bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
+  class="overflow-hidden relative bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
 >
   <div
     data-aos="slide-right"
@@ -13,29 +14,27 @@
     class="absolute background left-0 w-1/3 lg:w-1/4 h-full moving-gradient-2"
   />
 
-  <div
-    data-aos="slide-down"
-    data-aos-offset="200"
-    class="hidden lg:block absolute left-14 top-0 text-center"
-  >
-    <div class="w-5 h-28 bg-gray-50 dark:bg-gray-800 mb-2" />
-    <p class="text-gray-100 dark:text-gray-800 font-mono font-bold text-3xl">
-      001
-    </p>
-  </div>
+  <SectionNumber
+    number="001"
+    shaftClasses="bg-gray-50 dark:bg-gray-800"
+    textClasses="text-gray-100 dark:text-gray-800"
+  />
 
-  <section class="section">
+  <!-- <header class="main relative pt-40 pb-20 text-center">
     <h2
-      data-aos="zoom-in-left"
-      class="mb-6 font-black text-7xl text-gray-700 text-right"
+      class="lg:text-right tracking-wide text-5xl md:text-6xl lg:text-7xl font-black text-gray-200"
     >
       ABOUT ME
     </h2>
+  </header> -->
 
-    <div class="flex flex-col items-center lg:flex-row justify-between">
-      <div class="max-w-xs m-10 mb-16 lg:m-16 lg:mr-20 z-10">
+  <section class="main mb-40 mt-40 lg:mt-64">
+    <div
+      class="flex flex-col items-center gap-32 lg:gap-20 lg:flex-row justify-center"
+    >
+      <div class="max-w-xs z-10 flex-1">
         <div
-          class="bg-gray-100 dark:bg-gray-300 shadow-gray-300/50 shadow-2xl overflow-hidden p-3 rounded-sm"
+          class="bg-gray-100 dark:bg-gray-300 shadow-2xl overflow-hidden p-3 rounded-sm"
         >
           <img
             data-aos="slide-right"
@@ -48,15 +47,18 @@
       </div>
 
       <div
-        class="bg-white dark:bg-gray-900 px-6 py-6 lg:py-10 lg:px-10 shadow-2xl shrink relative"
+        class="flex-1 max-w-prose relative bg-white dark:bg-gray-900 px-6 py-6 lg:py-10 lg:px-10 shadow-2xl"
       >
-        <!-- <h2 data-aos="zoom-in-left" class="title mb-6 lg:mb-10 font-mono">
-        > About me
-      </h2> -->
+        <div
+          class="absolute right-0 -top-20 lg:-top-32 lg:text-right tracking-wide text-5xl md:text-6xl lg:text-7xl font-black text-gray-200"
+        >
+          <TextReveal text="ABOUT ME" />
+        </div>
+
         <p
           data-aos="zoom-in-left"
           data-aos-delay="100"
-          class="text-gray-500 dark:text-gray-300 lg:text-lg max-w-prose"
+          class="text-gray-500 dark:text-gray-300 lg:text-lg"
         >
           What's up? I’m Bob, a student currently earning my degree in
           University of Toronto, and also working as a software developer.
@@ -91,3 +93,6 @@
     <div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
   </div>
 </main>
+
+<style>
+</style>

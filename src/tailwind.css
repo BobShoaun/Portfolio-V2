@@ -47,7 +47,6 @@ body {
 
 .main {
   @apply px-5 md:px-24 lg:px-28;
-  @apply w-full overflow-hidden;
 }
 
 .section {
@@ -277,3 +276,38 @@ body {
   @apply dark:hover:text-gray-800 dark:hover:bg-gray-50;
   @apply mt-3;
 }
+
+
+
+@keyframes cover-reveal {
+  0% {
+    transform: translateX(-101%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(101%);
+  }
+}
+@keyframes text-reveal {
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.reveal #cover {
+  animation: cover-reveal 1000ms ease 100ms forwards;
+}
+
+.reveal #text {
+  animation: text-reveal 1000ms ease 100ms forwards;
+}
+
+

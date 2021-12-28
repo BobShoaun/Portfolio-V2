@@ -18,7 +18,7 @@
 
 <main
   id="game-development"
-  class="relative from-gray-100 to-white bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
+  class="relative overflow-hidden from-gray-100 to-white bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
   <SectionHeader
     wrapperClasses="moving-gradient-2"

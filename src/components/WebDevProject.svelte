@@ -5,10 +5,10 @@
 
 <main class="">
   <section
-    class="sm:mx-14 lg:mx-0 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12"
+    class="sm:mx-14 lg:mx-0 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-14"
   >
     <div
-      class="max-h-80 w-fit shadow-lg mx-auto bg-gradient-to-br from-green-300 to-blue-300 shadow-3xl overflow-hidden rounded-sm"
+      class="max-h-80 lg:max-w-1/2 w-fit shrink shadow-lg mx-0 bg-gradient-to-br from-green-300 to-blue-300 shadow-3xl overflow-hidden rounded-sm"
     >
       <img
         data-aos={right ? "slide-right" : "slide-left"}
@@ -21,7 +21,7 @@
       />
     </div>
 
-    <div class={right ? "lg:order-first" : ""}>
+    <div class="flex-1 {right ? 'lg:order-first' : ''}">
       <h1
         data-aos={right ? "fade-right" : "fade-left"}
         class="text-2xl lg:text-4xl font-bold dark:text-gray-50 mb-1"
