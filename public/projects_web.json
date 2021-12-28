@@ -1,14 +1,35 @@
 [
+  {
+		"name": "Artsu.me",
+		"image": "/images/artsume.png",
+		"collaborators": "with artsu.me team",
+		"description": "An art hosting site where artists can upload their work, and make a personalized portfolio to showcase their work in a meaningful way. Dive into an amazing community of talented artists, and share your work through Artsu.me",
+		"technologies": ["react", "tailwindcss", "express", "mongodb", "cloudinary"],
+		"website": "https://artsu.me/",
+		"github": "",
+		"year": 2021
+	},
 	{
 		"name": "Bobcoin",
 		"image": "/images/bobcoin.png",
 		"collaborators": "by myself",
-		"description": "Given my fascination in blockchain technologies, I've decided to make my own cryptocurrency from scratch. It uses the proof of work consensus, elliptic curve signatures, the UTXO model, a BIP compliant wallet format, a block explorer, and many more. This project deepened my understanding of the inner workings of cryptocurrencies like Bitcoin.",
-		"technologies": ["mongodb", "express", "react", "node.js", "bulma", "socket.io"],
+		"description": "Given my fascination in blockchain technologies and Bitcoin, I've decided to make my own cryptocurrency from scratch. It features PoW consensus, digital signatures, merkle trees, the UTXO model, BIP compliant wallets, a block explorer, mining client, and many more.",
+		"technologies": ["react", "bulma", "node.js", "express", "mongodb", "socket.io", "npm"],
 		"website": "https://bobcoin.cash",
 		"github": "https://github.com/BobShoaun/Bobcoin-Node",
 		"year": 2021,
 		"more": "/articles/how-i-made-my-own-cryptocurrency"
+	},
+
+  {
+		"name": "Cardistry",
+		"image": "/images/cardistry.png",
+		"collaborators": "by myself",
+		"description": "A javascript library for easily animating groups of cards or card-like elements in your website. It is complete with proper, extensive documentations and some basic examples.",
+		"technologies": ["html", "js", "css", "tailwindcss", "express", "npm"],
+		"website": "https://cardistry.herokuapp.com/",
+		"github": "",
+		"year": 2021
 	},
 	{
 		"name": "Pathforge",
@@ -18,6 +39,16 @@
 		"technologies": ["vue", "buefy", "graphql", "postgres"],
 		"website": "https://pathforge.co/",
 		"year": 2020
+	},
+  {
+		"name": "Portfolio V2",
+		"image": "/images/portfolio-v2.png",
+		"collaborators": "by myself",
+		"description": "The site you are looking at right now! It is the second iteration of my personal portfolio site, showcasing my experiences and skillsets. It features a fully responsive design, cool animations, and dark mode.",
+		"technologies": ["svelte", "tailwindcss", "netlify"],
+		"website": "https://www.bobng.me/",
+    "github": "https://github.com/BobShoaun/Portfolio-V2",
+		"year": 2021
 	},
 	{
 		"name": "Course Checker",
@@ -44,7 +75,7 @@
 		"image": "/images/todo app 2.png",
 		"collaborators": "by myself",
 		"description": "A simple and elegant to do list application with a great UI built as practice while learning the vue framework and firebase firestore.",
-		"technologies": ["vue", "tailwind", "firebase"],
+		"technologies": ["vue", "tailwindcss", "firebase"],
 		"github": "https://github.com/BobShoaun/Vue-Todo-App",
 		"website": "https://bobshoaun.github.io/Vue-Todo-App/#/",
 		"year": 2020

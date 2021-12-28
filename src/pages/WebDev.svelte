@@ -33,15 +33,17 @@
 
     <button
       on:click={() => (expanded = !expanded)}
-      class="py-2 px-4 mt-40 shadow-md font-semibold rounded-sm transition-color hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto focus:outline-none"
+      class="mt-40 w-full flex items-center gap-2 group font-semibold text-gray-700 dark:text-gray-100"
     >
+      <hr class="flex-1 mr-2 border-gray-400 dark:border-gray-500" />
       {#if expanded}
-        <i class="fas fa-angle-up mr-2" />
-        <span>Show Less</span>
+        <i class="fas fa-angle-up" />
+        <span class="group-hover:underline">Show Less</span>
       {:else}
-        <i class="fas fa-angle-down mr-2" />
-        <span>Show More</span>
+        <i class="fas fa-angle-down" />
+        <span class="group-hover:underline">Show More</span>
       {/if}
+      <hr class="flex-1 ml-2 border-gray-400 dark:border-gray-500" />
     </button>
   </section>
 
