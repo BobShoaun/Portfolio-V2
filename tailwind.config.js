@@ -4,34 +4,34 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.svelte"],
   darkMode: "class",
-  purge: {
-    // These options are passed through directly to PurgeCSS
-    options: {
-      safelist: [
-        "lg:max-w-20",
-        "lg:max-w-30",
-        "lg:max-w-40",
-        "lg:max-w-50",
-        "lg:max-w-55",
-        "lg:max-w-60",
-        "lg:max-w-70",
-        "lg:max-w-80",
-        "text-blue-400",
-        "text-green-400",
-        "text-red-400",
-        "text-indigo-400",
-        "bg-white",
-        "bg-gray-700",
-        "bg-teal-50",
-        "text-teal-600",
-        "border-teal-600",
-        "bg-teal-600",
-      ],
-      blocklist: [/^debug-/],
-      keyframes: true,
-      fontFace: true,
-    },
-  },
+  // purge: {
+  //   // These options are passed through directly to PurgeCSS
+  //   options: {
+  //     safelist: [
+  //       "lg:max-w-20",
+  //       "lg:max-w-30",
+  //       "lg:max-w-40",
+  //       "lg:max-w-50",
+  //       "lg:max-w-55",
+  //       "lg:max-w-60",
+  //       "lg:max-w-70",
+  //       "lg:max-w-80",
+  //       "text-blue-400",
+  //       "text-green-400",
+  //       "text-red-400",
+  //       "text-indigo-400",
+  //       "bg-white",
+  //       "bg-gray-700",
+  //       "bg-teal-50",
+  //       "text-teal-600",
+  //       "border-teal-600",
+  //       "bg-teal-600",
+  //     ],
+  //     blocklist: [/^debug-/],
+  //     keyframes: true,
+  //     fontFace: true,
+  //   },
+  // },
   theme: {
     extend: {
       minHeight: {
