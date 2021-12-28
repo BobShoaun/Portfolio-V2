@@ -1,5 +1,7 @@
 <script>
   import { copyToClipboard } from "../helper";
+  import SectionNumber from "../components/SectionNumber.svelte";
+  import TextReveal from "../components/TextReveal.svelte";
 
   async function submitForm() {
     let contactForm = document.querySelector("form");
@@ -38,31 +40,12 @@
     class="absolute background left-0 w-2/5 h-full moving-gradient-1"
   />
 
-  <!-- <div
-    data-aos="slide-down"
-    data-aos-offset="200"
-    class="hidden lg:block absolute left-14 top-0"
-  >
-    <div class="w-5 h-28 bg-gray-50 dark:bg-gray-800 mb-4" />
-    <p
-      class="text-gray-100 dark:text-gray-800 font-mono font-bold text-4xl left-0 absolute"
-    >
-      101
-    </p>
-  </div> -->
-
-  <div
-    data-aos="slide-down"
-    data-aos-offset="200"
-    class="hidden lg:block absolute right-14 top-0"
-  >
-    <div class="w-5 h-28 bg-gray-800 dark:bg-gray-50 mb-4" />
-    <p
-      class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl right-0 absolute"
-    >
-      110
-    </p>
-  </div>
+  <SectionNumber
+    right
+    number="110"
+    shaftClasses="bg-gray-800 dark:bg-gray-50"
+    textClasses="text-gray-800 dark:text-gray-50"
+  />
 
   <section class="section relative">
     <div
@@ -78,7 +61,12 @@
       </div>
       <div class="lg:flex gap-10">
         <div class="basis-2/5">
-          <h2 data-aos="fade" class="title mb-4 font-mono">Contact(Me)</h2>
+          <h2
+            class="dark:text-gray-200 tracking-wide text-4xl md:text-5xl lg:text-6xl font-black mb-4"
+          >
+            <TextReveal text="CONTACT ME" />
+          </h2>
+
           <h5
             data-aos="fade"
             class="text-gray-500 dark:text-gray-300 mb-7 lg:mb-10"

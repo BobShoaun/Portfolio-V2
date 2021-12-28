@@ -35,7 +35,7 @@
     >
       <TextReveal text="EXPERIENCE" />
     </h2>
-    <div class="basis-1/2">
+    <div data-aos="fade-left" data-aos-delay="200" class="basis-1/2">
       <p
         class="text-base lg:text-lg text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
@@ -89,10 +89,8 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute left-14 bottom-0"
-  >
-    <div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
-  </div>
+    class="hidden lg:block absolute left-14 bottom-0 w-5 h-28 bg-gray-600 dark:bg-gray-300"
+  />
 </main>
 
 <style>

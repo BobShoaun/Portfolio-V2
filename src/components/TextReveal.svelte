@@ -19,10 +19,10 @@
 </script>
 
 <div bind:this={textReveal} class="relative inline-block">
-  <h1 id="text" class="opacity-0" style="animation-delay: {delay}ms">
-    {text}
-  </h1>
-  <div class="absolute overflow-hidden inset-0">
+  <p id="text" class="opacity-0" style="animation-delay: {delay}ms">
+    {@html text}
+  </p>
+  <div class="absolute overflow-hidden pointer-events-none inset-0">
     <div
       id="cover"
       class="absolute inset-0 bg-current transform-gpu -translate-x-[101%]"

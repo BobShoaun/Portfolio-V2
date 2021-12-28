@@ -1,5 +1,6 @@
 <script>
-  import { slide } from "svelte/transition";
+  import SectionNumber from "../components/SectionNumber.svelte";
+  import TextReveal from "../components/TextReveal.svelte";
 
   let posters = [
     "sumfun.png",
@@ -16,53 +17,63 @@
   let currentIndex = 0;
 </script>
 
-<main id="graphic-design" class="main relative bg-gray-100 dark:bg-gray-900">
-  <div
-    data-aos="slide-down"
-    data-aos-offset="200"
-    class="hidden lg:block absolute left-14 top-0"
-  >
-    <div class="w-5 h-36 bg-gray-800 dark:bg-gray-50 mb-4" />
-    <p
-      class="text-gray-800 dark:text-gray-50 font-mono font-bold text-4xl text-right left-0 absolute"
-    >
-      101
-    </p>
-  </div>
+<main
+  id="graphic-design"
+  class="overflow-hidden relative bg-gray-100 dark:bg-gray-900"
+>
+  <SectionNumber
+    number="101"
+    shaftClasses="bg-gray-800 dark:bg-gray-50"
+    textClasses="text-gray-800 dark:text-gray-50"
+  />
 
-  <section class="section">
-    <div class="lg:ml-10 mt-8">
-      <h2 class="text-7xl mb-2 font-black text-gray-600">GRAPHIC DESIGN</h2>
-      <p class="lg:ml-5 text-lg text-gray-300 max-w-prose ">
+  <header class="px-5 relative lg:flex pt-40 pb-24 gap-10 text-center">
+    <h2
+      class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-200 mb-4"
+    >
+      <TextReveal text={`GRAPHIC <br> DESIGN`} />
+    </h2>
+    <div data-aos="fade-left" data-aos-delay="200" class="basis-1/2">
+      <p
+        class="text-base lg:text-lg text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
+      >
         I also have an eye for good typography and graphic designs. Here are
         some of my work designing various posters for university clubs and
         events.
       </p>
     </div>
+  </header>
 
-    <!-- <div class="text-center">
-      <div
-        class="bg-white dark:bg-gray-800 p-10 mb-6 lg:mb-14 shadow-lg inline-block"
-      >
-        <h2 data-aos="fade-in" class="title mb-6 font-mono">Graphic Design</h2>
-        <h5 data-aos="fade-in" class="subtitle max-w-xl">
-          I also have an eye for good typography and graphic designs. Here are
-          some of my work designing various posters for university clubs and
-          events.
-        </h5>
-      </div>
-    </div> -->
-
-    <div class="mt-10 lg:flex items-center mb-20">
+  <section class="main max-w-6xl mx-auto mb-40">
+    <div class="mb-16 flex justify-evenly md:hidden">
       <button
         on:click={() =>
           (currentIndex =
             currentIndex - 1 < 0 ? posters.length - 1 : currentIndex - 1)}
-        class="hidden lg:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
+        class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm px-6 py-2 flex items-center"
+      >
+        <i class="fas fa-caret-left text-xl mr-4" />
+        <p class="font-bold">Previous</p>
+      </button>
+      <button
+        on:click={() => (currentIndex = (currentIndex + 1) % posters.length)}
+        class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm px-6 py-2 flex items-center"
+      >
+        <p class="font-bold">Next</p>
+        <i class="fas fa-caret-right text-xl ml-4" />
+      </button>
+    </div>
+
+    <div class="md:flex items-center justify-center gap-10">
+      <button
+        on:click={() =>
+          (currentIndex =
+            currentIndex - 1 < 0 ? posters.length - 1 : currentIndex - 1)}
+        class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
       >
         <i class="fas fa-caret-left text-4xl" />
       </button>
-      <div class="p-3 lg:p-5 shadow-2xl bg-white max-w-md mx-auto">
+      <div class="p-3 md:p-5 shadow-2xl bg-white max-w-md mx-auto">
         <img
           class=""
           src={`/images/designs/${posters[currentIndex]}`}
@@ -71,39 +82,18 @@
       </div>
       <button
         on:click={() => (currentIndex = (currentIndex + 1) % posters.length)}
-        class="hidden lg:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
+        class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
       >
         <i class="fas fa-caret-right text-4xl" />
       </button>
-
-      <div class="mt-10 flex justify-evenly lg:hidden">
-        <button
-          on:click={() =>
-            (currentIndex =
-              currentIndex - 1 < 0 ? posters.length - 1 : currentIndex - 1)}
-          class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm px-5 py-2 flex items-center"
-        >
-          <i class="fas fa-caret-left text-2xl mr-4" />
-          <p class="font-bold">Previous</p>
-        </button>
-        <button
-          on:click={() => (currentIndex = (currentIndex + 1) % posters.length)}
-          class="bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm px-5 py-2 flex items-center"
-        >
-          <p class="font-bold">Next</p>
-          <i class="fas fa-caret-right text-2xl ml-4" />
-        </button>
-      </div>
     </div>
   </section>
 
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute right-14 bottom-0"
-  >
-    <div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
-  </div>
+    class="hidden lg:block absolute right-14 bottom-0 w-5 h-28 bg-gray-600 dark:bg-gray-300"
+  />
 </main>
 
 <style>

@@ -1,13 +1,8 @@
 <script>
   import { Link } from "svelte-routing";
-  import { blur, slide } from "svelte/transition";
   import TextReveal from "../components/TextReveal.svelte";
   import { copyToClipboard } from "../helper";
   import { onMount } from "svelte";
-
-  onMount(() => {
-    // setTimeout(() => (ready = true), 500);
-  });
 
   export let theme;
 
@@ -23,7 +18,7 @@
     data-aos="slide-down"
     data-aos-delay="700"
     data-aos-duration="700"
-    class="absolute background top-0 right-0 h-1/2 w-full md:w-1/3 md:h-full moving-gradient-1"
+    class="absolute top-0 right-0 h-1/2 w-full md:w-1/3 md:h-full moving-gradient-1"
   />
 
   <section
@@ -81,17 +76,17 @@
     data-aos="slide-up"
     data-aos-delay="1500"
     data-aos-duration="700"
-    class="hidden lg:block absolute left-14 bottom-0 text-center"
+    class="hidden lg:block absolute left-14 bottom-0 text-center text-gray-700 dark:text-gray-50"
   >
-    <a href="https://github.com/BobShoaun" target="_blank" class="block mb-6"
-      ><i class="text-gray-800 dark:text-gray-50 fab fa-github fa-lg" /></a
+    <a href="https://github.com/BobShoaun" target="_blank" class="block mb-5"
+      ><i class=" fab fa-github fa-lg" /></a
     >
     <a
       href="https://www.linkedin.com/in/ngbobshoaun/"
       target="_blank"
-      class="block mb-6"
+      class="block mb-5"
     >
-      <i class="text-gray-800 dark:text-gray-50 fab fa-linkedin-in fa-lg" /></a
+      <i class="fab fa-linkedin-in fa-lg" /></a
     >
 
     <!-- <a
@@ -103,16 +98,16 @@
 
     <p
       on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
-      class="block mb-6 cursor-pointer"
+      class="block mb-5 cursor-pointer"
     >
-      <i class="text-gray-800 dark:text-gray-50 far fa-envelope fa-lg" />
+      <i class="far fa-envelope fa-lg" />
     </p>
 
     <!-- <a href="https://codepen.io/bobshoaun" target="_blank" class="block mb-8"
-			><i class="text-gray-800 dark:text-gray-50 fab fa-codepen fa-lg" /></a
+			><i class="fab fa-codepen fa-lg" /></a
 		> -->
 
-    <div class="w-5 h-28 bg-gray-800 dark:bg-gray-50" />
+    <div class="w-5 h-28 bg-gray-700 dark:bg-gray-50" />
   </div>
 
   <!-- <div class="absolute w-40 h-40 bg-transparent border-gray-300 border-8 top-64 right-64 design-element"></div> -->
@@ -126,26 +121,3 @@
     <i class="hover-vertical fas fa-angle-down" />
   </p>
 </main>
-
-<style>
-  .background {
-    transform: rotate(20deg);
-    /* height: 2000px; */
-    /* width: 250px; */
-    /* right: 500px; */
-    /* top: -500px; */
-    /* z-index: -1; */
-  }
-
-  /* .design-element {
-
-		background-size: 100% 200%;
-		background-position: top;
-		animation: gradient-animation-y 10s infinite alternate;
-	} */
-
-  /* 
-  .design-element:hover, .design-element:focus {
-    background-position: right;
-  } */
-</style>

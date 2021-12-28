@@ -89,7 +89,7 @@ body {
 
 
 .nav-text {
-  @apply font-mono text-sm;
+  @apply font-mono text-sm font-semibold;
   @apply text-gray-800 dark:text-gray-50;
   @apply hover:bg-gray-600 hover:text-gray-50;
   @apply dark:hover:bg-gray-50 dark:hover:text-gray-800;
@@ -277,8 +277,6 @@ body {
   @apply mt-3;
 }
 
-
-
 @keyframes cover-reveal {
   0% {
     transform: translateX(-101%);
@@ -303,11 +301,11 @@ body {
 }
 
 .reveal #cover {
-  animation: cover-reveal 1000ms ease 100ms forwards;
+  animation: cover-reveal 700ms ease 100ms forwards;
 }
 
 .reveal #text {
-  animation: text-reveal 1000ms ease 100ms forwards;
+  animation: text-reveal 700ms ease 100ms forwards;
 }
 
 
