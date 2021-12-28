@@ -18,7 +18,7 @@
 
 <main
   id="game-development"
-  class="relative overflow-hidden from-gray-100 to-white bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
+  class="relative overflow-hidden from-gray-100 to-gray-200 bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
   <SectionHeader
     wrapperClasses="moving-gradient-2"
@@ -52,6 +52,6 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute left-14 bottom-0 z-10 w-5 h-28 dark:bg-gray-300 bg-gray-600"
+    class="hidden shadow-xl lg:block absolute left-14 bottom-0 z-10 w-5 h-28 dark:bg-gray-400 bg-gray-600"
   />
 </main>

@@ -33,15 +33,15 @@
         data-aos="flip-up"
         data-aos-delay="600"
         data-aos-duration="700"
-        class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8"
+        class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-6"
       />
       <h1
-        class="mb-3 lg:mb-5 font-mono text-2xl md:text-3xl lg:text-5xl font-extrabold text-gray-600 dark:text-white"
+        class="mb-3 font-mono font-bold text-2xl md:text-3xl lg:text-5xl text-gray-700 dark:text-white"
       >
         <TextReveal delay={800} once text={welcomeMessage} />
       </h1>
       <p
-        class="-font-mono text-lg md:text-xl lg:text-xl mb-12 font-bold text-gray-500 dark:text-gray-400 ml-1"
+        class="text-lg md:text-xl lg:text-xl mb-8 font-bold text-gray-500 dark:text-gray-400 ml-1"
       >
         <TextReveal
           delay={1000}
@@ -107,7 +107,7 @@
 			><i class="fab fa-codepen fa-lg" /></a
 		> -->
 
-    <div class="w-5 h-28 bg-gray-700 dark:bg-gray-50" />
+    <div class="shadow-xl w-5 h-28 bg-gray-700 dark:bg-gray-50" />
   </div>
 
   <!-- <div class="absolute w-40 h-40 bg-transparent border-gray-300 border-8 top-64 right-64 design-element"></div> -->

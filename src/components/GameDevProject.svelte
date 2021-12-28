@@ -29,12 +29,16 @@
   </div>
 
   <div
-    class="p-6 bg-gray-50 dark:bg-gray-900 shadow-xl"
+    class="px-6 py-10 bg-gray-50 dark:bg-gray-900 shadow-xl"
     style="height: fit-content"
   >
-    <h1 data-aos="flip-down" class="font-bold text-2xl dark:text-gray-50 mb-1">
+    <h1
+      data-aos="flip-down"
+      class="font-extrabold text-2xl lg:text-3xl text-gray-800 dark:text-gray-50 mb-1"
+    >
       {project.name}
-      <span class="font-light text-right text-xl dark:text-gray-300"
+      <span
+        class="ml-0.5 font-light text-right text-xl lg:text-2xl dark:text-gray-300"
         >{project.year}</span
       >
     </h1>
@@ -48,7 +52,7 @@
     <p
       data-aos="fade-up"
       data-aos-delay="200"
-      class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed"
+      class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed font-semibold"
     >
       {project.description}
     </p>
@@ -69,7 +73,7 @@
           <a
             href={project.github}
             target="_blank"
-            class="shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-800 dark:text-gray-50"
+            class="shadow-md rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors flex items-center text-gray-800 dark:text-gray-50"
           >
             <p class="text-md">Github</p>
             <i class="fab fa-github ml-3 text-lg" /></a
@@ -79,7 +83,7 @@
           <a
             href={project.website}
             target="_blank"
-            class="flex items-center text-gray-800 dark:text-gray-50 ml-6"
+            class="flex items-center hover:underline text-gray-800 dark:text-gray-50 ml-6"
           >
             <p class="text-md">Link</p>
             <i class="fas fa-external-link-alt ml-3 text-md" />

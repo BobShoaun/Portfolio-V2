@@ -14,30 +14,30 @@
 
 <main
   id="experience"
-  class="overflow-hidden relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
+  class="overflow-hidden bg-gray-100 relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
   <div
     data-aos="slide-down"
     data-aos-delay="900"
-    class="bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full"
+    class="bg-gray-200 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full"
   />
 
   <SectionNumber
     right
     number="010"
-    shaftClasses="bg-gray-800 dark:bg-gray-50"
-    textClasses="text-gray-800 dark:text-gray-50"
+    shaftClasses="bg-gray-600 dark:bg-gray-50"
+    textClasses="text-gray-600 dark:text-gray-50"
   />
 
   <header class="px-5 relative lg:flex pt-40 pb-24 gap-10 text-center">
     <h2
-      class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-200 mb-4"
+      class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-700 dark:text-gray-200 mb-4"
     >
       <TextReveal text="EXPERIENCE" />
     </h2>
     <div data-aos="fade-left" data-aos-delay="200" class="basis-1/2">
       <p
-        class="text-base lg:text-lg text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
+        class="text-base lg:text-lg text-gray-600 dark:text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
         I currently have more than 2 years of work experience and counting. Here
         are some companies I have worked at before.
@@ -74,7 +74,7 @@
               {experience.start} - {experience.end}
             </p>
             <ul
-              class="text-base text-gray-700 dark:text-gray-200 list-square ml-4"
+              class="text-base font-semibold text-gray-700 dark:text-gray-200 list-square ml-4"
             >
               {#each experience.points as point}
                 <li class="mt-1">{point}</li>
@@ -89,7 +89,7 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute left-14 bottom-0 w-5 h-28 bg-gray-600 dark:bg-gray-300"
+    class="hidden lg:block shadow-xl absolute left-14 bottom-0 w-5 h-28 bg-gray-400 dark:bg-gray-300"
   />
 </main>
 

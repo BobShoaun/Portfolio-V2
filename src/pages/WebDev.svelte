@@ -19,7 +19,7 @@
 
 <main
   id="web-development"
-  class="relative overflow-hidden bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
+  class="relative overflow-hidden bg-gray-100 bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
   <SectionHeader />
   <SectionNumber number="011" />
@@ -33,7 +33,7 @@
 
     <button
       on:click={() => (expanded = !expanded)}
-      class="py-2 px-4 mt-40 shadow-md rounded-sm transition-color hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto focus:outline-none"
+      class="py-2 px-4 mt-40 shadow-md font-semibold rounded-sm transition-color hover:shadow-lg border-2 bg-transparent  border-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-white block mx-auto focus:outline-none"
     >
       {#if expanded}
         <i class="fas fa-angle-up mr-2" />
@@ -48,8 +48,6 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute right-14 bottom-0"
-  >
-    <div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
-  </div>
+    class="hidden lg:block absolute shadow-xl right-14 bottom-0 w-5 h-28 bg-gray-400 dark:bg-gray-300"
+  />
 </main>

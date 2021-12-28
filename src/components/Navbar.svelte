@@ -115,7 +115,7 @@
       data-aos-delay="800"
       data-aos-duration="700"
       on:click={toggleTheme}
-      class="text-sm border-gray-500 border-2 hover:bg-gray-200 dark:hover:bg-gray-700 py-1.5 px-3 dark:text-gray-50 rounded-md focus:outline-none transition-colors"
+      class="text-sm font-semibold border-gray-500 border-2 hover:bg-gray-200 dark:hover:bg-gray-700 py-1.5 px-3 dark:text-gray-50 rounded-md focus:outline-none transition-colors"
       ><i
         class="{theme === 'dark' ? 'fa fa-moon' : 'far fa-sun'} mr-2"
       />{theme === "dark" ? "Dark" : "Light"}</button

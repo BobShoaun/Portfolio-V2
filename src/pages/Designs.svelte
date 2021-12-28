@@ -19,23 +19,23 @@
 
 <main
   id="graphic-design"
-  class="overflow-hidden relative bg-gray-100 dark:bg-gray-900"
+  class="overflow-hidden relative bg-gray-50 dark:bg-gray-900"
 >
   <SectionNumber
     number="101"
-    shaftClasses="bg-gray-800 dark:bg-gray-50"
-    textClasses="text-gray-800 dark:text-gray-50"
+    shaftClasses="bg-gray-700 dark:bg-gray-50"
+    textClasses="text-gray-700 dark:text-gray-50"
   />
 
   <header class="px-5 relative lg:flex pt-40 pb-24 gap-10 text-center">
     <h2
-      class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-200 mb-4"
+      class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-700 dark:text-gray-200 mb-4"
     >
       <TextReveal text={`GRAPHIC <br> DESIGN`} />
     </h2>
     <div data-aos="fade-left" data-aos-delay="200" class="basis-1/2">
       <p
-        class="text-base lg:text-lg text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
+        class="text-base lg:text-lg text-gray-600 dark:text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
         I also have an eye for good typography and graphic designs. Here are
         some of my work designing various posters for university clubs and
@@ -92,12 +92,6 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute right-14 bottom-0 w-5 h-28 bg-gray-600 dark:bg-gray-300"
+    class="hidden lg:block shadow-xl absolute right-14 bottom-0 w-5 h-28 bg-gray-400 dark:bg-gray-300"
   />
 </main>
-
-<style>
-  /* .poster {
-    max-height: 90vh;
-  } */
-</style>

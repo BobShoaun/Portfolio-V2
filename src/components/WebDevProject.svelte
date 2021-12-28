@@ -3,9 +3,9 @@
   export let right = false;
 </script>
 
-<main class="">
+<main class="sm:mx-14 lg:mx-0 ">
   <section
-    class="sm:mx-14 lg:mx-0 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-14"
+    class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-14"
   >
     <div
       class="max-h-80 lg:max-w-1/2 w-fit shrink shadow-lg mx-0 bg-gradient-to-br from-green-300 to-blue-300 shadow-3xl overflow-hidden rounded-sm"
@@ -24,7 +24,7 @@
     <div class="flex-1 {right ? 'lg:order-first' : ''}">
       <h1
         data-aos={right ? "fade-right" : "fade-left"}
-        class="text-2xl lg:text-4xl font-bold dark:text-gray-50 mb-1"
+        class="text-2xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-50 mb-1"
       >
         {@html project.name}
         <span
@@ -35,14 +35,14 @@
       <p
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="100"
-        class="font-bold font-mono text-sm text-purple-600 dark:text-purple-300 mb-4"
+        class="font-bold font-mono text-sm text-purple-700 dark:text-purple-300 mb-4"
       >
         {project.collaborators}
       </p>
       <p
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="200"
-        class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed max-w-prose"
+        class="mb-4 text-gray-600 font-semibold dark:text-gray-300 leading-relaxed max-w-prose"
       >
         {project.description}
       </p>
@@ -50,7 +50,7 @@
       <p
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="300"
-        class="text-sm font-mono font-semibold mb-8 text-red-400 dark:text-red-300"
+        class="text-sm font-mono font-semibold mb-8 text-red-500 dark:text-red-300"
       >
         {project.technologies.join(" // ")}
       </p>
@@ -64,14 +64,14 @@
           <a
             href={project.github}
             target="_blank"
-            class="shadow-md hover:shadow-lg transition-shadow rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-800 dark:text-gray-50"
+            class="shadow-md rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors flex items-center text-gray-800 dark:text-gray-50"
           >
             <p class="text-md">Github</p>
             <i class="fab fa-github ml-3 text-lg" /></a
           >
         {:else}
           <button
-            class="shadow-md rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
+            class="rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
             disabled
           >
             <p class="text-md">Private</p>
@@ -82,7 +82,7 @@
           <a
             href={project.website}
             target="_blank"
-            class="flex px-2 py-2 items-center text-gray-800 dark:text-gray-50"
+            class="flex px-2 py-2 items-center hover:underline text-gray-800 dark:text-gray-50"
           >
             <p class="text-md">Link</p>
             <i class="fas fa-external-link-alt ml-3 text-md" />
@@ -92,7 +92,7 @@
     </div>
   </section>
   {#if project.more}
-    <section data-aos="fade-up" class="mt-14 mx-4 md:mx-0">
+    <section data-aos="fade-up" class="mt-14">
       <a
         href={project.more}
         class="block relative text-gray-700 dark:text-white cursor-pointer featured-article "

@@ -43,8 +43,8 @@
   <SectionNumber
     right
     number="110"
-    shaftClasses="bg-gray-800 dark:bg-gray-50"
-    textClasses="text-gray-800 dark:text-gray-50"
+    shaftClasses="bg-gray-700 dark:bg-gray-50"
+    textClasses="text-gray-700 dark:text-gray-50"
   />
 
   <section class="section relative">
@@ -56,21 +56,18 @@
           data-aos="flip-up"
           data-aos-delay="600"
           data-aos-duration="700"
-          class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-8"
+          class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-6"
         />
       </div>
       <div class="lg:flex gap-10">
         <div class="basis-2/5">
           <h2
-            class="dark:text-gray-200 tracking-wide text-4xl md:text-5xl lg:text-6xl font-black mb-4"
+            class="text-gray-700 dark:text-gray-200 tracking-wide text-4xl md:text-5xl lg:text-6xl font-black mb-2"
           >
             <TextReveal text="CONTACT ME" />
           </h2>
 
-          <h5
-            data-aos="fade"
-            class="text-gray-500 dark:text-gray-300 mb-7 lg:mb-10"
-          >
+          <h5 data-aos="fade" class="text-gray-500 dark:text-gray-300 mb-7">
             Shoot me a message and I will get back to you as soon as I can. My
             emails are
             <span

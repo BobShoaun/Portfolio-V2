@@ -16,17 +16,9 @@
 
   <SectionNumber
     number="001"
-    shaftClasses="bg-gray-50 dark:bg-gray-800"
+    shaftClasses="bg-gray-100 dark:bg-gray-800"
     textClasses="text-gray-100 dark:text-gray-800"
   />
-
-  <!-- <header class="main relative pt-40 pb-20 text-center">
-    <h2
-      class="lg:text-right tracking-wide text-5xl md:text-6xl lg:text-7xl font-black text-gray-200"
-    >
-      ABOUT ME
-    </h2>
-  </header> -->
 
   <section class="main mb-40 mt-40 lg:mt-64">
     <div
@@ -34,7 +26,7 @@
     >
       <div class="max-w-xs z-10 flex-1">
         <div
-          class="bg-gray-100 dark:bg-gray-300 shadow-2xl overflow-hidden p-3 rounded-sm"
+          class="bg-gray-50 dark:bg-gray-300 shadow-2xl overflow-hidden p-3 rounded-sm"
         >
           <img
             data-aos="slide-right"
@@ -50,7 +42,7 @@
         class="flex-1 max-w-prose relative bg-white dark:bg-gray-900 px-6 py-6 lg:py-10 lg:px-10 shadow-2xl"
       >
         <div
-          class="absolute right-0 -top-20 lg:-top-32 lg:text-right tracking-wide text-5xl md:text-6xl lg:text-7xl font-black text-gray-200"
+          class="absolute right-0 -top-20 lg:-top-32 lg:text-right tracking-wide text-5xl md:text-6xl lg:text-7xl font-black text-gray-700 dark:text-gray-200"
         >
           <TextReveal text="ABOUT ME" />
         </div>
@@ -58,7 +50,7 @@
         <p
           data-aos="zoom-in-left"
           data-aos-delay="100"
-          class="text-gray-500 dark:text-gray-300 lg:text-lg"
+          class="text-gray-600 dark:text-gray-300 lg:text-lg"
         >
           What's up? I’m Bob, a student currently earning my degree in
           University of Toronto, and also working as a software developer.
@@ -88,10 +80,8 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute right-14 bottom-0"
-  >
-    <div class="w-5 h-28 bg-gray-600 dark:bg-gray-300" />
-  </div>
+    class="shadow-xl hidden lg:block absolute right-14 bottom-0 w-5 h-28 bg-gray-300 dark:bg-gray-300"
+  />
 </main>
 
 <style>
