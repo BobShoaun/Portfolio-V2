@@ -5,13 +5,13 @@
   "scripts": {
     "start": "sirv public -s",
     "serve": "serve public -p 80",
-    "deploy:ghpages": "gh-pages -d public",
-    "dev:tailwind": "npx tailwindcss -i src/tailwind.css -o public/index.css --watch",
     "dev:svelte": "rollup -c -w",
     "build:svelte": "rollup -c",
+    "dev:tailwind": "npx tailwindcss -i src/tailwind.css -o public/index.css --watch",
+    "build:tailwind": "npx tailwindcss -i src/tailwind.css -o public/index.css --minify",
     "dev": "concurrently \"npm run dev:svelte\" \"npm run dev:tailwind\"",
-    "build:tailwind": "npx tailwindcss -o public/index.css --minify",
-    "build": "npm run build:tailwind && npm run build:svelte"
+    "build": "npm run build:tailwind && npm run build:svelte",
+    "deploy:ghpages": "gh-pages -d public"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
