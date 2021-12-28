@@ -6,6 +6,15 @@
   // const primary = "red-500";
   // const light = "red-50";
 
+  /* 
+  bg-teal-50
+  text-teal-50
+  border-teal-50
+  bg-teal-600
+  text-teal-600
+  border-teal-600
+  */
+
   const primary = "teal-600";
   const light = "teal-50";
 </script>

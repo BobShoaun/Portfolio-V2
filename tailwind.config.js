@@ -2,9 +2,13 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  content: ["./src/**/*.svelte", "./public/*.html", "./public/*.json"],
+  content: [
+    "./src/**/*.svelte",
+    "./src/**/*.js",
+    "./public/*.html",
+    "./public/*.json",
+  ],
   darkMode: "class",
-
   theme: {
     extend: {
       minHeight: {

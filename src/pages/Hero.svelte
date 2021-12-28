@@ -46,7 +46,7 @@
         <TextReveal
           delay={1000}
           once
-          text="My name is Bob and I create nice things."
+          text="My name is Bob and I build nice things."
         />
       </p>
 
