@@ -1,4 +1,8 @@
 <script>
+  import technologies from "../static/technologies";
+
+  let techLinks = new Map(technologies.map((tech) => [tech.tech, tech.link]));
+
   export let project = null;
   export let right = false;
 </script>
@@ -7,19 +11,57 @@
   <section
     class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-14"
   >
-    <div
-      class="max-h-80 lg:max-w-1/2 w-fit shrink shadow-lg mx-0 bg-gradient-to-br from-green-300 to-blue-300 shadow-3xl overflow-hidden rounded-sm"
-    >
-      <img
-        data-aos={right ? "slide-right" : "slide-left"}
-        data-aos-duration="500"
+    <div class="lg:max-w-1/2 w-fit shrink">
+      <div
+        class="mx-0 mb-4 max-h-80 w-fit bg-gradient-to-br from-green-300 to-blue-300 shadow-xl overflow-hidden rounded-sm"
+      >
+        <img
+          data-aos={right ? "slide-right" : "slide-left"}
+          data-aos-duration="200"
+          data-aos-delay="100"
+          class="max-h-[inherit] w-auto object-scale-down p-2 sm:p-3 cursor-pointer img-container"
+          src={project.image}
+          alt={`Screenshot of ${project.name}`}
+          on:click={() => window.open(project.website)}
+          loading="lazy"
+        />
+      </div>
+      <div
+        data-aos={right ? "flip-up" : "flip-up"}
         data-aos-delay="100"
-        class="max-h-[inherit] w-auto object-scale-down p-2 sm:p-3 cursor-pointer img-container"
-        src={project.image}
-        alt={`Screenshot of ${project.name}`}
-        on:click={() => window.open(project.website)}
-        loading="lazy"
-      />
+        class="flex items-center justify-center gap-3"
+      >
+        {#if project.github}
+          <a
+            href={project.github}
+            aria-label="Look at GitHub repo"
+            target="_blank"
+            class="shadow-md rounded-md px-3 py-1.5 bg-gray-700 hover:bg-gray-600 transition-colors flex items-center text-gray-50"
+          >
+            <p class="">Github</p>
+            <i class="fab fa-github ml-3 text-lg" /></a
+          >
+        {:else}
+          <button
+            class="rounded-md px-3 py-1.5 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
+            disabled
+          >
+            <p class="">Private</p>
+            <i class="fas fa-code ml-3 text-lg" />
+          </button>
+        {/if}
+        {#if project.website}
+          <a
+            href={project.website}
+            aria-label="Go to live website"
+            target="_blank"
+            class="flex px-2 py-2 items-center group text-gray-800 dark:text-gray-50"
+          >
+            <p class="group-hover:underline">Link</p>
+            <i class="fas fa-external-link-alt ml-3" />
+          </a>
+        {/if}
+      </div>
     </div>
 
     <div class="flex-1 {right ? 'lg:order-first' : ''}">
@@ -36,10 +78,16 @@
       <p
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="100"
-        class="font-bold font-mono text-sm text-purple-700 dark:text-purple-300 mb-4"
+        class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-3"
       >
         {project.collaborators}
       </p>
+
+      <hr
+        data-aos={right ? "fade-right" : "fade-left"}
+        data-aos-delay="150"
+        class="mb-4 border-gray-400 dark:border-gray-500"
+      />
       <p
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="200"
@@ -48,47 +96,18 @@
         {@html project.description}
       </p>
 
-      <p
+      <div
         data-aos={right ? "fade-right" : "fade-left"}
         data-aos-delay="300"
-        class="text-sm font-mono font-semibold mb-8 text-red-500 dark:text-red-300"
+        class="text-sm font-mono font-semibold flex flex-wrap gap-2"
       >
-        {project.technologies.join(" // ")}
-      </p>
-
-      <div
-        data-aos={right ? "flip-up" : "flip-up"}
-        data-aos-delay="400"
-        class="flex flex-wrap items-center justify-end gap-4"
-      >
-        {#if project.github}
+        {#each project.technologies as tech}
           <a
-            href={project.github}
+            href={techLinks.get(tech)}
             target="_blank"
-            class="shadow-md rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors flex items-center text-gray-800 dark:text-gray-50"
+            class="bg-red-200 text-red-900 px-2">{tech}</a
           >
-            <p class="text-md">Github</p>
-            <i class="fab fa-github ml-3 text-lg" /></a
-          >
-        {:else}
-          <button
-            class="rounded-md px-4 py-2 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
-            disabled
-          >
-            <p class="text-md">Private</p>
-            <i class="fas fa-code ml-3 text-lg" />
-          </button>
-        {/if}
-        {#if project.website}
-          <a
-            href={project.website}
-            target="_blank"
-            class="flex px-2 py-2 items-center hover:underline text-gray-800 dark:text-gray-50"
-          >
-            <p class="text-md">Link</p>
-            <i class="fas fa-external-link-alt ml-3 text-md" />
-          </a>
-        {/if}
+        {/each}
       </div>
     </div>
   </section>
@@ -109,14 +128,6 @@
           by Ng Bob Shoaun &nbsp;∙&nbsp; 2 August 2021 &nbsp;∙&nbsp; 8 minute
           read
         </p>
-        <!-- <div class="text-center" data-aos="flip-up" data-aos-delay="100">
-          <a
-            href={project.more}
-            class="font-bold shadow-md hover:shadow-lg transition-shadow rounded-sm px-4 py-2 bg-purple-300 text-gray-800"
-          >
-            Click Here to Read
-          </a>
-        </div> -->
       </a>
     </section>
   {/if}

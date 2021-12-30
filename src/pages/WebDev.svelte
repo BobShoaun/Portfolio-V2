@@ -17,9 +17,9 @@
   }
 </script>
 
-<main
+<section
   id="web-development"
-  class="relative overflow-hidden bg-gray-100 bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
+  class="relative overflow-hidden snap-center bg-gray-100 bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
   <SectionHeader />
   <SectionNumber number="011" />
@@ -52,4 +52,4 @@
     data-aos-offset="200"
     class="hidden lg:block absolute shadow-xl right-14 bottom-0 w-4 h-28 bg-gray-400 dark:bg-gray-300"
   />
-</main>
+</section>

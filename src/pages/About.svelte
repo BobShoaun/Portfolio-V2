@@ -5,7 +5,7 @@
 
 <section
   id="about"
-  class="overflow-hidden relative bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
+  class="overflow-hidden snap-center relative bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
 >
   <div
     data-aos="slide-right"

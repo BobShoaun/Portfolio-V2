@@ -16,7 +16,7 @@
   }
 </script>
 
-<main
+<section
   id="game-development"
   class="relative overflow-hidden from-gray-100 to-gray-200 bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
@@ -56,4 +56,4 @@
     data-aos-offset="200"
     class="hidden shadow-xl lg:block absolute left-14 bottom-0 z-10 w-4 h-28 dark:bg-gray-400 bg-gray-600"
   />
-</main>
+</section>

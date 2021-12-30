@@ -10,7 +10,7 @@
     theme === "dark" ? 'console.log("Hey!")' : 'console.log("Hi!")';
 </script>
 
-<main
+<section
   id="home"
   class="relative main bg-gray-100 h-screen flex bg-gradient-to-b dark:from-gray-700 dark:to-gray-900"
 >
@@ -130,4 +130,4 @@
   >
     <i class="hover-vertical fas fa-angle-down" />
   </button>
-</main>
+</section>

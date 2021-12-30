@@ -26,7 +26,7 @@
 		"image": "/images/cardistry.png",
 		"collaborators": "by myself",
 		"description": "A javascript library for easily animating groups of cards or card-like elements in your website. It is complete with proper, extensive documentations and some basic examples.",
-		"technologies": ["html", "js", "css", "tailwindcss", "express", "npm"],
+		"technologies": ["html", "css", "javascript", "tailwindcss", "express", "npm"],
 		"website": "https://cardistry.herokuapp.com/",
 		"github": "",
 		"year": 2021
@@ -36,7 +36,7 @@
 		"image": "/images/pathforge.png",
 		"collaborators": "with pathforge team",
 		"description": "An e-learning site that aims to redefine the self learning experience. It provides a community for online learners to help each other out and step through the materials together.",
-		"technologies": ["vue", "buefy", "graphql", "postgres"],
+		"technologies": ["vue", "buefy", "graphql", "hasura", "postgresql"],
 		"website": "https://pathforge.co/",
 		"year": 2020
 	},
@@ -65,7 +65,7 @@
 		"image": "/images/countries-of-the-world.png",
 		"collaborators": "with my students",
 		"description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst mentoring learners about the basics of the fetch api and javascript's promise callback chains.",
-		"technologies": ["html", "css", "js", "restcountries api"],
+		"technologies": ["html", "css", "javascript", "restcountries api"],
 		"github": "https://github.com/BobShoaun/Countries-of-the-World",
 		"website": "https://bobshoaun.github.io/Countries-of-the-World/",
 		"year": 2021

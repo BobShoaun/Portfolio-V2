@@ -17,7 +17,7 @@
   let currentIndex = 0;
 </script>
 
-<main
+<section
   id="graphic-design"
   class="overflow-hidden relative bg-gray-50 dark:bg-gray-900"
 >
@@ -97,4 +97,4 @@
     data-aos-offset="200"
     class="hidden lg:block shadow-xl absolute right-14 bottom-0 w-4 h-28 bg-gray-400 dark:bg-gray-300"
   />
-</main>
+</section>

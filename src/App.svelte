@@ -1,12 +1,6 @@
 <script>
   import Navbar from "./components/Navbar.svelte";
-  import Hero from "./pages/Hero.svelte";
-  import About from "./pages/About.svelte";
-  import Experience from "./pages/Experience.svelte";
-  import WebDev from "./pages/WebDev.svelte";
-  import Designs from "./pages/Designs.svelte";
-  import GameDev from "./pages/GameDev.svelte";
-  import Contact from "./pages/Contact.svelte";
+  import Main from "./components/Main.svelte";
   import Footer from "./components/Footer.svelte";
   import Resume from "./pages/Resume.svelte";
   import FunFacts from "./pages/FunFacts.svelte";
@@ -40,28 +34,16 @@
   <Navbar bind:theme on:toggleTheme={toggleTheme} />
   <Router {url}>
     <Route path="/">
-      <Hero bind:theme />
-      <About />
-      <Experience />
-      <WebDev />
-      <GameDev />
-      <Designs />
-      <Contact />
+      <Main bind:theme />
     </Route>
 
     <Route path="resume" component={Resume} />
     <Route path="Resume" component={Resume} />
 
-    <!-- <Route path="hello">
-      <Route path="how-i-made-my-own-cryptocurrency" component={Article} />
-    </Route> -->
     <Route
       path="articles/how-i-made-my-own-cryptocurrency"
       component={Article}
     />
-
-    <!-- <Route path="articles/:title" component={Article} /> -->
-    <!-- <Route path="Articles/:title" component={Article} /> -->
 
     <Route path="Facts" component={FunFacts} />
     <Route path="facts" component={FunFacts} />

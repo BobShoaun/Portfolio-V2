@@ -29,7 +29,7 @@
   }
 </script>
 
-<main
+<section
   id="contact"
   class="main overflow-hidden relative bg-gray-100 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900"
 >
@@ -149,7 +149,7 @@
   >
     <i class="hover-vertical fas fa-angle-up" />
   </button>
-</main>
+</section>
 
 <style>
 </style>

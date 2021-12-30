@@ -12,7 +12,7 @@
   }
 </script>
 
-<main
+<section
   id="experience"
   class="overflow-hidden bg-gray-100 relative bg-gradient-to-b dark:from-gray-900 dark:to-gray-800"
 >
@@ -94,7 +94,7 @@
     data-aos-offset="200"
     class="hidden lg:block shadow-xl absolute left-14 bottom-0 w-4 h-28 bg-gray-400 dark:bg-gray-300"
   />
-</main>
+</section>
 
 <style>
   .exp {
