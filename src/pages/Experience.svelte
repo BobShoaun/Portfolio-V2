@@ -47,7 +47,7 @@
 
   <section class="main max-w-6xl mx-auto mb-40 relative z-10">
     <div
-      class="md:grid md:grid-cols-2 mx-6 sm:mx-28 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
+      class="grid grid-cols-1 md:grid-cols-2 mx-6 sm:mx-28 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
     >
       {#each experiences as experience}
         <button

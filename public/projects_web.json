@@ -44,7 +44,7 @@
 		"name": "Portfolio V2",
 		"image": "/images/portfolio-v2.png",
 		"collaborators": "by myself",
-		"description": "The site you are looking at right now! It is the second iteration of my personal portfolio site, showcasing my experiences and skillsets. It features a fully responsive design, cool animations, AA accessibility, and dark mode.",
+		"description": "The site you are looking at right now! It is the second iteration of my personal portfolio site, showcasing my experiences and skillsets. It features a fully responsive design, cool animations, WAI-ARIA accessibility, and dark mode.",
 		"technologies": ["svelte", "tailwindcss", "netlify"],
 		"website": "https://www.bobng.me/",
     "github": "https://github.com/BobShoaun/Portfolio-V2",
