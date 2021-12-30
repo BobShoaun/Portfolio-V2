@@ -1,6 +1,6 @@
 <script>
   import Navbar from "./components/Navbar.svelte";
-  import Main from "./components/Main.svelte";
+  import Main from "./pages/Main.svelte";
   import Footer from "./components/Footer.svelte";
   import Resume from "./pages/Resume.svelte";
   import FunFacts from "./pages/FunFacts.svelte";

@@ -1,11 +1,11 @@
 <script>
-  import Hero from "./pages/Hero.svelte";
-  import About from "./pages/About.svelte";
-  import Experience from "./pages/Experience.svelte";
-  import WebDev from "./pages/WebDev.svelte";
-  import Designs from "./pages/Designs.svelte";
-  import GameDev from "./pages/GameDev.svelte";
-  import Contact from "./pages/Contact.svelte";
+  import Hero from "./Hero.svelte";
+  import About from "./About.svelte";
+  import Experience from "./Experience.svelte";
+  import WebDev from "./WebDev.svelte";
+  import Designs from "./Designs.svelte";
+  import GameDev from "./GameDev.svelte";
+  import Contact from "./Contact.svelte";
 
   export let theme;
 </script>
