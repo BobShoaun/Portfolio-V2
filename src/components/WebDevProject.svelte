@@ -16,8 +16,9 @@
         data-aos-delay="100"
         class="max-h-[inherit] w-auto object-scale-down p-2 sm:p-3 cursor-pointer img-container"
         src={project.image}
-        alt={project.name}
+        alt={`Screenshot of ${project.name}`}
         on:click={() => window.open(project.website)}
+        loading="lazy"
       />
     </div>
 
@@ -44,7 +45,7 @@
         data-aos-delay="200"
         class="mb-4 text-gray-600 font-semibold dark:text-gray-300 leading-relaxed max-w-prose"
       >
-        {project.description}
+        {@html project.description}
       </p>
 
       <p

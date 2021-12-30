@@ -14,16 +14,17 @@
         autoplay
         loop
         muted
+        controls
         playsinline
         src={project.video}
         class="max-h-[inherit] w-auto p-2 sm:p-3 cursor-pointer img-container"
-        on:click={() => window.open(project.github)}
       />
     {:else}
       <img
+        loading="lazy"
         src={project.image}
         class="max-h-[inherit] w-auto p-2 sm:p-3 cursor-pointer img-container"
-        alt={project.name}
+        alt={`Screenshot of ${project.name}`}
       />
     {/if}
   </div>
@@ -95,11 +96,11 @@
 </main>
 
 <style>
-  .img-container {
+  /* .img-container {
     opacity: 1;
     transition: opacity 500ms ease !important;
-  }
-  .img-container:is(:hover, :focus) {
+  } */
+  /* .img-container:is(:hover, :focus) {
     opacity: 0.4;
-  }
+  } */
 </style>

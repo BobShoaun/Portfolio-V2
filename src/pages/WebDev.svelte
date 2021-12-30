@@ -38,10 +38,10 @@
       <hr class="flex-1 mr-2 border-gray-400 dark:border-gray-500" />
       {#if expanded}
         <i class="fas fa-angle-up" />
-        <span class="group-hover:underline">Show Less</span>
+        <span class="group-hover:underline">Less Projects</span>
       {:else}
         <i class="fas fa-angle-down" />
-        <span class="group-hover:underline">Show More</span>
+        <span class="group-hover:underline">More Projects</span>
       {/if}
       <hr class="flex-1 ml-2 border-gray-400 dark:border-gray-500" />
     </button>
@@ -50,6 +50,6 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block absolute shadow-xl right-14 bottom-0 w-5 h-28 bg-gray-400 dark:bg-gray-300"
+    class="hidden lg:block absolute shadow-xl right-14 bottom-0 w-4 h-28 bg-gray-400 dark:bg-gray-300"
   />
 </main>

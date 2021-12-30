@@ -54,19 +54,19 @@
         data-aos="flip-up"
         data-aos-delay="1200"
         data-aos-duration="700"
-        class="text-sm"
+        class="text-sm text-gray-700 font-semibold font-mono"
       >
         <Link
           to="resume"
           class="transition-colors px-4 py-1 mr-3 lg:ml-1 inline-block bg-green-200 shadow-green-300/20 shadow-lg border rounded-sm border-green-400  hover:bg-green-300 "
           noroute
         >
-          <p class="text-gray-700 font-semibold font-mono">View resume</p></Link
+          View resume</Link
         >
         <a
           href="#contact"
           class="transition-colors px-4 py-1 inline-block bg-blue-200 shadow-blue-300/20 shadow-lg hover:bg-blue-300 rounded-sm border border-blue-400"
-          ><p class="text-gray-700 font-semibold font-mono">Let's talk</p></a
+          >Let's talk</a
         >
       </div>
     </div>
@@ -76,48 +76,58 @@
     data-aos="slide-up"
     data-aos-delay="1500"
     data-aos-duration="700"
-    class="hidden lg:block absolute left-14 bottom-0 text-center text-gray-700 dark:text-gray-50"
+    class="hidden text-xl absolute lg:flex flex-col gap-4 items-center w-4 left-14 bottom-0 text-center text-gray-700 dark:text-gray-50"
   >
-    <a href="https://github.com/BobShoaun" target="_blank" class="block mb-5"
-      ><i class=" fab fa-github fa-lg" /></a
+    <a
+      title="See my GitHub profile"
+      aria-label="See my GitHub profile"
+      href="https://github.com/BobShoaun"
+      target="_blank"
+      class="block"><i class="fab fa-github" /></a
     >
     <a
+      title="Connect on LinkedIn"
+      aria-label="Connect on LinkedIn"
       href="https://www.linkedin.com/in/ngbobshoaun/"
       target="_blank"
-      class="block mb-5"
+      class="block"
     >
-      <i class="fab fa-linkedin-in fa-lg" /></a
+      <i class="fab fa-linkedin-in" /></a
     >
 
     <!-- <a
-      href="https://www.instagram.com/n.bob.s/"
-      target="_blank"
-      class="block mb-8"
-      ><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
-    > -->
+    href="https://www.instagram.com/n.bob.s/"
+    target="_blank"
+    class="block mb-8"
+    ><i class="text-gray-800 dark:text-gray-50 fab fa-instagram fa-lg" /></a
+  > -->
 
-    <p
-      on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
-      class="block mb-5 cursor-pointer"
+    <a
+      title="Send me an email"
+      aria-label="Send me an email"
+      href="mailto:ngbobshoaun2000@gmail.com"
+      target="_blank"
+      class="block"
     >
-      <i class="far fa-envelope fa-lg" />
-    </p>
+      <i class="far fa-envelope" />
+    </a>
 
     <!-- <a href="https://codepen.io/bobshoaun" target="_blank" class="block mb-8"
-			><i class="fab fa-codepen fa-lg" /></a
-		> -->
+    ><i class="fab fa-codepen fa-lg" /></a
+  > -->
 
-    <div class="shadow-xl w-5 h-28 bg-gray-700 dark:bg-gray-50" />
+    <div class="shadow-xl w-4 h-28 bg-gray-700 dark:bg-gray-50" />
   </div>
 
-  <!-- <div class="absolute w-40 h-40 bg-transparent border-gray-300 border-8 top-64 right-64 design-element"></div> -->
-  <p
+  <button
+    title="Go to about me"
+    aria-label="Go to about me"
     data-aos="fade-down"
     data-aos-delay="1500"
     data-aos-duration="700"
     on:click={() => document.getElementById("about").scrollIntoView()}
-    class="text-2xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-28 right-0 left-0"
+    class="text-xl lg:text-3xl py-5 text-gray-700 dark:text-white absolute w-14 mx-auto text-center bottom-20 right-0 left-0"
   >
     <i class="hover-vertical fas fa-angle-down" />
-  </p>
+  </button>
 </main>

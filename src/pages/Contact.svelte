@@ -70,21 +70,22 @@
           <h5 data-aos="fade" class="text-gray-500 dark:text-gray-300 mb-7">
             Shoot me a message and I will get back to you as soon as I can. My
             emails are
-            <span
-              class="cursor-pointer text-gray-700 dark:text-gray-100 underline"
+            <button
+              class="text-gray-700 dark:text-gray-100 underline"
               on:click={() => copyToClipboard("ngbobshoaun2000@gmail.com")}
-              >ngbobshoaun2000@gmail.com</span
+              >ngbobshoaun2000@gmail.com</button
             >
             and
-            <span
-              class="cursor-pointer text-gray-700 dark:text-gray-100 underline"
+            <button
+              class="text-gray-700 dark:text-gray-100 underline"
               on:click={() => copyToClipboard("bobshoaun.ng@mail.utoronto.ca")}
-              >bobshoaun.ng@mail.utoronto.ca</span
+              >bobshoaun.ng@mail.utoronto.ca</button
             >
           </h5>
         </div>
 
         <form
+          aria-label="contact form"
           data-aos="fade"
           data-aos-duration="700"
           data-aos-delay="200"
@@ -97,25 +98,23 @@
           class="basis-3/5"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden">
-            <label
-              >Don’t fill this out if you’re human: <input
-                name="bot-field"
-              /></label
-            >
-          </p>
+          <label for="bot-field" class="hidden"
+            >Don’t fill this out if you’re human: <input
+              name="bot-field"
+            /></label
+          >
           <div class="flex flex-col md:flex-row lg:flex-col">
             <input
               name="name"
-              class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
+              class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
               type="text"
               placeholder="Your name"
               required
             />
             <input
               name="email"
-              class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50 focus:outline-none"
-              type="text"
+              class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
+              type="email"
               placeholder="Your email"
               required
             />
@@ -123,14 +122,14 @@
 
           <textarea
             name="message"
-            class="w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50 focus:outline-none"
+            class="w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50"
             placeholder="Tell me what you think!"
             rows="6"
             required
           />
           <button
             type="submit"
-            class="transition-colors bg-purple-200 shadow-purple-300/20 shadow-lg rounded-sm border border-purple-400 hover:bg-purple-300 text-gray-700 py-1 px-4 flex items-center gap-2 ml-auto"
+            class="transition-colors bg-purple-200 shadow-purple-300/20 shadow-lg rounded-sm border border-purple-400 hover:bg-purple-300 text-gray-700 py-1 px-4 flex items-center gap-3 ml-auto"
             ><i class="far fa-paper-plane text-xs" />
             <p class="font-semibold font-mono">Send</p>
           </button>
@@ -138,15 +137,18 @@
       </div>
     </div>
   </section>
-  <p
+
+  <button
+    title="Back to top"
+    aria-label="Back to top"
     data-aos="fade-up"
     data-aos-offset="200"
     data-aos-duration="700"
     on:click={() => window.scrollTo(0, 0)}
-    class="text-xl lg:text-3xl text-gray-700 dark:text-white cursor-pointer text-center absolute bottom-20 right-0 left-0"
+    class="text-xl lg:text-3xl text-gray-700 dark:text-white w-14 mx-auto text-center absolute bottom-20 right-0 left-0"
   >
     <i class="hover-vertical fas fa-angle-up" />
-  </p>
+  </button>
 </main>
 
 <style>

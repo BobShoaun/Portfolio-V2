@@ -66,6 +66,7 @@
 
     <div class="md:flex items-center justify-center gap-10">
       <button
+        aria-label="previous poster"
         on:click={() =>
           (currentIndex =
             currentIndex - 1 < 0 ? posters.length - 1 : currentIndex - 1)}
@@ -75,12 +76,14 @@
       </button>
       <div class="p-3 md:p-5 shadow-2xl bg-white max-w-md mx-auto">
         <img
+          loading="lazy"
           class=""
           src={`/images/designs/${posters[currentIndex]}`}
-          alt={posters[currentIndex]}
+          alt={`${posters[currentIndex]} poster`}
         />
       </div>
       <button
+        aria-label="next poster"
         on:click={() => (currentIndex = (currentIndex + 1) % posters.length)}
         class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
       >
@@ -92,6 +95,6 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block shadow-xl absolute right-14 bottom-0 w-5 h-28 bg-gray-400 dark:bg-gray-300"
+    class="hidden lg:block shadow-xl absolute right-14 bottom-0 w-4 h-28 bg-gray-400 dark:bg-gray-300"
   />
 </main>

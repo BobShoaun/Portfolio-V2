@@ -92,8 +92,8 @@ body {
   @apply font-mono text-sm font-semibold;
   @apply text-gray-800 dark:text-gray-50;
   @apply hover:bg-gray-600 hover:text-gray-50;
-  @apply dark:hover:bg-gray-50 dark:hover:text-gray-800;
-  @apply transition-colors;
+  @apply dark:hover:bg-gray-50 dark:focus:bg-gray-50 dark:hover:text-gray-800 dark:focus:text-gray-800;
+  @apply transition-colors focus:outline-none;
   transition-duration: 0.25s !important;
 }
 
@@ -129,7 +129,7 @@ body {
   background-image: var(--gradient-1);
   background-size: 400% 400%;
   background-position: top;
-  animation: gradient-animation-y 10s infinite ease-in-out;
+  animation: gradient-animation-y 7s infinite ease-in-out;
 }
 
 .moving-gradient-2 {
@@ -144,7 +144,7 @@ body {
   background-image: var(--gradient-2);
   background-size: 400% 400%;
   background-position: top;
-  animation: gradient-animation-y 10s infinite ease-in-out;
+  animation: gradient-animation-y 7s infinite ease-in-out;
 }
 
 .moving-gradient-x {

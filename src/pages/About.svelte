@@ -3,7 +3,7 @@
   import TextReveal from "../components/TextReveal.svelte";
 </script>
 
-<main
+<section
   id="about"
   class="overflow-hidden relative bg-gray-50 bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
 >
@@ -29,11 +29,12 @@
           class="bg-gray-50 dark:bg-gray-300 shadow-2xl overflow-hidden p-3 rounded-sm"
         >
           <img
+            loading="lazy"
             data-aos="slide-right"
             data-aos-duration="500"
             data-aos-delay="200"
             src="/images/me.jpg"
-            alt="me"
+            alt="A guy (me) posing with a University of Toronto hoodie."
           />
         </div>
       </div>
@@ -80,9 +81,9 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="shadow-xl hidden lg:block absolute right-14 bottom-0 w-5 h-28 bg-gray-300 dark:bg-gray-300"
+    class="shadow-xl hidden lg:block absolute right-14 bottom-0 w-4 h-28 bg-gray-300 dark:bg-gray-300"
   />
-</main>
+</section>
 
 <style>
 </style>

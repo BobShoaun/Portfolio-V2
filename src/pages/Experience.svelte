@@ -19,7 +19,7 @@
   <div
     data-aos="slide-down"
     data-aos-delay="900"
-    class="bg-gray-200 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full"
+    class="bg-gray-200 z-0 bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 absolute right-0 w-1/2 h-full"
   />
 
   <SectionNumber
@@ -45,16 +45,19 @@
     </div>
   </header>
 
-  <section class="main max-w-6xl mx-auto mb-40">
+  <section class="main max-w-6xl mx-auto mb-40 relative z-10">
     <div
       class="md:grid md:grid-cols-2 mx-6 sm:mx-28 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
     >
       {#each experiences as experience}
-        <div class="exp aspect-square flex {experience.background}">
+        <button
+          class="exp text-left aspect-square flex {experience.background}"
+        >
           <img
+            loading="lazy"
             class="m-auto w-40 sm:w-52 md:w-48 lg:w-40"
             src={experience.logo}
-            alt={experience.name}
+            alt={`logo for ${experience.name}`}
             style="mix-blend-mode: {experience.blend}"
           />
           <div
@@ -81,7 +84,7 @@
               {/each}
             </ul>
           </div>
-        </div>
+        </button>
       {/each}
     </div>
   </section>
@@ -89,17 +92,15 @@
   <div
     data-aos="slide-up"
     data-aos-offset="200"
-    class="hidden lg:block shadow-xl absolute left-14 bottom-0 w-5 h-28 bg-gray-400 dark:bg-gray-300"
+    class="hidden lg:block shadow-xl absolute left-14 bottom-0 w-4 h-28 bg-gray-400 dark:bg-gray-300"
   />
 </main>
 
 <style>
   .exp {
-    aspect-ratio: 1/1;
     position: relative;
     --hover-time: 400ms;
     overflow: hidden;
-    cursor: pointer;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     /* background-attachment: fixed; */
   }
@@ -115,7 +116,7 @@
     overflow-y: auto;
   }
 
-  .exp:hover .exp-desc {
+  .exp:is(:hover, :focus) .exp-desc {
     transform: translateY(0);
     opacity: 1;
   }

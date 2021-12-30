@@ -11,7 +11,7 @@
   data-aos-delay="100"
   class={`hidden lg:block absolute top-0 ${right ? "right-14" : "left-14"}`}
 >
-  <div class={`w-5 h-32 mb-2 shadow-xl ${shaftClasses}`} />
+  <div class={`w-4 h-32 mb-2 shadow-xl ${shaftClasses}`} />
   <p
     class={`${textClasses} ${
       right ? "right-0" : "left-0"
