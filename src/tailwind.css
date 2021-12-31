@@ -19,24 +19,6 @@ html {
   @apply dark:text-white text-gray-700;
 }
 
-
-
-/* ::-webkit-scrollbar {
-  width: 0.75em;
-} */
-
-/* ::-webkit-scrollbar-track {
-  @apply bg-gray-50;
-} */
-
-/* ::-webkit-scrollbar-thumb {
-  @apply bg-gray-900;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray-900;
-} */
-
 .main {
   @apply px-5 md:px-24 lg:px-28;
 }
@@ -44,14 +26,6 @@ html {
 .section {
   max-width: 1200px;
   @apply m-auto py-20 lg:pt-52 lg:pb-52;
-}
-
-.title {
-  @apply text-3xl md:text-4xl font-bold text-gray-600 dark:text-gray-50;
-}
-
-.subtitle {
-  @apply text-gray-500 dark:text-gray-400 text-lg md:text-xl font-semibold;
 }
 
 .heading::before {

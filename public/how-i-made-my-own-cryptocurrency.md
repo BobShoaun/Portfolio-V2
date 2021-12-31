@@ -4,7 +4,7 @@ Bobcoin is a decentralized cryptocurrency that I made completely by myself after
 
 I made Bobcoin with the intention of recreating bitcoin, but also as a learning process. What better way to learn about cryptocurrencies than coding one yourself?
 
-|                                                        ![rocket.jpg](/images/bobcoin/rocket.jpg "Bobcoin going to Mars")                                                        |
+|                                                        ![rocket.jpg](/images/bobcoin/rocket.webp "Bobcoin going to Mars")                                                        |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | _Bobcoin going to Mars - [created by brgfx - www.freepik.com](https://www.freepik.com/free-vector/rocket-flying-through-astriods_4955149.htm#page=1&query=rocket&position=15)_ |
 

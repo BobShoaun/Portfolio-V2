@@ -33,7 +33,7 @@
             data-aos="slide-right"
             data-aos-duration="500"
             data-aos-delay="200"
-            src="/images/me.jpg"
+            src="/images/me.webp"
             alt="A guy (me) posing with a University of Toronto hoodie."
           />
         </div>

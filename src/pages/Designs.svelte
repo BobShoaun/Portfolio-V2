@@ -3,16 +3,16 @@
   import TextReveal from "../components/TextReveal.svelte";
 
   let posters = [
-    "sumfun.png",
-    "starlight.png",
-    "prosperity toss.png",
-    "freaky funhouse.png",
-    "freaky funhouse ticket front.png",
-    "unspoken.png",
-    "lazarus.png",
-    "closeted lies.png",
-    "minnie.png",
-    "better life.png",
+    "sumfun.webp",
+    "starlight.webp",
+    "prosperity toss.webp",
+    "freaky funhouse.webp",
+    "freaky funhouse ticket front.webp",
+    "unspoken.webp",
+    "lazarus.webp",
+    "closeted lies.webp",
+    "minnie.webp",
+    "better life.webp",
   ];
   let currentIndex = 0;
 </script>

@@ -21,7 +21,7 @@
 	},
   {
 		"name": "Flappy Face",
-		"video": "/videos/flappy face.mp4",
+		"video": "/videos/flappy face.webm",
 		"collaborators": "with friends",
 		"description": "The first game I have made with some friends, a Flappy bird clone running as a Java applet. Fun fact: the sound effects and background music are all acapella.",
 		"technologies": ["eclipse", "java"],
