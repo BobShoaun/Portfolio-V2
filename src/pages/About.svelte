@@ -48,22 +48,28 @@
           <TextReveal text="ABOUT ME" />
         </div>
 
-        <p
+        <div
           data-aos="zoom-in-left"
           data-aos-delay="100"
-          class="text-gray-600 dark:text-gray-300 lg:text-lg"
+          class="text-gray-600 dark:text-gray-300 lg:text-lg space-y-5"
         >
-          What's up? I’m Bob, a student currently earning my degree in
-          University of Toronto, and also working as a software developer.
-          <br /><br />
-          The passion to create and innovate has always been in me. I strive to build
-          quality, intuitive products with the goal of learning and improving my
-          coding skills.
-          <br /><br />
-          My expertise include JS, React, Vue, Unity, and C#. Recently I have been
-          intrigue with blockchain technologies. Aside from coding, I enjoy playing
-          table tennis, video games, and the drums.
-        </p>
+          <p class="first-letter:text-4xl first-letter:font-bold">
+            What's up? I’m Bob, a student specializing in Computer Science at
+            University of Toronto, and also working as a part-time software
+            developer.
+          </p>
+          <p>
+            &emsp;&emsp; The passion to create and innovate has always been in
+            me. I strive to build quality, intuitive, and robust software with
+            the goal of learning and improving my skills.
+          </p>
+          <p>
+            &emsp;&emsp; My expertise include JavaScript, CSS, and the MERN
+            stack. Recently I have been intrigue with blockchain tech and Web3.
+            Aside from coding, I enjoy playing table tennis, video games, and
+            the drums.
+          </p>
+        </div>
         <!-- <Link
 				data-aos="fade-left"
 				to="facts"
