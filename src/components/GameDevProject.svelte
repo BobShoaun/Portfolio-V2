@@ -5,8 +5,8 @@
   export let project = null;
 </script>
 
-<main style="grid-column: {project.span ?? 'span 4'};">
-  <div class="mx-auto relative z-10 max-h-80 w-fit">
+<article style="grid-column: {project.span ?? 'span 4'};">
+  <aside class="mx-auto relative z-10 max-h-80 w-fit">
     <div
       class="relative z-10 max-h-80 w-fit mx-3.5 shadow-lg bg-gradient-to-br from-purple-400 to-red-300 shadow-3xl overflow-hidden rounded-sm"
     >
@@ -32,9 +32,9 @@
         />
       {/if}
     </div>
-  </div>
+  </aside>
 
-  <div
+  <section
     class="-mt-5 px-5 pt-10 pb-5 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-sm"
     style="height: fit-content"
   >
@@ -111,15 +111,5 @@
         {/if}
       </div>
     {/if}
-  </div>
-</main>
-
-<style>
-  /* .img-container {
-    opacity: 1;
-    transition: opacity 500ms ease !important;
-  } */
-  /* .img-container:is(:hover, :focus) {
-    opacity: 0.4;
-  } */
-</style>
+  </section>
+</article>

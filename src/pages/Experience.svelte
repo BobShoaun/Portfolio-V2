@@ -31,7 +31,7 @@
 
   <header class="px-5 relative lg:flex pt-40 pb-24 gap-10 text-center">
     <h2
-      class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-700 dark:text-gray-200 mb-4"
+      class="basis-1/2 inline-block lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-700 dark:text-gray-200 mb-4"
     >
       <TextReveal text="EXPERIENCE" />
     </h2>

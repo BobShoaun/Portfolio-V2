@@ -84,6 +84,3 @@
     class="shadow-xl hidden lg:block absolute right-14 bottom-0 w-4 h-28 bg-gray-300 dark:bg-gray-300"
   />
 </section>
-
-<style>
-</style>

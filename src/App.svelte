@@ -30,7 +30,7 @@
   const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 </script>
 
-<main class="{theme === 'dark' ? 'dark' : ''} flex flex-col">
+<div class="{theme === 'dark' ? 'dark' : ''} flex flex-col">
   <Navbar bind:theme on:toggleTheme={toggleTheme} />
   <Router {url}>
     <Route path="/">
@@ -49,7 +49,4 @@
     <Route path="facts" component={FunFacts} />
   </Router>
   <Footer />
-</main>
-
-<style>
-</style>
+</div>

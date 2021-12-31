@@ -7,11 +7,11 @@
   export let right = false;
 </script>
 
-<main class="sm:mx-14 lg:mx-0 ">
-  <section
+<article class="sm:mx-14 lg:mx-0">
+  <div
     class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-14"
   >
-    <div class="lg:max-w-1/2 w-fit shrink">
+    <aside class="lg:max-w-1/2 w-fit shrink">
       <div
         class="mx-0 mb-4 max-h-80 w-fit bg-gradient-to-br from-green-300 to-blue-300 shadow-xl overflow-hidden rounded-sm"
       >
@@ -62,9 +62,9 @@
           </a>
         {/if}
       </div>
-    </div>
+    </aside>
 
-    <div class="flex-1 {right ? 'lg:order-first' : ''}">
+    <section class="flex-1 {right ? 'lg:order-first' : ''}">
       <h1
         data-aos={right ? "fade-right" : "fade-left"}
         class="text-2xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-50 mb-1"
@@ -109,10 +109,10 @@
           >
         {/each}
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   {#if project.more}
-    <section data-aos="fade-up" class="mt-14">
+    <article data-aos="fade-up" class="mt-14">
       <a
         href={project.more}
         class="block relative text-gray-700 dark:text-white cursor-pointer featured-article "
@@ -129,9 +129,9 @@
           read
         </p>
       </a>
-    </section>
+    </article>
   {/if}
-</main>
+</article>
 
 <style>
   .img-container {
