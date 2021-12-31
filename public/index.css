@@ -1322,16 +1322,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.625rem;
 }
 
-.py-0\.5 {
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }

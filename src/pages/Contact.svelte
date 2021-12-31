@@ -62,7 +62,7 @@
       <div class="lg:flex gap-10">
         <div class="basis-2/5">
           <h2
-            class="text-gray-700 dark:text-gray-200 tracking-wide text-4xl md:text-5xl lg:text-6xl font-black mb-2"
+            class="text-gray-700 dark:text-gray-200 inline-block tracking-wide text-4xl md:text-5xl lg:text-6xl font-black mb-2"
           >
             <TextReveal text="CONTACT ME" />
           </h2>
