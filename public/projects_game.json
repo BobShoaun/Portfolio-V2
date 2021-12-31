@@ -24,7 +24,7 @@
 		"video": "/videos/flappy face.webm",
 		"collaborators": "with friends",
 		"description": "The first game I have made with some friends, a Flappy bird clone running as a Java applet. Fun fact: the sound effects and background music are all acapella.",
-		"technologies": ["eclipse", "java"],
+		"technologies": ["eclipse", "java", "photoshop"],
 		"github": "https://github.com/BobShoaun/Flappy-Face",
 		"year": 2015,
     "span": "span 3"
@@ -71,7 +71,6 @@
 		"year": 2019,
     "span": "span 3"
 	},
-
 	{
 		"name": "Zombie Game",
 		"video": "/videos/zombie game.mp4",
@@ -91,6 +90,5 @@
 		"github": "https://github.com/BobShoaun/Doxel-Core",
 		"year": 2017,
     "span": "span 3"
-
 	}
 ]

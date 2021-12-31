@@ -24,8 +24,20 @@ export default [
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
+    tech: "scss",
+    link: "https://sass-lang.com/documentation/syntax",
+  },
+  {
     tech: "tailwindcss",
     link: "https://tailwindcss.com/",
+  },
+  {
+    tech: "redux",
+    link: "https://redux.js.org/",
+  },
+  {
+    tech: "jest",
+    link: "https://jestjs.io/",
   },
   {
     tech: "npm",
@@ -34,6 +46,10 @@ export default [
   {
     tech: "node.js",
     link: "https://nodejs.org/",
+  },
+  {
+    tech: "docker",
+    link: "https://www.docker.com/",
   },
   {
     tech: "express",

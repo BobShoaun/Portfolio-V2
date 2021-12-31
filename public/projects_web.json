@@ -4,7 +4,7 @@
 		"image": "/images/artsume.webp",
 		"collaborators": "with artsu.me team",
 		"description": "An art hosting site where artists can upload their work, and make a personalized portfolio to showcase their work in a meaningful way. Dive into an amazing community of talented artists, and share your work through Artsu.me",
-		"technologies": ["react", "tailwindcss", "express", "mongodb", "cloudinary"],
+		"technologies": ["react", "redux", "tailwindcss", "express", "mongodb", "cloudinary", "jest"],
 		"website": "https://artsu.me/",
 		"github": "",
 		"year": 2021
@@ -14,7 +14,7 @@
 		"image": "/images/bobcoin.webp",
 		"collaborators": "by myself",
 		"description": "Given my fascination in blockchain technologies and Bitcoin, I've decided to make my own cryptocurrency from scratch. It features <abbr title='Proof of work'>PoW</abbr> consensus, digital signatures, merkle trees, the <abbr title='Unspent transaction output'>UTXO</abbr> model, <abbr title='Bitcoin improvement proposal'>BIP</abbr> compliant wallets, a block explorer, mining client, and many more.",
-		"technologies": ["react", "bulma", "node.js", "express", "mongodb", "socket.io", "npm"],
+		"technologies": ["react", "redux", "bulma", "node.js", "express", "mongodb", "socket.io", "npm", "jest"],
 		"website": "https://bobcoin.cash",
 		"github": "https://github.com/BobShoaun/Bobcoin-Node",
 		"year": 2021,
@@ -36,7 +36,7 @@
 		"image": "/images/pathforge.webp",
 		"collaborators": "with pathforge team",
 		"description": "An e-learning site that aims to redefine the self learning experience. It provides a community for online learners to help each other out and step through the materials together.",
-		"technologies": ["vue", "buefy", "graphql", "hasura", "postgresql"],
+		"technologies": ["vue", "scss", "buefy", "graphql", "hasura", "postgresql", "docker"],
 		"website": "https://pathforge.co/",
 		"year": 2020
 	},
