@@ -10,7 +10,7 @@
 		"year": 2021
 	},
 	{
-		"name": "Bobcoin",
+		"name": "Bobcoin (XBC)",
 		"image": "/images/bobcoin.webp",
 		"collaborators": "by myself",
 		"description": "Given my fascination in blockchain technologies and Bitcoin, I've decided to make my own cryptocurrency from scratch. It features <abbr title='Proof of work'>PoW</abbr> consensus, digital signatures, merkle trees, the <abbr title='Unspent transaction output'>UTXO</abbr> model, <abbr title='Bitcoin improvement proposal'>BIP</abbr> compliant wallets, a block explorer, mining client, and many more.",

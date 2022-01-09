@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: bobng.me
+Token: 614629b1c6a63a22714c8411c588bc5dbdd3131bf99e4be67a1b6b8ec1cb95b7

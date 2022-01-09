@@ -7,7 +7,7 @@
   export let theme;
 
   $: welcomeMessage =
-    theme === "dark" ? 'console.log("HEY!")' : 'console.log("HI!")';
+    theme === "dark" ? 'console.log("Hey!👋")' : 'console.log("Hi!🙋‍♂️")';
 </script>
 
 <section

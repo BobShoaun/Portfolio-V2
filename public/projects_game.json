@@ -51,10 +51,10 @@
     "span": "2 / span 6"
 	},
 	{
-		"name": "Csgo Weapons",
+		"name": "CS:GO Weapons",
 		"video": "/videos/csgo weapons.mp4",
 		"collaborators": "by myself",
-		"description": "My recreation of CSGO's complex shooting mechanics - spray patterns, accuracy decay, recoil, and movement innacuracy. Moreover, each weapons has its own traits and parameters.",
+		"description": "My recreation of CS:GO's complex shooting mechanics - spray patterns, accuracy decay, recoil, and movement innacuracy. Moreover, each weapons has its own traits and parameters.",
 		"technologies": ["unity", "c#", "unet multiplayer"],
 		"github": "https://github.com/BobShoaun/Csgo-Weapons",
 		"year": 2017,
