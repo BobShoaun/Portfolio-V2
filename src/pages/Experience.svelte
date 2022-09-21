@@ -39,8 +39,8 @@
       <p
         class="text-base lg:text-lg text-gray-600 dark:text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
-        I currently have more than 2 years of work experience and counting. Here
-        are some companies I have worked at before.
+        I have more than 2 years of work experience and counting. Here are some
+        companies I have worked at before.
       </p>
     </div>
   </header>
@@ -55,7 +55,7 @@
         >
           <img
             loading="lazy"
-            class="m-auto w-40 sm:w-52 md:w-48 lg:w-40"
+            class="m-auto h-40 sm:h-52 md:h-48 lg:h-40 aspect-square object-scale-down"
             src={experience.logo}
             alt={`logo for ${experience.name}`}
             style="mix-blend-mode: {experience.blend}"
@@ -119,5 +119,16 @@
   .exp:is(:hover, :focus) .exp-desc {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    .exp:first-child {
+      grid-column: 1 / span 2;
+      aspect-ratio: 2 / 1;
+    }
+
+    .exp:first-child img {
+      height: 80%;
+    }
   }
 </style>

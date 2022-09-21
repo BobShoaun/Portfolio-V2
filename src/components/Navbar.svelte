@@ -107,11 +107,13 @@
       >
 
       <a
-        href="/resume"
+        href="/Resume - Bob Shoaun Ng.pdf"
         data-aos="zoom-in"
         data-aos-delay="700"
         class="nav-text"
-        data-aos-duration="700">Resume</a
+        data-aos-duration="700"
+        target="_blank"
+        noroute>Resume</a
       >
     </Router>
     <button

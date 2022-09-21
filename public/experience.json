@@ -1,61 +1,76 @@
 [
   {
-		"name": "X-CD Technologies Inc.",
-		"logo": "/images/x-cd logo.png",
-		"background": "moving-gradient-2",
-		"blend": "multiply",
-		"position": "Software Developer",
-		"start": "April 2021",
-		"end": "Present",
-		"highlight": "text-indigo-400",
-		"points": [
+    "name": "Zynga Inc.",
+    "logo": "/images/zynga.png",
+    "background": "bg-white",
+    "position": "Software Engineering Intern - Analytics",
+    "start": "May 2022",
+    "end": "Present",
+    "highlight": "text-red-400",
+    "points": [
+      "Developed a centralized portal for analytics application, fixed various bugs by refactoring legacy React components, improved the website’s visuals and user experience by refactoring the CSS and introducing accessible HTML.",
+      "Led production releases of the centralized portal, ensuring approval from quality assurance, running and fixing automated content testing, drafting Change Management requests, and executing scheduled deployments using Jenkins.",
+      "Participated actively in code reviews, suggested codebase improvements and conventions like BEM for reduced CSS specificity issues and better structure.",
+      "Conceived and implemented an automated tagging feature for PM emails using Python, deployed as a CronJob. Wrote technical specs, held internal review meetings, then drove the entire feature to completion."
+    ]
+  },
+  {
+    "name": "X-CD Technologies Inc.",
+    "logo": "/images/x-cd logo.png",
+    "background": "moving-gradient-2",
+    "blend": "multiply",
+    "position": "Software Developer",
+    "start": "April 2021",
+    "end": "Feb 2022",
+    "highlight": "text-indigo-400",
+    "points": [
       "Developed client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
       "Participated in code reviews, and provided feedback to improve code quality.",
       "Worked on the frontend using React, Redux, Redux-saga, and the backend using Node.js, Express, and MySQL."
     ]
-	},
+  },
 
-	{
-		"name": "Pathforge Pte. Ltd.",
-		"logo": "/images/pathforge logo.jpg",
-		"background": "bg-white",
-		"position": "Fullstack Developer",
-		"start": "Sept 2020",
-		"end": "April 2021",
-		"highlight": "text-green-400",
-		"points": [
-      "Worked with developers and designers in a startup environment.",
-      "Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning site.",
-      "Developed a CMS for course materials, integrated user leaderboards, and built the entire social feed and endorsement system."
-		]
-	},
-	{
-		"name": "The Hacker Collective",
-		"logo": "/images/thc logo.png",
-		"background": "bg-gray-700",
-		"position": "Mentor / Jumpstarter",
-		"start": "Sept 2020",
-		"end": "April 2021",
-		"highlight": "text-red-400",
-		"points": [
+  {
+    "name": "The Hacker Collective",
+    "logo": "/images/thc logo.png",
+    "background": "bg-gray-700",
+    "position": "Mentor / Jumpstarter",
+    "start": "Sept 2020",
+    "end": "April 2021",
+    "highlight": "text-red-400",
+    "points": [
       "Conducted zoom lectures and mentoring sessions to groups of learners about programming and web development.",
       "Did live programming demonstrations to students, and guided them so they understood the concepts.",
       "Topics covered include JavaScript fundamentals, Object-oriented programming, CSS basics, flexbox and grid, Git and Github crash course, using REST APIs, DOM manipulation, and a few mini projects."
     ]
-	},
-	{
-		"name": "N2N Connect Bhd.",
-		"logo": "/images/n2n connect logo.png",
-		"background": "moving-gradient-1",
-		"position": "Frontend Developer / Trainee",
-		"start": "June",
-		"end": "August 2019",
-		"highlight": "text-blue-400",
-		"points": [
-		  "Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
-        "Fixed bugs and introduced new quality of life features.",
-        "Presented my work during head of department meetings.",
-        "Wrote extensive documentation for proper project handover."
-		]
-	}
+  },
+  {
+    "name": "Pathforge Pte. Ltd.",
+    "logo": "/images/pathforge logo.jpg",
+    "background": "bg-white",
+    "position": "Fullstack Developer",
+    "start": "Sept 2020",
+    "end": "April 2021",
+    "highlight": "text-green-400",
+    "points": [
+      "Worked with developers and designers in a startup environment.",
+      "Used technologies like Vue, Buefy, Graphql, Hasura, and Postgres to build a social e-learning site.",
+      "Developed a CMS for course materials, integrated user leaderboards, and built the entire social feed and endorsement system."
+    ]
+  },
+  {
+    "name": "N2N Connect Bhd.",
+    "logo": "/images/n2n connect logo.png",
+    "background": "moving-gradient-1",
+    "position": "Frontend Developer / Trainee",
+    "start": "June",
+    "end": "August 2019",
+    "highlight": "text-blue-400",
+    "points": [
+      "Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",
+      "Fixed bugs and introduced new quality of life features.",
+      "Presented my work during head of department meetings.",
+      "Wrote extensive documentation for proper project handover."
+    ]
+  }
 ]

@@ -749,6 +749,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50%;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .max-h-80 {
   max-height: 20rem;
 }
@@ -1581,6 +1585,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2450,6 +2459,10 @@ html {
     margin-right: 7rem;
   }
 
+  .sm\:h-52 {
+    height: 13rem;
+  }
+
   .sm\:w-52 {
     width: 13rem;
   }
@@ -2495,6 +2508,10 @@ html {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-48 {
+    height: 12rem;
   }
 
   .md\:w-5 {
@@ -2602,6 +2619,10 @@ html {
 
   .lg\:h-2 {
     height: 0.5rem;
+  }
+
+  .lg\:h-40 {
+    height: 10rem;
   }
 
   .lg\:w-1\/4 {

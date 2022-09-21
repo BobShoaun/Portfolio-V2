@@ -139,4 +139,8 @@ export default [
     tech: "mips assembly",
     link: "https://en.wikipedia.org/wiki/MIPS_architecture",
   },
+  {
+    tech: "mars simulator",
+    link: "http://courses.missouristate.edu/kenvollmar/mars/",
+  },
 ];
