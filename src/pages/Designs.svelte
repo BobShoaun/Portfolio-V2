@@ -78,15 +78,18 @@
         <i class="fas fa-caret-left text-4xl" />
       </button>
 
-      <img
-        floading="lazy"
-        data-aos="fade-up"
-        data-aos-offset="100"
-        data-aos-delay="200"
-        class="border-[0.75rem] md:border-[1.25rem] border-white max-w-md mx-auto before:block before:bg-gray-400 before:w-80 before:aspect-[1/1.42]"
-        src={`/images/designs/${posters[currentIndex]}`}
-        alt={`${posters[currentIndex]} poster`}
-      />
+      <div class="max-w-md mx-auto">
+        <img
+          floading="lazy"
+          data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-delay="200"
+          class="border-[0.75rem] md:border-[1.25rem] border-white shadow-2xl"
+          src={`/images/designs/${posters[currentIndex]}`}
+          alt={`${posters[currentIndex]} poster`}
+        />
+      </div>
+
       <button
         aria-label="next poster"
         data-aos="fade-left"
