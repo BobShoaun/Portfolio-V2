@@ -219,11 +219,11 @@
 
       <a
         on:click={() => (open = false)}
-        use:link
         data-aos="slide-left"
         data-aos-delay="200"
         class="block bg-gray-50 dark:bg-gray-800 p-5"
-        href="/resume"
+        target="_blank"
+        href="/Resume - Bob Shoaun Ng.pdf"
       >
         Resume
       </a>

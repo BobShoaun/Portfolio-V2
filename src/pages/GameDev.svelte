@@ -27,7 +27,7 @@
   />
   <SectionNumber number="100" right />
 
-  <section class="main pb-40 pt-32 max-w-6xl mx-auto">
+  <section class="main pb-40 pt-32 max-w-7xl mx-auto">
     <div
       class="space-y-36 lg:space-y-0 lg:grid lg:grid-cols-8 gap-x-20 gap-y-36"
     >

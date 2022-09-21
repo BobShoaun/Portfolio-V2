@@ -24,7 +24,7 @@
   <SectionHeader />
   <SectionNumber number="011" />
 
-  <section class="main max-w-6xl pb-40 pt-32 mx-auto">
+  <section class="main max-w-7xl pb-40 pt-32 mx-auto">
     <div class="space-y-40">
       {#each visibleProjects as project, index}
         <WebDevProject {project} right={index % 2} />

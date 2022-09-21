@@ -539,6 +539,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -709,6 +713,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 1 / 1;
 }
 
+.aspect-\[1\.4142\] {
+  aspect-ratio: 1.4142;
+}
+
+.aspect-\[1\.4142\/1\] {
+  aspect-ratio: 1.4142 / 1;
+}
+
+.aspect-\[1\/1\.4142\] {
+  aspect-ratio: 1 / 1.4142;
+}
+
 .h-auto {
   height: auto;
 }
@@ -765,6 +781,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 25%;
 }
 
+.min-h-\[35rem\] {
+  min-height: 35rem;
+}
+
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -815,6 +835,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
+.min-w-\[20rem\] {
+  min-width: 20rem;
+}
+
 .max-w-prose {
   max-width: 65ch;
 }
@@ -837,6 +865,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .flex-1 {
@@ -973,6 +1005,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2.5rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-x-20 {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
@@ -1044,6 +1080,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
+.border-8 {
+  border-width: 8px;
+}
+
+.border-\[0\.75rem\] {
+  border-width: 0.75rem;
+}
+
 .border-t-4 {
   border-top-width: 4px;
 }
@@ -1089,6 +1133,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-teal-600 {
   --tw-border-opacity: 1;
   border-color: rgb(13 148 136 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-gray-50 {
@@ -1255,6 +1304,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .py-32 {
@@ -2273,6 +2326,43 @@ html {
   font-weight: 700;
 }
 
+.before\:block::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:aspect-\[1\/1\.42\]::before {
+  content: var(--tw-content);
+  aspect-ratio: 1 / 1.42;
+}
+
+.before\:w-24::before {
+  content: var(--tw-content);
+  width: 6rem;
+}
+
+.before\:w-64::before {
+  content: var(--tw-content);
+  width: 16rem;
+}
+
+.before\:w-80::before {
+  content: var(--tw-content);
+  width: 20rem;
+}
+
+.before\:bg-red-600::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.before\:bg-gray-400::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
@@ -2532,6 +2622,10 @@ html {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:border-\[1\.25rem\] {
+    border-width: 1.25rem;
   }
 
   .md\:p-5 {

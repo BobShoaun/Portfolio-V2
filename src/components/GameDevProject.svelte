@@ -43,9 +43,9 @@
       class="font-extrabold text-2xl lg:text-3xl text-gray-800 dark:text-gray-50 mb-1"
     >
       {project.name}
-      <span
+      <time
         class="ml-0.5 font-light text-right text-xl lg:text-2xl dark:text-gray-300"
-        >{project.year}</span
+        >{project.year}</time
       >
     </h1>
     <p

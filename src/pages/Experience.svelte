@@ -74,7 +74,7 @@
               @{experience.name}
             </h1>
             <p class="text-gray-500 dark:text-gray-400 mb-5 font-mono text-sm">
-              {experience.start} - {experience.end}
+              <time>{experience.start}</time> - <time>{experience.end}</time>
             </p>
             <ul
               class="text-base font-semibold text-gray-700 dark:text-gray-200 list-square ml-4"

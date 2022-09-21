@@ -67,6 +67,9 @@
     <div class="md:flex items-center justify-center gap-10">
       <button
         aria-label="previous poster"
+        data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-delay="200"
         on:click={() =>
           (currentIndex =
             currentIndex - 1 < 0 ? posters.length - 1 : currentIndex - 1)}
@@ -74,16 +77,21 @@
       >
         <i class="fas fa-caret-left text-4xl" />
       </button>
-      <div class="p-3 md:p-5 shadow-2xl bg-white max-w-md mx-auto">
-        <img
-          loading="lazy"
-          class=""
-          src={`/images/designs/${posters[currentIndex]}`}
-          alt={`${posters[currentIndex]} poster`}
-        />
-      </div>
+
+      <img
+        floading="lazy"
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-delay="200"
+        class="border-[0.75rem] md:border-[1.25rem] border-white max-w-md mx-auto before:block before:bg-gray-400 before:w-80 before:aspect-[1/1.42]"
+        src={`/images/designs/${posters[currentIndex]}`}
+        alt={`${posters[currentIndex]} poster`}
+      />
       <button
         aria-label="next poster"
+        data-aos="fade-left"
+        data-aos-offset="100"
+        data-aos-delay="200"
         on:click={() => (currentIndex = (currentIndex + 1) % posters.length)}
         class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
       >
