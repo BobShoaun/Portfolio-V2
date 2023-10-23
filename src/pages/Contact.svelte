@@ -145,9 +145,9 @@
     data-aos-offset="200"
     data-aos-duration="700"
     on:click={() => window.scrollTo(0, 0)}
-    class="text-xl lg:text-3xl py-5 text-gray-700 dark:text-white w-14 mx-auto text-center absolute bottom-20 right-0 left-0"
+    class="group text-xl lg:text-3xl py-5 text-gray-700 dark:text-white w-14 mx-auto text-center absolute bottom-20 right-0 left-0"
   >
-    <i class="hover-vertical fas fa-angle-up" />
+    <i class="hover-vertical fas fa-angle-up group-hover:pause" />
   </button>
 </section>
 

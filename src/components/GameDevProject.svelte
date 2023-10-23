@@ -8,13 +8,10 @@
 <article style="grid-column: {project.span ?? 'span 4'};">
   <aside class="mx-auto relative z-10 max-h-80 w-fit">
     <div
-      class="relative z-10 max-h-80 w-fit mx-3.5 shadow-lg bg-gradient-to-br from-purple-400 to-red-300 shadow-3xl overflow-hidden rounded-sm"
+      class="relative z-10 max-h-80 w-fit mx-3.5 shadow-lg bg-gradient-to-br from-purple-400 to-red-300 shadow-3xl overflow-hidden"
     >
       {#if project.video}
         <video
-          data-aos={"slide-down"}
-          data-aos-duration="500"
-          data-aos-delay="100"
           autoplay
           loop
           muted
@@ -93,7 +90,7 @@
           <a
             href={project.github}
             target="_blank"
-            class="shadow-md rounded-md px-3 py-1.5 bg-gray-700 hover:bg-gray-600 transition-colors flex items-center text-gray-50"
+            class="px-3 py-1.5 transition-colors flex items-center bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 hover:dark:bg-gray-600 text-gray-500 dark:text-gray-50"
           >
             <p class="">Github</p>
             <i class="fab fa-github ml-3 text-lg" /></a

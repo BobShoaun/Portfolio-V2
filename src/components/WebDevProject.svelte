@@ -13,7 +13,7 @@
   >
     <aside class="lg:max-w-1/2 w-fit shrink">
       <div
-        class="mx-0 mb-4 max-h-80 w-fit bg-gradient-to-br from-green-300 to-blue-300 shadow-xl overflow-hidden rounded-sm"
+        class="mx-0 mb-4 max-h-80 w-fit bg-gradient-to-br from-green-300 to-blue-300 shadow-xl overflow-hidden"
       >
         <img
           data-aos={right ? "slide-right" : "slide-left"}
@@ -36,14 +36,14 @@
             href={project.github}
             aria-label="Look at GitHub repo"
             target="_blank"
-            class="shadow-md rounded-md px-3 py-1.5 bg-gray-700 hover:bg-gray-600 transition-colors flex items-center text-gray-50"
+            class="px-3 py-1.5 transition-colors flex items-center bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 hover:dark:bg-gray-600 text-gray-500 dark:text-gray-50"
           >
             <p class="">Github</p>
             <i class="fab fa-github ml-3 text-lg" /></a
           >
         {:else}
           <button
-            class="rounded-md px-3 py-1.5 dark:bg-gray-700 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
+            class="px-3 py-1.5 dark:bg-gray-800 bg-gray-200 flex items-center text-gray-500 dark:text-gray-400 cursor-not-allowed"
             disabled
           >
             <p class="">Private</p>
@@ -115,7 +115,7 @@
     <article data-aos="fade-up" class="mt-14">
       <a
         href={project.more}
-        class="block relative text-gray-700 dark:text-white cursor-pointer featured-article "
+        class="block relative text-gray-700 dark:text-white cursor-pointer featured-article"
       >
         <em class="block mb-2"
           ><i class="fas fa-newspaper mr-2 text-lg" />Featured Article</em

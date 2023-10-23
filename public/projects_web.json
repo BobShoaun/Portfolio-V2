@@ -1,83 +1,126 @@
 [
   {
-		"name": "Artsu.me",
-		"image": "/images/artsume.webp",
-		"collaborators": "with artsu.me team",
-		"description": "An art hosting site where artists can upload their work, and make a personalized portfolio to showcase their work in a meaningful way. Dive into an amazing community of talented artists, and share your work through Artsu.me",
-		"technologies": ["react", "redux", "tailwindcss", "express", "mongodb", "cloudinary", "jest"],
-		"website": "https://artsu.me/",
-		"github": "",
-		"year": 2021
-	},
-	{
-		"name": "Bobcoin (XBC)",
-		"image": "/images/bobcoin.webp",
-		"collaborators": "by myself",
-		"description": "Given my fascination in blockchain technologies and Bitcoin, I've decided to make my own cryptocurrency from scratch. It features <abbr title='Proof of work'>PoW</abbr> consensus, digital signatures, merkle trees, the <abbr title='Unspent transaction output'>UTXO</abbr> model, <abbr title='Bitcoin improvement proposal'>BIP</abbr> compliant wallets, a block explorer, mining client, and many more.",
-		"technologies": ["react", "redux", "bulma", "node.js", "express", "mongodb", "socket.io", "npm", "jest"],
-		"website": "https://bobcoin.cash",
-		"github": "https://github.com/BobShoaun/Bobcoin-Node",
-		"year": 2021,
-		"more": "/articles/how-i-made-my-own-cryptocurrency"
-	},
+    "name": "Little Lolli Shop (WIP)",
+    "image": "/images/littlelolli.png",
+    "collaborators": "by myself for client",
+    "description": "An e-commerce and marketing website for my sister's personal business that sells miniature handmade charms and jewelry. Complete with a content management system for managing inventories. The website is still new and a work in progress.",
+    "technologies": ["astro", "tailwindcss", "firebase", "sanity"],
+    "website": "https://littlelolli.shop/",
+    "github": "https://github.com/BobShoaun/Little-Lolli-Shop",
+    "year": 2023
+  },
+  {
+    "name": "Bobcoin (XBC)",
+    "image": "/images/bobcoin.webp",
+    "collaborators": "by myself",
+    "description": "Given my fascination in blockchain technologies and Bitcoin, I've decided to make my own cryptocurrency from scratch. It features <abbr title='Proof of work'>PoW</abbr> consensus, digital signatures, merkle trees, the <abbr title='Unspent transaction output'>UTXO</abbr> model, <abbr title='Bitcoin improvement proposal'>BIP</abbr> compliant wallets, a block explorer, mining client, and many more.",
+    "technologies": [
+      "react",
+      "redux",
+      "bulma",
+      "node.js",
+      "express",
+      "mongodb",
+      "socket.io",
+      "npm",
+      "jest"
+    ],
+    "website": "https://bobcoin.cash",
+    "github": "https://github.com/BobShoaun/Bobcoin-Node",
+    "year": 2021,
+    "more": "/articles/how-i-made-my-own-cryptocurrency"
+  },
+  {
+    "name": "Artsu.me",
+    "image": "/images/artsume.webp",
+    "collaborators": "with artsu.me team",
+    "description": "An art hosting site where artists can upload their work, and make a personalized portfolio to showcase their work in a meaningful way. Dive into an amazing community of talented artists, and share your work through Artsu.me",
+    "technologies": [
+      "react",
+      "redux",
+      "tailwindcss",
+      "express",
+      "mongodb",
+      "cloudinary",
+      "jest"
+    ],
+    "website": "https://artsu.me/",
+    "github": "",
+    "year": 2021
+  },
 
   {
-		"name": "Cardistry",
-		"image": "/images/cardistry.png",
-		"collaborators": "by myself",
-		"description": "A javascript library for easily animating groups of cards or card-like elements in your website. It is complete with proper, extensive documentations and some basic examples.",
-		"technologies": ["html", "css", "javascript", "tailwindcss", "express", "npm"],
-		"website": "https://cardistry.herokuapp.com/",
-		"github": "",
-		"year": 2021
-	},
-	{
-		"name": "Pathforge",
-		"image": "/images/pathforge.webp",
-		"collaborators": "with pathforge team",
-		"description": "An e-learning site that aims to redefine the self learning experience. It provides a community for online learners to help each other out and step through the materials together.",
-		"technologies": ["vue", "scss", "buefy", "graphql", "hasura", "postgresql", "docker"],
-		"website": "https://pathforge.co/",
-		"year": 2020
-	},
+    "name": "Cardistry",
+    "image": "/images/cardistry.png",
+    "collaborators": "by myself",
+    "description": "A javascript library for easily animating groups of cards or card-like elements in your website. It is complete with proper, extensive documentations and some basic examples.",
+    "technologies": [
+      "html",
+      "css",
+      "javascript",
+      "tailwindcss",
+      "express",
+      "npm"
+    ],
+    "website": "https://cardistry.herokuapp.com/",
+    "github": "https://github.com/BobShoaun/Cardistry",
+    "year": 2021
+  },
   {
-		"name": "Portfolio V2",
-		"image": "/images/portfolio-v2.png",
-		"collaborators": "by myself",
-		"description": "The site you are looking at right now! It is the second iteration of my personal portfolio site, showcasing my experiences and skillsets. It features a fully responsive design, cool animations, WAI-ARIA accessibility, and dark mode.",
-		"technologies": ["svelte", "tailwindcss", "netlify"],
-		"website": "https://www.bobng.me/",
+    "name": "Pathforge",
+    "image": "/images/pathforge.webp",
+    "collaborators": "with pathforge team",
+    "description": "An e-learning site that aims to redefine the self learning experience. It provides a community for online learners to help each other out and step through the materials together.",
+    "technologies": [
+      "vue",
+      "scss",
+      "buefy",
+      "graphql",
+      "hasura",
+      "postgresql",
+      "docker"
+    ],
+    "website": "https://pathforge.co/",
+    "year": 2020
+  },
+  {
+    "name": "Portfolio V2",
+    "image": "/images/portfolio-v2.png",
+    "collaborators": "by myself",
+    "description": "The site you are looking at right now! It is the second iteration of my personal portfolio site, showcasing my experiences and skillsets. It features a fully responsive design, cool animations, WAI-ARIA accessibility, and dark mode.",
+    "technologies": ["svelte", "tailwindcss", "netlify"],
+    "website": "https://www.bobng.me/",
     "github": "https://github.com/BobShoaun/Portfolio-V2",
-		"year": 2021
-	},
-	{
-		"name": "Course Checker",
-		"image": "/images/course-checker 2.png",
-		"collaborators": "by myself",
-		"description": "AKA The ADP Timetabler, A web application for students in the ADP program of Taylor’s University to generate a visually appealing & customizable timetable based on courses they want to take for their next semester.",
-		"technologies": ["html", "css", "unity", "c#", "webgl"],
-		"github": "https://github.com/BobShoaun/Course-Checker",
-		"website": "https://bobshoaun.github.io/Course-Checker/",
-		"year": 2017
-	},
-	{
-		"name": "Countries of the World",
-		"image": "/images/countries-of-the-world.png",
-		"collaborators": "with my students",
-		"description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst mentoring learners about the basics of the fetch api and javascript's promise callback chains.",
-		"technologies": ["html", "css", "javascript", "restcountries api"],
-		"github": "https://github.com/BobShoaun/Countries-of-the-World",
-		"website": "https://bobshoaun.github.io/Countries-of-the-World/",
-		"year": 2021
-	},
-	{
-		"name": "things to do",
-		"image": "/images/todo app 2.png",
-		"collaborators": "by myself",
-		"description": "A simple and elegant to do list application with a great UI built as practice while learning the vue framework and firebase firestore.",
-		"technologies": ["vue", "tailwindcss", "firebase"],
-		"github": "https://github.com/BobShoaun/Vue-Todo-App",
-		"website": "https://bobshoaun.github.io/Vue-Todo-App/#/",
-		"year": 2020
-	}
+    "year": 2021
+  },
+  {
+    "name": "Course Checker",
+    "image": "/images/course-checker 2.png",
+    "collaborators": "by myself",
+    "description": "AKA The ADP Timetabler, A web application for students in the ADP program of Taylor’s University to generate a visually appealing & customizable timetable based on courses they want to take for their next semester.",
+    "technologies": ["html", "css", "unity", "c#", "webgl"],
+    "github": "https://github.com/BobShoaun/Course-Checker",
+    "website": "https://bobshoaun.github.io/Course-Checker/",
+    "year": 2017
+  },
+  {
+    "name": "Countries of the World",
+    "image": "/images/countries-of-the-world.png",
+    "collaborators": "with my students",
+    "description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst mentoring learners about the basics of the fetch api and javascript's promise callback chains.",
+    "technologies": ["html", "css", "javascript", "restcountries api"],
+    "github": "https://github.com/BobShoaun/Countries-of-the-World",
+    "website": "https://bobshoaun.github.io/Countries-of-the-World/",
+    "year": 2021
+  },
+  {
+    "name": "things to do",
+    "image": "/images/todo app 2.png",
+    "collaborators": "by myself",
+    "description": "A simple and elegant to do list application with a great UI built as practice while learning the vue framework and firebase firestore.",
+    "technologies": ["vue", "tailwindcss", "firebase"],
+    "github": "https://github.com/BobShoaun/Vue-Todo-App",
+    "website": "https://bobshoaun.github.io/Vue-Todo-App/#/",
+    "year": 2020
+  }
 ]

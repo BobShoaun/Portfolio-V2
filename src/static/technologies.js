@@ -143,4 +143,12 @@ export default [
     tech: "mars simulator",
     link: "http://courses.missouristate.edu/kenvollmar/mars/",
   },
+  {
+    tech: "astro",
+    link: "https://astro.build/",
+  },
+  {
+    tech: "sanity",
+    link: "https://www.sanity.io/",
+  },
 ];

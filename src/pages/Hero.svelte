@@ -46,7 +46,7 @@
         <TextReveal
           delay={1000}
           once
-          text="My name is Bob, I build and design industry standard web applications."
+          text="I build and design industry standard web experiences. Welcome to my website."
         />
       </p>
 
@@ -56,12 +56,14 @@
         data-aos-duration="700"
         class="text-sm text-gray-700 font-semibold font-mono"
       >
-        <Link
-          to="resume"
-          class="transition-colors px-4 py-1 mr-3 lg:ml-1 inline-block bg-green-200 shadow-green-300/20 shadow-lg border rounded-sm border-green-400  hover:bg-green-300 "
-          noroute
-        >
-          View resume</Link
+        <a
+          href="/Resume - Bob Shoaun Ng.pdf"
+          data-aos="zoom-in"
+          data-aos-delay="700"
+          class="transition-colors px-4 py-1 mr-3 lg:ml-1 inline-block bg-green-200 shadow-green-300/20 shadow-lg border rounded-sm border-green-400 hover:bg-green-300"
+          data-aos-duration="700"
+          target="_blank"
+          noroute>View Resume</a
         >
         <a
           href="#contact"
@@ -126,8 +128,8 @@
     data-aos-delay="1500"
     data-aos-duration="700"
     on:click={() => document.getElementById("about").scrollIntoView()}
-    class="text-xl lg:text-3xl py-5 text-gray-700 dark:text-white absolute w-14 mx-auto text-center bottom-20 right-0 left-0"
+    class="group text-xl lg:text-3xl py-5 text-gray-700 dark:text-white absolute w-14 mx-auto text-center bottom-20 right-0 left-0"
   >
-    <i class="hover-vertical fas fa-angle-down" />
+    <i class="hover-vertical fas fa-angle-down group-hover:pause" />
   </button>
 </section>

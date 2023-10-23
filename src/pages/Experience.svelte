@@ -39,8 +39,8 @@
       <p
         class="text-base lg:text-lg text-gray-600 dark:text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
-        I have more than 2 years of work experience and counting. Here are some
-        companies I have worked at before.
+        I have more than 3 years of work experience and counting. Here are some
+        companies I have had the privilege to work at.
       </p>
     </div>
   </header>
@@ -122,12 +122,14 @@
   }
 
   @media (min-width: 768px) {
-    .exp:first-child {
+    .exp:first-child,
+    .exp:nth-child(2) {
       grid-column: 1 / span 2;
       aspect-ratio: 2 / 1;
     }
 
-    .exp:first-child img {
+    .exp:first-child img,
+    .exp:nth-child(2) img {
       height: 80%;
     }
   }

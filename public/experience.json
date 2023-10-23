@@ -1,11 +1,26 @@
 [
   {
+    "name": "Amazon Web Services",
+    "logo": "/images/aws.png",
+    "background": "moving-gradient-1",
+    "position": "SDE Intern - Aurora Control Plane",
+    "start": "May",
+    "end": "Aug. 2023",
+    "highlight": "text-orange-400",
+    "points": [
+      "Designed and engineered an easy-to-use, elaborate dashboard for on-call engineers to monitor the patching statuses of various database clusters.",
+      "Drove the project from conception to completion. Held design document reviews, midpoint demos, final presentation, and various meetings with stakeholder and other engineers to align on details.",
+      "Contributed to 3 major codebases for the project, spanning multiple teams. Wrote heavily tested code (>90% code coverage) following conventions and practices of respective teams. Participated in extensive code reviews, and discussed with reviewers on code changes and comments.",
+      "Delivered first version of the project successfully given the tight deadline. Wrote detailed documentation and recorded videos explaining the codebases for a thorough knowledge transfer."
+    ]
+  },
+  {
     "name": "Zynga Inc.",
     "logo": "/images/zynga.png",
     "background": "bg-white",
     "position": "Software Engineering Intern - Analytics",
     "start": "May 2022",
-    "end": "Present",
+    "end": "April 2023",
     "highlight": "text-red-400",
     "points": [
       "Developed a centralized portal for analytics application, fixed various bugs by refactoring legacy React components, improved the website’s visuals and user experience by refactoring the CSS and introducing accessible HTML.",
@@ -21,7 +36,7 @@
     "blend": "multiply",
     "position": "Software Developer",
     "start": "April 2021",
-    "end": "Feb 2022",
+    "end": "Feb. 2022",
     "highlight": "text-indigo-400",
     "points": [
       "Developed client's e-commerce stores, product consumption platforms, member & corporate directories, and the corresponding admin functionalities.",
@@ -35,7 +50,7 @@
     "logo": "/images/thc logo.png",
     "background": "bg-gray-700",
     "position": "Mentor / Jumpstarter",
-    "start": "Sept 2020",
+    "start": "Sept. 2020",
     "end": "April 2021",
     "highlight": "text-red-400",
     "points": [
@@ -49,7 +64,7 @@
     "logo": "/images/pathforge logo.jpg",
     "background": "bg-white",
     "position": "Fullstack Developer",
-    "start": "Sept 2020",
+    "start": "Sept. 2020",
     "end": "April 2021",
     "highlight": "text-green-400",
     "points": [
@@ -64,7 +79,7 @@
     "background": "moving-gradient-1",
     "position": "Frontend Developer / Trainee",
     "start": "June",
-    "end": "August 2019",
+    "end": "Aug. 2019",
     "highlight": "text-blue-400",
     "points": [
       "Revamped the frontend of the company's internal timesheet management system using Angular.js and Bootstrap.",

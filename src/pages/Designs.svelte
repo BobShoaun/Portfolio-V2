@@ -73,7 +73,7 @@
         on:click={() =>
           (currentIndex =
             currentIndex - 1 < 0 ? posters.length - 1 : currentIndex - 1)}
-        class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
+        class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all p-5 pl-4"
       >
         <i class="fas fa-caret-left text-4xl" />
       </button>
@@ -96,7 +96,7 @@
         data-aos-offset="100"
         data-aos-delay="200"
         on:click={() => (currentIndex = (currentIndex + 1) % posters.length)}
-        class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all rounded-sm p-5"
+        class="hidden md:block bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-all p-5 pr-4"
       >
         <i class="fas fa-caret-right text-4xl" />
       </button>
