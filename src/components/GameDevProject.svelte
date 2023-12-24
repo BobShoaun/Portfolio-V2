@@ -36,7 +36,7 @@
     style="height: fit-content"
   >
     <h1
-      data-aos="flip-down"
+      data-aos="flip-up"
       class="font-extrabold text-2xl lg:text-3xl text-gray-800 dark:text-gray-50 mb-1"
     >
       {project.name}
@@ -46,7 +46,7 @@
       >
     </h1>
     <p
-      data-aos="fade-up"
+      data-aos="fade-in"
       data-aos-delay="100"
       class="font-bold font-mono text-sm text-blue-500 dark:text-blue-300 mb-3"
     >
@@ -54,12 +54,12 @@
     </p>
 
     <hr
-      data-aos="fade-up"
+      data-aos="fade-in"
       data-aos-delay="150"
       class="mb-4 border-gray-400 dark:border-gray-500"
     />
     <p
-      data-aos="fade-up"
+      data-aos="fade-in"
       data-aos-delay="200"
       class="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed font-semibold"
     >
@@ -67,7 +67,7 @@
     </p>
 
     <div
-      data-aos="fade-up"
+      data-aos="fade-in"
       data-aos-delay="300"
       class="text-sm font-mono font-semibold flex flex-wrap gap-2 mb-6"
     >

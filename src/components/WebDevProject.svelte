@@ -76,7 +76,7 @@
         >
       </h1>
       <p
-        data-aos={right ? "fade-right" : "fade-left"}
+        data-aos="fade"
         data-aos-delay="100"
         class="font-bold font-mono text-sm text-purple-700 dark:text-purple-400 mb-3"
       >
@@ -84,12 +84,12 @@
       </p>
 
       <hr
-        data-aos={right ? "fade-right" : "fade-left"}
+        data-aos="fade"
         data-aos-delay="150"
         class="mb-4 border-gray-400 dark:border-gray-500"
       />
       <p
-        data-aos={right ? "fade-right" : "fade-left"}
+        data-aos="fade"
         data-aos-delay="200"
         class="mb-4 text-gray-600 font-semibold dark:text-gray-300 leading-relaxed max-w-prose"
       >
@@ -97,7 +97,7 @@
       </p>
 
       <div
-        data-aos={right ? "fade-right" : "fade-left"}
+        data-aos="fade"
         data-aos-delay="300"
         class="text-sm font-mono font-semibold flex flex-wrap gap-2"
       >
@@ -112,7 +112,7 @@
     </section>
   </div>
   {#if project.more}
-    <article data-aos="fade-up" class="mt-14">
+    <article data-aos="fade-left" class="mt-14">
       <a
         href={project.more}
         class="block relative text-gray-700 dark:text-white cursor-pointer featured-article"

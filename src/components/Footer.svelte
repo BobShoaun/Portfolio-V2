@@ -55,7 +55,7 @@
       href="https://github.com/BobShoaun/Portfolio-V2"
       target="_blank"
     >
-      Designed & Built by Ng Bob Shoaun &copy; <time>2022</time>
+      Designed & Built by Ng Bob Shoaun &copy; <time>2023</time>
     </a>
   </div>
 </footer>

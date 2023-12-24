@@ -2,24 +2,9 @@
   import { Link } from "svelte-routing";
   import { copyToClipboard } from "../helper";
   import resume from "../resume.js";
-
-  // const primary = "red-500";
-  // const light = "red-50";
-
-  /* 
-  bg-teal-50
-  text-teal-50
-  border-teal-50
-  bg-teal-600
-  text-teal-600
-  border-teal-600
-  */
-
-  const primary = "teal-600";
-  const light = "teal-50";
 </script>
 
-<main class="bg-gray-500 dark:bg-gray-700 pt-32 pb-20 overflow-auto flex">
+<main class="bg-gray-100 dark:bg-gray-700 pt-32 pb-20 overflow-auto flex">
   <div class="m-auto">
     <div class="mb-5">
       <Link
@@ -32,211 +17,210 @@
       >
       <button
         on:click={() => window.print()}
-        class="px-4 py-1 font-bold font-mono border-blue-400 border bg-blue-200 hover:bg-blue-300 rounded-none"
+        class="px-4 py-1 font-bold font-mono text-gray-700 border-indigo-400 border bg-indigo-200 hover:bg-indigo-300 rounded-none"
         ><i class="fas fa-print mr-3" />Print</button
       >
     </div>
 
-    <main class="resume bg-white shadow-xl">
-      <section class="sidebar flex flex-col justify-between gap-2">
-        <aside
-          class={`bg-${light} px-5 pt-5 pb-6 border-${primary} border-t-4`}
-        >
-          <h1
-            class="text-gray-700 text-5xl font-extrabold mb-1"
-            fstyle="font-size: 2.5rem; line-height: 1"
-          >
-            {resume.name}
-          </h1>
-          <h3 class={`text-${primary} font-semibold text-lg mb-3 leading-5`}>
-            {resume.title}
-          </h3>
-          <div class="grid info items-center">
-            <i class="text-gray-700 text-center fas fa-phone" />
-            <p class="text-gray-700 text-sm">{resume.phoneNumber}</p>
+    <main
+      class="resume bg-white shadow-xl flex flex-col justify-between fpx-8 fpy-9"
+    >
+      <section>
+        <h1 class={`text-gray-700 text-3xl font-extrabold`}>
+          {resume.name}
+        </h1>
 
-            <i class="text-gray-700 text-center fas fa-globe" />
-            <a
-              href={resume.website.url}
-              target="_blank"
-              class="text-gray-700 text-sm">{resume.website.label}</a
-            >
+        <div class="flex items-start mt-1 content-text">
+          <ul class="text-gray-600 flex flex-wrap gap-x-4 gap-y-0.5">
+            <li>
+              <a
+                class="flex gap-1.5 items-center"
+                href={resume.website.url}
+                target="_blank"
+                ><i class="fas fa-globe" />{resume.website.label}</a
+              >
+            </li>
 
-            <i class="text-gray-700 text-center fas fa-envelope" />
-            <p
-              class="text-gray-700 text-sm cursor-pointer"
-              on:click={() => copyToClipboard(resume.email.url)}
-            >
-              {resume.email.label}
-            </p>
-            <i class="text-gray-700 text-center fab fa-linkedin" />
-            <a
-              href={resume.linkedIn.url}
-              target="_blank"
-              class="text-gray-700 text-sm">{resume.linkedIn.label}</a
-            >
-            <i class="text-gray-700 text-center fab fa-github" />
-            <a
-              href={resume.github.url}
-              target="_blank"
-              class="text-gray-700 text-sm">{resume.github.label}</a
-            >
-            <i class="text-gray-700 text-center fas fa-map-marker-alt" />
-            <p class="text-gray-700 text-sm">{resume.location}</p>
-          </div>
-        </aside>
+            <li>
+              <button
+                class="flex gap-1.5 items-center"
+                on:click={() => copyToClipboard(resume.email.url)}
+              >
+                <i class="fas fa-envelope" />
+                {resume.email.label}
+              </button>
+            </li>
 
-        <div>
-          <h2
-            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
-          >
-            About Me
-          </h2>
-          <p class="text-gray-600 text-sm pl-1">
-            <q>{resume.about}</q>
+            <li class="">
+              <a
+                class="flex gap-1.5 items-center"
+                href={resume.linkedIn.url}
+                target="_blank"
+                ><i class="fab fa-linkedin" />{resume.linkedIn.label}</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="flex gap-1.5 items-center"
+                href={resume.github.url}
+                target="_blank"
+                ><i class="fab fa-github" />{resume.github.label}</a
+              >
+            </li>
+
+            <li>
+              <a class="flex gap-1.5 items-center" href="tel:+1437-984-6410"
+                ><i class="fas fa-phone" />{resume.phoneNumber}</a
+              >
+            </li>
+
+            <li>
+              <p class="flex gap-1.5 items-center">
+                <i class="fas fa-map-marker-alt" />{resume.location}
+              </p>
+            </li>
+          </ul>
+
+          <p class="text-gray-400 text-right right-text basis-1/3">
+            Last updated <em>{resume.lastUpdated}</em>
           </p>
-        </div>
-
-        <div>
-          <h2
-            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
-          >
-            Coding Languages
-          </h2>
-          <div class="tags flex flex-wrap justify-start">
-            {#each resume.codingLanguages as codingLanguage}
-              <h4
-                class={`bg-${primary} px-2.5 py-1.5 font-bold text-xs text-white`}
-              >
-                {codingLanguage}
-              </h4>
-            {/each}
-          </div>
-        </div>
-
-        <div>
-          <h2
-            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
-          >
-            Tech Stack
-          </h2>
-          <div class="tags flex flex-wrap justify-start">
-            {#each resume.techStack as framework}
-              <h4
-                class={`bg-${primary} px-2.5 py-1.5 font-bold text-xs text-white`}
-              >
-                {framework}
-              </h4>
-            {/each}
-          </div>
-        </div>
-
-        <div
-          class={`bg-${light} border-${primary} border-b-4 px-5 pt-1.5 pb-1.5 w-full`}
-        >
-          <h3 class={`text-${primary} text-sm`}>
-            Last updated on: <span class="italic font-semibold"
-              >{resume.lastUpdated}</span
-            >
-          </h3>
         </div>
       </section>
 
-      <!-- CONTENT SECTION -->
+      <section>
+        <h2
+          class={`w-full text-resume-primary bg-resume-light border-resume-primary pl-2 py-0 border-l-2 font-bold text-sm`}
+        >
+          Technical Skills
+        </h2>
 
-      <article class="content flex flex-col justify-between gap-2">
-        <div>
-          <h2
-            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
-          >
-            Education
-          </h2>
+        <div
+          class="grid grid-cols-[auto_1fr] mt-2 items-baseline gap-x-2 text-xs content-text"
+        >
+          <h3 class="text-gray-700 font-bold">Languages:</h3>
+          <p class="text-gray-500">
+            {resume.skills.languages.join(", ")}
+          </p>
+          <h3 class="text-gray-700 font-bold">Frontend:</h3>
+          <p class="text-gray-500">
+            {resume.skills.frontend.join(", ")}
+          </p>
+          <h3 class="text-gray-700 font-bold">Backend:</h3>
+          <p class="text-gray-500">
+            {resume.skills.backend.join(", ")}
+          </p>
+          <h3 class="text-gray-700 font-bold">Database:</h3>
+          <p class="text-gray-500">
+            {resume.skills.database.join(", ")}
+          </p>
+          <h3 class="text-gray-700 font-bold">DevOps:</h3>
+          <p class="text-gray-500">
+            {resume.skills.devops.join(", ")}
+          </p>
+          <h3 class="text-gray-700 font-bold">Others:</h3>
+          <p class="text-gray-500">
+            {resume.skills.others.join(", ")}
+          </p>
+        </div>
+      </section>
 
-          <div class="flex justify-between items-baseline mb-0">
-            <h3 class="text-gray-700 text-md font-bold">
-              {resume.education.school}
-            </h3>
-            <p class="text-xs text-gray-700 font-semibold">
-              CGPA: {resume.education.cgpa}
-            </p>
-          </div>
+      <section>
+        <h2
+          class="w-full text-resume-primary bg-resume-light border-resume-primary pl-2 py-0 border-l-2 font-bold text-sm"
+        >
+          Professional Experiences
+        </h2>
 
-          <p class="text-sm text-gray-400 float-right text-right">
+        <ul class="flex flex-col gap-2.5 mt-2">
+          {#each resume.experiences as experience}
+            <li>
+              <div class="flex items-baseline gap-2">
+                <h3 class="text-gray-700 font-bold title-text">
+                  {experience.company}
+                </h3>
+                <em class="text-gray-500 title-text">
+                  {experience.position}
+                </em>
+
+                <p class="text-gray-400 ml-auto right-text">
+                  {experience.location}
+                </p>
+
+                <p class="text-gray-400 right-text ml-2">
+                  {experience.timeline}
+                </p>
+              </div>
+
+              <ul class="list-square text-gray-700 pl-5 mt-0.5 content-text">
+                {#each experience.points as point}
+                  <li>
+                    {point}
+                  </li>
+                {/each}
+              </ul>
+            </li>
+          {/each}
+        </ul>
+      </section>
+
+      <section>
+        <h2
+          class={`w-full text-resume-primary bg-resume-light border-resume-primary pl-2 py-0 border-l-2 font-bold text-sm`}
+        >
+          Education
+        </h2>
+
+        <div class="flex justify-between items-baseline mt-2">
+          <h3 class="text-gray-700 font-bold title-text">
+            {resume.education.school}
+          </h3>
+          <p class="text-gray-400 right-text">
             {resume.education.timeline}
           </p>
-          <p class="text-sm text-gray-400 mb-0.5 italic">
-            {resume.education.major}
+        </div>
+
+        <div class="flex justify-between items-baseline mt-0.5">
+          <p class="text-gray-700 content-text">
+            {resume.education.description}
           </p>
-
-          <ul class="list-square text-gray-700 pl-5 text-xs">
-            {#each resume.education.courses as course}
-              <li>
-                {course.name}
-                <p class="float-right">{@html course.grade}</p>
-              </li>
-            {/each}
-          </ul>
+          <p class="text-gray-500 font-semibold content-text">
+            CGPA: {resume.education.cgpa}
+          </p>
         </div>
+      </section>
 
-        <div>
-          <h2
-            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
-          >
-            Experience
-          </h2>
-
-          {#each resume.experiences as experience, i}
-            <h3 class="text-gray-700 text-md font-bold">
-              {experience.company}
-            </h3>
-            <p class="text-sm text-gray-400 float-right text-right">
-              {experience.timeline}
-            </p>
-            <p class="text-sm text-gray-400 mb-0.5 italic">
-              {experience.position}
-            </p>
-            <ul
-              class={`list-square text-gray-600 pl-5 text-xs ${
-                i == resume.experiences.length - 1 ? "mb-0" : "mb-2"
-              }`}
-            >
-              {#each experience.points as point}
-                <li>
-                  {point}
-                </li>
-              {/each}
-            </ul>
+      <section>
+        <h2
+          class={`w-full text-resume-primary bg-resume-light border-resume-primary pl-2 py-0 border-l-2 font-bold text-sm`}
+        >
+          Projects
+        </h2>
+        <ul class="flex flex-col gap-2.5 mt-2">
+          {#each resume.projects as project}
+            <li>
+              <div class="flex justify-between items-baseline">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  class="text-gray-700 font-bold title-text flex items-baseline gap-1.5"
+                >
+                  {project.name}
+                  <i class="text-[10px] leading-3 fa fa-external-link-alt" />
+                </a>
+                <p class="text-gray-400 right-text">{project.type}</p>
+              </div>
+              <ul class="list-square text-gray-700 pl-5 content-text mt-0.5">
+                {#each project.points as point}
+                  <li>
+                    {point}
+                  </li>
+                {/each}
+              </ul>
+            </li>
           {/each}
-        </div>
-
-        <div>
-          <h2
-            class={`text-${primary} bg-${light} w-full border-${primary} pl-4 py-1 border-l-4 font-semibold text-xl mb-2`}
-          >
-            Projects
-          </h2>
-
-          {#each resume.projects as project, i}
-            <div class="flex justify-between items-baseline mb-0.5">
-              <h3 class="text-gray-700 text-md font-bold">
-                {project.name}
-              </h3>
-              <p class="text-sm text-gray-400 italic">{project.type}</p>
-            </div>
-            <ul
-              class={`list-square text-gray-600 pl-5 text-xs ${
-                i == resume.projects.length - 1 ? "mb-0" : "mb-2"
-              }`}
-            >
-              {#each project.points as point}
-                <li>
-                  {point}
-                </li>
-              {/each}
-            </ul>
-          {/each}
-        </div>
-      </article>
+        </ul>
+      </section>
     </main>
   </div>
 </main>
@@ -255,20 +239,30 @@
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Source Sans Pro', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
-    /* 
-
-    display: grid;
-    grid-template-columns: 1fr 3fr; */
-
-    display: flex;
-    gap: 2rem;
 
     /* a4 size */
     width: 21cm;
     height: 29.7cm;
 
     box-sizing: border-box;
-    padding: 2.25rem;
+    /* padding: 2.25rem; */
+    padding: 0.5in;
+  }
+
+  .content-text {
+    /* @apply text-[11px] leading-snug; */
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .right-text {
+    font-size: 11px;
+    line-height: 1rem;
+  }
+
+  .title-text {
+    font-size: 13px;
+    line-height: 1.4;
   }
 
   @media print {
@@ -286,26 +280,7 @@
     }
     @page {
       size: A4;
+      margin: 0.5in;
     }
-  }
-
-  .info {
-    /* display: grid; */
-    grid-template-columns: auto 1fr;
-    column-gap: 0.6rem;
-    row-gap: 0.55rem;
-  }
-  .content {
-    grid-area: content;
-  }
-  .sidebar {
-    grid-area: sidebar;
-    flex-shrink: 2;
-  }
-  .tags {
-    gap: 0.3rem;
-  }
-  a {
-    color: rgba(55, 65, 81, var(--tw-text-opacity));
   }
 </style>

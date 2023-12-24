@@ -51,19 +51,17 @@
       </p>
 
       <div
-        data-aos="flip-up"
+        data-aos="fade-left"
         data-aos-delay="1200"
         data-aos-duration="700"
         class="text-sm text-gray-700 font-semibold font-mono"
       >
-        <a
-          href="/Resume - Bob Shoaun Ng.pdf"
+        <Link
+          to="/resume"
           data-aos="zoom-in"
           data-aos-delay="700"
           class="transition-colors px-4 py-1 mr-3 lg:ml-1 inline-block bg-green-200 shadow-green-300/20 shadow-lg border rounded-sm border-green-400 hover:bg-green-300"
-          data-aos-duration="700"
-          target="_blank"
-          noroute>View Resume</a
+          data-aos-duration="700">View Resume</Link
         >
         <a
           href="#contact"

@@ -45,6 +45,12 @@ module.exports = {
         // current: "currentColor",
         // ...colors,
         gray: colors.blueGray,
+        resume: {
+          light: colors.teal[50],
+          primary: colors.teal[700],
+          // light: colors.indigo[50],
+          // primary: colors.indigo[700],
+        },
       },
     },
   },
