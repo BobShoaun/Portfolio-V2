@@ -1205,11 +1205,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(241 245 249 / 0.8);
 }
 
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .bg-indigo-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(199 210 254 / var(--tw-bg-opacity));
@@ -1266,10 +1261,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-gray-200 {
   --tw-gradient-to: #e2e8f0;
-}
-
-.fill-red-500 {
-  fill: #ef4444;
 }
 
 .object-contain {
@@ -1490,20 +1481,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
-.text-\[11px\] {
-  font-size: 11px;
-}
-
 .text-\[10px\] {
   font-size: 10px;
 }
 
-.text-\[5px\] {
-  font-size: 5px;
-}
-
-.text-\[8px\] {
-  font-size: 8px;
+.text-\[11px\] {
+  font-size: 11px;
 }
 
 .font-extrabold {
@@ -1602,15 +1585,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(15 118 110 / var(--tw-text-opacity));
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-current {
-  color: currentColor;
-}
-
 .text-orange-400 {
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
@@ -1634,11 +1608,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .underline {

@@ -1,7 +1,7 @@
 const resume = {
   name: "Bob Shoaun Ng",
   title: "Software Developer &\n Designer",
-  phoneNumber: "+1 (437) 984 6410",
+  phoneNumber: "(437) 984-6410",
   website: {
     url: "https://www.bobng.me/",
     label: "bobng.me",
@@ -27,8 +27,10 @@ const resume = {
     languages: [
       "JavaScript (ES6)",
       "HTML",
-      "(S)CSS",
-      "C(++)",
+      "CSS",
+      "SCSS",
+      "C",
+      "C++",
       "Python",
       "TypeScript",
       "Java",
@@ -39,9 +41,9 @@ const resume = {
       "React",
       "Tailwind",
       "Redux",
-      "Astro",
       "Vue",
       "Svelte",
+      "Astro",
       "Bulma",
       "Bootstrap",
       "Figma",
@@ -69,6 +71,7 @@ const resume = {
       "Git",
       "NPM",
       "Insomnia",
+      "Postman",
       "Unity Engine",
       "Jest",
       "Selenium",
@@ -82,10 +85,10 @@ const resume = {
   lastUpdated: "Dec 2023",
   education: {
     school: "University of Toronto, St. George",
-    cgpa: "3.90 / 4.0", // Dean's List Scholar
+    cgpa: "3.90 / 4.0 (Dean's List Scholar)", // Dean's List Scholar
     description:
       "Honours Bachelor of Science Candidate - Computer Science Specialist (4th year)",
-    timeline: "Sept 2019 - June 2024",
+    timeline: "Expected April 2024",
   },
 
   experiences: [
@@ -95,11 +98,12 @@ const resume = {
       timeline: "May 2023 - Aug 2023",
       location: "Toronto, ON",
       points: [
-        "Engineered an easy-to-use dashboard for on-call engineers to monitor the patching statuses of Aurora database clusters using React, AWS Cloudscape, DynamoDB, Ruby on Rails with various existing Aurora and RDS service APIs.",
-        "Wrote design document, held reviews, midpoint and final demos. Communicated across different teams proactively.",
+        "Created an easy-to-use dashboard for on-call engineers to monitor the patching statuses of Aurora limitless database clusters, saving 85% of the total time needed to monitor patches and detect issues.",
+        "Used React, AWS Cloudscape, DynamoDB, Ruby on Rails with various existing Aurora and RDS service APIs for the dashboard.",
+        "Wrote design document, held reviews, midpoint and final demo with 50+ attendees. Communicated across 3 departments proactively.",
         // "Drove project from conception to completion. Held meetings spanning mutliple teams. Held design document reviews, midpoint demos, final presentation, and various meetings with stakeholder and other engineers to align on details.",
-        "Contributed to 3 major codebases, spanning multiple teams with different conventions. Code tested with >90% coverage.",
-        "Created detailed Wiki documentation and recorded videos explaining the codebases for a thorough knowledge transfer.",
+        "Contributed to 3 major codebases, spanning multiple teams with different conventions. Code thoroughly tested with >95% coverage.",
+        "Created detailed Wiki documentation with recorded videos walking through 90% of the codebase for a thorough knowledge transfer.",
       ],
     },
     {
@@ -109,9 +113,10 @@ const resume = {
       location: "Toronto, ON",
       points: [
         "Developed a centralized portal for analytics applications using React and Redux, introducing accessible HTML and Tailwind.",
-        "Led production releases of the centralized portal, ensuring approval from quality assurance, running and fixing automated content testing, drafting Change Management requests, and executing scheduled deployments using Jenkins.",
-        "Implemented a Python CronJob for tagging product emails. Wrote docs, held review meetings, then drove feature to completion.",
-        "Created analytics reports using Jupyter notebooks and useful logging visualisations using Splunk dashboards.",
+        "Led production releases of the centralized portal, ensuring approval from quality assurance, running and fixing automated content testing, drafting Change Management requests, and executing scheduled deployments using Jenkins with 0 downtime.",
+        "Designed and built a Python CronJob for tagging product emails, saving project managers 90% of time spent manually tagging emails.",
+        // "Wrote technical specifications, held review meetings, then drove the entire feature to completion.",
+        "Created analytics reports using Jupyter notebooks and useful logging visualization using Splunk dashboards.",
         "Carried out frontend migration of a major A/B testing system from Angular.js, Bootstrap to React, TypeScript, and Tailwind.",
       ],
     },
@@ -134,7 +139,7 @@ const resume = {
       location: "Kuala Lumpur, Malaysia",
       points: [
         "Developed a social e-learning site using Vue and Bulma, with GraphQL, Hasura, and Postgres in the backend.",
-        "Built a CMS for course materials, integrated user leaderboards, and implemented entire social feed and endorsement system.",
+        "Built a CMS for course materials, integrated user leaderboards, and implemented an entire social feed and endorsement system.",
         "Conducted Zoom lectures about programming and web development, teaching HTML, CSS, and JavaScript to groups of learners.",
       ],
     },
@@ -156,22 +161,38 @@ const resume = {
       type: "Personal project",
       points: [
         "A proof of work cryptocurrency built using Typescript Node.js for business logic, Express, MongoDB, and web sockets for the Node backend/API, Jest for unit testing, React, Redux, and Bulma for the frontend block explorer, wallet software, and mining client.",
-        "Secured using cryptographic hash algorithms, digital signatures, public-key cryptography, merkle trees, Nakamoto consensus, BIP compliancy, and the UTXO model, resulting in a tamper-proof blockchain ledger.",
+        "Secured using cryptographic hash algorithms, digital signatures, public-key cryptography, Merkle trees, Nakamoto consensus, BIP compliance, and the UTXO model, resulting in a tamper-proof blockchain ledger.",
         // "Refactored blockchain storage, query, and validation code by redefining Mongoose schemas, and devising a new stratagy for handling blockchain reorganizations and forks. Overall, increasing efficiency and scalability by 80%.",
-        "Through this project, introducted 20+ friends and family to cryptocurrencies, and grew a Discord community with 100+ members.",
+        "Through this project, taught 20+ friends and family basic cryptocurrency usage, and grew a Discord community with 100+ members.",
       ],
       link: "https://github.com/BobShoaun/Bobcoin-Node",
+      github: [
+        {
+          repo: "Bobcoin-Node",
+          url: "https://github.com/BobShoaun/Bobcoin-Node",
+        },
+        {
+          repo: "Bobcoin-Client",
+          url: "https://github.com/BobShoaun/Bobcoin-Client",
+        },
+      ],
     },
     {
       name: "Artsu.me",
       type: "Academic project",
       points: [
-        "Developed an art hosting webapp that allows artist to create a job-ready portfolio to showcase their artworks.",
+        "Developed an art hosting web app that allows artists to create a job-ready portfolio to showcase their artworks.",
         "Led and managed a team of 4 junior developers, providing mentorship and support to struggling individuals.",
-        "Built using React, Tailwind, Redux for the frontend. Express, MongoDB, Cloudinary for the backend. Heroku, Google Cloud for deployment. Jest and Supertest for unit testing. OAuth2.0 for authentication using Google or Facebook.",
+        "Built using React, Tailwind, Redux for the frontend. Express, MongoDB, and Cloudinary for the backend. Heroku, Google Cloud for deployment. Jest and Supertest for testing. OAuth2.0 for authentication using Google or Facebook.",
         // "Wrote proper documentation for developer on-boarding, for every user story, and for every API endpoint.",
       ],
       link: "https://github.com/BobShoaun/Artsu.me",
+      github: [
+        {
+          repo: "Artsu.me",
+          url: "https://github.com/BobShoaun/Artsu.me",
+        },
+      ],
     },
     // {
     //   name: "Assembly Doodle Jump",

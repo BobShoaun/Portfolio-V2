@@ -51,7 +51,7 @@
               </button>
             </li>
 
-            <li class="">
+            <li class="fbasis-1/2">
               <a
                 class="flex gap-1.5 items-center"
                 href={resume.linkedIn.url}
@@ -60,7 +60,7 @@
               >
             </li>
 
-            <li>
+            <li class="basis-1/3">
               <a
                 class="flex gap-1.5 items-center"
                 href={resume.github.url}
@@ -82,9 +82,9 @@
             </li>
           </ul>
 
-          <p class="text-gray-400 text-right right-text basis-1/3">
+          <!-- <p class="text-gray-400 text-right right-text basis-1/3">
             Last updated <em>{resume.lastUpdated}</em>
-          </p>
+          </p> -->
         </div>
       </section>
 
@@ -129,7 +129,7 @@
         <h2
           class="w-full text-resume-primary bg-resume-light border-resume-primary pl-2 py-0 border-l-2 font-bold text-sm"
         >
-          Professional Experiences
+          Work Experience
         </h2>
 
         <ul class="flex flex-col gap-2.5 mt-2">
@@ -200,15 +200,25 @@
           {#each resume.projects as project}
             <li>
               <div class="flex justify-between items-baseline">
-                <a
-                  href={project.link}
-                  target="_blank"
+                <h3
                   class="text-gray-700 font-bold title-text flex items-baseline gap-1.5"
                 >
                   {project.name}
-                  <i class="text-[10px] leading-3 fa fa-external-link-alt" />
-                </a>
-                <p class="text-gray-400 right-text">{project.type}</p>
+                  <!-- <i class="text-[10px] leading-3 fa fa-external-link-alt" /> -->
+                </h3>
+                <ul class="text-gray-400 flex right-text gap-4">
+                  {#each project.github as github}
+                    <li>
+                      <a
+                        class="flex gap-1 items-center"
+                        href={github.url}
+                        target="_blank"
+                        ><i class="fab fa-github" />{github.repo}</a
+                      >
+                    </li>
+                  {/each}
+                </ul>
+                <!-- <p class="text-gray-400 right-text">{project.github[0].repo}</p> -->
               </div>
               <ul class="list-square text-gray-700 pl-5 content-text mt-0.5">
                 {#each project.points as point}
