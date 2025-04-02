@@ -286,4 +286,45 @@ html {
   }
 }
 
+/* .test {
+  width: 0;
+  transition: all 2s steps(var(--title-length));
+}
+
+.typing h1 {
+  width: 100%;
+} */
+
+.typing {
+  animation: typing calc(var(--title-duration) * 1ms) steps(var(--title-length)) infinite,
+    blink 1s step-end infinite;
+
+    /* transition: width 4s; */
+    /* transition: all; */
+}
+
+/* .clear-typing {
+  width: 0;
+  background-color: red;
+}
+ */
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  25%, 75% {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 

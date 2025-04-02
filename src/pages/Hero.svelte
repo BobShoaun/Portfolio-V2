@@ -6,8 +6,32 @@
 
   export let theme;
 
-  $: welcomeMessage =
-    theme === "dark" ? 'console.log("Hey!👋")' : 'console.log("Hi!🙋‍♂️")';
+  const heroTitles = [
+    'console.log("Hey!")',
+    'print("Hello there.")',
+    'Console.WriteLine("Yo");',
+    'cout << "Hey!" << endl;',
+    'echo "Hello, World!"',
+    'printf("Whatsup\\n");',
+  ];
+
+  const heroTitleDuration = 4000; // ms
+
+  let heroTitlesRef = [];
+
+  const animation = async () => {
+    let currentHeroTitleIndex = 0;
+    while (true) {
+      heroTitlesRef[currentHeroTitleIndex].style.opacity = 1;
+      await new Promise((resolve) => setTimeout(resolve, heroTitleDuration));
+      heroTitlesRef[currentHeroTitleIndex].style.opacity = 0;
+      currentHeroTitleIndex = ++currentHeroTitleIndex % heroTitles.length;
+    }
+  };
+
+  onMount(() => {
+    animation();
+  });
 </script>
 
 <section
@@ -22,8 +46,8 @@
   />
 
   <section
-    data-aos="fade-in"
-    data-aos-delay="600"
+    fdata-aos="fade-in"
+    fdata-aos-delay="600"
     class="m-auto pt-5 relative grow max-w-5xl"
   >
     <div
@@ -35,11 +59,22 @@
         data-aos-duration="700"
         class="bg-purple-400 dark:bg-purple-300 shadow-purple-300/60 shadow-lg w-8 h-1.5 lg:w-10 lg:h-2 ml-0.5 mb-6"
       />
-      <h1
-        class="mb-3 md:mb-6 font-mono font-black text-2xl md:text-3xl lg:text-5xl text-gray-700 dark:text-white"
-      >
-        <TextReveal delay={800} once text={welcomeMessage} />
-      </h1>
+      <div class="mb-2 md:mb-5 relative hero-title">
+        {#each heroTitles as heroTitle, index}
+          <div
+            bind:this={heroTitlesRef[index]}
+            class="inline-block title-1 absolute first:relative left-0 opacity-0"
+          >
+            <h1
+              class="typing inline-block pb-2 whitespace-nowrap overflow-hidden border-r-[3px] font-mono font-black text-2xl md:text-3xl lg:text-5xl text-gray-700 dark:text-white"
+              style="--title-length: {heroTitle.length}; --title-duration: {heroTitleDuration}"
+            >
+              {heroTitle}
+            </h1>
+          </div>
+        {/each}
+      </div>
+
       <p
         class="text-lg md:text-xl lg:text-xl mb-8 font-bold text-gray-500 dark:text-gray-400 ml-1"
       >

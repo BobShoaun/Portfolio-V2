@@ -757,6 +757,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50%;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .max-h-80 {
   max-height: 20rem;
 }
@@ -1052,12 +1056,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-self: flex-start;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .overflow-auto {
   overflow: auto;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-sm {
@@ -1084,8 +1096,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0.75rem;
 }
 
+.border-r-\[3px\] {
+  border-right-width: 3px;
+}
+
 .border-l-2 {
   border-left-width: 2px;
+}
+
+.border-l-\[1px\] {
+  border-left-width: 1px;
+}
+
+.border-r-\[1px\] {
+  border-right-width: 1px;
 }
 
 .border-gray-400 {
@@ -1126,6 +1150,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-resume-primary {
   --tw-border-opacity: 1;
   border-color: rgb(15 118 110 / var(--tw-border-opacity));
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
 .bg-gray-50 {
@@ -1404,6 +1433,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.25rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1426,10 +1459,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-right {
   text-align: right;
-}
-
-.indent-4 {
-  text-indent: 1rem;
 }
 
 .font-mono {
@@ -2282,13 +2311,72 @@ html {
   }
 }
 
-.first-letter\:text-4xl::first-letter {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+/* .test {
+  width: 0;
+  transition: all 2s steps(var(--title-length));
 }
 
-.first-letter\:font-bold::first-letter {
-  font-weight: 700;
+.typing h1 {
+  width: 100%;
+} */
+
+.typing {
+  -webkit-animation: typing calc(var(--title-duration) * 1ms) steps(var(--title-length)) infinite,
+    blink 1s step-end infinite;
+          animation: typing calc(var(--title-duration) * 1ms) steps(var(--title-length)) infinite,
+    blink 1s step-end infinite;
+  /* transition: width 4s; */
+  /* transition: all; */
+}
+
+/* .clear-typing {
+  width: 0;
+  background-color: red;
+}
+ */
+
+@-webkit-keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  25%, 75% {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  25%, 75% {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.first\:relative:first-child {
+  position: relative;
 }
 
 .hover\:bg-gray-300:hover {
@@ -2510,8 +2598,8 @@ html {
     margin-bottom: 1rem;
   }
 
-  .md\:mb-6 {
-    margin-bottom: 1.5rem;
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .md\:block {
