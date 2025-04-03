@@ -23,7 +23,7 @@
     </div>
 
     <main
-      class="resume bg-white shadow-xl flex flex-col justify-between fpx-8 fpy-9"
+      class="resume bg-white shadow-xl flex flex-col justify-between"
     >
       <section>
         <h1 class={`text-gray-700 text-3xl font-extrabold`}>
@@ -143,13 +143,11 @@
                   {experience.position}
                 </h4>
 
-                
-
                 <p class="text-gray-400 ml-auto right-text">
                   {experience.location}
                 </p>
 
-                <div class="border-gray-300 border-l-[1px] border-r-[1px] h-2 self-center"></div>
+                <!-- <div class="text-gray-400 self-center text-sm h-2 pt-[2px] mb-auto">╵</div> -->
 
                 <p class="text-gray-400 right-text">
                   {experience.timeline}
@@ -259,8 +257,12 @@
     height: 29.7cm;
 
     box-sizing: border-box;
-    /* padding: 2.25rem; */
-    padding: 0.4in; /* ideally at least 0.5in */
+    /* size: A4 portrait; */
+
+    /* --padding: 0.5in; ideally at least 0.5in */
+    /* padding: var(--padding);  */
+    padding: 0.5in;
+
   }
 
   .content-text {
@@ -293,12 +295,14 @@
       left: 0 !important;
       margin: 0 !important;
       padding: 0 !important;
+      /* padding: var(--padding);  */
       line-height: 18px;
       -webkit-print-color-adjust: exact !important;
     }
     @page {
       size: A4;
       margin: 0.5in;
+      /* margin: var(--padding); */
     }
   }
 </style>
