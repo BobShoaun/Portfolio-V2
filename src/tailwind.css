@@ -26,12 +26,12 @@ html {
 }
 
 .main {
-  @apply px-5 md:px-24 lg:px-28;
+  @apply px-0 sm:px-3 md:px-24 lg:px-28;
 }
 
 .section {
   max-width: 1200px;
-  @apply m-auto py-20 lg:pt-52 lg:pb-52;
+  @apply m-auto py-10 md:py-20 lg:py-52;
 }
 
 .heading::before {
@@ -286,38 +286,22 @@ html {
   }
 }
 
-/* .test {
-  width: 0;
-  transition: all 2s steps(var(--title-length));
+.typing {
+  opacity: 1;
+  z-index: 10;
 }
 
 .typing h1 {
-  width: 100%;
-} */
-
-.typing {
-  animation: typing calc(var(--title-duration) * 1ms) steps(var(--title-length)) infinite,
+  animation: typing calc(var(--title-duration) * 1ms) steps(var(--title-length)) both,
     blink 1s step-end infinite;
-
-    /* transition: width 4s; */
-    /* transition: all; */
 }
-
-/* .clear-typing {
-  width: 0;
-  background-color: red;
-}
- */
 
 @keyframes typing {
-  from {
-    width: 0%;
+  from, 90%, to {
+    max-width: 0;
   }
-  25%, 75% {
-    width: 100%;
-  }
-  to {
-    width: 0%;
+  50%, 70% {
+    max-width: 100%;
   }
 }
 

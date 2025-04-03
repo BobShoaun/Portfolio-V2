@@ -20,7 +20,7 @@
     textClasses="text-gray-100 dark:text-gray-800"
   />
 
-  <section class="main mb-40 mt-40 lg:mt-64">
+  <section class="main my-20 md:mb-40 md:mt-40 lg:mt-64">
     <div
       class="flex flex-col items-center gap-32 lg:gap-20 lg:flex-row justify-center"
     >
@@ -34,7 +34,7 @@
             data-aos-duration="500"
             data-aos-delay="200"
             src="/images/me.webp"
-            alt="A guy (me) posing with a an Amazon t-shirt with the Columbia Icefield in the background."
+            alt="Me wearing an Amazon t-shirt with Columbia Icefields in the background during my vacation to Banff, Alberta."
           />
         </div>
       </div>
@@ -53,20 +53,23 @@
           data-aos-delay="100"
           class="text-gray-600 dark:text-gray-300 lg:text-lg space-y-5"
         >
-          <p class="first-letter:text-4xl first-letter:font-bold">
-            What's up? I’m Bob, a software developer with expertise in web
-            development. Currently, I am a Computer Science specialist at
-            University of Toronto.
+          <p>
+            Hey there!👋 I'm Bob Shoaun Ng, a passionate software developer
+            specializing in web development. I hold an Honours Bachelor of
+            Science in Computer Science from the University of Toronto and
+            proudly call both Malaysia 🇲🇾 and Toronto, Canada 🇨🇦 home.
           </p>
-          <p class="indent-4">
-            The passion to create and innovate has always been in me. I strive
-            to build quality, clean, intuitive, and robust software with
-            attention and deliberation.
+          <p>
+            From a young age, I've been driven by the thrill of creating and
+            innovating. My goal? To build clean, intuitive, and robust software
+            that not only works seamlessly but also delivers an exceptional user
+            experience. My expertise lies in JavaScript, CSS, and the MERN
+            stack. I've also dove deep into the world of blockchain technology
+            and Web3.
           </p>
-          <p class="indent-4">
-            My expertise include JavaScript, CSS, and the MERN stack. Recently I
-            have been intrigue with blockchain tech and Web3. Aside from coding,
-            I enjoy playing table tennis, video games, and the drums.
+          <p>
+            Beyond coding, you’ll find me playing table tennis 🏓, cycling
+            through the city 🚴, or jamming on the drums 🥁.
           </p>
         </div>
         <!-- <Link

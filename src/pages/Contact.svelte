@@ -47,9 +47,9 @@
     textClasses="text-gray-700 dark:text-gray-50"
   />
 
-  <section class="section relative">
+  <section class="section relative py-32 lg:py-52">
     <div
-      class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 md:px-7 py-10 lg:px-10 lg:py-14 mb-16"
+      class="bg-gray-50 dark:bg-gray-900 shadow-2xl px-5 md:px-7 py-10 lg:px-10 lg:py-14 md:mb-16"
     >
       <div>
         <div
@@ -67,7 +67,7 @@
             <TextReveal text="CONTACT ME" />
           </h2>
 
-          <h5 data-aos="fade" class="text-gray-500 dark:text-gray-300 mb-7">
+          <h5 data-aos="fade" class="text-sm md:text-base text-gray-500 dark:text-gray-300 mb-7">
             Shoot me a message and I will get back to you as soon as I can. My
             emails are
             <button
@@ -78,8 +78,8 @@
             and
             <button
               class="text-gray-700 dark:text-gray-100 underline"
-              on:click={() => copyToClipboard("bobshoaun.ng@mail.utoronto.ca")}
-              >bobshoaun.ng@mail.utoronto.ca</button
+              on:click={() => copyToClipboard("bobshoaun.ng@alumni.utoronto.ca")}
+              >bobshoaun.ng@alumni.utoronto.ca</button
             >
           </h5>
         </div>
@@ -106,14 +106,14 @@
           <div class="flex flex-col md:flex-row lg:flex-col">
             <input
               name="name"
-              class="w-full mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
+              class="w-full text-sm md:text-base mb-3 md:mb-4 mr-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
               type="text"
               placeholder="Your name"
               required
             />
             <input
               name="email"
-              class="w-full mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
+              class="w-full text-sm md:text-base mb-3 md:mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-600 dark:text-gray-50"
               type="email"
               placeholder="Your email"
               required
@@ -122,7 +122,7 @@
 
           <textarea
             name="message"
-            class="w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50"
+            class="text-sm md:text-base w-full px-4 py-2 mb-4 min-h-1/4 bg-gray-200 dark:bg-gray-700 dark:text-gray-50"
             placeholder="Tell me what you think!"
             rows="6"
             required

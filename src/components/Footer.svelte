@@ -51,11 +51,11 @@
   <div class="text-center">
     <a
       data-aos="fade-up"
-      class="nav-text text-gray-700 dark:text-gray-50"
+      class="nav-text !text-xs md:text-sm text-gray-700 dark:text-gray-50"
       href="https://github.com/BobShoaun/Portfolio-V2"
       target="_blank"
     >
-      Designed & Built by Ng Bob Shoaun &copy; <time>2023</time>
+      Designed & Built by Ng Bob Shoaun &copy; <time>{new Date().getFullYear()}</time>
     </a>
   </div>
 </footer>

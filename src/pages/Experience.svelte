@@ -29,7 +29,7 @@
     textClasses="text-gray-600 dark:text-gray-50"
   />
 
-  <header class="px-5 relative lg:flex pt-40 pb-24 gap-10 text-center">
+  <header class="px-5 relative lg:flex pt-20 md:pt-40 pb-10 md:pb-24 gap-10 text-center">
     <h2
       class="basis-1/2 inline-block lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-700 dark:text-gray-200 mb-4"
     >
@@ -39,13 +39,13 @@
       <p
         class="text-base lg:text-lg text-gray-600 dark:text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
-        I have more than 3 years of work experience and counting. Here are some
-        companies I have had the privilege to work at.
+        I have over three years of experience and counting. Here are some of the
+        incredible companies I've had the privilege to work with.
       </p>
     </div>
   </header>
 
-  <section class="main max-w-6xl mx-auto mb-40 relative z-10">
+  <section class="main max-w-6xl mx-auto mb-20 md:mb-40 relative z-10">
     <div
       class="grid grid-cols-1 md:grid-cols-2 mx-6 sm:mx-28 md:mx-0 lg:mx-20 xl:mx-28 shadow-2xl"
     >

@@ -12,7 +12,7 @@
         class="px-4 py-2 inline-block leading-4 border-green-400 border bg-green-200 hover:bg-green-300 rounded-none mr-3 text-gray-700 font-mono"
       >
         <p class="text-gray-700 font-bold font-mono">
-          <i class="fas fa-arrow-left mr-3" />Go Back
+          <i class="fas fa-arrow-left mr-3" />Back
         </p></Link
       >
       <button
@@ -132,27 +132,31 @@
           Work Experience
         </h2>
 
-        <ul class="flex flex-col gap-2.5 mt-2">
+        <ul class="flex flex-col gap-2 mt-2">
           {#each resume.experiences as experience}
-            <li>
+            <li> 
               <div class="flex items-baseline gap-2">
-                <h3 class="text-gray-700 font-bold title-text">
+                <h3 class="text-gray-800 font-bold title-text">
                   {experience.company}
                 </h3>
-                <em class="text-gray-500 title-text">
+                <h4 class="text-gray-600 subtitle-text italic">
                   {experience.position}
-                </em>
+                </h4>
+
+                
 
                 <p class="text-gray-400 ml-auto right-text">
                   {experience.location}
                 </p>
 
-                <p class="text-gray-400 right-text ml-2">
+                <div class="border-gray-300 border-l-[1px] border-r-[1px] h-2 self-center"></div>
+
+                <p class="text-gray-400 right-text">
                   {experience.timeline}
                 </p>
               </div>
 
-              <ul class="list-square text-gray-700 pl-5 mt-0.5 content-text">
+              <ul class="list-square text-gray-700 pl-4 mt-0.5 content-text">
                 {#each experience.points as point}
                   <li>
                     {point}
@@ -185,7 +189,7 @@
             {resume.education.description}
           </p>
           <p class="text-gray-500 font-semibold content-text">
-            CGPA: {resume.education.cgpa}
+            {resume.education.cgpa}
           </p>
         </div>
       </section>
@@ -196,7 +200,7 @@
         >
           Projects
         </h2>
-        <ul class="flex flex-col gap-2.5 mt-2">
+        <ul class="flex flex-col gap-2 mt-2">
           {#each resume.projects as project}
             <li>
               <div class="flex justify-between items-baseline">
@@ -220,7 +224,7 @@
                 </ul>
                 <!-- <p class="text-gray-400 right-text">{project.github[0].repo}</p> -->
               </div>
-              <ul class="list-square text-gray-700 pl-5 content-text mt-0.5">
+              <ul class="list-square text-gray-700 pl-4 content-text mt-0.5">
                 {#each project.points as point}
                   <li>
                     {point}
@@ -256,7 +260,7 @@
 
     box-sizing: border-box;
     /* padding: 2.25rem; */
-    padding: 0.5in;
+    padding: 0.4in; /* ideally at least 0.5in */
   }
 
   .content-text {
@@ -273,6 +277,10 @@
   .title-text {
     font-size: 13px;
     line-height: 1.4;
+  }
+
+  .subtitle-text {
+    font-size: 12px;
   }
 
   @media print {

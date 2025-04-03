@@ -7,13 +7,13 @@
   export let right = false;
 </script>
 
-<article class="sm:mx-14 lg:mx-0">
+<article class="mx-3 sm:mx-14 lg:mx-0">
   <div
     class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-14"
   >
-    <aside class="lg:max-w-1/2 w-fit shrink">
+    <aside class="lg:max-w-1/2 basis-1/2">
       <div
-        class="mx-0 mb-4 max-h-80 w-fit bg-gradient-to-br from-green-300 to-blue-300 shadow-xl overflow-hidden"
+        class="mb-4 max-h-80 mx-auto w-fit bg-gradient-to-br from-green-300 to-blue-300 shadow-xl overflow-hidden"
       >
         <img
           data-aos={right ? "slide-right" : "slide-left"}
@@ -64,7 +64,7 @@
       </div>
     </aside>
 
-    <section class="flex-1 {right ? 'lg:order-first' : ''}">
+    <section class="basis-1/2 {right ? 'lg:order-first' : ''}">
       <h1
         data-aos={right ? "fade-right" : "fade-left"}
         class="text-2xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-50 mb-1"
@@ -91,7 +91,7 @@
       <p
         data-aos="fade"
         data-aos-delay="200"
-        class="mb-4 text-gray-600 font-semibold dark:text-gray-300 leading-relaxed max-w-prose"
+        class="text-sm md:text-base mb-4 text-gray-600 font-semibold dark:text-gray-300 leading-relaxed max-w-prose"
       >
         {@html project.description}
       </p>
@@ -112,19 +112,19 @@
     </section>
   </div>
   {#if project.more}
-    <article data-aos="fade-left" class="mt-14">
+    <article data-aos="fade-left" class="mt-14 mx-5">
       <a
         href={project.more}
         class="block relative text-gray-700 dark:text-white cursor-pointer featured-article"
       >
-        <em class="block mb-2"
-          ><i class="fas fa-newspaper mr-2 text-lg" />Featured Article</em
+        <em class="flex items-center gap-2 mb-2"
+          ><i class="fas fa-newspaper text-lg" />Featured Article</em
         >
         <hr class="mb-4 border-gray-400" />
-        <h1 class="text-2xl lg:text-3xl font-bold mb-3">
+        <h1 class="text-xl lg:text-2xl font-bold mb-3">
           How I Made My Own Cryptocurrency
         </h1>
-        <p class="text-gray-500 dark:text-gray-300">
+        <p class="text-gray-500 dark:text-gray-300 text-sm">
           by Ng Bob Shoaun &nbsp;∙&nbsp; 2 August 2021 &nbsp;∙&nbsp; 8 minute
           read
         </p>
@@ -143,11 +143,11 @@
   }
 
   .featured-article {
-    outline: 2px dashed transparent;
-    outline-offset: 1.5em;
+    outline: 2px dashed rgba(156, 163, 175);
+    outline-offset: 1.25em;
     transition: outline ease 400ms;
   }
   .featured-article:is(:hover, :focus) {
-    outline: 2px dashed rgba(156, 163, 175);
+    outline-style: solid;
   }
 </style>

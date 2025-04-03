@@ -7,31 +7,30 @@
   export let theme;
 
   const heroTitles = [
-    'console.log("Hey!")',
-    'print("Hello there.")',
-    'Console.WriteLine("Yo");',
-    'cout << "Hey!" << endl;',
-    'echo "Hello, World!"',
-    'printf("Whatsup\\n");',
+    'console.log("Hello!")',
+    'print("You\'ve arrived")',
+    'cout << "at a place";',
+    // 'out.println("where code");',
+    'content: "where code"',
+    'echo "meets creativity."',
+    'printf("Let\'s build");',
+    '<p>something amazing!</p>',
+    'Console.Write(":D");',
   ];
 
-  const heroTitleDuration = 4000; // ms
+  const heroTitleDuration = 3000; // ms
 
   let heroTitlesRef = [];
 
   const animation = async () => {
-    let currentHeroTitleIndex = 0;
-    while (true) {
-      heroTitlesRef[currentHeroTitleIndex].style.opacity = 1;
-      await new Promise((resolve) => setTimeout(resolve, heroTitleDuration));
-      heroTitlesRef[currentHeroTitleIndex].style.opacity = 0;
-      currentHeroTitleIndex = ++currentHeroTitleIndex % heroTitles.length;
+    for (let i = 0; true; i++) {
+      heroTitlesRef[i % heroTitles.length].classList.add("typing");
+      await new Promise(resolve => setTimeout(resolve, heroTitleDuration));
+      heroTitlesRef[i % heroTitles.length].classList.remove("typing");
     }
   };
 
-  onMount(() => {
-    animation();
-  });
+  onMount(animation);
 </script>
 
 <section
@@ -63,10 +62,12 @@
         {#each heroTitles as heroTitle, index}
           <div
             bind:this={heroTitlesRef[index]}
-            class="inline-block title-1 absolute first:relative left-0 opacity-0"
+            class="inline-block title-1 absolute first:relative left-0 opacity-0 z-0"
           >
             <h1
-              class="typing inline-block pb-2 whitespace-nowrap overflow-hidden border-r-[3px] font-mono font-black text-2xl md:text-3xl lg:text-5xl text-gray-700 dark:text-white"
+              class="inline-block pb-2 whitespace-nowrap overflow-hidden 
+                    border-r-[3px] border-gray-600 dark:border-white font-mono 
+                    font-black text-xl sm:text-2xl md:text-3xl lg:text-5xl text-gray-700 dark:text-white"
               style="--title-length: {heroTitle.length}; --title-duration: {heroTitleDuration}"
             >
               {heroTitle}
@@ -81,7 +82,7 @@
         <TextReveal
           delay={1000}
           once
-          text="I build and design industry standard web experiences. Welcome to my website."
+          text="I craft and design industry standard web experiences. Welcome to my website."
         />
       </p>
 

@@ -27,18 +27,17 @@
   />
   <SectionNumber number="100" right />
 
-  <section class="main pb-40 pt-32 max-w-7xl mx-auto">
+  <section class="main py-20 md:pb-40 md:pt-32 max-w-7xl mx-auto">
     <div
-      class="space-y-36 lg:space-y-0 lg:grid lg:grid-cols-8 gap-x-20 gap-y-36"
+      class="space-y-20 md:space-y-36 lg:space-y-0 lg:grid lg:grid-cols-8 gap-x-20 gap-y-36"
     >
       {#each visibleProjects as project}
         <GameDevProject {project} />
       {/each}
     </div>
-
     <button
       on:click={() => (expanded = !expanded)}
-      class="mt-40 w-full flex items-center gap-2 group font-semibold text-gray-700 dark:text-gray-100"
+      class="mt-20 md:mt-40 w-full flex items-center gap-2 group font-semibold text-gray-700 dark:text-gray-100"
     >
       <hr class="flex-1 mr-2 border-gray-400 dark:border-gray-500" />
       {#if expanded}

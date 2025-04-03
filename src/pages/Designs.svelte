@@ -27,7 +27,7 @@
     textClasses="text-gray-700 dark:text-gray-50"
   />
 
-  <header class="px-5 relative lg:flex pt-40 pb-24 gap-10 text-center">
+  <header class="px-5 relative lg:flex pt-20 md:pt-40 pb-24 gap-10 text-center">
     <h2
       class="basis-1/2 lg:text-right tracking-wide text-4xl md:text-5xl lg:text-7xl font-black text-gray-700 dark:text-gray-200 mb-4"
     >

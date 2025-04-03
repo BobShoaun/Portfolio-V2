@@ -1,19 +1,5 @@
 [
-  {
-    "name": "Little Lolli Shop (WIP)",
-    "image": "/images/littlelolli.png",
-    "collaborators": "by myself for client",
-    "description": "An e-commerce and marketing website for my sister's personal business that sells miniature handmade charms and jewelry. Complete with a content management system for managing inventories. The website is still new and a work in progress.",
-    "technologies": [
-      "astro",
-      "tailwindcss",
-      "firebase",
-      "sanity"
-    ],
-    "website": "https://littlelolli.shop/",
-    "github": "https://github.com/BobShoaun/Little-Lolli-Shop",
-    "year": 2023
-  },
+
   {
     "name": "Bobcoin (XBC)",
     "image": "/images/bobcoin.webp",
@@ -71,6 +57,21 @@
     "year": 2021
   },
   {
+    "name": "Little Lolli Shop (WIP)",
+    "image": "/images/littlelolli.png",
+    "collaborators": "by myself for client",
+    "description": "An e-commerce and marketing website for my sister's personal business that sells miniature handmade charms and jewelry. Complete with a content management system for managing inventories. The website is still new and a work in progress.",
+    "technologies": [
+      "astro",
+      "tailwindcss",
+      "firebase",
+      "sanity"
+    ],
+    "website": "https://littlelolli.shop/",
+    "github": "https://github.com/BobShoaun/Little-Lolli-Shop",
+    "year": 2023
+  },
+  {
     "name": "Pathforge",
     "image": "/images/pathforge.webp",
     "collaborators": "with pathforge team",
@@ -121,7 +122,7 @@
     "name": "Countries of the World",
     "image": "/images/countries-of-the-world.png",
     "collaborators": "with my students",
-    "description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst mentoring learners about the basics of the fetch api and javascript's promise callback chains.",
+    "description": "A website displaying information about all the countries in the world, gathered from an external api. It was built in less than 3 hours whilst mentoring learners about the basics of the fetch api and Javascript's promise callback chains.",
     "technologies": [
       "html",
       "css",
@@ -136,7 +137,7 @@
     "name": "things to do",
     "image": "/images/todo app 2.png",
     "collaborators": "by myself",
-    "description": "A simple and elegant to do list application with a great UI built as practice while learning the vue framework and firebase firestore.",
+    "description": "A simple and elegant to do list application with a great UI built as practice while learning the Vue.js framework and Firebase firestore.",
     "technologies": [
       "vue",
       "tailwindcss",
