@@ -10,11 +10,11 @@
     'console.log("Hello!")',
     'print("You\'ve arrived")',
     'cout << "at a place";',
-    // 'out.println("where code");',
     'content: "where code"',
-    'echo "meets creativity."',
+    'echo "meets creativity!"',
     'printf("Let\'s build");',
-    '<p>something amazing!</p>',
+    '<p>something cool</p>',
+    'out.println("together!");',
     'Console.Write(":D");',
   ];
 
@@ -62,10 +62,10 @@
         {#each heroTitles as heroTitle, index}
           <div
             bind:this={heroTitlesRef[index]}
-            class="inline-block title-1 absolute first:relative left-0 opacity-0 z-0"
+            class="inline-block absolute first:relative left-0 opacity-0 z-0"
           >
             <h1
-              class="inline-block pb-2 whitespace-nowrap overflow-hidden 
+              class="inline-block md:pb-1 lg:pb-2 whitespace-nowrap overflow-hidden 
                     border-r-[3px] border-gray-600 dark:border-white font-mono 
                     font-black text-xl sm:text-2xl md:text-3xl lg:text-5xl text-gray-700 dark:text-white"
               style="--title-length: {heroTitle.length}; --title-duration: {heroTitleDuration}"
@@ -77,7 +77,7 @@
       </div>
 
       <p
-        class="text-lg md:text-xl lg:text-xl mb-8 font-bold text-gray-500 dark:text-gray-400 ml-1"
+        class="text-sm md:text-lg lg:text-xl mb-8 font-bold text-gray-500 dark:text-gray-400 ml-1"
       >
         <TextReveal
           delay={1000}
@@ -90,7 +90,7 @@
         data-aos="fade-left"
         data-aos-delay="1200"
         data-aos-duration="700"
-        class="text-sm text-gray-700 font-semibold font-mono"
+        class="text-xs md:text-sm text-gray-700 font-semibold font-mono"
       >
         <Link
           to="/resume"
