@@ -147,7 +147,7 @@
                   {experience.location}
                 </p>
 
-                <!-- <div class="text-gray-400 self-center text-sm h-2 pt-[2px] mb-auto">╵</div> -->
+                <div class="text-gray-400 self-center text-sm h-2 pt-[2px] mb-auto">╵</div>
 
                 <p class="text-gray-400 right-text">
                   {experience.timeline}
@@ -259,9 +259,9 @@
     box-sizing: border-box;
     /* size: A4 portrait; */
 
-    /* --padding: 0.5in; ideally at least 0.5in */
-    /* padding: var(--padding);  */
-    padding: 0.5in;
+    /* ideally at least 0.5in */
+    --padding: 0.4in; 
+    padding: var(--padding); 
 
   }
 
@@ -301,8 +301,7 @@
     }
     @page {
       size: A4;
-      margin: 0.5in;
-      /* margin: var(--padding); */
+      margin: var(--padding);
     }
   }
 </style>
