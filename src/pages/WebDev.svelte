@@ -24,7 +24,7 @@
   <SectionHeader
     wrapperClasses="moving-gradient-1"
     headingText="WEB DEVELOPMENT"
-    subtitleText="My projects are driven by passion and creativity. Here are some of my featured works that showcase my skills and expertise."
+    subtitleText="Here are some of my featured works that showcases my skills and expertise in fullstack web development."
   />
   <!-- subtitleText="I have industry experience working as a fullstack web developer, here are some featured projects." -->
   <SectionNumber number="011" />

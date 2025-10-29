@@ -99,10 +99,10 @@ const resume = {
       timeline: "Sep 2024 - Present",
       location: "Toronto, ON",
       points: [
-        "Migrated codebase of integral software from Java Spring to Quarkus framework while maintaining backwards compatibility, resulting in a reduced memory and CPU usage by 75% and startup time by 30x.",
-        "Designed and implemented automated e2e testing and integrated QA process into the existing pipeline for the rollout of the migration.",
-        "Corresponded in customer escalation tickets and performed root cause analysis on issues in customer's database instances.",
-        "Onboarded and mentored 2 new hires, providing documentation and advice, allowing them to tackle tickets within the first 3 weeks.",
+        "Migrated codebase of integral database software from Java Spring to Quarkus framework while maintaining backwards compatibility, resulting in a reduced memory footprint and CPU usage of 30% and 60% respectively, with the startup time reduced by 30x.",
+        "Designed and implemented automated e2e testing and integrated QA process into the existing pipeline for a smooth rollout of the migration.",
+        "Corresponded in 10+ customer escalation tickets and performed root cause analysis on issues in customer's database instances.",
+        "Onboarded 2 new hires and 2 interns, provided troubleshooting aid and advice which allowed them to ramp up within the first 3 weeks.",
       ],
     },
     {

@@ -22,70 +22,68 @@
       >
     </div>
 
-    <main
-      class="resume bg-white shadow-xl flex flex-col justify-between"
-    >
+    <main class="resume bg-white shadow-xl flex flex-col justify-between">
       <section>
-        <h1 class={`text-gray-700 text-3xl font-extrabold`}>
+        <h1 class="text-gray-700 text-3xl font-extrabold">
           {resume.name}
         </h1>
 
-        <div class="flex items-start mt-1 content-text">
-          <ul class="text-gray-600 flex flex-wrap gap-x-4 gap-y-0.5">
-            <li>
-              <a
-                class="flex gap-1.5 items-center"
-                href={resume.website.url}
-                target="_blank"
-                ><i class="fas fa-globe" />{resume.website.label}</a
-              >
-            </li>
+        <ul
+          class="content-text mt-1 text-gray-600 flex flex-wrap gap-x-5 gap-y-0.5 max-w-screen-sm"
+        >
+          <li>
+            <a
+              class="flex gap-1.5 items-center"
+              href={resume.website.url}
+              target="_blank"
+              ><i class="fas fa-globe" />{resume.website.label}</a
+            >
+          </li>
 
-            <li>
-              <button
-                class="flex gap-1.5 items-center"
-                on:click={() => copyToClipboard(resume.email.url)}
-              >
-                <i class="fas fa-envelope" />
-                {resume.email.label}
-              </button>
-            </li>
+          <li>
+            <button
+              class="flex gap-1.5 items-center"
+              on:click={() => copyToClipboard(resume.email.url)}
+            >
+              <i class="fas fa-envelope" />
+              {resume.email.label}
+            </button>
+          </li>
 
-            <li class="fbasis-1/2">
-              <a
-                class="flex gap-1.5 items-center"
-                href={resume.linkedIn.url}
-                target="_blank"
-                ><i class="fab fa-linkedin" />{resume.linkedIn.label}</a
-              >
-            </li>
+          <li>
+            <a
+              class="flex gap-1.5 items-center"
+              href={resume.linkedIn.url}
+              target="_blank"
+              ><i class="fab fa-linkedin" />{resume.linkedIn.label}</a
+            >
+          </li>
 
-            <li class="basis-1/3">
-              <a
-                class="flex gap-1.5 items-center"
-                href={resume.github.url}
-                target="_blank"
-                ><i class="fab fa-github" />{resume.github.label}</a
-              >
-            </li>
+          <li>
+            <a
+              class="flex gap-1.5 items-center"
+              href={resume.github.url}
+              target="_blank"
+              ><i class="fab fa-github" />{resume.github.label}</a
+            >
+          </li>
 
-            <li>
-              <a class="flex gap-1.5 items-center" href="tel:+1437-984-6410"
-                ><i class="fas fa-phone" />{resume.phoneNumber}</a
-              >
-            </li>
+          <li>
+            <a class="flex gap-1.5 items-center" href="tel:+1437-984-6410"
+              ><i class="fas fa-phone" />{resume.phoneNumber}</a
+            >
+          </li>
 
-            <li>
-              <p class="flex gap-1.5 items-center">
-                <i class="fas fa-map-marker-alt" />{resume.location}
-              </p>
-            </li>
-          </ul>
+          <li>
+            <p class="flex gap-1.5 items-center">
+              <i class="fas fa-map-marker-alt" />{resume.location}
+            </p>
+          </li>
+        </ul>
 
-          <!-- <p class="text-gray-400 text-right right-text basis-1/3">
+        <!-- <p class="text-gray-400 text-right right-text basis-1/3">
             Last updated <em>{resume.lastUpdated}</em>
           </p> -->
-        </div>
       </section>
 
       <section>
@@ -134,7 +132,7 @@
 
         <ul class="flex flex-col gap-2 mt-2">
           {#each resume.experiences as experience}
-            <li> 
+            <li>
               <div class="flex items-baseline gap-2">
                 <h3 class="text-gray-800 font-bold title-text">
                   {experience.company}
@@ -147,7 +145,11 @@
                   {experience.location}
                 </p>
 
-                <div class="text-gray-400 self-center text-sm h-2 pt-[2px] mb-auto">╵</div>
+                <div
+                  class="text-gray-400 self-center text-sm h-2 pt-[2px] mb-auto"
+                >
+                  ╵
+                </div>
 
                 <p class="text-gray-400 right-text">
                   {experience.timeline}
@@ -260,9 +262,7 @@
     /* size: A4 portrait; */
 
     /* ideally at least 0.5in */
-    --padding: 0.4in; 
-    padding: var(--padding); 
-
+    padding: 0.4in;
   }
 
   .content-text {
@@ -293,15 +293,20 @@
       z-index: 100000 !important;
       top: 0 !important;
       left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
       margin: 0 !important;
       padding: 0 !important;
-      /* padding: var(--padding);  */
       line-height: 18px;
       -webkit-print-color-adjust: exact !important;
+      background: white !important;
+      box-shadow: none !important;
     }
     @page {
       size: A4;
-      margin: var(--padding);
+      margin: 0.4in;
+      background: white !important;
+      box-shadow: none !important;
     }
   }
 </style>

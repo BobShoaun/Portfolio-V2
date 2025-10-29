@@ -13,23 +13,29 @@
   >
     <aside class="lg:max-w-1/2 basis-1/2">
       <div
-        class="mb-4 max-h-80 mx-auto w-fit bg-gradient-to-br from-green-300 to-blue-300 shadow-xl overflow-hidden"
+        class="max-h-80 mx-auto w-fit relative shadow-xl overflow-hidden"
       >
         <img
           data-aos={right ? "slide-right" : "slide-left"}
           data-aos-duration="200"
           data-aos-delay="100"
-          class="max-h-[inherit] w-auto object-scale-down p-2 sm:p-3 cursor-pointer img-container"
+          class="max-h-[inherit] w-auto object-scale-down"
           src={project.image}
           alt={`Screenshot of ${project.name}`}
           on:click={() => window.open(project.website)}
           loading="lazy"
         />
+        <a 
+          href={project.website}
+          target="_blank"
+          class="absolute text-[0] bg-black inset-0 cursor-pointer opacity-0 hover:opacity-80 bg-gradient-to-br from-green-300 to-blue-300 transition-opacity duration-500"
+        >{project.website}</a>
+
       </div>
       <div
         data-aos={right ? "flip-up" : "flip-up"}
         data-aos-delay="100"
-        class="flex items-center justify-center gap-3"
+        class="flex items-center justify-center gap-3 mt-4"
       >
         {#if project.github}
           <a
@@ -134,14 +140,6 @@
 </article>
 
 <style>
-  .img-container {
-    opacity: 1;
-    transition: opacity 500ms ease !important;
-  }
-  .img-container:is(:hover, :focus) {
-    opacity: 0.4;
-  }
-
   .featured-article {
     outline: 2px dashed rgba(156, 163, 175);
     outline-offset: 1.25em;

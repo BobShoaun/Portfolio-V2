@@ -8,7 +8,7 @@
 <article style="grid-column: {project.span ?? 'span 4'};">
   <aside class="mx-auto relative z-10 max-h-80 w-fit">
     <div
-      class="relative z-10 max-h-80 w-fit mx-3.5 shadow-lg bg-gradient-to-br from-purple-400 to-red-300 shadow-3xl overflow-hidden"
+      class="z-10 max-h-80 w-fit mx-3.5 shadow-xl overflow-hidden"
     >
       {#if project.video}
         <video
@@ -18,13 +18,13 @@
           controls
           playsinline
           src={project.video}
-          class="max-h-[inherit] w-auto p-2 sm:p-3 cursor-pointer img-container"
+          class="max-h-[inherit] w-auto"
         />
       {:else}
         <img
           loading="lazy"
           src={project.image}
-          class="max-h-[inherit] w-auto p-2 sm:p-3 cursor-pointer img-container"
+          class="max-h-[inherit] w-auto"
           alt={`Screenshot of ${project.name}`}
         />
       {/if}
@@ -32,8 +32,7 @@
   </aside>
 
   <section
-    class="-mt-5 px-5 pt-10 pb-5 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-sm"
-    style="height: fit-content"
+    class="-mt-5 px-5 pt-10 pb-5 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-sm h-fit"
   >
     <h1
       data-aos="flip-up"

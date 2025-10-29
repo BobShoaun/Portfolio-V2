@@ -61,15 +61,14 @@
           </p>
           <p>
             From a young age, I've been driven by the thrill of creating and
-            innovating. My goal? To build clean, intuitive, and robust software
+            innovating. I find satisfaction in building clean, intuitive, and robust software
             that not only works seamlessly but also delivers an exceptional user
             experience. My expertise lies in JavaScript, CSS, and the MERN
             stack. I've also dove deep into the world of blockchain technology
             and Web3.
           </p>
           <p>
-            Beyond coding, you’ll find me playing table tennis 🏓, cycling
-            through the city 🚴, or jamming on the drums 🥁.
+            Beyond coding, you’ll find me playing table tennis 🏓, out cycling 🚴, jamming on the drums 🥁, or listening to music 🎧.
           </p>
         </div>
         <!-- <Link

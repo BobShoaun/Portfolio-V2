@@ -82,7 +82,7 @@
         <TextReveal
           delay={1000}
           once
-          text="I craft and design industry standard web experiences. Welcome to my website."
+          text="I design and build industry standard web experiences. Welcome to my website."
         />
       </p>
 

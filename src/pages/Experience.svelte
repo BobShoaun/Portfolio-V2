@@ -39,8 +39,8 @@
       <p
         class="text-base lg:text-lg text-gray-600 dark:text-gray-300 lg:text-left lg:max-w-sm mx-auto max-w-prose lg:mx-0 font-semibold"
       >
-        I have over three years of experience and counting. Here are some of the
-        incredible companies I've had the privilege to work with.
+        Having over four years of experience and counting, here are some of the
+        incredible companies I've had the privilege to work at.
       </p>
     </div>
   </header>

@@ -311,4 +311,11 @@ html {
   }
 }
 
-
+@media print {
+  :not(.resume *) {
+    box-shadow: none !important;
+    background: none !important;
+    color: transparent !important;
+    border-color: transparent !important;
+  }
+}
