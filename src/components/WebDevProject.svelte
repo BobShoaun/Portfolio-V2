@@ -25,11 +25,13 @@
           on:click={() => window.open(project.website)}
           loading="lazy"
         />
-        <a 
-          href={project.website}
-          target="_blank"
-          class="absolute text-[0] bg-black inset-0 cursor-pointer opacity-0 hover:opacity-80 bg-gradient-to-br from-green-300 to-blue-300 transition-opacity duration-500"
-        >{project.website}</a>
+        {#if project.website}
+          <a 
+            href={project.website}
+            target="_blank"
+            class="absolute text-[0] bg-black inset-0 cursor-pointer opacity-0 hover:opacity-80 bg-gradient-to-br from-green-300 to-blue-300 transition-opacity duration-500"
+          >{project.website}</a>
+        {/if}
 
       </div>
       <div
