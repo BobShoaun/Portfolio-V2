@@ -22,7 +22,6 @@
           class="max-h-[inherit] w-auto object-scale-down"
           src={project.image}
           alt={`Screenshot of ${project.name}`}
-          on:click={() => window.open(project.website)}
           loading="lazy"
         />
         {#if project.website}
