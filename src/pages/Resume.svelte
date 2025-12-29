@@ -94,7 +94,7 @@
         </h2>
 
         <div
-          class="grid grid-cols-[auto_1fr] mt-2 items-baseline gap-x-2 text-xs content-text"
+          class="grid grid-cols-[auto_1fr] mt-1.5 items-baseline gap-x-2 text-xs content-text"
         >
           <h3 class="text-gray-700 font-bold">Languages:</h3>
           <p class="text-gray-500">
@@ -130,7 +130,7 @@
           Work Experience
         </h2>
 
-        <ul class="flex flex-col gap-2 mt-2">
+        <ul class="flex flex-col gap-1.5 mt-1.5">
           {#each resume.experiences as experience}
             <li>
               <div class="flex items-baseline gap-2">
@@ -175,7 +175,7 @@
           Education
         </h2>
 
-        <div class="flex justify-between items-baseline mt-2">
+        <div class="flex justify-between items-baseline mt-1.5">
           <h3 class="text-gray-700 font-bold title-text">
             {resume.education.school}
           </h3>
@@ -200,7 +200,7 @@
         >
           Projects
         </h2>
-        <ul class="flex flex-col gap-2 mt-2">
+        <ul class="flex flex-col gap-1.5 mt-1.5">
           {#each resume.projects as project}
             <li>
               <div class="flex justify-between items-baseline">
