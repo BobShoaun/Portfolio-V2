@@ -89,7 +89,7 @@ const resume = {
     school: "University of Toronto, St. George",
     cgpa: "3.91 / 4.0 CGPA (Dean's List Scholar)", // Dean's List Scholar
     description:
-      "Graduated with Honours Bachelor of Science - Computer Science Specialist",
+      "Honours Bachelor of Science with High Distinction - Computer Science Specialist",
     timeline: "Sep 2019 - Jun 2024",
   },
 
@@ -173,7 +173,7 @@ const resume = {
         "Developed a social e-learning platform using Vue, Bulma, GraphQL, Hasura, and Postgres, continuously improving the codebase.",
         "Built a CMS for course materials, implemented user leaderboards, mentor endorsement feature, and the entire social feed system.",
         // "Taught programming and web development - HTML, CSS, and JavaScript to students enrolled in the bootcamp in 2 hour long sessions.",
-        "Instructed programming and web development (HTML, CSS, JavaScript) in 2-hour bootcamp sessions for enrolled students."
+        "Instructed programming and web dev (HTML, CSS, JavaScript, React, Vue) in 10+ 2-hour long bootcamp sessions for groups of 6+ students."
       ],
     },
     // {
